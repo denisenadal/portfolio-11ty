@@ -6,9 +6,9 @@ columns: "col-12"
 ---
 ## Initial Project Requirements
 Through an interview process with the Talent Team SME, we developed the following project brief:
-{%- row -%}
-{%- column "col-12  col-md-8 col-lg-6" -%}
-<div class="p-4 bg-info text-white mb-4">
+<div class="wrapper"><div class="row">
+    <div class="col col-12  col-md-8 col-lg-6">
+    <div class="p-4 bg-info text-white mb-4">
 
 ### Business goals
 
@@ -19,36 +19,36 @@ Through an interview process with the Talent Team SME, we developed the followin
     - Improve cross functional communication between teams
     - Less duplication of resources
 
+    </div>
+    </div>
+    <div class="col col-12  col-md-4 col-lg-6">
+    <div class="p-4 bg-blue text-white mb-4">
+
+    ### Product Purpose
+    Build a content management system for a company-wide intranet system. It should be a one-stop destination for information about company policies, procedures and news.
+
+    </div>
+    <div class="p-4 bg-indigo text-white mb-4">
+
+    ### Target audience
+    **FIFCOUSA Employees.** They will be looking for company policies, procedures, information, and news. We want then to view the newsletter and engage with timely content
+    - this includes employees who are not tech savvy, do not have FIFCO accounts, may not have smart phones
+    - some do not speak english (costa rica)
+    - disabilities/accessibility issues.
+
+    </div>
 </div>
-{%- endcolumn -%}
-{%- column "col-12  col-md-4 col-lg-6" -%}
-<div class="p-4 bg-blue text-white mb-4">
-
-### Product Purpose
-Build a content management system for a company-wide intranet system. It should be a one-stop destination for information about company policies, procedures and news.
-
-</div>
-<div class="p-4 bg-indigo text-white mb-4">
-
-### Target audience
-**FIFCOUSA Employees.** They will be looking for company policies, procedures, information, and news. We want then to view the newsletter and engage with timely content
-- this includes employees who are not tech savvy, do not have FIFCO accounts, may not have smart phones
-- some do not speak english (costa rica)
-- disabilities/accessibility issues.
-
-</div>
-{%- endcolumn -%}
-{%- endrow -%}
-{%- hr-%}
-{%- row -%}
-{%- column "col-12  col-md-8 col-lg-6" -%}
+</div></div>
+{% hr %}
+<div class="wrapper"><div class="row">
+<div class="col col-12  col-md-8 col-lg-6">
 
 ## User Research
 We used a combination of interviews and surveys to uncover the common needs of employees at FIFCO USA. Based on the responses we received we were able to determine what content needed to be added to the site and what links needed highest visibility and ease of access. We were able to use these insights to design our site navigation and information architecture.
 
 {%- workimage  "/work/fifco-intranet/00-research/site-map.webp","","Information Architecture Site Map", "Information Architecture Site Map"  -%}
-{%- endcolumn -%}
-{%- column "col-12  col-md-4 col-lg-6" -%}
+</div>
+<div class="col col-12  col-md-4 col-lg-6">
 <div class="p-4 bg-purple text-white mb-4">
 
 ### Survey Questions
@@ -61,5 +61,5 @@ We used a combination of interviews and surveys to uncover the common needs of e
 - What would you like to see on a website designed for FIFCO USA employees?
 
 </div>
-{%- endcolumn -%}
-{%- endrow -%}
+</div>
+</div></div>

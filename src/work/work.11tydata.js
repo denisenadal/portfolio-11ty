@@ -1,7 +1,7 @@
 module.exports =  {
     type: "work",
     draft: true,
-    layout: "work/case-study.html",
+    layout: "test.html",
     weight: 50,
     date_range:"",
     image: "",

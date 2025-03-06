@@ -54,8 +54,8 @@ images: [{
    }
 }]
 ---
-{%- row -%}
-{% column "col-12 col-sm-12 col-md-8 col-lg-7 mb-4" %}
+<div class="wrapper"><div class="row">
+<div class="col col-12 col-sm-12 col-md-8 col-lg-7 mb-4">
 ### Full Redesign 
 (Nov, Dec 2019)
 
@@ -64,8 +64,8 @@ After several failed attempts to inject user-focused experiences into the existi
 We never implemented this redesign as we ran out of runway.
 
 You can read the **[full case study]( /work/pm-redesign/)**.
-{% endcolumn %}
-{% column "" %}
+</div>
+<div class="col">
     {%- workimage "/work/pm-call-experience/06-redesign/all-workflows.jpg", "figure text-muted mb-4", "photo documenting task analysis of various target user's work flows", "documenting task analysis of various target user's work flows"  -%}
-{%- endcolumn -%}
-{%- endrow -%}
+</div>
+</div></div>

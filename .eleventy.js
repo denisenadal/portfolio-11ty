@@ -1,10 +1,19 @@
 const markdownIt = require("markdown-it");
 module.exports = function (eleventyConfig) {
+  // setup server config & browersync
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.addPassthroughCopy("src/pages/*/assets")
+  eleventyConfig.addWatchTarget("assets/css/");
+  eleventyConfig.addWatchTarget("src/pages/*/assets");
+  eleventyConfig.addWatchTarget("src/pages");
+  // eleventyConfig.addWatchTarget("src/pages/*/*.{png,jpeg,jpg,webp,webm,mp4,css,js,svg} ");
   //eleventyConfig.addPassthroughCopy("src/admin")
   // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+  eleventyConfig.setBrowserSyncConfig({notify: true});
 
+
+  //set up coolections & data
+  const site = require('./src/_data/site.js');
   eleventyConfig.addCollection("allSections", async (collectionsApi) => {
 		return collectionsApi.getAll().filter(function (item) {
       if(item.page.filePathStem.includes('section0')){
@@ -12,7 +21,6 @@ module.exports = function (eleventyConfig) {
       }
 		});
 	});
-
   eleventyConfig.addCollection("allPosts", async (collectionsApi) => {
 		// get unsorted items
 		return collectionsApi.getAll().filter(function (item) {
@@ -24,35 +32,46 @@ module.exports = function (eleventyConfig) {
 	});
 
 
+  //set up content rules
   eleventyConfig.setLiquidOptions({ jsTruthy: true });
-
-  eleventyConfig.addWatchTarget("assets/css/");
-  eleventyConfig.addWatchTarget("src/pages/*/assets");
-  eleventyConfig.addWatchTarget("src/pages");
-  // eleventyConfig.addWatchTarget("src/pages/*/*.{png,jpeg,jpg,webp,webm,mp4,css,js,svg} ");
-
-  eleventyConfig.ignores.add("src/pages/*/assets/*.md");
-  eleventyConfig.ignores.add("src/pages/*/embeddable.html");
-
-  eleventyConfig.setBrowserSyncConfig({notify: true});
-
   eleventyConfig.setFrontMatterParsingOptions({ excerpt: true, });
 
+  //set up shortcodes
+  eleventyConfig.addShortcode("button", function(link,title,classes) { 
+    return `<a href='${link}' class='btn ${classes}'>${title} </a>`
+  });
+  eleventyConfig.addShortcode("hr", function() { 
+    return `<hr class="content-divider clear-both">`
+  });
+  eleventyConfig.addShortcode("workimage", function(src, classes, alt, caption, ) { 
+    let classStr = "class='image-modal-link d-block'"
+    classStr += classes ? classes : "";
+    let captionStr = '';
+    if(caption){
+      captionStr = "<figcaption>"+caption+"</figcaption>";
+    }
+    return `<a href='${src}' ${classStr}>
+    <figure class="workimg-figure">
+        <img src='${src}'
+             alt='${alt}' />
+       ${captionStr}
+    </figure>
+</a>`
+  });
+
+
+
+  //setup filters 
   eleventyConfig.addFilter("md", function (content = "") {
     return markdownIt({ html: true }).render(content);
   });
   eleventyConfig.addFilter("ISODate", function (content = new Date()) {
     return content.toISOString();
   });
-
-  const site = require('./src/_data/site.js');
-
-  /**
+    /**
    * Prefixes the given URL with the site's base URL.
    * @param {string} url
    */
-  
-
   eleventyConfig.addFilter('absoluteUrl', function(url) {
     if(!url){
       return '';

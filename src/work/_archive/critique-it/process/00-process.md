@@ -31,4 +31,4 @@ images: [{
 ---
 For the design, I started with some simple pencil sketches of screens and user flows. Once I felt I understood how user's should interact with the site and what information needed to be displayed, I started designing as I coded. 
 
-{%- button http://critique-it.herokuapp.com/#/,"live version",btn-secondary  -%}
+{%- button "http://critique-it.herokuapp.com/#/","live version",btn-secondary  -%}

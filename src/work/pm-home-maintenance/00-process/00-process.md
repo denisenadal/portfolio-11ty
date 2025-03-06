@@ -7,9 +7,9 @@ order: 0
 columns: "col-sm-12"
 ---
 The process for this project was fast and experimental.
-{%- hr-%}
-{%- row -%}
-{% column "col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4" %}
+{% hr %}
+<div class="wrapper"><div class="row">
+<div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
 
 ### Understand the Problem Space
 
@@ -18,8 +18,8 @@ We conducted several rounds of **lean experiments** to test hypotheses about the
 Some of the methods we used were **in-depth interviews, guerilla surveys, paid surveys**, informally interviewing everyone we know and looking at general market data. Some of the most common sentiments we heard from homeowners are listed to the right.
 
 Below are some examples of the experiments we ran.
-{% endcolumn %}
-{% column "" %}
+</div>
+<div class="col">
         <div class="text-light bg-info p-3 mb-4">
             <h3>Key Insights</h3>
             <ul class="lead">
@@ -28,33 +28,33 @@ Below are some examples of the experiments we ran.
                 <li>"I don't know how to tell if they're doing a good job"</li>
             </ul>
         </div>
-{%- endcolumn -%}
-{%- endrow -%}
-{%- row -%}
-{% column "" %}
+</div>
+</div></div>
+<div class="wrapper"><div class="row">
+<div class="col">
    {%- workimage "/work/pm-home-maintenance/00-process/experiment1.png", "figure text-muted mb-4", "experiment results", "experiment results"  -%}
     {%- workimage "/work/pm-home-maintenance/00-process/experiment-results.jpg", "figure text-muted mb-4", "design artifacts for subscription home maintenance service", "the results of all our experiments put together as an example of space saturate"  -%}
-{%- endcolumn -%}
-{% column "" %}
+</div>
+<div class="col">
     {%- workimage "/work/pm-home-maintenance/00-process/experiment2.png", "figure text-muted mb-4", "experiment results", "experiment results"  -%}
     {%- workimage "/work/pm-home-maintenance/00-process/boards-04.jpg", "figure text-muted mb-4", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
-{%- endcolumn -%}
-{% column "" %}
+</div>
+<div class="col">
     {%- workimage "/work/pm-home-maintenance/00-process/boards-01.jpg", "figure text-muted mb-4", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
    {%- workimage "/work/pm-home-maintenance/00-process/boards-03.jpg", "figure text-muted mb-4", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
-{%- endcolumn -%}
-{%- endrow -%}
+</div>
+</div></div>
 
-{%- hr-%}
+{% hr %}
 
-{%- row -%}
-{%- column "col-sm-12 col-md-3" -%}
-    {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.png", ""figure text-muted "", "our primary persona", "our primary persona"  -%}
-{%- endcolumn -%}
-{%- column "col-sm-12 col-md-3" -%}
-   {%- workimage "/work/pm-home-maintenance/00-process/ScottCarpenter-DIYHomeowner.png", ""figure text-muted "", "our secondary persona", "our secondary persona"  -%}
-{%- endcolumn -%}
-{% column "col-sm-12 col-md-6"  %}
+<div class="wrapper"><div class="row">
+<div class="col col-sm-12 col-md-3">
+    {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.png","figure text-muted ", "our primary persona", "our primary persona"  -%}
+</div>
+<div class="col col-sm-12 col-md-3">
+   {%- workimage "/work/pm-home-maintenance/00-process/ScottCarpenter-DIYHomeowner.png","figure text-muted ", "our secondary persona", "our secondary persona"  -%}
+</div>
+<div class="col col-sm-12 col-md-6" >
 
 ### Define The Problem
 
@@ -69,24 +69,25 @@ We build a **customer journey map** of their experience hiring a contractor for 
         <li>Homeowners frequently end up paying too much for repairs because they didn't do or don't know how to do regular maintenance.</li>
     </ol>
 </div>
-{%- endcolumn -%}
-{%- endrow -%}
+</div>
+</div></div>
 
-{%- hr-%}
+{% hr %}
 
-{%- row -%}
-{% column "col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4" %}
+<div class="wrapper"><div class="row">
+<div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
+
 ### Ideate
 
 We also conducted **collaborative design sessions** and **workshops** to ideate product opportunities and define and test a **value proposition**. 
 
-{% endcolumn  %}
-{%- endrow -%}
-{%- row -%}
-{% column "" %}
+</div>
+</div></div>
+<div class="wrapper"><div class="row">
+<div class="col">
     {%- workimage "/work/pm-home-maintenance/00-process/boards-02.jpg", "figure text-muted mb-4", "design artifacts for subscription for various solutions for home maintenance service", "design artifacts for various solutions for subscription home maintenance service"  -%}
-{%- endcolumn -%}
-{% column "" %}
+</div>
+<div class="col">
         <div class="text-light bg-info p-3 mb-4">
             <h3>Our Solution</h3>
             <ol class="lead">
@@ -94,10 +95,10 @@ We also conducted **collaborative design sessions** and **workshops** to ideate 
             </ol>
         </div>
      {%- workimage "/work/pm-home-maintenance/00-process/valueprop.png", "figure text-muted mb-4", "ideating on value propositions", "ideating on value propositions"  -%}
-{%- endcolumn -%}
-{%- endrow -%}
+</div>
+</div></div>
 
-{%- hr-%}
+{% hr %}
 
 ### Next Steps
 

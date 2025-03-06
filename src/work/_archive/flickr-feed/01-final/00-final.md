@@ -32,5 +32,5 @@ images: [{
 ---
 The final version is a demo hosted on glitch.
 
-{%- button https://flickrfeed.glitch.me/,"live version",btn-secondary  -%}
+{%- button "https://flickrfeed.glitch.me/","live version",btn-secondary  -%}
 
