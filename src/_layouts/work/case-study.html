@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+{{partial "single-work/page-header.html" . }}
+    {{$page := .}}
+
+    <!-- for each section declared in the index.md, grab the associated resource file and add a section partial for it-->
+    {{/*  TODO figure out how to sort out nav before sorting the rest  */}}
+    {{with $page.Resources.ByType "page"}}
+        {{range sort  . ".Name"}}
+            {{if eq .Name "00-nav.html"}}
+                {{partial "single-work/page-nav.html" .}}
+                
+             {{else }}
+                {{partial "single-work/page-section.html" (dict "page" $page "section" .  "sectionName" .Params.name ) }}
+            {{end}}
+        {{end}}
+    {{end}}
+
+
+    {{partial "image-modal.html"}}
+</main>
+{{ end }}

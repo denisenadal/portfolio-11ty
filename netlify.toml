@@ -1,0 +1,19 @@
+[build]
+publish = "public"
+command = "npm run build"
+
+[context.production.environment]
+
+
+[context.branch-deploy]
+
+[[redirects]]
+  from = "/*"
+  to = "https://denisenadal.com/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

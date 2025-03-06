@@ -1,0 +1,30 @@
+{{ $social := .Site.Data.social }}
+<aside id="splash"
+         class="d-flex flex-column justify-content-center align-items-start">
+        {{ if .Site.Params.displayPicture }}
+        <img src="{{.Site.BaseURL}}{{.Site.Params.displayPicture}}"
+             class="rounded-circle mb-3 bio-img"
+             width="160px" alt="photo of {{ .Site.Data.author }}">
+        {{ end }}
+        <h2 class="heading">
+            <span class="display-4">{{ .Site.Data.author }}</span>
+            <br>
+            {{with .Site.Params.subtitle}}
+            <span class="text-white highlight px-4 py-1">{{ . }}</span>{{end}}
+        </h2>
+        {{with .Site.Params.blurb}}
+        <p class="text-muted my-1">{{ . | safeHTML }}</p>
+        {{end}}
+        <div class="social my-4">
+
+            {{ range $key, $value := $social }}
+            <a class="text-dark mx-2 d-inline-block"
+                target="_blank"
+               href="{{ $value }}"
+               rel="me" aria-label="{{$key}}">
+                <i class="fa fa-{{$key}} fa-2x"  aria-hidden="true"></i>
+            </a>
+            {{ end }}
+        </div>
+
+</aside>

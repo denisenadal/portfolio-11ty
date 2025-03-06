@@ -1,0 +1,11 @@
+<a href="{{.section.File.Dir | absURL}}{{.image.src}}" class="image-modal-link mb-3">
+    <figure class="figure"
+            data-title="{{.page.Title}}">
+        <img src="{{.section.File.Dir | absURL}}{{.image.src}}"
+             alt="{{.image.title}}"
+             class="figure-img img-fluid">
+        {{if .image.params.caption }}
+        <figcaption class="figure-caption">{{.image.title}}</figcaption>
+        {{end }}
+    </figure>
+</a>

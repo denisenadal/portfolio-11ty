@@ -1,0 +1,41 @@
+<div id="work" class="meta-section bg-accent">
+    <section  class="">
+        <h2 class="heading">Work </h2>
+        <div class="row">
+            {{$works := (where .Site.RegularPages "Type" "work")}}
+            {{if ne (.Scratch.Get "filter") nil}}
+                {{$filter := .Scratch.Get "filter"}}
+                {{ $works = $works | intersect ( .Site.RegularPages.RelatedTo ( $filter  )) }}
+            {{end}}
+            {{ range first 9 (sort $works ".Params.weight" "desc") }}
+            <div class="col-lg-4 col-md-4 col-12 mb-3 d-flex">
+                <div class="bg-white p-4 shadow-sm d-flex flex-column flex-fill">
+                    <a class="mb-3"
+                       href="{{ .Permalink }}" >
+                        <div class="featuredImage border"
+                             role="img" aria-label="Cover photo for the '{{ .Title }}' project"
+                             style="background-image: url('{{ .Permalink }}{{ .Params.image.name }}');">
+                        </div>
+                    </a>
+                    <!-- <small class="text-muted">{{ .Date.Format "Jan 2, 2006"}}</small> -->
+                    <a href="{{ .Permalink }}" class="flex-fill">
+                        <h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3>
+                    </a>
+        
+                    <div>
+                        {{ range .Params.tags }}
+                        <span class="badge badge-light font-weight-normal p-1">{{ title . }}</span>
+                        {{ end }}
+
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ .Site.BaseURL }}/work"
+               class="btn btn-lg btn-secondary d-inline-block ">Browse All</a>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,40 @@
+<section id="work-header"
+         class="meta-section">
+    <div class="row wrapper">
+        <div id="work-header-left"
+             class="col-md-7 mt-3">
+            {{with .Params.image}}
+            <img src="{{.name}}"
+                 alt="{{.alt}}"
+                 class="shadow-sm border">
+            {{end}}
+        </div>
+        <div id="work-header-right"
+             class="col-md-5 d-flex flex-column flex-end justify-content-end">
+            <h2 id="work-title"
+                class="h2 m-0">{{.Title}}</h2>
+            <p class="h4 mt-0">{{.Params.subtitle}}</p>
+            <p class="h6 mb-2 mt-3 text-gray"> {{.Params.date_range}}</p>
+            <p class="m-0 text-muted">
+                {{.Content}}
+            </p>
+            {{if or (isset .Params "team")  (isset .Params "org") (isset .Params "role")}}
+            <hr>
+            <dl>
+                {{with .Params.role}}
+                <dt>Role</dt>
+                <dd class="mb-4">{{.}}</dd>
+                {{end}}
+                {{with .Params.team}}
+                <dt>Team</dt>
+                <dd class="mb-4">{{.}}</dd>
+                {{end}}
+                {{with .Params.org}}
+                <dt>Org</dt>
+                <dd class="mb-4">{{.}}</dd>
+                {{end}}
+            </dl>
+            {{end}}
+        </div>
+    </div>
+</section>

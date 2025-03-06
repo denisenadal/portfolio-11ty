@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{$page := .}}
+<main>
+{{partial "single-work/page-header.html" . }}
+
+	<!-- for each section declared in the index.md, grab the associated resource file and add a section partial for it-->
+	{{with $page.Resources.ByType "page"}}
+		{{range sort  . ".Name"}}
+		{{$sectionName := .Params.name | default (path.Base .File.Dir)}}
+		{{partial "single-work/page-section.html" (dict "page" $page "section" .  "sectionName" $sectionName ) }}
+		{{end}}
+	{{end}}
+    <section class="meta-section content-section text-center d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <a href="/work" class="btn btn-primary">Back to All Works</a>
+            </div>
+        </div>
+    </section>
+    {{partial "image-modal.html"}}
+
+</main>
+{{ end }}

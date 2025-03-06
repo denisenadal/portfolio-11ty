@@ -1,0 +1,28 @@
+---
+title: "The Final Design"
+date: "2020-01-31"
+draft: 
+order: 1
+images: [{
+    "src": "tutoring-desktop.png",
+    "title":"desktop version",
+    "params":{
+        "caption":true,
+        "order":0,
+         "columns": "col-sm-6 col-md-6 col-lg-3"
+    }
+},{
+    "src": "tutoring-mobile.png",
+    "title":"mobile version",
+    "params":{
+        "caption":true,
+        "order":0,
+        "columns": "col-sm-6 col-md-6 col-lg-3"
+    }
+}]
+---
+The final design combined the most successful aspects of different designs. The color scheme was muted and refined to match our company's branding.
+
+This calendar has been easy for our client, the Academic Performance & Tutoring Center, to use. It has been in use since its launch in early 2017. 
+
+{{< button link="https://tutoring.dixie.edu/tutoring-schedule/" title="Visit the live version" class="btn-secondary" >}}
