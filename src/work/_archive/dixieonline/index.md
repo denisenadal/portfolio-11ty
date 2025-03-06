@@ -1,7 +1,7 @@
 ---
 title:  "Dixie Online"
 subtitle: "Web Design"
-date: "2017-10-31"
+date: 2017-10-31
 date_range: "Fall 2017"
 draft: true
 image: {"name":"MiniLapTop1.jpg"," alt":"Dixie Online web presence"}

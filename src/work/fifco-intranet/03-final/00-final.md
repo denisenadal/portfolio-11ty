@@ -1,6 +1,6 @@
 ---
 title:  "Final Production Site"
-date: "2021-09-01"
+date: 2021-09-01
 draft: false
 columns: "col-12"
 images: [{"src": "2022-06-intranet-375-home.webp",

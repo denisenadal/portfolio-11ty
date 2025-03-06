@@ -4,7 +4,7 @@ subtitle: UI/UX Design
 image: {"name":"mobile-group.jpg",
         "alt":"mobile devices"}
 draft: true
-date: "2020-01-31"
+date: 2020-01-31
 date_range: Fall 2019
 type: "work"
 tags: ["UI Design", "UX Design"]

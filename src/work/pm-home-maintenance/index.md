@@ -1,7 +1,7 @@
 ---
 title: "Home Maintenance Service"
 subtitle: "Product Research & UI/UX Design"
-date: "2020-01-31"
+date: 2020-01-31
 date_range: "January 2020"
 draft: false
 image: {

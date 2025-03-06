@@ -1,7 +1,7 @@
 ---
 title: "Personal Portfolio & Branding"
 subtitle: "UI/UX Design"
-date: "2018-04-31"
+date: 2018-04-31
 date_range: "Spring 2018"
 draft: true
 image: {

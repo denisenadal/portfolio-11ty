@@ -1,7 +1,7 @@
 ---
 title: dixie.edu User Portals
 subtitle: Design & Development
-date: "2017-10-31"
+date: 2017-10-31
 date_range: "Fall 2017"
 draft: false
 image: {"name":"dsu-set2.webp"," alt":"DSU homepage on variations screens"}

@@ -1,7 +1,7 @@
 ---
 title:  "FIFCO USA Intranet"
 subtitle: "Design & Development"
-date: "2021-09-01"
+date: 2021-09-01
 date_range: "Fall 2020 -Fall 2021"
 draft: false
 image: {"name":"2022-03-screens.webp"," alt":"Image of the FIFCO USA Intranet on a mobile phone and a laptop computer"}

@@ -3,7 +3,6 @@ module.exports =  {
     draft: true,
     layout: "work/case-study.html",
     weight: 50,
-    date:"",
     date_range:"",
     image: "",
     tags: [],

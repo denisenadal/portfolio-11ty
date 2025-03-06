@@ -1,6 +1,6 @@
 ---
 title: "The Final Design"
-date: "2020-01-31"
+date: 2020-01-31
 draft: false
 columns: "col-sm-12"
 images: [{"src":"personal-hd.jpg",

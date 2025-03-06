@@ -1,7 +1,7 @@
 ---
 title: "Customer Search & Job Scheduling Experience"
 subtitle: "UI/UX Design"
-date: "2019-11-30"
+date: 2019-11-30
 date_range: "Summer 2018 - Fall 2019"
 draft: true
 image: {"name":"cover3.jpg"," alt":"Design exploration for job and customer screens in the Pointman App"}

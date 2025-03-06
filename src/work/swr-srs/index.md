@@ -1,7 +1,7 @@
 ---
 title: "SRS - SuccessWare Remote Admin Site"
 subtitle: "UI/UX Design"
-date: "2020-03-12"
+date: 2020-03-12
 date_range: "Feb - March 2020"
 draft: false
 image: {"name":"cover-image.png"," alt":"Creating a modern UI and experience for SWR admin site"}

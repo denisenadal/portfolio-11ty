@@ -1,7 +1,7 @@
 ---
 title:  "Strange Horizons"
 subtitle: "Potential Site Design"
-date: "2016-009-31T20:46:03-05:00"
+date: 2016-09-30
 date_range: "Fall 2016"
 draft: true
 image: {"name":"strange_horizons_preview.jpg"," alt":"cropped view of the strange horizons redesign"}

@@ -1,7 +1,7 @@
 ---
 title: "Process"
 name: "process"
-date: 2019-09-01:46:03-05:00
+date: 2019-09-01
 draft: false
 order: 0
 columns: "col-sm-12"

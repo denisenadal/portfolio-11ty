@@ -1,6 +1,6 @@
 ---
 title: "The Final Project"
-date: "2017-10-31"
+date: 2017-10-31
 draft: false
 order: 1
 columns: "col-sm-12"

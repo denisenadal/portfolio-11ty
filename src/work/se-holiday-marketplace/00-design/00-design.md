@@ -1,6 +1,6 @@
 ---
 title: "Design Process"
-date: "2020-11-01"
+date: 2020-11-01
 draft: false
 order: 0
 columns: "col-sm-12 "

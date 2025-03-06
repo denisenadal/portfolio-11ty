@@ -1,6 +1,6 @@
 ---
 title: "Development & Final Site"
-date: "2021-01-01"
+date: 2021-01-01
 draft: false
 order: 0
 columns: "col-sm-12 "

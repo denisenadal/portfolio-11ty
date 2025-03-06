@@ -1,7 +1,7 @@
 ---
 title: "Background"
 name: "background"
-date: 2019-11-01:46:03-05:00
+date: 2019-11-30
 draft: false
 order: 0
 columns: "col-sm-6 col-lg-7"

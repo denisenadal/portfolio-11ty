@@ -1,7 +1,7 @@
 ---
 title:  "Spilker Custom Homes"
 subtitle: "Site Redesign & Branding"
-date: "2017-10-31"
+date: 2017-10-31
 date_range: "Fall 2017"
 draft: true
 image: {"name":"spilker-set.jpg"," alt":"mockup of website on all screens"}

@@ -1,6 +1,6 @@
 ---
 title: "Solution 2 (Part 1)"
-date: 2019-11-01:46:03-05:00
+date: 2019-11-30
 draft: false
 order: 3
 columns: "col-sm-12"

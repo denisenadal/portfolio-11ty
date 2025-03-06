@@ -1,7 +1,7 @@
 ---
 title:  "flickr feed"
 subtitle: "Coding Project"
-date: "2018-03-31"
+date: 2018-03-31
 date_range: "March 2018"
 draft: true
 image: {"name":"01-final/flickrfeed-desktop-default.png"," alt":"Desktop Latest Results"}

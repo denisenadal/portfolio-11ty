@@ -1,7 +1,7 @@
 ---
 title:  "Reporting Dashboards"
 subtitle: "UI Design + Dev"
-date: "2019-03-31"
+date: 2019-03-31
 date_range: "Fall 2018 - Spring 2019"
 draft: false
 image: {"name":"reports-group.webp"," alt":"Various reporting screens within the Pointman App"}

@@ -1,7 +1,7 @@
 ---
 title:  "CritiqueIt Web App"
 subtitle: "UI/UX Design & Development"
-date: "2017-10-31"
+date: 2017-10-31
 date_range: "Fall 2017"
 draft: true
 image: {"name":"critiqueit-mockup.jpg"," alt":"CritiqueIt App on iMac screen"}

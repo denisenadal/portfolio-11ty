@@ -1,6 +1,6 @@
 ---
 title: "Project Outcome"
-date: "2020-01-31"
+date: 2020-01-31
 draft: false
 columns: "col-sm-12 col-md-12 col-lg-6"
 images: [{"src":"marketneed.png",

@@ -1,7 +1,7 @@
 ---
 title: Academic Calendar App
 subtitle: Design & Development
-date: "2018-02-31"
+date: 2018-02-31
 date_range: "Fall 2017 -Spring 2018"
 draft: true
 image: {"name":"ac-ipad.jpg"," alt":"Academic Calendar on an iPad"}

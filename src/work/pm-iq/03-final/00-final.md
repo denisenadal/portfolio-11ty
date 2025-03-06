@@ -1,7 +1,7 @@
 ---
 title: The Final Design
 draft: false
-date: "2018-10-31"
+date: 2018-10-31
 order: 1
 columns: "col-sm-12 col-md-12 col-lg-6 offset-lg-6"
 images: [{

@@ -1,7 +1,7 @@
 ---
 title:  "Seagram's Escapes Holiday Marketplace"
 subtitle: "Design & Development"
-date: "2020-11-01"
+date: 2020-11-01
 date_range: "Fall/Winter 2020"
 draft: false
 image: {"name":"cover-2.webp"," alt":"Header Image for the Seagram's Escapes Holiday Marketplace"}

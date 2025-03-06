@@ -1,6 +1,6 @@
 ---
 title: "The Final Design"
-date: "2020-01-31"
+date: 2020-01-31
 draft:
 order: 2
 columns: "col-sm-6"
