@@ -25,4 +25,4 @@ The final design combined the most successful aspects of different designs. The 
 
 This calendar has been easy for our client, the Academic Performance & Tutoring Center, to use. It has been in use since its launch in early 2017. 
 
-{{< button link="https://tutoring.dixie.edu/tutoring-schedule/" title="Visit the live version" class="btn-secondary" >}}
+{% button "https://tutoring.dixie.edu/tutoring-schedule/","Visit the live version", "btn-secondary" %}

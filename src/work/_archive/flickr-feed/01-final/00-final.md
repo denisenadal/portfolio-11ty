@@ -32,4 +32,5 @@ images: [{
 ---
 The final version is a demo hosted on glitch.
 
-{{<button  title="live version" link="https://flickrfeed.glitch.me/" class="btn-secondary"  >}}
+{%- button https://flickrfeed.glitch.me/,"live version",btn-secondary  -%}
+

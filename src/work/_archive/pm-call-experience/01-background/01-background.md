@@ -6,8 +6,8 @@ draft: false
 order: 1
 columns: "col-sm-12"
 ---
-{{<row>}}
-{{% column class="col-12 col-sm-12 col-md-8 col-xl-7 mb-4" %}}
+{%- row -%}
+{% column "col-12 col-sm-12 col-md-8 col-xl-7 mb-4" %}
 
 Every app or product or service has a workflow that is critical to its success. For Field Management Software there are two; one each for its 2 primary user groups.  For CSR's the most important task is to be able to efficiently answer a phone call and schedule work. For the technicians in the field, it's efficiently working through the tasks necessary to complete a job.
 
@@ -24,9 +24,9 @@ The "Answer a Call and Schedule Work" task had major usability issues when we st
 We also conducted a usability test, tracking how long it took users to complete the task of looking up a customer and scheduling work at their home. We were shocked to find that it took an **average 17 clicks, and up to 30 clicks in some cases -** the fastest it could be done was in 11 clicks. 
 
 It was clear that we needed to make this process simpler and faster; if we're expecting users to complete this task dozens of times a day, it needs to be a great experience.
-{{%/column%}}
-{{<column class="col-sm-12 col-md-4 col-xl-5 mb-4">}}
-    {{<workImage class="figure text-muted mb-4" src="/work/pm-call-experience/01-background/pm-dispatchboard-desktop.png" alt="screenshot of the dispatch board" caption="the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work">}}
-    {{<workImage class="figure text-muted mb-4" src="/work/pm-call-experience/01-background/pm-contactproperty-dialog.png" alt="screenshot of how our app displays information about a person or house." caption="how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture.">}}
-{{</column>}}
-{{</row>}}
+{% endcolumn %}
+{%- column "col-sm-12 col-md-4 col-xl-5 mb-4" -%}
+    {%- workimage "/work/pm-call-experience/01-background/pm-dispatchboard-desktop.png", "figure text-muted mb-4", "screenshot of the dispatch board", "the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work"  -%}
+    {%- workimage "/work/pm-call-experience/01-background/pm-contactproperty-dialog.png", "figure text-muted mb-4", "screenshot of how our app displays information about a person or house.", "how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture."  -%}
+{%- endcolumn -%}
+{%- endrow -%}

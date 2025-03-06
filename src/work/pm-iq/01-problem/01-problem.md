@@ -6,11 +6,11 @@ draft: false
 order: 0
 columns: "col-sm-12"
 ---
-{{<row>}}
-{{<column class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4" >}}
-{{%markdown%}}
+{%- row -%}
+{% column "col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4" %}
+
 The existing invoicing and quotes system in our app wasn't flexible enough to meet the needs of technicians out in the field. Here are some of the common issues our users experienced:
-{{%/markdown%}}
+
     <div class="text-light bg-info mb-4 p-3">
         <h3>Issues</h3>
         <ul>
@@ -20,9 +20,9 @@ The existing invoicing and quotes system in our app wasn't flexible enough to me
             <li>Our system couldn't show discounts on quotes. So the homeowner would have to trust the technician that the price will be lower than what the paper shows.</li>
         </ul>
     </div>
-{{</column>}}
-{{<column>}}
-        {{<workImage class="figure text-muted" src="/work/pm-iq/01-problem/systems-map.png" alt="example of how complex the job workflow can be"  caption="example of how complex the job workflow can be">}}
-{{</column>}}
-{{</row>}}
+{%- endcolumn -%}
+{% column "" %}
+    {%- workimage "/work/pm-iq/01-problem/systems-map.png", "figure text-muted", "example of how complex the job workflow can be", "example of how complex the job workflow can be"  -%}
+{%- endcolumn -%}
+{%- endrow -%}
 
