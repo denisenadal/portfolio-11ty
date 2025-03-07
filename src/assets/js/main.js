@@ -79,7 +79,27 @@ async function resetNavLinks(){
         }
         return 'done';
 }
+//https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists
+function waitForElm(selector) {
+    return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+            return resolve(document.querySelector(selector));
+        }
 
+        const observer = new MutationObserver(mutations => {
+            if (document.querySelector(selector)) {
+                observer.disconnect();
+                resolve(document.querySelector(selector));
+            }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+}
 mainMenu.addEventListener('click', async function(event) {
     event.stopPropagation();
     mainMenuInner.classList.toggle("animate");
@@ -94,3 +114,4 @@ window.onresize = function(){
   clearTimeout(doit);
   doit = setTimeout(resetNavLinks, 100);
 };
+document.getElementById("copyright-date").innerText = new Date().getFullYear();

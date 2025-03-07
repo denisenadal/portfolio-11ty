@@ -10,9 +10,7 @@
 		{{ partial "home/experience.html" . }}
 	{{end}}
 	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}
-		{{ if (templates.Exists "partials/worksFilter.html")  }}
-			{{ partial "worksFilter.html" . }}
-		{{ end }}
+		{% comment %}TODO create a collection of works to be featured here {% endcomment %} 
 		{{ partial "works-gallery.html" . }}
 	{{end}}
 	{{ if gt (len (where .Data.Pages "Type" "blog")) 0 }}

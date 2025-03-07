@@ -12,10 +12,9 @@
 {%  for tag in tags %}
 {{tag}}
 {% endfor %}
-org: {{org}}
-team: {{team}}
-role: {{role}}
+<p>org: {{org}}</p>
+<p>team: {{team}}</p>
+<p>role: {{role}}</p>
 content: 
 {{content}}
-    </body>
-</html>
+{% include 'footer.html' %}

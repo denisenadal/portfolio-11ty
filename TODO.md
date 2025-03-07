@@ -2,4 +2,6 @@
 [ ] convert from handlebars to liquid
 [ ] convert archetypes.md to dir js files
 
----
+---☆
+
+"Web Design" "Web Development" "UI Design"

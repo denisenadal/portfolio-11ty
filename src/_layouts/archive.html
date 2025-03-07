@@ -1,0 +1,13 @@
+<h1>Im an archive page</h1>
+<main class="bg-light">
+    <section class="meta-section">
+        <div class="wrapper">
+            {%- if title -%}<h1>{{ title }}</h1>{%- endif -%}
+            {%- if content -%}<div>{{ content }}</div>{%- endif -%}
+            {% for p in pagination.items %}
+                <h3>{{p.data.title}}</h3>
+            {%- endfor -%}
+            {%- include "pagination.html"  -%}
+        </div>
+    </section>
+</main>

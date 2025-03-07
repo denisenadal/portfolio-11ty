@@ -4,6 +4,7 @@ subtitle: "UI/UX Design"
 date: 2019-11-30
 date_range: "Fall 2018 - Fall 2019"
 draft: false
+featured: true
 image: {"name":"summary-cover.webp"," alt":"Design exploration for job and customer screens in the Pointman App"}
 type: "work"
 weight: 90
