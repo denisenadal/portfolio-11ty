@@ -1,4 +1,6 @@
 const markdownIt = require("markdown-it");
+const xmlFiltersPlugin = require('eleventy-xml-plugin')
+
 module.exports = function (eleventyConfig) {
   // setup server config & browersync
   eleventyConfig.addPassthroughCopy("src/assets")
@@ -26,7 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("allWork", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {
       // Side-step tags and do your own filtering
-      if (item.page.filePathStem.includes('work') && !item.page.filePathStem.includes('0')) {
+      if (item.data.type == 'work' && !item.page.filePathStem.includes('0')) {
         return !item.data.draft;
       }
     }).sort(function (a, b) {
@@ -44,11 +46,21 @@ module.exports = function (eleventyConfig) {
         return b.weight - a.weight; // sort by date - descending
       });
   });
-
+  eleventyConfig.addCollection("allPosts", async (collectionsApi) => {
+    return collectionsApi.getAll().filter(function (item) {
+      // Side-step tags and do your own filtering
+      if (item.page.filePathStem.includes('post') ) {
+        return !item.data.draft;
+      }
+    }).sort(function (a, b) {
+        return b.date - a.date; // sort by date - descending
+      });
+  });
 
   //set up content rules
   eleventyConfig.setLiquidOptions({ jsTruthy: true });
   eleventyConfig.setFrontMatterParsingOptions({ excerpt: true, });
+  eleventyConfig.addPlugin(xmlFiltersPlugin)
 
   //set up shortcodes
   eleventyConfig.addShortcode("button", function (link, title, classes) {
@@ -104,9 +116,12 @@ module.exports = function (eleventyConfig) {
     return url;
   });
 
+
+
   return {
     templateFormats: [
       "md",
+      "njk",
       "html",
       "liquid",
       "jpg",

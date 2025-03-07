@@ -1,0 +1,10 @@
+---
+pagination:
+  data: tagPages
+  size: 1
+  alias: tag
+permalink: "/tag/{{ tag.title | slugify }}/"
+layout: "archive.html"
+---
+
+{{ tag.title }} is {{ tag.color }} color

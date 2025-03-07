@@ -1,6 +1,6 @@
 ---
 title: "title"
-draft: true
+draft: false
 summary: elloo
 featured_image: 
 type: "blog"

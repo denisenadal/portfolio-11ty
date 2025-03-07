@@ -1,0 +1,25 @@
+---
+permalink: "/rss/work.xml"
+url: "/rss/work.xml"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.lang }}">
+  <title>Works by {{ site.title | escape }}</title>
+  <subtitle>{{ site.description | xml_escape | escape }}</subtitle>
+  <link href="{{ permalink}}" rel="self" />
+  <link href="{{site.url }}" />
+  <updated>{{ collections.allWorks | sort: "date" }}</updated>
+  <id>{{ site.url }}work</id>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
+  {%- for post in collections.allWork | sort: "data.date"  reverse %}
+  <entry>
+    <title>{{ post.data.title | xml_escape | escape }}</title>
+    <link href="{{ post.permalink }}" />
+    <updated>{{ post.data.date  }}</updated>
+    <id>{{ post.permalink }}</id>
+    <content type="html">{{ post.data.metaDesc | xml_escape | escape }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

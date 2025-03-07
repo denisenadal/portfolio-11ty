@@ -11,7 +11,15 @@ module.exports =  {
         metaTitle: function(data){
             return `${data.title} | ${data.site.title}`
         },
-        metaDesc: "{{desc | strip_html}}",
+        metaDesc: function(data){
+            let desc = "";
+            if(!data.desc){
+                let content = data.page.rawInput;
+                content = content.replace(/(<([^>]+)>)/gi, "");
+                desc = content.length > 250 ? content.slice(0, 249) + '&hellip;' : content;
+            }
+            return desc;
+        },
         sections: function(data) {
             return data.collections.allSections.filter(s =>{
                 return s.data.page.filePathStem.includes(data.page.fileSlug)

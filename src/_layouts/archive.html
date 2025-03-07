@@ -1,13 +1,24 @@
-<h1>Im an archive page</h1>
+---
+layout: base.html
+---
 <main class="bg-light">
     <section class="meta-section">
         <div class="wrapper">
-            {%- if title -%}<h1>{{ title }}</h1>{%- endif -%}
+            {%- if title -%}<h2>{{ title }}</h2>{%- endif -%}
+            {%- if desc -%}<p class="subtitle">{{ desc }}</p>{%- endif -%}
             {%- if content -%}<div>{{ content }}</div>{%- endif -%}
-            {% for p in pagination.items %}
-                <h3>{{p.data.title}}</h3>
-            {%- endfor -%}
-            {%- include "pagination.html"  -%}
+            {%- if type == "tag" -%}
+                {%- for tag in tagPages -%}
+                <a href="/tag/{{tag.title|slugify}}"
+                    class="badge badge-light font-weight-normal p-1 bg-{{tag.color}}">{{tag.title}}</a>
+                {%- endfor -%}
+            {%- else -%}
+                {%- for item in pagination.items -%}
+                    {%- include "list-item.html" -%}
+                {%- endfor -%}
+            {%- endif -%}
+
+            {%- include "pagination.html" -%}
         </div>
     </section>
 </main>

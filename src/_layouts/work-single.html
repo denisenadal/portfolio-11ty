@@ -1,6 +1,6 @@
 
 <main>
-{{partial "single-work/page-header.html" . }}
+{%- include "single-work/page-header.html" -%}
 
 	<!-- for each section declared in the index.md, grab the associated resource file and add a section partial for it-->
 	{{with $page.Resources.ByType "page"}}
