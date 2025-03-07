@@ -8,7 +8,7 @@
         "build:11typrod": "ELEVENTY_ENV=production eleventy",
         "build:11tydev": "ELEVENTY_ENV=staging eleventy",
         "build:sass": "npx sass sass:src/assets/css --style=compressed",
-        "watch:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+        "watch:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve --incremental",
         "watch:sass": "sass --watch sass:src/assets/css --trace",
         "start": "concurrently \"npm run watch:dev\" \"npm run watch:sass\"",
         "build": "concurrently \"npm run build:11tydev\" \"npm run build:sass\"",
@@ -19,8 +19,10 @@
     "dependencies": {
         "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
+        "bootstrap": "^5.3.3",
         "concurrently": "^8.0.1",
+        "eleventy-xml-plugin": "^0.1.0",
         "markdown-it": "^13.0.1",
-        "sass": "^1.61.0"
+        "sass": "^1.85.1"
     }
 }
