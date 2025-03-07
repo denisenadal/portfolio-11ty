@@ -3,7 +3,8 @@ title:  "Dixie Online"
 subtitle: "Web Design"
 date: 2017-10-31
 date_range: "Fall 2017"
-draft: true
+draft: false
+archived: true
 image: {"name":"MiniLapTop1.jpg"," alt":"Dixie Online web presence"}
 type: "work"
 tags: ["Web Design", "Web Development"]

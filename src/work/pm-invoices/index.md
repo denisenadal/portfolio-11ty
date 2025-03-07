@@ -4,6 +4,7 @@ subtitle: "UI/UX Design"
 date: 2018-10-31
 date_range: "Fall 2018"
 draft: false
+archived: true
 image: {"name":"process/v01design.png"," alt":"design for improved invoice layout"}
 type: "work"
 weight: 40

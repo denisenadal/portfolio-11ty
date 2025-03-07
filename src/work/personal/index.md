@@ -3,7 +3,8 @@ title: "Personal Portfolio & Branding"
 subtitle: "UI/UX Design"
 date: 2018-04-31
 date_range: "Spring 2018"
-draft: true
+draft: false
+archived: true
 image: {
    "name":"personal-group.jpg",
     "alt":"personal portfolio site on various screen sizes"}

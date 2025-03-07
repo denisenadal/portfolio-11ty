@@ -3,7 +3,8 @@ title:  "Campus Map App"
 subtitle: "UI/UX Design & Development"
 date: 2017-07-31
 date_range: "Summer 2017"
-draft: true
+draft: false
+archived: true
 image: {"name":"maps-mockups.jpg"," alt":"Campus Maps app on iMac screens"}
 type: "work"
 tags: ["Web Design","UI Design", "Web Development"]

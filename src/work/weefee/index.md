@@ -3,7 +3,8 @@ title:  "WeeFee App"
 subtitle: "Branding & UI Design"
 date: 2017-10-31
 date_range: "Fall 2017"
-draft: true
+draft: false
+archived: true
 image: {"name":"weefee-logo-design.png"," alt":"branding for WeeFee app"}
 type: "work"
 tags: ["UI Design","Branding"]

@@ -3,7 +3,8 @@ title: Navigation Systems in Pointman
 subtitle: UI/UX Design 
 image: {"name":"mobile-group.jpg",
         "alt":"mobile devices"}
-draft: true
+draft: false
+archived: false
 date: 2020-01-31
 date_range: Fall 2019
 type: "work"
