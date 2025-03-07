@@ -1,0 +1,55 @@
+{
+    "title": "Strengths & Skills",
+    "chart": {
+        "UI Design": "80",
+        "UX Design": "90",
+        "Design Thinking": "95",
+        "Product Management": "66",
+        "Front-End Engineering": "66",
+        "Full-Stack Engineering": "33",
+        "Agile/SCRUM": "75"
+    },
+    "list": [
+        {
+            "Product Design": [
+                "Design Thinking",
+                "User-Centered Design",
+                "UX Research ",
+                "Product Discovery",
+                "Customer Journey Mapping",
+                "Task Analysis",
+                "Usability Testing",
+                "Wireframing & Prototyping"
+            ]
+        },{
+            "Product Management" :["Certified Scrum Product Owner","Certified Scrum Master","Agile & Lean Methodologies","Project Management"]
+        },{
+            "Programming Strengths": [
+                "JavaScript",
+                "jQuery",
+                "HTML5",
+                "CSS3",         
+                "SASS",
+                "Bootstrap", 
+                "Eleventy",
+                "Wordpress",
+                "PHP",
+                "Bubble/No-Code"
+            ]
+        },
+        {
+            "Programming Competencies": [
+                "Node.js",
+                "AngularJS",
+                "Vue.js",
+                "Git", 
+                "Python",
+                "MySQL",
+                "MongoDB",
+                "Hugo",
+                "Linux",
+                "Shopify"
+            ]
+        }
+    ]
+}

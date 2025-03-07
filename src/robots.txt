@@ -3,4 +3,4 @@ User-Agent: {{$robots.useragent | default "*"}}
 Allow: {{$robots.allow | default "*"}}
 Disallow: {{$robots.disallow | default ""}}
 
-Sitemap: {{ .Site.BaseURL }}/sitemap.xml
+Sitemap: {{site.baseURL }}/sitemap.xml

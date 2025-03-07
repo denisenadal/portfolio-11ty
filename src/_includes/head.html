@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='{{ site.lang | default: "en-us" }}'>
+{%- if metaDesc  -%}
+    {%- assign pageDesc = metaDesc -%}
+{%- elsif desc -%}
+    {%- assign pageDesc = desc -%}
+{%- else -%}
+    {%- assign pageDesc = site.desc -%}
+{%- endif -%}
+
+
+{%- if metaTitle  -%}
+    {%- assign pageTitle = metaTitle -%}
+{%- elsif title -%}
+    {%- assign pageTitle = title -%}
+{%- else -%}
+    {%- assign pageTitle = site.title -%}
+{%- endif -%}
+
+{%- if metaImage  -%}
+    {%- assign pageImage = metaImage -%}
+{%- elsif image -%}
+    {%- assign pageImage = image -%}
+{%- else -%}
+    {%- assign pageImage = site.metaImage -%}
+{%- endif -%}
+
+{%- if type and type != "page" -%}
+    {%- assign pageSubtitle = type -%}
+{%- else -%}
+    {%- assign pageSubtitle = site.subtitle -%}
+{%- endif -%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>{{site.title}} ☆ {{pageTitle}} - {{pageSubtitle}} </title>
+    <meta name="description" content="{{pageDesc}}">
+    {{ if site.author }}
+    <meta name="author" content="{{ site.author }}">
+    {{ endif }}
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="keywords" content="{%- if keywords -%}{{keywords}}{%-else-%}{{site.keywords}}{%-endif-%}" />
+    <meta name="description" content="{{ pageDesc}}" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="{{permalink}}" />
+    <meta property="og:title" content="{{site.title}} ☆ {{pageTitle}} - {{pageSubtitle}}" />
+    <meta property="og:image" content="{{ pageImage}}" />
+    <meta property="og:site_name" content="{{site.title}}" />
+    <meta property="og:description" content="{{pageDesc }}" />
+    <link rel="canonical" href="{{permalink}}" />
+    <meta content="{{ pageDesc}}" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    {{ headerScripts }}
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&family=Roboto:ital,wght@0,200;0,300;0,700;1,300;1,400;1,700&display=swap"  as="style">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ site.GTM_ID }}');</script>
+<!-- End Google Tag Manager -->
+</head>
+{%- if page.url == "/ -%}
+    {%- assign pageClasses  = "home" -%}
+{%- elsif type -%}
+{%- assign pageClasses  = type -%}
+
+{%- else -%}
+{%- assign pageClasses  = "page" -%}
+{%- endif -%}
+
+<body class="{{ pageClasses }} ">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.GTM_ID }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->

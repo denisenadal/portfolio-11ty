@@ -1,9 +1,5 @@
-<html>
-    <head>
-
-    </head>
-    <body>
-        
+{% include 'head.html' %}
+{% include 'header.html' %}
 
 {{title}}
 {{subtitle}}
@@ -16,9 +12,10 @@
 {%  for tag in tags %}
 {{tag}}
 {% endfor %}
-{{org}}
-{{team}}
-{{role}}
+org: {{org}}
+team: {{team}}
+role: {{role}}
+content: 
 {{content}}
     </body>
 </html>
