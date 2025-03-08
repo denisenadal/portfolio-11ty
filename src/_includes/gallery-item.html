@@ -1,0 +1,20 @@
+ <div class="col-lg-4 col-md-4 col-12 mb-3 d-flex">
+        <div class="bg-white p-4 shadow-sm d-flex flex-column flex-fill">
+            <a class="mb-3" href="{{ item.data.page.url}}" >
+                <div class="featuredImage border"
+                     role="img" aria-label="Cover photo for the '{{ item.data.title}}' project"
+                     style="background-image: url('{{ item.data.page.url}}{{ item.data.image.name }}');">
+                </div>
+            </a>
+            <small  class="col-auto text-muted text-right">{{ item.date | ISODate | date: "%b %Y"}}</small>
+            <a href="{{ item.data.page.url}}" class="flex-fill">
+                <h3 class="h4 font-weight-bold text-dark">{{ item.data.title}}</h3>
+            </a>
+
+            <div class="tag-list col-auto">
+                {%- for t in item.data.tags -%}
+                <a href="/tag/{{t | slugify}}" class="badge font-weight-normal text-light bg-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>

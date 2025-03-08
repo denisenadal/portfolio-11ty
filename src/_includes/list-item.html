@@ -8,16 +8,32 @@
  </a>
    </div>
    <div class="col text-col col-sm-12 col-md-8">
-    <small class="text-muted text-right">{{ item.date | ISODate | date: "%b %Y"}}</small>
+    <div class="row justify-content-end">
+        <div class="tag-list col-auto">
+            {%- for t in item.data.tags -%}
+            <a href="/tag/{{t | slugify}}" class="badge font-weight-normal text-light bg-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
+            {%- endfor -%}
+    
+        </div>
+        {%- assign status = false -%}
+        {%- if item.data.archive == true -%}
+            {%- assign status = "archive" -%}
+        {%- endif -%}
+        {%- if status == false and item.data.draft == true -%}
+            {%- assign  status = "draft"-%}
+        {%- else -%}
+        {%- assign  status = "published"-%}
+        {%- endif -%}
+        <span  class="col-auto badge  font-weight-normal {% if status == "published" %} bg-success{%else %}bg-light{% endif-%}">{{status | default: "fuck"}}</span>
+        <span class="col-auto">Weight: {{item.data.weight}}</span>
+        {% if item.data.featured ==  true %}<span class="col-auto">Featured!</span>{% endif-%}
+        
+        <small  class="col-auto text-muted text-right">{{ item.date | ISODate | date: "%b %Y"}}</small>
+    </div>
+
     <a href="{{ item.data.page.url}}" class="flex-fill">
         <h3 class="h4 font-weight-bold text-dark">{{ item.data.title}}</h3>
     </a>
     <p>{{item.data.metaDesc}}</p>
    </div>
-    <div class="tag-list">
-        {%- for t in item.data.tags -%}
-        <a href="/work/tagged/{{t | slugify}}" class="badge font-weight-normal p-1 bg-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
-        {%- endfor -%}
-
-    </div>
 </div>

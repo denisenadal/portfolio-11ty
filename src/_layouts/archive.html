@@ -7,30 +7,12 @@ layout: base.html
 
             {%- if title -%}<h2>{{ title }}</h2>{%- endif -%}
             {%- if desc -%}<p class="subtitle">{{ desc }}</p>{%- endif -%}
-            {%- if content -%}<div>{{ content }}</div>{%- endif -%}
             <div class="archive-list">
-
-            {%- if type == "tagList" -%}
-            {% assign tagsByCount = collections.allTags | sort: "count" | reverse %}
-                {%- for tag in tagsByCount -%}
-                <a href="/tag/{{tag.title|slugify}}"
-                    class="badge font-weight-normal p-1 bg-{{tag.color}}">{{tag.title}} - {{tag.count}}</a>
-                {%- endfor -%}
-
-            {%- elsif type == "tag" -%}    
-                {%- assign items = collections.allWork | filterByTag: title -%}
-                {%- for item in items -%}
-                    <p>{{item.title}}</p>
-                    {%- include "list-item.html" -%}
-                {%- endfor -%}
-
-            {%- else -%}
-                {%- for item in pagination.items -%}
-                    {%- include "list-item.html" -%}
-                {%- endfor -%}
-            {%- endif -%}
+                {{content}}
             </div>
+            {%- if showPagination -%}
             {%- include "pagination.html" -%}
+            {%- endif -%}
         </div>
     </section>
 </main>

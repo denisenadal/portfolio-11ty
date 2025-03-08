@@ -1,0 +1,22 @@
+---js
+{
+title: "All Work",
+desc: "Past Design & Development projects by Denise Nadal",
+keywords: "UI/UX Design, Web Design, Front-End Development, Front-End Engineering,Design Portfolio, Development Portfolio, Engineering Portfolio",
+layout: "archive.html",
+showPagination: true,
+pagination:{
+    size: 10,
+    data: "collections.allWork",
+    before: function(paginationData, fullData) {
+        return paginationData.sort(function(a,b){
+            return b.data.weight -a.data.weight;
+        })
+      }
+    }
+}
+---
+{%- for item in pagination.items -%}
+    <p>{{item.title}}</p>
+    {%- include "list-item.html" -%}
+{%- endfor -%}

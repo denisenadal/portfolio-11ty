@@ -43,9 +43,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("featuredWork", async (collectionsApi) => {
     return collectionsApi.getAll()
       .filter(function (item) {
-        // Side-step tags and do your own filtering
         if (item.page.filePathStem.includes('work') && !item.page.filePathStem.includes('0')) {
-          return !item.data.draft;
+          return !item.data.draft && item.data.featured 
         }
       }).sort(function (a, b) {
         return b.weight - a.weight; // sort by date - descending

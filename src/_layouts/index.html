@@ -13,7 +13,19 @@ layout: base.html
 	{{end}}
 	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}
 		{% comment %}TODO create a collection of works to be featured here {% endcomment %} 
-		{{ partial "works-gallery.html" . }}
+		<div id="work" class="meta-section bg-accent">
+			<section  class="">
+				<h2 class="heading">Work </h2>
+				<div class="row">
+					{%- assign items = colletions.featuredWork | sort: "weight" -%}
+					{%- include "gallery-items.html" -%}
+				</div>
+				<div class="text-center mt-5">
+					<a href="{{site.baseURL }}/work"
+					   class="btn btn-lg btn-secondary d-inline-block ">Browse All</a>
+				</div>
+			</section>
+		</div>
 	{{end}}
 	{{ if gt (len (where .Data.Pages "Type" "blog")) 0 }}
 		{{ partial "blog-gallery.html" . }}

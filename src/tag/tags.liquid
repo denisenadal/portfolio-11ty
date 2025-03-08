@@ -8,7 +8,10 @@ layout: "archive.html"
 title: tags
 desc: these are tags
 type: tagList
+showPagination: false
 ---
-
-
-this is the tag archive
+{% assign tagsByCount = collections.allTags | sort: "count" | reverse %}
+{%- for tag in tagsByCount -%}
+<a href="/tag/{{tag.title|slugify}}"
+    class="badge font-weight-normal p-1 bg-{{tag.color}}">{{tag.title}} - {{tag.count}}</a>
+{%- endfor -%}

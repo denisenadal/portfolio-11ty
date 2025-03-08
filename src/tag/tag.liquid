@@ -1,6 +1,7 @@
 ---
 layout: "archive.html"
 type: "tag"
+showPagination: false
 pagination:
   data: collections.allTags 
   size: 1
@@ -10,3 +11,9 @@ eleventyComputed:
   title: "{{t.title}}"
   desc: "{{t.desc}}"
 ---
+<div class="row gallery-items">
+{%- assign items = collections.allWork | filterByTag: title -%}
+{%- for item in items -%}
+    {%- include "gallery-item.html" -%}
+{%- endfor -%}
+</div> 
