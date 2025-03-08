@@ -1,5 +1,9 @@
 const markdownIt = require("markdown-it");
 const xmlFiltersPlugin = require('eleventy-xml-plugin')
+const slugify = require('slugify');
+
+const colors = ["primary","secondary","success","danger","warning","info","light","dark"];
+let tagBK =[];
 
 module.exports = function (eleventyConfig) {
   // setup server config & browersync
@@ -16,6 +20,7 @@ module.exports = function (eleventyConfig) {
 
   //set up coolections & data
   const site = require('./src/_data/site.js');
+
   eleventyConfig.addCollection("allSections", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {
       if (item.page.filePathStem.includes('section0')) {
@@ -56,11 +61,49 @@ module.exports = function (eleventyConfig) {
         return b.date - a.date; // sort by date - descending
       });
   });
+  eleventyConfig.addCollection("allTags", async (collectionsApi) => {
+     const taggedItems = collectionsApi.getAll().filter(function (item) {
+      return item.data.tags; 
+    })
+    const tags =[];
+    taggedItems.forEach(item => {
+      item.data.tags.forEach(itemsTag =>{
+        let currentTag = tags.find(t =>{return t.title == itemsTag});
+        if(currentTag){
+          currentTag.count ++;
+        }
+        else {
+          let i = tags.length || 0;
+          let max = colors.length - 1;
+          while (i > max) {
+            i= i -max;
+          }
+          tags.push({
+            title: itemsTag,
+            desc: `Things tagged with ${itemsTag}`,
+            rawInput:  `Things tagged with ${itemsTag}`,
+            content:  `<p>Things tagged with ${itemsTag}</p>`,
+            count: 1,
+            color: colors[i]
+          })
+        }
+       
+      })
+    })
+    const sortedTags = tags.sort(function (a, b) {
+        return a - b; // sort by date - descending
+      });
+    if(tagBK.length == 0 ){
+      tagBK = tags;
+    }
+    return sortedTags;
+  });
 
   //set up content rules
   eleventyConfig.setLiquidOptions({ jsTruthy: true });
   eleventyConfig.setFrontMatterParsingOptions({ excerpt: true, });
   eleventyConfig.addPlugin(xmlFiltersPlugin)
+  eleventyConfig.addGlobalData("tagData",  tagBK);
 
   //set up shortcodes
   eleventyConfig.addShortcode("button", function (link, title, classes) {
@@ -116,7 +159,23 @@ module.exports = function (eleventyConfig) {
     return url;
   });
 
-
+  eleventyConfig.addFilter("filterByTag", function (arr, value) {
+    // console.log(this)
+    const filtered =  arr.filter((item) => {
+      return item.data.tags.includes(value)
+    });
+    return filtered
+  });
+  eleventyConfig.addFilter("getTagColor", function (arr, value) {
+    const filtered =  arr.find((item) => {
+      return item.title === value;
+    });
+    if(filtered && filtered.color){
+      return filtered.color
+    }
+    return 'dark'
+  });
+  
 
   return {
     templateFormats: [

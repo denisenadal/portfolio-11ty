@@ -86,7 +86,9 @@ li {
         }
     }
 }
-
+main {
+    margin-top: 72px;
+  }
 main,
 main.home .meta-section,
 .full-height {
@@ -248,3 +250,6 @@ main.error {
         font-size: 12rem;
     }
 }
+.badge.bg-light {
+    color: var(--bs-dark);
+  }

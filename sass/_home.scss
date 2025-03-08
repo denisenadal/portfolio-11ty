@@ -88,7 +88,8 @@
     }
 }
 
-#work {
+#work, 
+.archive-list {
     .featuredImage {
         background-color: map.get($colors,"gray");
         min-height: 180px;

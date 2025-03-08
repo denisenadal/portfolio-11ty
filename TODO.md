@@ -5,3 +5,10 @@
 ---☆
 
 "Web Design" "Web Development" "UI Design"
+
+C - character
+D - denise's mixes
+F - fanmix
+G - genre
+M - mixes
+T - time 

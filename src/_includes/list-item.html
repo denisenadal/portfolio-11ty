@@ -14,11 +14,9 @@
     </a>
     <p>{{item.data.metaDesc}}</p>
    </div>
-
-
-    <div>
-        {%- for tag in item.data.tags -%}
-        <a href="/tag/{{tag.title | slugify}}" class="badge badge-light font-weight-normal p-1 {{tag.color}}">{{tag.title}}</tag>
+    <div class="tag-list">
+        {%- for t in item.data.tags -%}
+        <a href="/work/tagged/{{t | slugify}}" class="badge font-weight-normal p-1 bg-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
         {%- endfor -%}
 
     </div>

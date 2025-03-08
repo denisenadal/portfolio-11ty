@@ -1,10 +1,12 @@
 ---
-pagination:
-  data: tagPages
-  size: 1
-  alias: tag
-permalink: "/tag/{{ tag.title | slugify }}/"
 layout: "archive.html"
+type: "tag"
+pagination:
+  data: collections.allTags 
+  size: 1
+  alias: t
+eleventyComputed: 
+  permalink: "/tag/{{t.title| slugify}}/"
+  title: "{{t.title}}"
+  desc: "{{t.desc}}"
 ---
-
-{{ tag.title }} is {{ tag.color }} color
