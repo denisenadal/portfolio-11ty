@@ -1,6 +1,6 @@
 const markdownIt = require("markdown-it");
 const xmlFiltersPlugin = require('eleventy-xml-plugin')
-const slugify = require('slugify');
+require('dotenv').config()
 
 const colors = ["primary","secondary","success","danger","warning","info","light","dark"];
 let tagBK =[];
