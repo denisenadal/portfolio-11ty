@@ -21,6 +21,7 @@
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
         "bootstrap": "^5.3.3",
         "concurrently": "^8.0.1",
+        "dotenv": "^16.4.7",
         "eleventy-xml-plugin": "^0.1.0",
         "markdown-it": "^13.0.1",
         "sass": "^1.85.1"

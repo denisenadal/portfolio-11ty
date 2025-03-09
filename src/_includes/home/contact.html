@@ -1,19 +1,17 @@
-{{ $about := .Site.Data.about }}
-
 <div id="contact"
      class="meta-section">
     <section class="row">
         <div class="col-12 col-md-6">
-            {{ partial "home/splash.html" . }}
+            {%- include "home/splash.html" -%}
         </div>
         <div class="col-12 col-md-6">
             <div class="contact-form p-4 shadow">
-                <h2 class="heading mb-3 h1">Contact {{ $about.name }}</h2>
-                {{ if and (os.Getenv "FORMSPREE_ID") (os.Getenv "FORMSPREE_RECAPTCHA")  }}
+                <h2 class="heading mb-3 h1">Contact {{ site.author }}</h2>
+                {%-if site.FORMSPREE_ID and site.FORMSPREE_RECAPTCHA  -%}
          
                 <form id="my-form"
                       class="clearfix"
-                      action="https://formspree.io/{{ os.Getenv "FORMSPREE_ID" }}"
+                      action="https://formspree.io/{{ site.FORMSPREE_ID }}"
                       method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -38,7 +36,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <div class="g-recaptcha"
-                                 data-sitekey="{{ os.Getenv "FORMSPREE_RECAPTCHA" }}"
+                                 data-sitekey="{{ site.FORMSPREE_RECAPTCHA }}"
                                  data-callback="onRepSuccess"
                                  data-error-callback="error"
                                  data-expired-callback="error"></div>
@@ -51,7 +49,7 @@
                     </div>
                 </form>
                 <div id="my-form-status"></div>
-                {{ end }}
+                {%- endif -%}
             </div>
         </div>
     </section>

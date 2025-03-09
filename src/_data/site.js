@@ -19,6 +19,7 @@ module.exports =  {
     keywords: "UI/UX Design, Web Design, Front-End Development, Front-End Engineering,Design Portfolio, Development Portfolio, Engineering Portfolio, Design Wizard, Design Unicorn",
     baseURL: baseUrl,
     isDev: isDev,
-    GTM_ID: process.env.GTM_ID
-
+    GTM_ID: process.env.GTM_ID,
+    FORMSPREE_ID:  process.env.FORMSPREE_ID,
+    FORMSPREE_RECAPTCHA: process.env.FORMSPREE_RECAPTCHA
 }

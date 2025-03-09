@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
 
   //set up coolections & data
   const site = require('./src/_data/site.js');
+  site.colors = colors;
 
   eleventyConfig.addCollection("allSections", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {

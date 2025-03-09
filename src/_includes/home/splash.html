@@ -1,30 +1,30 @@
-{{ $social := .Site.Data.social }}
 <aside id="splash"
          class="d-flex flex-column justify-content-center align-items-start">
-        {{ if .Site.Params.displayPicture }}
-        <img src="{{.Site.BaseURL}}{{.Site.Params.displayPicture}}"
+        {%- if site.bioImage -%}
+        <img src="{{site.baseURL}}/assets/{{site.bioImage}}"
              class="rounded-circle mb-3 bio-img"
-             width="160px" alt="photo of {{ .Site.Data.author }}">
-        {{ end }}
+             width="160px" alt="photo of {{ site.author }}">
+       {%- endif -%}
         <h2 class="heading">
-            <span class="display-4">{{ .Site.Data.author }}</span>
+            <span class="display-4">{{ site.author }}</span>
             <br>
-            {{with .Site.Params.subtitle}}
-            <span class="text-white highlight px-4 py-1">{{ . }}</span>{{end}}
+            {%-if  site.subtitle -%}
+            <span class="text-white highlight px-4 py-1">{{  site.subtitle }}</span>
+            {%- endif -%}
         </h2>
-        {{with .Site.Params.blurb}}
-        <p class="text-muted my-1">{{ . | safeHTML }}</p>
-        {{end}}
+        {%-if  site.blurb -%}
+        <p class="text-muted my-1">{{ site.blurb | escape }}</p>
+        {%- endif -%}
         <div class="social my-4">
 
-            {{ range $key, $value := $social }}
+            {%- for value in social -%}
             <a class="text-dark mx-2 d-inline-block"
                 target="_blank"
-               href="{{ $value }}"
-               rel="me" aria-label="{{$key}}">
-                <i class="fa fa-{{$key}} fa-2x"  aria-hidden="true"></i>
+               href="{{ value[1] }}"
+               rel="me" aria-label="{{value[0]}}">
+                <i class="fa fa-{{value[0]}} fa-2x"  aria-hidden="true"></i>
             </a>
-            {{ end }}
+           {%- endfor -%}
         </div>
 
 </aside>

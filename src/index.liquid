@@ -1,0 +1,37 @@
+---
+layout: base.html 
+---
+<main class="home">
+	{%- if about -%}
+		{%- include  "home/about.html" -%}
+	{%- endif -%}
+	{%- if skills-%}
+		{%- include  "home/skills.html" -%}
+	{%- endif -%}
+	{%- if experience -%}
+		{%- include  "home/experience.html" -%}
+	{%- endif -%}
+	{%- if  collections.featuredWork.size > 1 -%}
+		<div id="work" class="meta-section bg-accent">
+			<section  class="">
+				<h2 class="heading">Work </h2>
+				<div class="row">
+					{%- assign items = collections.featuredWork | sort: "weight" -%}
+					{%- for item in items -%}
+					{%- include "gallery-item.html" -%}
+						{%- endfor -%}
+				</div>
+				<div class="text-center mt-5">
+					<a href="{{site.baseURL }}/work"
+					   class="btn btn-lg btn-secondary d-inline-block ">Browse All</a>
+				</div>
+			</section>
+		</div>
+	{%- endif -%}
+	{%- if  collections.allPosts.size > 1 -%}
+		{%- include  "blog-gallery.html"  -%}
+	{%- endif -%}
+
+	{%- include  "home/contact.html" -%}
+</main>
+
