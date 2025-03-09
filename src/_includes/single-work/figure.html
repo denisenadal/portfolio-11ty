@@ -1,7 +1,7 @@
-<a href="{{section.file.dir | absURL}}{{image.src}}" class="image-modal-link mb-3">
+<a href="{{section.page.fileSlug}}/{{image.src}}" class="image-modal-link mb-3">
     <figure class="figure"
-            data-title="{{data.title}}">
-        <img src="{{section.File.Dir | absURL}}{{image.src}}"
+            data-title="{{image.title}}">
+        <img src="{{section.page.fileSlug}}/{{image.src}}"
              alt="{{image.caption | default: image.title}}"
              class="figure-img img-fluid">
         {%- if image.caption -%}

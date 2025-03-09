@@ -9,8 +9,5 @@ image: {"name":"cover-2.webp"," alt":"Header Image for the Seagram's Escapes Hol
 type: "work"
 tags: ["UX Design","Web Development","11ty","Algolia.js" ]
 weight: 150
-resources: [
-    {"src":"00-design.md"},
-    {"src":"00-dev.md"}]
 ---
 Design and development for the Seagram's Escapes Holiday Marketplace featuring Black Owned Businesses, which Seagram's Escapes ran during the holiday season in 2020 to support Black small business owners. It was an amazing experience working on such a large project with a creative team for such a good cause. 

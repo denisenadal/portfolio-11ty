@@ -12317,6 +12317,9 @@ body.work main section.process-nav {
 body.work main section h1.text-pink, body.work main section .text-pink.h1 {
   margin: -0.75rem 0 1.25rem;
 }
+body.work main section p:empty {
+  display: none;
+}
 body.work main section a {
   color: #ff009c;
   font-weight: 500;

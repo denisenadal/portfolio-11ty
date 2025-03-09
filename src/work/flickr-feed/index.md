@@ -9,9 +9,6 @@ image: {"name":"01-final/flickrfeed-desktop-default.png"," alt":"Desktop Latest 
 type: "work"
 tags: ["Web App", "Web Development", "Rest APIs"]
 weight: 43
-resources: [
-    {"src":"00-process.md"},
-    {"src":"00-final.md"}]
 ---
 A simple Node/Express web app that allows users to search for images uploaded to flickr, and view those images either as a webpage or as raw json data.
 

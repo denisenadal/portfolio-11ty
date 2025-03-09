@@ -12,11 +12,5 @@ tags: ["UI Design","UX Design"]
 org: Pointman
 team: Steve Raines, Kurt Stangl, Mike Spencer, Michael Drewitt, Denise Nadal, David Cloyd. 
 role:  Front End Engineering, User Research, UX Design, UI Design
-resources: [
-    {"src":"00-background.md"},
-     {"src":"01-process.md"},
-     {"src":"00-scenarios.md"},
-     {"src":"00-components.md"},
-    {"src":"00-final.md"}]
 ---
 Improving the "Answer a Call and Schedule Work" experience for HVAC dispatchers and customer service reps. inside the Pointman Web App.

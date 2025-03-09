@@ -9,8 +9,5 @@ image: {"name":"weefee-logo-design.png"," alt":"branding for WeeFee app"}
 type: "work"
 tags: ["UI Design","Branding"]
 weight: 20
-resources:
-    - src: "00-process.md"
-    - src: "00-final.md"
 ---
 Preliminary branding and UI Design for an Electron app of network scanning tools for network security professionals and enthusiasts.

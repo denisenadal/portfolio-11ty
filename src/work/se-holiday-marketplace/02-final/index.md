@@ -42,15 +42,22 @@ Through this project we helped generate thousands of dollars of additional reven
 </div>
 
 {% hr %}
+
+
 ## Desktop Screens
 <div class="wrapper"><div class="row">
-<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">{%- workimage  "/work/se-holiday-marketplace/02-final/home-1280.webp","","Landing page - Desktop size", "$4"  -%}
+<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">
+{%- workimage  "/work/se-holiday-marketplace/02-final/home-1280.webp","","Landing page - Desktop size", "$4"  -%}
 </div>
-<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">{%- workimage  "/work/se-holiday-marketplace/02-final/categorie-1280.webp","","Category page - Desktop size", "$4"  -%}
+<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">
+{%- workimage  "/work/se-holiday-marketplace/02-final/categorie-1280.webp","","Category page - Desktop size", "$4"  -%}
 </div>
-<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">{%- workimage  "/work/se-holiday-marketplace/02-final/Screenshot_2021-02-09 Frequently Asked Questions Seagram's Escapes Holiday Marketplace.webp",""," Frequently Asked Questions- Desktop size", "$4"  -%}
+<div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">
+{%- workimage  "/work/se-holiday-marketplace/02-final/Screenshot_2021-02-09 Frequently Asked Questions Seagram's Escapes Holiday Marketplace.webp",""," Frequently Asked Questions- Desktop size", "$4"  -%}
 {%- workimage  "/work/se-holiday-marketplace/02-final/pre-releaseHome - Laptop - 1280px.webp","","Pre-Release Landing page - Desktop size", "$4"  -%}
 </div>
 </div></div>
 {% hr %}
+
+
 ## Mobile Screens

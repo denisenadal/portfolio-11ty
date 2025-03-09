@@ -18,6 +18,9 @@ body.work main section {
     h1.text-pink {
         margin: -0.75rem 0 1.25rem;
     }
+    p:empty {
+        display: none;
+      }
 
     a {
         color: $secondary;

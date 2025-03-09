@@ -3,38 +3,38 @@
     <div class="row wrapper">
         <div id="work-header-left"
              class="col-md-7 mt-3">
-            {{with .Params.image}}
-            <img src="{{.name}}"
-                 alt="{{.alt}}"
+            {%- if image -%}
+            <img src="{{image.name}}"
+                 alt="{{image.alt}}"
                  class="shadow-sm border">
-            {{end}}
+            {%- endif -%}
         </div>
         <div id="work-header-right"
              class="col-md-5 d-flex flex-column flex-end justify-content-end">
             <h2 id="work-title"
-                class="h2 m-0">{{.Title}}</h2>
-            <p class="h4 mt-0">{{.Params.subtitle}}</p>
-            <p class="h6 mb-2 mt-3 text-gray"> {{.Params.date_range}}</p>
+                class="h2 m-0">{{title}}</h2>
+            <p class="h4 mt-0">{{subtitle}}</p>
+            <p class="h6 mb-2 mt-3 text-gray"> {{date_range}}</p>
             <p class="m-0 text-muted">
-                {{.Content}}
+                {{content}}
             </p>
-            {{if or (isset .Params "team")  (isset .Params "org") (isset .Params "role")}}
+            {%- if team  or org or role -%}
             <hr>
             <dl>
-                {{with .Params.role}}
+                {%- if role -%}
                 <dt>Role</dt>
-                <dd class="mb-4">{{.}}</dd>
-                {{end}}
-                {{with .Params.team}}
+                <dd class="mb-4">{{role}}</dd>
+                {%- endif -%}
+                {%- if team -%}
                 <dt>Team</dt>
-                <dd class="mb-4">{{.}}</dd>
-                {{end}}
-                {{with .Params.org}}
+                <dd class="mb-4">{{team}}</dd>
+                {%- endif -%}
+                {%- if org -%}
                 <dt>Org</dt>
-                <dd class="mb-4">{{.}}</dd>
-                {{end}}
+                <dd class="mb-4">{{org}}</dd>
+                {%- endif -%}
             </dl>
-            {{end}}
+            {%- endif -%}
         </div>
     </div>
 </section>

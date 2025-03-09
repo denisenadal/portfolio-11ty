@@ -9,8 +9,6 @@ image: {"name":"process/v01design.png"," alt":"design for improved invoice layou
 type: "work"
 weight: 40
 tags: ["Print Design"]
-resources:
-    - src: "00-process.md"
 ---
 Improving the layout of system generated invoices to improve user satisfaction and reduce paper waste.
 

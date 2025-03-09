@@ -12,13 +12,6 @@ tags: ["UI Design","UX Design", "User Research", "Product Design"]
 org: Pointman
 team: Kurt Stangl, Mike Spencer, Denise Nadal, David Cloyd
 role: User research, user testing, customer journeys, user flows, personas, information architecture, task analysis
-resources: [
-    {"src":"00-overview.md"},
-     {"src":"01-research.md"},
-     {"src":"02-ideation.md"},
-     {"src":"03-visual.md"},
-    {"src":"04-components.md"},
-    {"src":"05-outcome.md"}]
 ---
 Completely reimagining the "Answer a Call and Schedule Work" experience for HVAC dispatchers and customer service reps. inside the Pointman Web App and conducting the necessary user research.
 

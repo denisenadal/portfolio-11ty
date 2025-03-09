@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("allSections", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {
-      if (item.page.filePathStem.includes('section0')) {
+      if ( item.page.filePathStem.includes('work') && item.page.filePathStem.includes('0') && item.data.draft !== true) {
         return true
       }
     }).sort(function (a, b) {
@@ -174,7 +174,12 @@ module.exports = function (eleventyConfig) {
     }
     return 'dark'
   });
-  
+  eleventyConfig.addFilter("formatSectionID", function (content = "") {
+    const regex = /[0-9-\s]/gm;
+    content = content.replace(regex, "");
+    content = eleventyConfig.getFilter("slugify")(content)
+    return content
+  });
 
   return {
     templateFormats: [

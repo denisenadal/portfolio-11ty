@@ -9,8 +9,5 @@ image: {"name":"strange_horizons_preview.jpg"," alt":"cropped view of the strang
 type: "work"
 tags: ["Web Design"]
 weight: 42
-resources: [
-    {"src":"00-process.md"},
-    {"src":"00-final.md"}]
 ---
 A mockup of  a potential redesign for online magazine *Strange Horizons*. It was completed as a design exercise.

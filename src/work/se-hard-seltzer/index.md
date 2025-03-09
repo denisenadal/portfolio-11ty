@@ -9,8 +9,5 @@ image: {"name":"Seltzer-Key-Visual.webp"," alt":"Key Visual for Seagram's Escape
 type: "work"
 tags: ["Web Development","Web Design","11ty" ]
 weight: 120
-resources: [
-    {"src":"00-design.md"},
-    {"src":"00-final.md"}]
 ---
 Design and development for the Seagram's Escapes Hard Seltzer brand website. 

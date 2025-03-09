@@ -11,7 +11,6 @@ tags: ["Web Design","Branding", "SEO"]
 weight: 35
 team: Denise Nadal,  Drew Adams
 role: Web Design, Web Development, Branding, SEO, Social Media Marketing
-resources: [{"src": "00-process.md"},{"src": "00-final.md"}]
 ---
 With project partner, Drew Adams, designed and implemented a new clean and modern site targeted towards our client’s target demographic, utilizing user feedback to optimize UI/UX. 
 

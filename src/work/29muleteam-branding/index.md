@@ -9,9 +9,6 @@ image: {"name":"29muleteam-mockup.jpg"," alt":"29 Mule Borax Branding System Moc
 type: "work"
 tags: ["Branding"]
 weight: 24
-resources: [
-    {"src":"00-process.md"},
-    {"src":"00-process.md"}]
 desc: "As a design exercise, I created a branded business system for one of my favorite cleaning products."
 keywords: "Branding, Graphic Design, 29 Mule Team"
 ---
