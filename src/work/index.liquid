@@ -4,6 +4,7 @@ title: "All Work",
 desc: "Past Design & Development projects by Denise Nadal",
 keywords: "UI/UX Design, Web Design, Front-End Development, Front-End Engineering,Design Portfolio, Development Portfolio, Engineering Portfolio",
 layout: "archive.html",
+permalink: "/work{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber | plus: 1 }}{% endif %}/",
 showPagination: true,
 pagination:{
     size: 10,
