@@ -1,6 +1,4 @@
-{{ $robots := .Site.Data.robots }}
-User-Agent: {{$robots.useragent | default "*"}}
-Allow: {{$robots.allow | default "*"}}
-Disallow: {{$robots.disallow | default ""}}
-
+User-Agent: *
+Allow: *
+Disallow: 
 Sitemap: {{site.baseURL }}/sitemap.xml
