@@ -32,15 +32,15 @@
 @use "../node_modules/@vianetz/spectre.css/src/typography";
 // @use "tables";
 @use "../node_modules/@vianetz/spectre.css/src/buttons";
-@use "../node_modules/@vianetz/spectre.css/src/forms";
-@use "../node_modules/@vianetz/spectre.css/src/labels";
-@use "../node_modules/@vianetz/spectre.css/src/codes";
-@use "../node_modules/@vianetz/spectre.css/src/media";
+// @use "../node_modules/@vianetz/spectre.css/src/forms";
+// @use "../node_modules/@vianetz/spectre.css/src/labels";
+// @use "../node_modules/@vianetz/spectre.css/src/codes";
+// @use "../node_modules/@vianetz/spectre.css/src/media";
 
 // Layout
-@use "../node_modules/@vianetz/spectre.css/src/layout";
-@use "../node_modules/@vianetz/spectre.css/src/hero";
-@use "../node_modules/@vianetz/spectre.css/src/navbar";
+@use "layout";
+// @use "../node_modules/@vianetz/spectre.css/src/hero";
+// @use "../node_modules/@vianetz/spectre.css/src/navbar";
 
 // Components
 // @use "accordions";
@@ -48,13 +48,13 @@
 // @use "../node_modules/@vianetz/spectre.css/src/badges";
 // @use "../node_modules/@vianetz/spectre.css/src/breadcrumbs";
 // @use "../node_modules/@vianetz/spectre.css/src/bars";
-@use "../node_modules/@vianetz/spectre.css/src/cards";
+// @use "../node_modules/@vianetz/spectre.css/src/cards";
 // @use "../node_modules/@vianetz/spectre.css/src/chips";
-@use "../node_modules/@vianetz/spectre.css/src/dropdowns";
-@use "../node_modules/@vianetz/spectre.css/src/empty";
-@use "../node_modules/@vianetz/spectre.css/src/menus";
-@use "../node_modules/@vianetz/spectre.css/src/modals";
-@use "../node_modules/@vianetz/spectre.css/src/navs";
+// @use "../node_modules/@vianetz/spectre.css/src/dropdowns";
+// @use "../node_modules/@vianetz/spectre.css/src/empty";
+// @use "../node_modules/@vianetz/spectre.css/src/menus";
+// @use "../node_modules/@vianetz/spectre.css/src/modals";
+// @use "../node_modules/@vianetz/spectre.css/src/navs";
 @use "../node_modules/@vianetz/spectre.css/src/pagination";
 // @use "../node_modules/@vianetz/spectre.css/src/panels";
 // @use "popovers";

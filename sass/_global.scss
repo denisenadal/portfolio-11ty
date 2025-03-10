@@ -122,11 +122,11 @@ main.home .meta-section,
         justify-content: center;
         font-weight: $headings-font-weight;
         font-size: 1.5rem;
-        border-bottom: 2px solid $gray-300;
+        border-bottom: 2px solid  map-get($grays,"300");
     }
 }
 #logo-link {
-    color: $black;
+    color: map-get($colors,"black");
     border-bottom: 4px dotted transparent;
     transition: $default-animation;
 
@@ -168,7 +168,7 @@ main.home .meta-section,
         display: none;
     }
     #logo-link:hover {
-        border-bottom: 4px dotted $gray-300;
+        border-bottom: 4px dotted  map-get($grays,"300");
     }
 }
 
@@ -183,7 +183,7 @@ main.home .meta-section,
         width: 24px;
         height: 4px;
         position: relative;
-        background: $black;
+        background: map-get($colors,"black");
         transition: all 0ms 300ms;
     }
 
@@ -243,7 +243,7 @@ main.home .meta-section,
 }
 
 .section-break {
-    border-top: 4px dotted $gray-300;
+    border-top: 4px dotted  map-get($grays,"300");
 }
 
 //=== error page ===//

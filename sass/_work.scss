@@ -1,4 +1,5 @@
 @use "dnvars" as *;
+@use "variables";
 @use "sass:map";
 body.work main section {
     padding-top: 4rem;
@@ -13,7 +14,7 @@ body.work main section {
     &.process-nav {
         border-top: dotted map.get($colors,"gray") 4px;
         border-bottom: dotted map.get($colors,"gray") 4px;
-        background: $white;
+        background: map-get($colors,"white");
     }
 
     /*work page sections*/
@@ -25,14 +26,14 @@ body.work main section {
       }
 
     a {
-        color: $secondary;
+        color: variables.$secondary-color;
         font-weight: 500;
         &:hover {
-            color: $primary;
+            color: variables.$primary-color;
         }
         
         &.btn {
-            color: $white;
+            color:map-get($colors,"white");
         }
     }
 
@@ -82,7 +83,7 @@ hr.content-divider {
 }
 
 .bg-accent hr.content-divider {
-    border-color: $white;
+    border-color:map-get($colors,"white");
 }
 
 .modal .figure {

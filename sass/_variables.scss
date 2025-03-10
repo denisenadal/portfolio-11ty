@@ -9,7 +9,7 @@ $url: "github.com/vianetz/spectre-css";
 $rtl: false !default;
 
 // Core colors
-$primary-color: $primary;
+$primary-color: map-get($colors, "pink" );
 $primary-color-dark: color.adjust($primary-color, $lightness: -3%) !default;
 $primary-color-light: color.adjust($primary-color, $lightness: 3%) !default;
 $secondary-color: map-get($colors,"cyan")!default;

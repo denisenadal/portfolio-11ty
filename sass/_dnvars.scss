@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:map";
+
 $colors: (
     "blue": #2184cf,
     "indigo": #4142c0,
@@ -14,55 +17,18 @@ $colors: (
     "gray-dark": #343a40,
 );
 
-$primary: map-get($colors,"teal");
-$secondary: map-get($colors,"pink");
-$success: map-get($colors,"green");
-$info: map-get($colors,"cyan");
-$warning: map-get($colors,"yellow");
-$danger: map-get($colors,"red");
-$light: #f8f9fa;
-$dark: #343a40;
-$accent: #e9fbfb;
-.bg-accent {
-    background-color: $accent;
-}
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
-// scss-docs-start gray-color-variables
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-// scss-docs-end gray-color-variables
-
-// fusv-disable
-// scss-docs-start gray-colors-map
+$accent:  color.adjust( map-get($colors,"cyan"), $lightness: 55%);
 $grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-) !default;
+  "100": #f8f9fa ,
+  "200": #e9ecef,
+  "300": #dee2e6,
+  "400":#ced4da,
+  "500": #adb5bd,
+  "600": #6c757d,
+  "700": #495057,
+  "800": #343a40 ,
+  "900": #212529
+);
 // $link-color: $primary;
 $overlay-light: rgba(255,255,255,0.87);
 $overlay-dark: rgba(211,79,79,0.87);
