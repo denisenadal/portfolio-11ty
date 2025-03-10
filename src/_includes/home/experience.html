@@ -5,7 +5,7 @@
         <div id="timeline" class="col-12">
             {%- if experience.experience -%}
             {%- for exp in experience.experience -%}
-            {%- assign index = forloop.index | modulo: 7-%}
+            {%- assign index = forloop.index | minus: 1 |  modulo: 7 -%}
             <div class="timeline-item d-flex d-column position-relative">
                 <i class="timeline-icon fa fa-circle fa-2x text-{{site.colors[index]}}"
                    aria-label="hidden"></i>

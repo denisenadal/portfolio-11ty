@@ -1,9 +1,8 @@
 
 # TODO
-[ ] update archive references
 [ ] update text on index page
 [ ] update skills list
-[ ] update work history
+[X] update work history
 [ ] update styles
 [ ] add new projects
 [ ] add details on new projects
@@ -16,6 +15,7 @@
 [X] convert shortcodes from files to functions in 11ty.js
 [X] convert from handlebars to liquid
 [X] convert archetypes.md to dir js files
+[X] update archive references
 
 # Notes
 ---☆
