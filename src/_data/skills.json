@@ -12,43 +12,18 @@
     "list": [
         {
             "Product Design": [
-                "Design Thinking",
-                "User-Centered Design",
-                "UX Research ",
-                "Product Discovery",
-                "Customer Journey Mapping",
-                "Task Analysis",
-                "Usability Testing",
-                "Wireframing & Prototyping"
+                 "Design Thinking","User-Centered Design","UX Research","User Personas","Customer Journey Mapping","Usability Testing","Wireframing & Prototyping","Design Systems","Information Architecture","WCAG Accessibility Standards"
             ]
         },{
-            "Product Management" :["Certified Scrum Product Owner","Certified Scrum Master","Agile & Lean Methodologies","Project Management"]
+            "Product Management" :["Agile Practices", "Project Management", "Roadmap Management", "Documentation","User Stories", "Backlog Management", "Product Prioritization", "Sprint Planning", "Customer Interviews", "Customer & Product Discovery", "Stakeholder Management"]
         },{
-            "Programming Strengths": [
-                "JavaScript",
-                "jQuery",
-                "HTML5",
-                "CSS3",         
-                "SASS",
-                "Bootstrap", 
-                "Eleventy",
-                "Wordpress",
-                "PHP",
-                "Bubble/No-Code"
+            "Coding": [
+                "JavaScript","JSON","AJAX/REST API","jQuery","Bootstrap","Node.js,","HTML5","CSS3","SASS","WordPress","PHP","MySQL","Hugo","Jekyll","11ty","Liquid","Linux","Bash","Git","Bubble","We-Web","No-Code"
             ]
         },
         {
-            "Programming Competencies": [
-                "Node.js",
-                "AngularJS",
-                "Vue.js",
-                "Git", 
-                "Python",
-                "MySQL",
-                "MongoDB",
-                "Hugo",
-                "Linux",
-                "Shopify"
+            "Tools & Software": [
+                "Adobe Creative Suite","Balsamiq","Figma","Sketch","Google Analytics","Hotjar","Asana","Jira","Trello","Wordpress","Webflow","Contentful"
             ]
         }
     ]
