@@ -1,3 +1,6 @@
+@use "dnvars" as *;
+@use "variables";
+@use "sass:map";
 //bootstrap overrides
 hr {width: 100%}
 
@@ -13,7 +16,7 @@ img {
 
 b,
 strong {
-    font-weight: $font-weight-bold;
+    font-weight: 700;
 }
 
 blockquote {
@@ -50,7 +53,7 @@ li {
 .modal-dialog {
     max-width: 90vw;
 
-    @include media-breakpoint-up(lg) {
+    @media (min-width: variables.$size-lg)  {
         max-width: 800px;
     }
 
@@ -78,7 +81,7 @@ li {
         margin: 0 auto;
     }
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: variables.$size-md)  {
         padding: 1rem 1.5rem;
 
         section {
@@ -128,16 +131,16 @@ main.home .meta-section,
     transition: $default-animation;
 
     .title {
-        color: $pink;
+        color: map-get($colors,"pink");;
         transition: $default-animation;
     }
     .subtitle {
-        color: $teal;
+        color: map-get($colors,"teal");;
         transition: $default-animation;
     }
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: variables.$size-md)  {
     .navbar,
     .nav-links {
         flex-flow: row;

@@ -1,0 +1,69 @@
+@use "sass:color";
+@use "sass:map";
+@use "dnvars" as *;
+@forward "../node_modules/@vianetz/spectre.css/src/_variables.scss" with (
+    $primary-color: map-get($colors,"pink")!default,
+    $secondary-color: map-get($colors,"cyan")!default,
+    $dark-color: #343a40,
+    $light-color: #f8f9fa,
+    $success-color: map-get($colors,"green"),
+    $warning-color: map-get($colors,"yellow"),
+    $error-color: map-get($colors,"red"),
+    $code-color: #d73e48 !default,
+    $highlight-color: map-get($colors,"yellow"),
+    $body-bg: #f8f9fa!default,
+    $body-font-color:#343a40,
+
+    $size-xs: 420px !default,
+    $size-sm: 640px !default,
+    $size-md: 800px !default,
+    $size-lg: 1080px !default,
+    $size-xl: 1280px !default,
+    $size-2x: 1440px !default
+);
+
+@use "../node_modules/@vianetz/spectre.css/src/mixins";
+
+// Reset and dependencies
+@use "../node_modules/normalize.css/normalize.css";
+@use "../node_modules/@vianetz/spectre.css/src/base";
+
+// Elements
+@use "../node_modules/@vianetz/spectre.css/src/typography";
+// @use "tables";
+@use "../node_modules/@vianetz/spectre.css/src/buttons";
+@use "../node_modules/@vianetz/spectre.css/src/forms";
+@use "../node_modules/@vianetz/spectre.css/src/labels";
+@use "../node_modules/@vianetz/spectre.css/src/codes";
+@use "../node_modules/@vianetz/spectre.css/src/media";
+
+// Layout
+@use "../node_modules/@vianetz/spectre.css/src/layout";
+@use "../node_modules/@vianetz/spectre.css/src/hero";
+@use "../node_modules/@vianetz/spectre.css/src/navbar";
+
+// Components
+// @use "accordions";
+// @use "avatars";
+// @use "../node_modules/@vianetz/spectre.css/src/badges";
+// @use "../node_modules/@vianetz/spectre.css/src/breadcrumbs";
+// @use "../node_modules/@vianetz/spectre.css/src/bars";
+@use "../node_modules/@vianetz/spectre.css/src/cards";
+// @use "../node_modules/@vianetz/spectre.css/src/chips";
+@use "../node_modules/@vianetz/spectre.css/src/dropdowns";
+@use "../node_modules/@vianetz/spectre.css/src/empty";
+@use "../node_modules/@vianetz/spectre.css/src/menus";
+@use "../node_modules/@vianetz/spectre.css/src/modals";
+@use "../node_modules/@vianetz/spectre.css/src/navs";
+@use "../node_modules/@vianetz/spectre.css/src/pagination";
+// @use "../node_modules/@vianetz/spectre.css/src/panels";
+// @use "popovers";
+// @use "steps";
+// @use "tabs";
+@use "../node_modules/@vianetz/spectre.css/src/tiles";
+// @use "toasts";
+// @use "tooltips";
+
+// Utility classes
+// @use "../node_modules/@vianetz/spectre.css/src/animations";
+@use "../node_modules/@vianetz/spectre.css/src/utilities";

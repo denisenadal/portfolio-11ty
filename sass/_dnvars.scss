@@ -1,0 +1,138 @@
+$colors: (
+    "blue": #2184cf,
+    "indigo": #4142c0,
+    "purple": #5b0bb3,
+    "pink": #ff009c,
+    "red": #fe3f3f,
+    "orange": #ff7029,
+    "yellow": #ece206,
+    "green": #84d662,
+    "teal": #49d1a2,
+    "cyan": #00b5da,
+    "white": #fefefe,
+    "gray": #c6c5d3,
+    "gray-dark": #343a40,
+);
+
+$primary: map-get($colors,"teal");
+$secondary: map-get($colors,"pink");
+$success: map-get($colors,"green");
+$info: map-get($colors,"cyan");
+$warning: map-get($colors,"yellow");
+$danger: map-get($colors,"red");
+$light: #f8f9fa;
+$dark: #343a40;
+$accent: #e9fbfb;
+.bg-accent {
+    background-color: $accent;
+}
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// $link-color: $primary;
+$overlay-light: rgba(255,255,255,0.87);
+$overlay-dark: rgba(211,79,79,0.87);
+$rainbow-gradient: linear-gradient( 292deg,
+rgba(91, 11, 179, 1) 0%,
+rgba(33, 132, 207, 1) 22%,
+rgba(0, 181, 218, 1) 33%,
+rgba(210, 233, 27, 1) 60%,
+rgba(236, 226, 6, 1) 64%,
+rgba(232, 206, 10, 1) 68%,
+rgba(255, 0, 156, 1) 96%);
+$brand-gradient: linear-gradient( 
+    292deg,
+rgba(19, 206, 200, 1) 0%,
+rgba(35, 113, 179, 1) 36%,
+rgba(22, 73, 196, 1) 54%,
+rgba(255, 0, 156, 1) 96%);
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$font-family-sans-serif: "Montserrat",
+sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 300;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$font-weight-base: $font-weight-normal;
+$headings-font-weight: $font-weight-bold;
+$headings-font-family:"Montserrat",
+sans-serif;
+$display1-weight: 300 !default;
+$display2-weight: 300 !default;
+$display3-weight: 700 !default;
+$display4-weight: 700 !default;
+$animation-rate: cubic-bezier(0.23,1,0.32,1);
+$default-animation: all 300ms $animation-rate;
+$adjusted-vh: calc(100vh - 8rem);
+
+
+
+@each $name, $hex in $colors {
+    .text-#{"" +$name}{
+      color: $hex;
+    }
+
+    .bg-#{"" +$name}{
+        background-color: $hex;
+      }
+  }
+
+.overlay-dark {
+    background: $overlay-dark;
+}
+
+.overlay-light {
+    background: $overlay-light;
+}
+
+@mixin rainbow-border {
+    content: "";
+    background: $rainbow-gradient;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+

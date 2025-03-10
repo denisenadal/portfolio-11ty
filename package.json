@@ -19,6 +19,7 @@
     "dependencies": {
         "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
+        "@vianetz/spectre.css": "^2.0.0",
         "bootstrap": "^5.3.3",
         "concurrently": "^8.0.1",
         "dotenv": "^16.4.7",
