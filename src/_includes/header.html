@@ -1,9 +1,9 @@
-<header id="main-header" class=" fixed-top shadow-sm bg-white">
-    <div class="navbar meta-section wrapper" role="navigation" aria-label="Main Menu">
-        <div class="branding d-flex">
-            <button class="hamburger-menu mr-2 mt-1" aria-label="Toggle Main Menu">
+<header id="main-header" class="p-fixed bg-white">
+    <div class="nav meta-section container" role="navigation" aria-label="Main Menu">
+        <div class="branding nav-left">
+            <!-- <button class="hamburger-menu mr-2 mt-1" aria-label="Toggle Main Menu">
 					<div class="hamburger-inner" aria-label="hidden"></div>
-				</button>
+				</button> -->
             <!--<a id="logo-link"
 							   data-menuanchor="intro"
 							   href="/#intro"
@@ -14,13 +14,13 @@
 									 width="36">
 							</a> -->
             <a id="logo-link" class="nav-link p-0 highlight-text" data-menuanchor="intro" href="{{site.baseURL}}#intro">
-                <h1 class="nav-logo h4"><span class="title">{{site.title }}</span> {%if site.subtitle%}☆<br class="d-sm-none"><span class="subtitle"> {{ site.subtitle}}</span>{% endif %}
+                <h1 class="accent-heading m-0"><span class="title">{{site.title }}</span> {%if site.subtitle%}☆<br class="d-sm-none"><span class="subtitle"> {{ site.subtitle}}</span>{% endif %}
                 </h1>
             </a>
         </div>
 
         {% if navigation %}
-        <nav id="main-menu" class="nav-links" aria-label="Main Menu Items">
+        <nav id="main-menu" class="nav-right" aria-label="Main Menu Items">
             {% for item in navigation %}
                 {% if item.fullPage %}
                 <a href="{{site.baseURL}}/{{ page.url }}" class="nav-item nav-link">{{ item.title | default: site.title}}</a> 

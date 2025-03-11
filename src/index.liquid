@@ -2,15 +2,10 @@
 layout: base.html 
 ---
 <main class="home">
-	{%- if about -%}
-		{%- include  "home/about.html" -%}
-	{%- endif -%}
-	{%- if skills-%}
-		{%- include  "home/skills.html" -%}
-	{%- endif -%}
-	{%- if experience -%}
-		{%- include  "home/experience.html" -%}
-	{%- endif -%}
+		{%- include  "home/hero.html" -%}
+		{%- include  "home/about-work.html" -%}
+		{%- include  "home/about-person.html" -%}
+		{%- include  "home/stats.html" -%}
 	{%- if  collections.featuredWork.size > 1 -%}
 		<div id="work" class="meta-section bg-accent">
 			<section  class="">
