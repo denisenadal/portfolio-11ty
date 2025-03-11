@@ -1,37 +1,24 @@
 @use "sass:color";
 @use "sass:map";
 
-$colors: (
-    "blue": #2184cf,
-    "indigo": #4142c0,
-    "purple": #5b0bb3,
-    "pink": #ff009c,
-    "red": #fe3f3f,
-    "orange": #ff7029,
-    "yellow": #ece206,
-    "green": #84d662,
-    "teal": #49d1a2,
-    "cyan": #00b5da,
-    "white": #fefefe,
-    "gray": #c6c5d3,
-    "gray-dark": #343a40,
-);
+$white: #FAF9FF;
+$black: #281B5A;
+$dark: #2B3755;
+$ocean: #677BB0;
+$violet: #7F61F8;
+$magenta: #F443AD;
+$lavender: #EAE5FF;
+$lemon: #F6FFC2;
+$seafoam: #C2FFE5;
+$cyan: #51E0FF;
+$lavender-100: #F2EFFF;
+$lemon-100: #FAFFD8;
+$pure-white: #fff;
+$success: #52DEA3;
+$error: #FF5B5B;
+$gray-300: $lavender;
 
-$accent:  color.adjust( map-get($colors,"cyan"), $lightness: 55%);
-$grays: (
-  "100": #f8f9fa ,
-  "200": #e9ecef,
-  "300": #dee2e6,
-  "400":#ced4da,
-  "500": #adb5bd,
-  "600": #6c757d,
-  "700": #495057,
-  "800": #343a40 ,
-  "900": #212529
-);
-// $link-color: $primary;
-$overlay-light: rgba(255,255,255,0.87);
-$overlay-dark: rgba(211,79,79,0.87);
+
 $rainbow-gradient: linear-gradient( 292deg,
 rgba(91, 11, 179, 1) 0%,
 rgba(33, 132, 207, 1) 22%,
@@ -67,27 +54,9 @@ $display3-weight: 700 !default;
 $display4-weight: 700 !default;
 $animation-rate: cubic-bezier(0.23,1,0.32,1);
 $default-animation: all 300ms $animation-rate;
-$adjusted-vh: calc(100vh - 8rem);
+$menu-height: 68px;
+$adjusted-vh: calc(100vh - $menu-height);
 
-
-
-@each $name, $hex in $colors {
-    .text-#{"" +$name}{
-      color: $hex;
-    }
-
-    .bg-#{"" +$name}{
-        background-color: $hex;
-      }
-  }
-
-.overlay-dark {
-    background: $overlay-dark;
-}
-
-.overlay-light {
-    background: $overlay-light;
-}
 
 @mixin rainbow-border {
     content: "";

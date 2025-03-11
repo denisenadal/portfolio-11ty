@@ -1,176 +1,31 @@
-@use "dnvars" as *;
-@use "variables";
+@use "sass:color";
 @use "sass:map";
-//bootstrap overrides
-hr {width: 100%}
+@use "dnvars" as *;
 
-a:hover {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-b,
-strong {
-    font-weight: 700;
-}
-
-blockquote {
-    line-height: 2rem;
-    margin: 1rem;
-    padding-left: 1rem;
-    display: block;
-    font-style: italic;
-    position: relative;
-
-    &:before {
-        content: "“";
-        font-size: 5rem;
-        position: absolute;
-        left: -2rem;
-        top: 1rem;
-    }
-}
-
-li {
-    margin-bottom: 1rem;
-}
-
-.clear-both {
-    clear: both;
-}
-.clear-left {
-    clear: left;
-}
-.clear-right {
-    clear: right;
-}
-
-.modal-dialog {
-    max-width: 90vw;
-
-    @media (min-width: variables.$size-lg)  {
-        max-width: 800px;
-    }
-
-    .modal-header,
-    .modal-content {
-        border: none;
-    }
-}
-//for top-level items such as header, footer, main wrapper
-.body-offset {
-    height: 4.5rem;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.meta-section {
-    padding: 1rem;
-
-    section {
-        padding: 1rem 0;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    @media (min-width: variables.$size-md)  {
-        padding: 1rem 1.5rem;
-
-        section {
-            padding: 3rem 0;
-        }
-    }
-}
-main {
-    margin-top: 72px;
-  }
 main,
 main.home .meta-section,
 .full-height {
     min-height: $adjusted-vh;
 }
 
-//heading & nav layout
-.navbar {
-    background: map-get($colors,"white");
-}
-.navbar,
-.nav-links {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    align-items: flex-start;
-}
 
-.nav-links {
-    align-items: stretch;
-    height: calc(100vh - 4rem);
-    display: none;
-
-    .nav-link {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: $headings-font-weight;
-        font-size: 1.5rem;
-        border-bottom: 2px solid  map-get($grays,"300");
-    }
-}
 #logo-link {
-    color: map-get($colors,"black");
+    color: $black;
     border-bottom: 4px dotted transparent;
     transition: $default-animation;
 
     .title {
-        color: map-get($colors,"pink");;
+        color: $magenta;
         transition: $default-animation;
     }
     .subtitle {
-        color: map-get($colors,"teal");;
+        color: $cyan;
         transition: $default-animation;
     }
 }
 
-@media (min-width: variables.$size-md)  {
-    .navbar,
-    .nav-links {
-        flex-flow: row;
-        text-align: left;
-    }
 
-    .navbar {
-        justify-content: space-between;
-    }
-    .nav-links {
-        height: auto;
-        width: auto;
-        display: flex !important;
 
-        .nav-link {
-            width: auto;
-            pointer-events: initial;
-            border: none;
-            font-size: inherit;
-            flex: 0;
-        }
-    }
-
-    .hamburger-menu {
-        display: none;
-    }
-    #logo-link:hover {
-        border-bottom: 4px dotted  map-get($grays,"300");
-    }
-}
 
 //hamburger menu from hugo-uilite theme
 .hamburger-menu {
@@ -183,12 +38,12 @@ main.home .meta-section,
         width: 24px;
         height: 4px;
         position: relative;
-        background: map-get($colors,"black");
+        background: $black;
         transition: all 0ms 300ms;
     }
 
     .hamburger-inner.animate {
-        background: map-get($colors,"white");
+        background: $white;
     }
     .hamburger-inner:before,
     .hamburger-inner:after {
@@ -243,16 +98,6 @@ main.home .meta-section,
 }
 
 .section-break {
-    border-top: 4px dotted  map-get($grays,"300");
+    border-top: 4px dotted $gray-300;
 }
 
-//=== error page ===//
-main.error {
-    padding-top: 4rem;
-    .error-emoji {
-        font-size: 12rem;
-    }
-}
-.badge.bg-light {
-    color: var(--bs-dark);
-  }

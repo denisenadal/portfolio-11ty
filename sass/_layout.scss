@@ -1,8 +1,8 @@
-@use "variables";
+@use "sass:math";
+@use "dnvars" as *;
+@use "../node_modules/@vianetz/spectre.css/src/_variables.scss";
 
 // Layout
-@use "sass:math";
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -161,163 +161,102 @@
   
 
 @media   (max-width: (variables.$size-xs - 1px)){
-    .col-xxs-12,
-    .col-xxs-11,
-    .col-xxs-10,
-    .col-xxs-9,
-    .col-xxs-8,
-    .col-xxs-7,
-    .col-xxs-6,
-    .col-xxs-5,
-    .col-xxs-4,
-    .col-xxs-3,
-    .col-xxs-2,
-    .col-xxs-1,
-    .col-xxs-auto {
-      flex: none;
-    }
-  
-    .col-xxs-12 {
-      width: 100%;
-    }
-  
-    .col-xxs-11 {
-      width: 91.66%;
-    }
-  
-    .col-xxs-10 {
-      width: 83.33%;
-    }
-  
-    .col-xxs-9 {
-      width: 75%;
-    }
-  
-    .col-xxs-8 {
-      width: 66.66%;
-    }
-  
-    .col-xxs-7 {
-      width: 58.33%;
-    }
-  
-    .col-xxs-6 {
-      width: 50%;
-    }
-  
-    .col-xxs-5 {
-      width: 41.66%;
-    }
-  
-    .col-xxs-4 {
-      width: 33.33%;
-    }
-  
-    .col-xxs-3 {
-      width: 25%;
-    }
-  
-    .col-xxs-2 {
-      width: 16.66%;
-    }
-  
-    .col-xxs-1 {
-      width: 8.33%;
-    }
-  
-    .col-xxs-auto {
-      width: auto;
-    }
-  
-    .hide-xxs {
-      display: none !important;
-    }
-  
-    .show-xxs {
-      display: block !important;
-    }
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-8,
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4,
+  .col-3,
+  .col-2,
+  .col-1,
+  .col-auto {
+    flex: 1;
+    width: 100%;
   }
-  
-
-
-@media  (min-width: variables.$size-xs) and (max-width: (variables.$size-sm - 1px)){
-    .col-xs-12,
-    .col-xs-11,
-    .col-xs-10,
-    .col-xs-9,
-    .col-xs-8,
-    .col-xs-7,
-    .col-xs-6,
-    .col-xs-5,
-    .col-xs-4,
-    .col-xs-3,
-    .col-xs-2,
-    .col-xs-1,
-    .col-xs-auto {
-      flex: none;
-    }
-  
-    .col-xs-12 {
-      width: 100%;
-    }
-  
-    .col-xs-11 {
-      width: 91.66%;
-    }
-  
-    .col-xs-10 {
-      width: 83.33%;
-    }
-  
-    .col-xs-9 {
-      width: 75%;
-    }
-  
-    .col-xs-8 {
-      width: 66.66%;
-    }
-  
-    .col-xs-7 {
-      width: 58.33%;
-    }
-  
-    .col-xs-6 {
-      width: 50%;
-    }
-  
-    .col-xs-5 {
-      width: 41.66%;
-    }
-  
-    .col-xs-4 {
-      width: 33.33%;
-    }
-  
-    .col-xs-3 {
-      width: 25%;
-    }
-  
-    .col-xs-2 {
-      width: 16.66%;
-    }
-  
-    .col-xs-1 {
-      width: 8.33%;
-    }
-  
-    .col-xs-auto {
-      width: auto;
-    }
-  
-    .hide-xs {
-      display: none !important;
-    }
-  
-    .show-xs {
-      display: block !important;
-    }
 }
-@media  (min-width: variables.$size-sm) and (max-width: (variables.$size-md - 1px)) {
+
+// @media  (min-width: variables.$size-xs) {
+//     .col-xs-12,
+//     .col-xs-11,
+//     .col-xs-10,
+//     .col-xs-9,
+//     .col-xs-8,
+//     .col-xs-7,
+//     .col-xs-6,
+//     .col-xs-5,
+//     .col-xs-4,
+//     .col-xs-3,
+//     .col-xs-2,
+//     .col-xs-1,
+//     .col-xs-auto {
+//       flex: none;
+//     }
+  
+//     .col-xs-12 {
+//       width: 100%;
+//     }
+  
+//     .col-xs-11 {
+//       width: 91.66%;
+//     }
+  
+//     .col-xs-10 {
+//       width: 83.33%;
+//     }
+  
+//     .col-xs-9 {
+//       width: 75%;
+//     }
+  
+//     .col-xs-8 {
+//       width: 66.66%;
+//     }
+  
+//     .col-xs-7 {
+//       width: 58.33%;
+//     }
+  
+//     .col-xs-6 {
+//       width: 50%;
+//     }
+  
+//     .col-xs-5 {
+//       width: 41.66%;
+//     }
+  
+//     .col-xs-4 {
+//       width: 33.33%;
+//     }
+  
+//     .col-xs-3 {
+//       width: 25%;
+//     }
+  
+//     .col-xs-2 {
+//       width: 16.66%;
+//     }
+  
+//     .col-xs-1 {
+//       width: 8.33%;
+//     }
+  
+//     .col-xs-auto {
+//       width: auto;
+//     }
+  
+//     .hide-xs {
+//       display: none !important;
+//     }
+  
+//     .show-xs {
+//       display: block !important;
+//     }
+// }
+@media  (min-width: variables.$size-sm)  {
     .col-sm-12,
     .col-sm-11,
     .col-sm-10,
@@ -394,7 +333,7 @@
       display: block !important;
     }
 }
-@media (min-width: variables.$size-md) and (max-width: (variables.$size-lg - 1px)) {
+@media (min-width: variables.$size-md)  {
     .col-md-12,
     .col-md-11,
     .col-md-10,

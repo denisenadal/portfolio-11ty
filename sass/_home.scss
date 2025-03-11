@@ -1,18 +1,19 @@
 @use "dnvars" as *;
-@use "variables";
 @use "sass:map";
+@use "dnvars" as *;
+@use "../node_modules/@vianetz/spectre.css/src/_variables.scss" as variables;
 //========== splash ============//
 #splash {
     .heading {
         line-height: 1.45;
     }
     a.text-dark:hover {
-        color:  map-get($grays,"300")!important;
+        color:  $gray-300!important;
     }
     a.btn-dark:hover {
-        background:  map-get($grays,"300");
-        border-color:  map-get($grays,"300");
-        color: map-get($colors,"black");
+        background:  $gray-300;
+        border-color:  $gray-300;
+        color: $black ;   
     }
     .bio-img {
         width: 144px;
@@ -29,7 +30,7 @@
     padding-left: 2rem;
 
     .timeline-item {
-        border-left: 3px solid map-get($colors,"white");
+        border-left: 3px solid $white;
         padding: 0 0 2rem 2rem;
 
         .timeline-icon {
@@ -49,7 +50,7 @@
 
         &:first-of-type::before {
             content: "";
-            background:  map-get($colors,"white");
+            background:  $white;
             width: 10px;
             height: 10px;
             position: absolute;
@@ -66,8 +67,7 @@
             width: calc(50% + 3px);
 
             &:nth-child(even) {
-                border-right: 3px solid map-get($colors,"black");
-                border-left: none;
+                border-right: 3px solid $black;                border-left: none;
                 padding: 0 2rem 2rem 0;
                 text-align: right;
                 left: 0;
@@ -94,7 +94,7 @@
 #work, 
 .archive-list {
     .featuredImage {
-        background-color: map.get($colors,"gray");
+        background-color: $gray-300;
         min-height: 180px;
         width: 100%;
         background-size: cover;
@@ -104,6 +104,6 @@
 
 #contact {
     .btn-primary {
-        color: map-get($colors,"white");
-    }
+        color: $white;
+        }
 }
