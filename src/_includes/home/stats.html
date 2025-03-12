@@ -1,0 +1,15 @@
+<section id="stats" class="bg-lemon">
+    <div class="container grid-lg ">
+        <h2 class="text-assistive">Experience</h2>
+        <div class="columns">
+            {%- for stat in stats -%}
+            <div id="{{stat.id}}" class="col-4 p-1">
+                <h3>{{stat.title}}</h3>
+                <p>{{stat.desc}}</p>
+                <a href="/work#{{stat.id}}">Learn More</a>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+

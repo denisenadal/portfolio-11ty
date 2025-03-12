@@ -1,85 +1,127 @@
 @use "sass:color";
 @use "sass:map";
 @use "dnvars" as *;
+:root {
+    --accent: #6faca4;
+    --menu-height: 74px;
+    --cyan: #{$cyan};
+    --seafoam: #{$seafoam};
+    --magenta: #{$magenta};
+    --lemon: #{$lemon};
+  }
 
+
+/*===============typogrpahy==============*/
+h1, .h1, .display-heading {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+h2, .h2 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+h3, .h3 {
+    font-weight: 500;
+    font-size: .875rem;
+}
+h4,.h4, h5,.h5, h6,.h6 {
+    font-size: .75rem;
+    font-weight: 600;
+}
+.display-heading-1 {
+    font-size:48px;
+}
+.display-heading-2 {
+    font-size: 40px;
+}
+.display-heading-3 {
+    font-size: 36px;
+}
+.accent-heading {
+    font-family: "Spline Sans Mono";
+    font-weight: 400;
+    text-shadow: .075em .075em 0 var(--color-secondary);
+    color: var(--color-primary);
+}
+/*===============layout=============*/
+main{
+    padding-top: var(--menu-height);
+}
 main,
-main.home .meta-section,
 .full-height {
-    min-height: $adjusted-vh;
+    min-height: calc(100vh - var(--menu-height));
 }
-
-
-#logo-link {
-    color: $black;
-    border-bottom: 4px dotted transparent;
-    transition: $default-animation;
-
-    .title {
-        color: $magenta;
-        transition: $default-animation;
-    }
-    .subtitle {
-        color: $cyan;
-        transition: $default-animation;
-    }
+.offset-cols{
+    margin-left: -.5rem;
+  margin-right: -.5rem;
 }
+.gallery-item .card-image .img-responsive {
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+.gallery-item  .card-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .gallery-item .flex-grow {
+    flex-grow: 1;
+  }
+  .gallery-item .tag-list {
+    display: flex;
+    gap: .3rem;
+    flex-flow: row wrap;
+    margin-top: .5rem;
+  }
+/*===============nav==============*/
 
+header#main-header {
+    border-bottom: solid 3px var(--color-dark);
+    z-index: 10;
+  }
+  
+#logo-link h1 {
+    font-size: 25px;
+    line-height: 1;
 
+    span.subtitle {
+        font-size: 22px;
+        text-transform: uppercase;
+      }
+  }
 
+  .nav .btn-link {
+    color: var(--font-color);
+    font-weight: 500;
+} 
 
-//hamburger menu from hugo-uilite theme
-.hamburger-menu {
-    height: 24px;
-    background: none;
-    border: none;
-    .hamburger-inner,
-    .hamburger-inner:after,
-    .hamburger-inner:before {
-        width: 24px;
-        height: 4px;
-        position: relative;
-        background: $black;
-        transition: all 0ms 300ms;
-    }
-
-    .hamburger-inner.animate {
-        background: $white;
-    }
-    .hamburger-inner:before,
-    .hamburger-inner:after {
-        content: "";
-        position: absolute;
-        left: 0;
-    }
-
-    .hamburger-inner:before {
-        bottom: 8px;
-        transition: bottom 300ms 300ms $animation-rate, transform 350ms $animation-rate;
-    }
-
-    .hamburger-inner:after {
-        top: 8px;
-        transition: top 300ms 300ms $animation-rate, transform 350ms $animation-rate;
-    }
-
-    .hamburger-inner.animate:after {
-        top: 0;
-        transform: rotate(45deg);
-        transition: top 300ms $animation-rate, transform 350ms 350ms $animation-rate;
-    }
-
-    .hamburger-inner.animate:before {
-        bottom: 0;
-        transform: rotate(-45deg);
-        transition: bottom 300ms $animation-rate, transform 350ms 350ms $animation-rate;
-    }
+/*===============utilities==============*/
+.bg-white {
+    background:#fff;
 }
-//========== SFX ============//
-.highlight {
+.bg-cyan{
+    background:var(--cyan);
+}
+.bg-magenta{
+    background:var(--magenta);
+}
+.bg-lemon{
+    background:var(--lemon);
+}
+.bg-seafoam{
+    background:var(--seafoam);
+}
+.rainbow {
     background: $rainbow-gradient;
     border-radius: 0.2rem;
 }
-.highlight-text {
+.rainbow-text {
     background: $rainbow-gradient;
     // background-size: 100% 30px;
     background-repeat: no-repeat;
@@ -87,13 +129,13 @@ main.home .meta-section,
     -webkit-text-fill-color: transparent;
     
 }
-.highlight-text-link:hover {
+.rainbow-text-link:hover {
     background: $rainbow-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.highlight-block-link:hover {
+.rainbow-block-link:hover {
     background: $brand-gradient;
 }
 

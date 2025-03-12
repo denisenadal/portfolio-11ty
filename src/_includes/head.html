@@ -28,7 +28,7 @@
     {%- assign pageSubtitle = type -%}
 {%- else -%}
     {%- assign pageSubtitle = site.subtitle -%}
-{%- endif -%}
+{%- endif %}
 
 <head>
     <meta charset="UTF-8">
@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {%- else -%}
 {%- assign pageClasses  = "page" -%}
-{%- endif -%}
+{%- endif %}
 
 <body id="{{page.fileSlug | slugify }}" class="{{ pageClasses }}  ">
     <!-- Google Tag Manager (noscript) -->

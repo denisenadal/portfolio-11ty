@@ -1,5 +1,31 @@
 ---
 layout: base.html 
+hero:
+  description: I like to bring order to chaos without stifling creativity, and designing delightful and accessible experiences.
+about:
+  title: Design Leader
+  subtitle: I like to design software & teams
+  desc: "<p>I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development.</p><p>I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions.</p><p>I'm always open to learning about new opportunities to grow.</p>"
+  image: assets/images/denise.webp
+person: 
+  title: Creative
+  subtitle: I like to create & cultivate
+  desc: "<p>I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights!</p> <p>I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my pets. (3 cats and a mantis)<p>"
+  gallery: 
+stats:
+  - id: pm
+    title: <span>2 years</span> PM
+    desc: "I’m always learning new things, and my natural love of organization, planning and scheming for the future naturally led me to Product Management. I’m endlessly curious about problems and how to best solve them."
+  - id: web
+    title: <span>10+ years</span> Web Dev
+    desc: "My first website was on geocities! Web Design was just another creative outlet for me until I started my professional career in 2016. While I’ve learned frameworks like Angular, React and Vue, I am happiest in in plain HTML, CSS and JS."
+  - id: design
+    title: <span>20+ years</span> Designer
+    desc: "I’ve been a designer my whole life. As a teen I designed books, zines, comics and more. I got a degree in Illustration in 2011 and learned how to craft solutions for clients. I’ve shifted to crafting experiences and interfaces, but the process stays the same."
+work:
+  title: My Work
+  subtitle:
+  desc: "Below are of my favorite projects I’ve worked on. Click through to see details on each, or use the button below to view all the projects on my archive page."
 ---
 <main class="home">
 		{%- include  "home/hero.html" -%}
@@ -7,21 +33,23 @@ layout: base.html
 		{%- include  "home/about-person.html" -%}
 		{%- include  "home/stats.html" -%}
 	{%- if  collections.featuredWork.size > 1 -%}
-		<div id="work" class="meta-section bg-accent">
-			<section  class="">
-				<h2 class="heading">Work </h2>
-				<div class="row">
-					{%- assign items = collections.featuredWork | sort: "weight" -%}
-					{%- for item in items -%}
-					{%- include "archive/gallery-item.html" -%}
-						{%- endfor -%}
-				</div>
-				<div class="text-center mt-5">
-					<a href="{{site.baseURL }}/work"
-					   class="btn btn-lg btn-secondary d-inline-block ">Browse All</a>
-				</div>
-			</section>
+	<section id="work" class="bg-light">
+		<div class="container grid-lg">
+			<h2 class="heading">{{work.title}}</h2>
+			<p>{{work.desc}}</p>
+			<div class="columns offset-cols">
+				{%- assign items = collections.featuredWork | sort: "weight" -%}
+				{%- for item in items -%}
+				{%- include "archive/gallery-item.html" -%}
+					{%- endfor -%}
+			</div>
+			<div class="text-center mt-5">
+				<a href="{{site.baseURL }}/work"
+					class="btn btn-lg btn-secondary d-inline-block ">Browse All</a>
+			</div>
 		</div>
+	</section>
+
 	{%- endif -%}
 	{%- if  collections.allPosts.size > 1 -%}
 		{%- include  "blog-gallery.html"  -%}

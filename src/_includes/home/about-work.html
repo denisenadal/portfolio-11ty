@@ -1,21 +1,20 @@
-<div id="about" class="container grid-xl">
-    <section   class="row">
-        <div class="col-12 col-md-6">
-       
+<section id="about-work" class=" bg-cyan">
+    <div class="container grid-lg">
+    <div class="columns">
+        <div class="col-4">
+           <div class="img-wrap pr-3">
+            <img src="{{about.image}}" alt="photo of {{site.author}}" class="img-responsive s-circle">
+           </div>
         </div>
-        <div class="col-12 col-md-6">
-            <h2 class="heading mb-3 h1">About {{about.name }}</h2>
-            <p>
-                {{ about.bio }}
+        <div class="col-8">
+            <h2 class="heading h1 mb-1">{{about.title }}</h2>
+            <p class="display-heading h3 subtitle">
+                {{ about.subtitle }}
             </p>
-            {%- if about.likes -%}
-            <h3 class="mt-4">Likes</h3>
-            <ul>
-                {%- for like in about.likes -%}
-                    <li class="my-2">{{like}}</li>
-                    {%- endfor  -%}
-            </ul>
-            {%- endif -%}
+            <p>
+                {{ about.desc }}
+            </p>
         </div>
-    </section>
-</div>
+    </div>
+    </div>
+</section>

@@ -1,109 +1,13 @@
-@use "dnvars" as *;
 @use "sass:map";
 @use "dnvars" as *;
-@use "../node_modules/@vianetz/spectre.css/src/_variables.scss" as variables;
 //========== splash ============//
-#splash {
-    .heading {
-        line-height: 1.45;
-    }
-    a.text-dark:hover {
-        color:  $gray-300!important;
-    }
-    a.btn-dark:hover {
-        background:  $gray-300;
-        border-color:  $gray-300;
-        color: $black ;   
-    }
-    .bio-img {
-        width: 144px;
-        height: 144px;
-        object-fit: cover;
-        box-shadow: 44px 18px 0px 0px rgba(0, 0, 0, 0.05);
-    }
+.hero {
+  background: url(/assets/images/hero-graphic.png) no-repeat center/cover;
 }
-//====//
-
-#timeline {
-    position: relative;
-    transition: $default-animation;
-    padding-left: 2rem;
-
-    .timeline-item {
-        border-left: 3px solid $white;
-        padding: 0 0 2rem 2rem;
-
-        .timeline-icon {
-            position: absolute;
-            top: 3px;
-            left: -15px;
-        }
-
-        .timeline-content {
-            transition: $default-animation;
-        }
-
-        .date {
-            position: relative;
-            left: -0.5rem;
-        }
-
-        &:first-of-type::before {
-            content: "";
-            background:  $white;
-            width: 10px;
-            height: 10px;
-            position: absolute;
-            top: 0;
-            left: -5px;
-            z-index: 0;
-        }
-    }
-
-    @media (min-width: variables.$size-md) {
-        .timeline-item {
-            position: relative;
-            left: 50%;
-            width: calc(50% + 3px);
-
-            &:nth-child(even) {
-                border-right: 3px solid $black;                border-left: none;
-                padding: 0 2rem 2rem 0;
-                text-align: right;
-                left: 0;
-
-                .timeline-icon {
-                    position: absolute;
-                    right: -15px;
-                    left: 0;
-                }
-
-                .timeline-content {
-                    transition: $default-animation;
-                }
-
-                .date {
-                    position: relative;
-                    left: -0.5rem;
-                }
-            }
-        }
-    }
+.hero .card {
+  max-width: 540px;
 }
 
-#work, 
-.archive-list {
-    .featuredImage {
-        background-color: $gray-300;
-        min-height: 180px;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-#contact {
-    .btn-primary {
-        color: $white;
-        }
+section h2 + .subtitle {
+  font-weight: 400;
 }
