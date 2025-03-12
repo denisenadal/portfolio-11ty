@@ -14,6 +14,14 @@
             <p>
                 {{ about.desc }}
             </p>
+            <h3 class="h3 text-center">Experience</h3>
+            <div class="columns">
+                {%- for stat in stats -%}
+                <div id="{{stat.id}}" class="col-4 p-1">
+                    <a href="/work#{{stat.id}}"><p>{{stat.title}}</p></a>
+                </div>
+                {%- endfor -%}
+            </div>
         </div>
     </div>
     </div>

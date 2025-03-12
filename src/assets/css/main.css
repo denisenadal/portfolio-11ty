@@ -6,6 +6,8 @@
   --seafoam: #C2FFE5;
   --magenta: #F443AD;
   --lemon: #F6FFC2;
+  --lavender: #EAE5FF;
+  --violet: #7F61F8;
 }
 
 /*===============typogrpahy==============*/
@@ -22,13 +24,13 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875rem;
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .display-heading-1 {
@@ -104,9 +106,64 @@ header#main-header {
   text-transform: uppercase;
 }
 
-.nav .btn-link {
+nav .btn.btn-link {
   color: var(--font-color);
   font-weight: 500;
+  position: relative;
+}
+
+nav .btn.btn-link:hover {
+  box-shadow: none;
+  color: var(--color-primary);
+}
+
+nav .btn.btn-link:after {
+  border-bottom: dotted 4px var(--color-borders);
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 0;
+  left: 50%;
+  transition: all 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+  display: block;
+  bottom: -2px;
+}
+
+nav .btn.btn-link:hover:after {
+  width: calc(100% - 1em);
+  left: 0.5em;
+}
+
+/*=============== elements  ==============*/
+.btn {
+  font-weight: 500;
+  font-family: "Spline Sans Mono";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn.btn-secondary {
+  border-radius: 2px;
+  box-shadow: 2px 2px 0px 2px var(--color-primary);
+  color: var(--color-primary);
+  border: none;
+}
+
+.btn.btn-secondary:hover {
+  box-shadow: inset 3px 3px 0px 1px rgba(0, 0, 0, 0.2), 2px 2px 0px 2px var(--color-secondary);
+  transform: translate(2px, 2px);
+}
+
+.label {
+  border-radius: 26px;
+  padding: 0.1rem 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+a.label:hover {
+  text-decoration: none;
+  box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 /*===============utilities==============*/
@@ -157,15 +214,142 @@ header#main-header {
 }
 
 .hero {
-  background: url(/assets/images/hero-graphic.png) no-repeat center/cover;
+  background: var(--lavender);
+  position: fixed;
+  overflow: visible;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
 }
 
+.hero .container:before {
+  content: "";
+  background: url("/assets/images/halftone-1 seafoam.png") center left/contain;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+
+.hero:before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  background: url("/assets/images/hero-left.svg") no-repeat top center/contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero:after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  background: url("/assets/images/hero-right.svg") no-repeat bottom center/contain;
+  position: absolute;
+  top: 3vw;
+  right: 0;
+  z-index: 0;
+}
+
+@media (min-width: 800px) {
+  .hero:before {
+    width: 45%;
+  }
+  .hero:after {
+    width: 33%;
+  }
+}
+@media (min-width: 1280px) {
+  .hero:before {
+    width: 33%;
+  }
+  .hero:after {
+    width: 25%;
+  }
+}
 .hero .card {
+  z-index: 2;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hero .card .text-col {
   max-width: 540px;
 }
 
+@media (min-width: 768px) {
+  .hero .card {
+    left: 10%;
+  }
+}
 section h2 + .subtitle {
   font-weight: 400;
+}
+
+section:not(.hero) {
+  position: relative;
+  z-index: 1;
+}
+
+#about-work {
+  margin-top: 400px;
+}
+
+@media (min-width: 8600px) {
+  #about-work {
+    margin-top: 460px;
+  }
+}
+@media (min-width: 800px) {
+  #about-work {
+    margin-top: 520px;
+  }
+}
+#about-work::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 8vw 100vw;
+  border-color: transparent transparent var(--cyan) transparent;
+  position: absolute;
+  top: -7.9vw;
+  z-index: 1;
+}
+
+#person-work:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 8vw 100vw;
+  border-color: transparent transparent var(--magenta) transparent;
+  top: -7.9vw;
+  z-index: 1;
+  display: block;
+  position: absolute;
+}
+
+#work:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 100vw 3vw 0;
+  border-color: transparent var(--magenta) transparent transparent;
+  top: 0;
+  z-index: 1;
+  display: block;
+  position: absolute;
+}
+
+#work {
+  margin-bottom: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */

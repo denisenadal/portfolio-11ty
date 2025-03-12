@@ -7,9 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build:11typrod": "ELEVENTY_ENV=production eleventy",
         "build:11tydev": "ELEVENTY_ENV=staging eleventy",
-        "build:sass": "npx sass sass:src/assets/css --style=compressed",
+        "build:sass": "npx sass --no-source-map --style=compressed sass:src/assets/css",
         "watch:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve  --incremental",
-        "watch:sass": "sass --watch --quiet sass:src/assets/css --trace",
+        "watch:sass": "sass --watch --quiet --trace --embed-sources sass:src/assets/css ",
         "start": "concurrently \"npm run watch:dev\" \"npm run watch:sass\"",
         "build": "concurrently \"npm run build:11tydev\" \"npm run build:sass\"",
         "build:dev": "concurrently \"npm run build:11typrod\" \"npm run build:sass\""

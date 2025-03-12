@@ -2492,6 +2492,11 @@ a.text-dark:hover {
   color: var(--color-light);
 }
 
+.bg-light {
+  background: var(--color-light) !important;
+  color: var(--color-dark);
+}
+
 .bg-gray {
   background: var(--g050) !important;
 }

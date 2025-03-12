@@ -8,6 +8,8 @@
     --seafoam: #{$seafoam};
     --magenta: #{$magenta};
     --lemon: #{$lemon};
+    --lavender: #{$lavender};
+    --violet: #{$violet};
   }
 
 
@@ -24,12 +26,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: .875rem;
 }
 h4,.h4, h5,.h5, h6,.h6 {
     font-size: .75rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .display-heading-1 {
     font-size:48px;
@@ -96,11 +98,58 @@ header#main-header {
       }
   }
 
-  .nav .btn-link {
+nav .btn.btn-link {
     color: var(--font-color);
     font-weight: 500;
+    position: relative;
 } 
-
+nav .btn.btn-link:hover {
+    box-shadow: none;
+    color: var(--color-primary);
+  }
+  nav .btn.btn-link:after {
+   border-bottom: dotted 4px var(--color-borders);
+   position: absolute;
+    content:"";
+    height: 4px;
+    width: 0;
+    left:50%;
+    transition: all .2s cubic-bezier(0.5, 1, 0.89, 1);
+   display: block;
+   bottom: -2px;
+  }
+  
+  nav .btn.btn-link:hover:after {
+    width: calc(100% - 1em);
+    left: .5em;
+  }
+/*=============== elements  ==============*/
+.btn {
+    font-weight: 500;
+    font-family: "Spline Sans Mono";
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  .btn.btn-secondary {
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px 2px var(--color-primary);
+    color: var(--color-primary);
+    border: none;
+  }
+  .btn.btn-secondary:hover {
+    box-shadow: inset 3px 3px 0px 1px rgba(0,0,0,.2), 2px 2px 0px 2px var(--color-secondary);
+    transform: translate(2px, 2px);
+  }
+.label {
+    border-radius: 26px;
+    padding: .1rem .4rem;
+    transition: all .2s ease-in-out;
+  }
+  a.label:hover {
+    text-decoration: none;
+    box-shadow: inset 0 0 100px 0 rgba(0, 0, 0,.2);
+    transform: scale(1.05);
+  }
 /*===============utilities==============*/
 .bg-white {
     background:#fff;

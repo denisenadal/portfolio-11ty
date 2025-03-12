@@ -2,12 +2,133 @@
 @use "dnvars" as *;
 //========== splash ============//
 .hero {
-  background: url(/assets/images/hero-graphic.png) no-repeat center/cover;
-}
-.hero .card {
-  max-width: 540px;
+  background: var(--lavender);
+  position:fixed;
+  overflow: visible;
+  z-index: 1;
+  width:100vw;
+  height: 100vh;
 }
 
+.hero .container:before {
+  content: '';
+  background: url("/assets/images/halftone-1 seafoam.png") center left/contain;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+
+.hero:before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  background: url("/assets/images/hero-left.svg") no-repeat top center/ contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.hero:after {
+content:"";
+  width: 40%;
+  height: 100%;
+  background: url("/assets/images/hero-right.svg") no-repeat bottom center/ contain;
+  position: absolute;
+  top: 3vw;
+  right: 0;
+  z-index: 0;
+}
+@media (min-width: 800px) {
+  .hero:before {
+    width: 45%;
+  }
+.hero:after {
+  width: 33%;
+
+}
+}
+@media (min-width: 1280px) {
+  .hero:before {
+    width: 33%;
+  }
+.hero:after {
+  width: 25%;
+
+}
+}
+.hero .card{
+  z-index: 2;
+  position: relative;
+  flex: 0 0 auto;
+}
+.hero .card .text-col {
+  max-width: 540px;
+}
+@media (min-width:768px){
+  .hero .card{
+    left: 10%;
+  }
+}
 section h2 + .subtitle {
   font-weight: 400;
+}
+section:not(.hero) {
+  position: relative;
+  z-index: 1;
+}
+#about-work {
+  margin-top: 400px;
+}
+@media (min-width:8600px){
+  #about-work {
+    margin-top: 460px;
+  }
+}
+@media (min-width:800px){
+  #about-work {
+    margin-top: 520px;
+  }
+}
+#about-work::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 8vw 100vw;
+  border-color: transparent transparent var(--cyan) transparent;
+  position: absolute;
+  top: -7.9vw;
+  z-index: 1;
+}
+
+#person-work:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 8vw 100vw;
+  border-color: transparent transparent var(--magenta) transparent;
+  top: -7.9vw;
+  z-index: 1;
+  display: block;
+  position: absolute;
+}
+#work:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 100vw 3vw 0 ;
+  border-color: transparent var(--magenta) transparent transparent;
+  top: 0;
+  z-index: 1;
+  display: block;
+  position: absolute;
+}
+#work {
+  margin-bottom: 100vh;
 }

@@ -1,11 +1,18 @@
 <section class="hero">
-    <div class="container justify-center align-center">
-        <div class="card bg-white p-2 mx-auto">
-            <h2 class="accent-heading m-0 display-heading-2">{{site.title}}</h2>
-            {%-if  site.subtitle -%}
-            <p class="subtitle h2 m-0 text-uppercase">{{  site.subtitle }}</p>
-            <p class="m-0">{{hero.description}}</p>
-            {%- endif -%}
+    <div class="container justify-center align-center grid-lg">
+        <div class="card bg-light p-2 mx-auto">
+           <div class="columns">
+            <div class="column text-col">
+                <h2 class="accent-heading m-0 display-heading-2">{{site.title}}</h2>
+                {%-if  site.subtitle -%}
+                <p class="subtitle h2 m-0 text-uppercase">{{  site.subtitle }}</p>
+                <p class="m-0">{{hero.description}}</p>
+                {%- endif -%}
+               </div>
+                <div class="column form-col">
+                    {%- include  "home/contact.html" -%}
+                </div>
+           </div>
         </div>
     </div>
 </section>
