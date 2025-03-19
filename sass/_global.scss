@@ -10,6 +10,7 @@
     --lemon: #{$lemon};
     --lavender: #{$lavender};
     --violet: #{$violet};
+    --white: ${pure-white};
   }
 
 
@@ -192,3 +193,32 @@ nav .btn.btn-link:hover {
     border-top: 4px dotted $gray-300;
 }
 
+.columns.col-gap {
+  gap: 1rem;
+}
+.columns.col-gap .column {
+  padding: 0;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.align-end {
+  align-items:flex-end;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-start {
+  align-items:flex-start;
+}
+.justify-start {
+  justify-content: flex-start;
+}

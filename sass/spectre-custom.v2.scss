@@ -6,6 +6,7 @@
 @use "dnvars" as *;
 
 :root{
+    --g000:#fff;
     --g050: #f7f8f9;
     --g075: #f1f1fc;
     --g100: #eef0f3;
@@ -819,7 +820,7 @@
   }
   
   .form-group:not(:last-child) {
-    margin-bottom: .4rem;
+    margin-bottom: 1rem;
   }
   
   fieldset {
@@ -852,14 +853,14 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: var(--color-background);
+    background: var(--g000);
     background-image: none;
     border: .05rem solid var(--color-borders);
     border-radius: .1rem;
     color: var(--color-text);
     display: block;
     font-size: .8em;
-    height: 1.8rem;
+    height: 1.667rem;
     line-height: 1.2em;
     max-width: 100%;
     outline: none;

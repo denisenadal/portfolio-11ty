@@ -5,6 +5,7 @@
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
 :root {
+  --g000:#fff;
   --g050: #f7f8f9;
   --g075: #f1f1fc;
   --g100: #eef0f3;
@@ -792,7 +793,7 @@ html:lang(ko),
 }
 
 .form-group:not(:last-child) {
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 fieldset {
@@ -825,14 +826,14 @@ legend {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: var(--color-background);
+  background: var(--g000);
   background-image: none;
   border: 0.05rem solid var(--color-borders);
   border-radius: 0.1rem;
   color: var(--color-text);
   display: block;
   font-size: 0.8em;
-  height: 1.8rem;
+  height: 1.667rem;
   line-height: 1.2em;
   max-width: 100%;
   outline: none;

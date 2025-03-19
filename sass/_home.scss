@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "dnvars" as *;
-//========== splash ============//
+//========== hero ============//
 .hero {
   background: var(--lavender);
   position:fixed;
@@ -64,33 +64,42 @@ content:"";
   z-index: 2;
   position: relative;
   flex: 0 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  padding: 1rem;
 }
 .hero .card .text-col {
   max-width: 540px;
 }
-@media (min-width:768px){
+
+@media (min-width:1024px){
   .hero .card{
-    left: 10%;
+    padding: 2rem;
   }
 }
-section h2 + .subtitle {
+section h2 + .subtitle,
+.h2.subtitle {
   font-weight: 400;
 }
 section:not(.hero) {
   position: relative;
   z-index: 1;
+  padding: 1.5rem 0;
 }
+//========== about work ============//
+
 #about-work {
   margin-top: 400px;
-}
-@media (min-width:8600px){
+    padding-bottom: 5rem;
+  }
+@media (min-width:600px){
   #about-work {
     margin-top: 460px;
   }
 }
 @media (min-width:800px){
   #about-work {
-    margin-top: 520px;
+    margin-top: calc(100vh - 8rem);
   }
 }
 #about-work::before {
@@ -104,8 +113,44 @@ section:not(.hero) {
   top: -7.9vw;
   z-index: 1;
 }
+.stat a {
+  color: var(--color-dark);
+  line-height: 1;
+  column-gap: .25rem;
+  row-gap: .125rem;
+  letter-spacing: -.025em;
+  transition: $default-animation;
+  font-size: 18px;
+}
 
-#person-work:before {
+.stat .num {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Spline Sans Mono";
+  letter-spacing: -.05em;
+}
+.stat .yr {
+  font-weight: 600;
+  font-family: "Spline Sans Mono";
+  line-height: 1;
+}
+
+.stat .field {
+  font-weight: 600;
+  font-family: "Spline Sans Mono";
+  line-height: 1.2;
+  margin-top: 0.25rem;
+  word-spacing: -.1rem;
+  letter-spacing: -.02rem;
+}
+.stat a:hover {
+  text-decoration: none;
+  color: var(--color-background);
+  text-shadow: 2.5px 2.5px 0 var(--color-primary);
+}
+//========== sabout peron ============//
+
+#about-person:before {
   content: '';
   width: 0px;
   height: 0px;
@@ -117,6 +162,20 @@ section:not(.hero) {
   display: block;
   position: absolute;
 }
+
+.about-images img {
+  height: 200px;
+  width: auto;
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  border: 2px solid black;
+}
+.about-images {
+  gap: 1rem;
+}
+//========== work============//
+
 #work:before {
   content: '';
   width: 0px;
@@ -131,4 +190,33 @@ section:not(.hero) {
 }
 #work {
   margin-bottom: 100vh;
+}
+//==========  contact ============//
+
+.form-input {
+  border-width: .06rem;
+  border-radius: 0;
+}
+.form-label {
+  font-size: 14px;
+  font-family: "Spline Sans Mono";
+  padding: 0 0 .125rem 0;
+}
+textarea.form-input {
+  min-height: 3.34rem;
+}
+#my-form-button[disabled] {
+  background: none;
+  border-color: transparent;
+  color: var(--color-dark);
+  opacity: .6;
+}
+
+//========== animations ============//
+#contact-section,
+#contact-title {
+  opacity: 0;
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
 }

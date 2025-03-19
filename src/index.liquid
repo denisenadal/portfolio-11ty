@@ -2,41 +2,78 @@
 layout: base.html 
 hero:
   description: I like to bring order to chaos without stifling creativity, and designing delightful and accessible experiences.
-about:
-  title: Design Leader
-  subtitle: I like to design software & teams
-  desc: "<p>I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development.</p><p>I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions.</p><p>I'm always open to learning about new opportunities to grow.</p>"
-  image: assets/images/denise.webp
-person: 
-  title: Creative
-  subtitle: I like to create & cultivate
-  desc: "<p>I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights!</p> <p>I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my pets. (3 cats and a mantis)<p>"
-  gallery: 
 stats:
   - id: pm
-    title: <span>2 years</span> PM
+    num: 2
+    field: Product Management
     desc: "I’m always learning new things, and my natural love of organization, planning and scheming for the future naturally led me to Product Management. I’m endlessly curious about problems and how to best solve them."
   - id: web
-    title: <span>10+ years</span> Web Dev
+    num: 10+
+    field: Web Development
     desc: "My first website was on geocities! Web Design was just another creative outlet for me until I started my professional career in 2016. While I’ve learned frameworks like Angular, React and Vue, I am happiest in in plain HTML, CSS and JS."
   - id: design
-    title: <span>20+ years</span> Designer
-    desc: "I’ve been a designer my whole life. As a teen I designed books, zines, comics and more. I got a degree in Illustration in 2011 and learned how to craft solutions for clients. I’ve shifted to crafting experiences and interfaces, but the process stays the same."
+    num: 8+
+    field: Product & UX Design
+    desc: "I’ve been a designer my whole life. As a teen I designed books, zines, comics and more. I got a degree in Illustration in 2011 and learned how to craft solutions for clients. I’ve shifted to crafting experiences and interfaces in 2016, but the process stays the same."
 work:
   title: My Work
   subtitle:
   desc: "Below are of my favorite projects I’ve worked on. Click through to see details on each, or use the button below to view all the projects on my archive page."
 ---
 <main class="home">
-	{%- include  "home/hero.html" -%}
-	{%- include  "home/about-work.html" -%}
-	{%- include  "home/about-person.html" -%}
-	{%- if  collections.allWork.size > 1 -%}
-		{%- include  "home/work-gallery.html"  -%}
-	{%- endif -%}
-	{%- if  collections.allPosts.size > 1 -%}
-		{%- include  "blog-gallery.html"  -%}
-	{%- endif -%}
+{%- include  "home/hero.html" -%}
+<section id="about-work" class=" bg-cyan">
+<div class="container grid-lg">
+<div class="columns">
+    <div class="col-4">
+        <div class="img-wrap pr-3">
+        <img src="assets/images/denise.webp" alt="photo of Denise Nadal" class="img-responsive s-circle">
+        </div>
+    </div>
+    <div class="col-8">
+        <h2 class="heading h1 mb-1">Design Leader</h2>
+        <p class="display-heading h3 subtitle mb-1">I like to design software & teams</p>
+        <p>I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development.</p><p>I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions.</p><p>I'm always open to learning about new opportunities to grow.</p>
+        <h3 class="h3 text-center my-2">Experience</h3>
+        <div class="stats columns col-gap">
+            {%- for stat in stats -%}
+            <div id="{{stat.id}}" class="column stat">
+                <a href="/work#{{stat.id}}" class="columns align-end justify-end">
+                  <span class="num">{{stat.num}}</span><span class="yr">YRS</span><span class="field col-12 text-right">{{stat.field}}</span>
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section id="about-person" class="bg-magenta">
+  <div class="container grid-xl ">
+      <div class="columns">
+          <div class="col-6 text-light">
+              <h2 class="heading h1 mb-1">Creative</h2>
+              <p class="display-heading h3 subtitle">
+                  I like to create & cultivate
+              </p>
+              <p>I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights!</p> <p>I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my pets. (3 cats and a mantis)<p>
+          </div>
+          <div class="col-6 columns about-images flex-center">
+              <img src="/assets/images/home/garden.webp" alt="" class="img-responsive column ">
+              <img src="/assets/images/home/snake-hoop.webp" alt="" class="img-responsive column ">
+              <img src="/assets/images/home/artifacts.webp" alt="" class="img-responsive column ">
+              <img src="/assets/images/home/plant-cat.webp" alt="" class="img-responsive column ">
+        
+          </div>
+      </div>
+  </div>
+</section>
+{%- if  collections.allWork.size > 1 -%}
+  {%- include  "home/work-gallery.html"  -%}
+{%- endif -%}
+{%- if  collections.allPosts.size > 1 -%}
+  {%- include  "blog-gallery.html"  -%}
+{%- endif -%}
 
 </main>
 
