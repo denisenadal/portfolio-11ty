@@ -1,20 +1,8 @@
 @use "sass:color";
 @use "sass:map";
-@use "dnvars" as *;
-:root {
-    --accent: #6faca4;
-    --menu-height: 74px;
-    --cyan: #{$cyan};
-    --seafoam: #{$seafoam};
-    --magenta: #{$magenta};
-    --lemon: #{$lemon};
-    --lavender: #{$lavender};
-    --violet: #{$violet};
-    --white: ${pure-white};
-  }
+// @use "dnvars" as *;
 
-
-/*===============typogrpahy==============*/
+/*===============typography==============*/
 h1, .h1, .display-heading {
     font-family: "Unbounded", sans-serif;
     font-weight: 500;
@@ -191,34 +179,4 @@ nav .btn.btn-link:hover {
 
 .section-break {
     border-top: 4px dotted $gray-300;
-}
-
-.columns.col-gap {
-  gap: 1rem;
-}
-.columns.col-gap .column {
-  padding: 0;
-}
-
-.align-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
-}
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-.align-end {
-  align-items:flex-end;
-}
-.justify-end {
-  justify-content: flex-end;
-}
-.align-start {
-  align-items:flex-start;
-}
-.justify-start {
-  justify-content: flex-start;
 }

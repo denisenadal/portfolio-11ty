@@ -1,0 +1,84 @@
+/*===============typogrpahy==============*/
+h1,
+.h1,
+.display-heading {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    /* font-size: 1.5rem; */
+}
+
+h2,
+.h2 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    /* font-size: 1rem; */
+}
+
+h3,
+.h3 {
+    font-weight: 600;
+    /* font-size: .875rem; */
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    /* font-size: .75rem; */
+    font-weight: 700;
+}
+
+.display-heading-1 {
+    font-size: 48px;
+}
+
+.display-heading-2 {
+    font-size: 40px;
+}
+
+.display-heading-3 {
+    font-size: 36px;
+}
+
+.accent-heading {
+    font-family: "Spline Sans Mono";
+    font-weight: 400;
+    text-shadow: .075em .075em 0 var(--color-secondary);
+    color: var(--color-primary);
+}
+
+/*===============layout=============*/
+main {
+    padding-top: var(--menu-height);
+}
+
+main,
+.full-height {
+    min-height: calc(100vh - var(--menu-height));
+}
+
+.gallery-item .card-image .img-responsive {
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.gallery-item .card-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.gallery-item .flex-grow {
+    flex-grow: 1;
+}
+
+.gallery-item .tag-list {
+    display: flex;
+    gap: .3rem;
+    flex-flow: row wrap;
+    margin-top: .5rem;
+}

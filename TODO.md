@@ -38,5 +38,19 @@ M - mixes
 T - time 
 ==============
 finis home page
-do stuff for ricard
+
+about me -
+
+- currently freelance web development
+- used to be product design director at EcoMap, where we built platforms for entrepreneurs to find resupurces, customers are econ dev agencies, local govs, etc
+
+- started as the first design hire and led and mentored junior designers as they joined on
+
+- juggling tasks
+- coaching
+- stakeholder management
+- service design
+- add your interaction design membership?
+- karen pang -> connect linkedin
+
 

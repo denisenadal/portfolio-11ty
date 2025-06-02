@@ -1,5 +1,5 @@
 {
-    "name": "template-generator",
+    "name": "denise nadal portfolio",
     "version": "1.0.0",
     "description": "Basic 11ty site",
     "main": ".eleventy.js",
@@ -7,9 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build:11typrod": "ELEVENTY_ENV=production eleventy",
         "build:11tydev": "ELEVENTY_ENV=staging eleventy",
-        "build:sass": "npx sass --no-source-map --style=compressed sass:src/assets/css",
+        "build:sass": "npx sass --no-source-map --style=compressed sass/main.scss src/assets/css/main.css",
         "watch:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve  --incremental",
-        "watch:sass": "sass --watch --quiet --trace --embed-sources sass:src/assets/css ",
+        "watch:sass": "sass --watch --trace --source-map-urls=absolute --color sass/main.scss src/assets/css/main.css ",
         "start": "concurrently \"npm run watch:dev\" \"npm run watch:sass\"",
         "build": "concurrently \"npm run build:11tydev\" \"npm run build:sass\"",
         "build:dev": "concurrently \"npm run build:11typrod\" \"npm run build:sass\""
@@ -19,8 +19,6 @@
     "dependencies": {
         "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
-        "@vianetz/spectre.css": "^2.0.0",
-        "bootstrap": "^5.3.3",
         "concurrently": "^8.0.1",
         "dotenv": "^16.4.7",
         "eleventy-xml-plugin": "^0.1.0",

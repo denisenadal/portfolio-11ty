@@ -3,7 +3,7 @@
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
-@use "dnvars" as *;
+// @use "dnvars" as *;
 
 :root{
     --g000:#fff;
@@ -18,24 +18,7 @@
     --g700: #505c6e;
     --g800:#455060;
     --g900: #303742;
-    --color-primary: #{$violet};
-    --color-primary-contrast:  #{$white};
-    --color-secondary:  #{$cyan};
-    --color-secondary-contrast:  #{$black};
-    --color-background: #{$white};
-    --color-text: #{$dark};
-    --color-code: #{$magenta};
-    --color-light: #{$white};
-    --color-dark: #{$dark};
-    --color-success: #{$success};
-    --color-success-contrast: #fff;
-    --color-error: #{$error};
-    --color-error-contrast: #fff;
-    --color-warning:#ffb700;
-    --color-warning-contrast: #fff;
-    --color-borders: #{$lavender};
-    --color-inputs: #{$lavender-100};;
-    --color-highlight: #{$lemon}; 
+
 
     --size-xs: 320px;
     --size-sm: 420px;
@@ -1572,6 +1555,31 @@
     display: none!important;
   }
   
+
+
+
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.align-end {
+  align-items:flex-end;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-start {
+  align-items:flex-start;
+}
+.justify-start {
+  justify-content: flex-start;
+}
   .cols,
   .columns {
     display: -ms-flexbox;
@@ -1587,7 +1595,12 @@
     margin-left: 0;
     margin-right: 0;
   }
-  
+  .columns.col-gap {
+    gap: 1rem;
+  }
+  .columns.col-gap .column {
+    padding: 0;
+  }
   .cols.col-gapless > .column,
   .columns.col-gapless > .column {
     padding-left: 0;
