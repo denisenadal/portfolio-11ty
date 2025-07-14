@@ -1,0 +1,13 @@
+<h2 id="hero-title" class="accent-heading m-0 display-heading-2">{{site.title}}</h2>
+{%-if site.subtitle -%}
+<p class="subtitle h2 m-0 text-uppercase">{{ site.subtitle }}</p>
+<p class="my-2">{{hero.description}}</p>
+{%- endif -%}
+<div class="container gap-0 social-links">
+    {%- for value in social -%}
+    {%- assign index = forloop.index | minus: 1 |  modulo: 5 -%}
+    <a class="text-primary d-inline-block" data-indexcolor="{{site.colors[index]}}" target="_blank" href="{{ value[1] }}" rel="me" aria-label="{{value[0]}}">
+        <i class="fa fa-{{value[0]}} fa-lg" aria-hidden="true"></i>
+    </a>
+    {%- endfor -%}  
+</div>

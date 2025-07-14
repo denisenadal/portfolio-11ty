@@ -12,6 +12,7 @@
   --lavender-100: #F2EFFF;
   --lemon-100: #FAFFD8;
   --pure-white: #fff;
+  --navy : #264f8e;
   --success: #52DEA3;
   --error: #FF5B5B;
   --gray-300: var(--lavender);
@@ -29,7 +30,7 @@
         rgba(35, 113, 179, 1) 36%,
         rgba(22, 73, 196, 1) 54%,
         rgba(255, 0, 156, 1) 96%);
-  --breakpoint-xs: 420;
+  --breakpoint-xs: 420px;
   --breakpoint-sm: 758px;
   --breakpoint-md: 1024px;
   --breakpoint-lg: 1280px;
@@ -38,18 +39,14 @@
   --default-animation: all 300ms var(--animation-rate);
   --menu-height: 68px;
   --adjusted-vh: calc(100vh - var(--menu-height));
-  --font-family-sans-serif: "Montserrat", sans-serif;
-  --font-weight-light: 200;
-  --font-weight-normal: 300;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
-  --font-weight-base: var(--font-weight-normal);
-  --headings-font-weight: var(--font-weight-bold);
-  --headings-font-family: "Montserrat", sans-serif;
+  --headings-font: "Roboto Flex", sans-serif;
+  --body-font: "Roboto Flex", Roboto, Inter, Arial, Helvetica, sans-serif;
   --display1-weight: 300;
   --display2-weight: 300;
   --display3-weight: 700;
   --display4-weight: 700;
+  --gap-units: 1rem;
+  --gap: var(--gap-units);
 }
 
 @mixin rainbow-border {

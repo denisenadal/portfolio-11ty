@@ -1,7 +1,7 @@
 <!-- needs to receive id,  col1 width, col content, col2 width, col2 content, reverse bool -->
 <section id="{{section.id}}" class=" bg-cyan">
-    <div class="container grid-lg">
-    <div class="columns">
+    <div class="container lg">
+    <div class="container gap-1">
         <div class="col-4">
            <div class="img-wrap pr-3">
             <img src="{{about.image}}" alt="photo of {{site.author}}" class="img-responsive s-circle">
@@ -16,7 +16,7 @@
                 {{ about.desc }}
             </p>
             <h3 class="h3 text-center">Experience</h3>
-            <div class="columns">
+            <div class="container gap-1">
                 {%- for stat in stats -%}
                 <div id="{{stat.id}}" class="col-4 p-1">
                     <a href="/work#{{stat.id}}"><p>{{stat.title}}</p></a>

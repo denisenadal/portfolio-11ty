@@ -22,7 +22,7 @@
   --color-secondary-contrast: #333;
   --color-secondary-active: #edacff;
   --color-background: #fff;
-  --color-text: #3b4351;
+  --color-text: #2B3755;
   --color-success: #32b643;
   --color-success-contrast: #fff;
   --color-error: #e85600;
@@ -2676,7 +2676,7 @@ a.text-dark:hover {
   padding-top: 1.5rem!important;
 }
 .s-rounded {
-  border-radius: .1rem;
+  border-radius: .25rem;
 }
 
 .s-circle {

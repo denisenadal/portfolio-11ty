@@ -1,5 +1,5 @@
 
-#about-work {
+#about-career {
   background: linear-gradient( 315deg, transparent 80%, #f058bd52 110%), linear-gradient( to top, transparent 85%, #ff89c65c 110%), linear-gradient( 135deg, transparent 80%, #c5f7ffb0 100%), linear-gradient( to bottom, transparent 75%, #bceff7 100%), radial-gradient( #fff,#fff, transparent );
   animation: 0 4px 30px rgba(0, 0, 0, .1);
   backdrop-filter: blur(5.8px);

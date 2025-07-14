@@ -1,41 +1,10 @@
-{%- if site.FORMSPREE_ID and site.FORMSPREE_RECAPTCHA  -%}
-<form id="my-form" class="clearfix"
-        action="https://formspree.io/{{ site.FORMSPREE_ID }}"
-        method="POST">
-    <div class="columns col-gap">
-        <div class="form-group column">
-            <label class="form-label" for="name">Name</label>
-            <input type="text"
-                    class="form-input"
-                    name="name" id="name" />
+<section class="contact">
+    <div class="contact container lg flex-center gap-2">
+        <div class="col text-col">
+            {%- include "bio.html" -%}
         </div>
-        <div class="form-group column">
-            <label class="form-label" for="email">Email:</label>
-            <input type="email"
-                    class="form-input"
-                    name="email" id="email"/>
+        <div id="contact-section" class="col">
+            {%- include  "home/form.html" -%}
         </div>
     </div>
-    <div class="form-group">
-        <label class="form-label" for="message">Message:</label>
-        <textarea class="form-input"
-                    name="message" id="message"></textarea>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group">
-            <div class="g-recaptcha"
-                    data-sitekey="{{ site.FORMSPREE_RECAPTCHA }}"
-                    data-callback="onRepSuccess"
-                    data-error-callback="error"
-                    data-expired-callback="error"></div>
-        </div>
-        <div class="form-group col">
-            <button id="my-form-button"
-                    class="btn btn-primary float-right"
-                    disabled="disabled">Submit</button>
-        </div>
-    </div>
-</form>
-<div id="my-form-status"></div>
-{%- endif -%}
+</section>
