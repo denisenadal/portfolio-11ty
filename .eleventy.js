@@ -2,7 +2,7 @@ const markdownIt = require("markdown-it");
 const xmlFiltersPlugin = require('eleventy-xml-plugin')
 require('dotenv').config()
 
-const colors = ["pink","red","orange","yellow","green","blue","purple"];
+const colors = ["magenta","cyan","violet","pink","red","orange","yellow","green","blue","purple","ocean"];
 let tagBK =[];
 
 module.exports = function (eleventyConfig) {
@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
     return collectionsApi.getAll().filter(function (item) {
       // Side-step tags and do your own filtering
       if (item.data.type == 'work' && !item.page.filePathStem.includes('0')) {
-        return !item.data.draft;
+        return !item.data.draft && !item.data.archived;
       }
     }).sort(function (a, b) {
         return b.date - a.date; // sort by date - descending
@@ -45,17 +45,17 @@ module.exports = function (eleventyConfig) {
     return collectionsApi.getAll()
       .filter(function (item) {
         if (item.page.filePathStem.includes('work') && !item.page.filePathStem.includes('0')) {
-          return !item.data.draft && item.data.featured 
+          return !item.data.draft && !item.data.archived  && item.data.featured 
         }
       }).sort(function (a, b) {
-        return b.weight - a.weight; // sort by date - descending
+        return b.data.weight - a.data.weight; // sort by date - descending
       });
   });
   eleventyConfig.addCollection("allPosts", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {
       // Side-step tags and do your own filtering
       if (item.page.filePathStem.includes('post') ) {
-        return !item.data.draft;
+        return !item.data.draft && !item.data.archived
       }
     }).sort(function (a, b) {
         return b.date - a.date; // sort by date - descending

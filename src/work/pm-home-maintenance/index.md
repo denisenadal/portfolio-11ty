@@ -4,7 +4,7 @@ subtitle: "Product Research & UI/UX Design"
 date: 2020-01-31
 date_range: "January 2020"
 draft: false
-featured: true
+featured: false
 image: {
     "name":"pitchDeck-Title.png", 
     "alt":"design for subscription home maintenance service"}

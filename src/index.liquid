@@ -27,14 +27,16 @@ work:
         <img src="assets/images/denise.webp" alt="photo of Denise Nadal" class="img-responsive s-circle bio-photo">
     </figure>
     <div class="col-8 text-col">
+    {%- assign heroSection = true -%}
         {%- include  "bio.html" -%}
+      {%- assign heroSection = false -%}
     </div>
   </div>
 </section>
 <section id="about-career" class="">
   <div class="container lg gap-2">
       <div class="col-8">
-          <h2 class="heading h1 mb-1 text-violet">Design Leader</h2>
+          <h2 class="heading h1 mb-1 ">Design Leader</h2>
           <p class="display-heading h3 subtitle mb-1">I like to design software & teams</p>
           <p>I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development.</p><p>I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions.</p><p>I'm always open to learning about new opportunities to grow.</p>
           <!--<h3 class="h3 text-center my-2">Experience</h3>
@@ -56,7 +58,7 @@ work:
 <section id="about-person" class="">
   <div class="container lg gap-2 flex-center">
     <div class="col-7 ">
-        <h2 class="heading h1 mb-1 text-magenta">Creative</h2>
+        <h2 class="heading h1 mb-1 ">Creative</h2>
         <p class="display-heading h3 subtitle">
             I like to create & cultivate
         </p>

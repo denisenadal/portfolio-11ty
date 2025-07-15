@@ -4,12 +4,12 @@
 
 /*===============typography==============*/
 h1, .h1, .display-heading {
-    font-family: "Unbounded", sans-serif;
+    font-family: var(--body-font), sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }
 h2, .h2 {
-    font-family: "Unbounded", sans-serif;
+    font-family: var(--body-font), sans-serif;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -32,7 +32,7 @@ h4,.h4, h5,.h5, h6,.h6 {
     font-size: 36px;
 }
 .accent-heading {
-    font-family: "Spline Sans Mono";
+    font-family: var(--body-font);
     font-weight: 400;
     text-shadow: .075em .075em 0 var(--color-secondary);
     color: var(--color-primary);
@@ -115,7 +115,7 @@ nav .btn.btn-link:hover {
 /*=============== elements  ==============*/
 .btn {
     font-weight: 500;
-    font-family: "Spline Sans Mono";
+    font-family: var(--body-font);
     text-transform: uppercase;
     letter-spacing: .1em;
   }

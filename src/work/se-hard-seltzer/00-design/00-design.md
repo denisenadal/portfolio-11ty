@@ -5,7 +5,7 @@ draft: false
 order: 0
 columns: "col-sm-12 "
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8   mb-4">
 The design process for this project began with a project brief submitted by the Seagrams Escapes Brand team and an initial discussion surrounding the brand image they were developing and the key features they wanted. During this meeting we worked up an initial wireframe collaboratively.
 
@@ -14,7 +14,7 @@ Afterwords I quickly worked up some low fidelity mockups to make sure we were on
 </div></div>
 
 ## Design Iterations
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-6 col-sm-6 col-md-4 col-lg-4  mb-4">
 {%- workimage  "/work/se-hard-seltzer/00-design/00-wireframe.webp","","Initial wireframes", "Initial wireframes"  -%}
 {%- workimage  "/work/se-hard-seltzer/00-design/01-lofi-design.webp","","Low Fidelity Designs", "Low Fidelity Designs"  -%}
@@ -28,7 +28,7 @@ Afterwords I quickly worked up some low fidelity mockups to make sure we were on
 {% hr %}
 
 ## Prototype Screens
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-6 col-sm-6 col-md-3 col-lg-2  mb-4">
 {%- workimage  "/work/se-hard-seltzer/01-testing/hifi-mobile-320px@1x.webp","","Landing page - Desktop size", "Landing page - Desktop size" -%}
 </div>

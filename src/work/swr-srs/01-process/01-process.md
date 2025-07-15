@@ -6,7 +6,7 @@ draft: false
 order: 1
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
 I followed a modified version of the **Design Thinking** process. I started with trying to find out as much as I could about the site, who used it and for what reasons, as well as what they did and didn't like about the system. Next I sketched out the logical **content structure** and **information architecture** with our support team. Then I created **wireframes** which I **tested** with users, and revised several times before working up some high-res mockups. These mockups where turned into **prototypes** and also went through several round of testing. From there I developed detailed screens to use as product specs to hand off to the engineers.
 {% hr %}
@@ -29,7 +29,7 @@ I also interviewed members of the engineering team, who understood the data stru
 </div></div>
 {% hr %}
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-3">
 
 ##   Information Architecture
@@ -52,7 +52,7 @@ This was somewhat challenging as the data structure was as shown, right:
 </div></div>
 
 {% hr %}
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-5  mb-4">
 ## Wireframes
 
@@ -74,7 +74,7 @@ Highlighted on the images are discussion points:
 
 {% hr %}
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
     <div class=" col col-sm-12 col-md-6">
         <span class="h2 d-block">&nbsp;</span>
     {%- workimage  "/work/swr-srs/01-process/theme-variants.webp","","Testing out variants of the material theme" -%}
@@ -93,7 +93,7 @@ I also created a walkthrough of how I expected save interactions to work through
 
 {% hr %}
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-3">
 
 ## Prototyping
@@ -102,7 +102,7 @@ Prototyping went through three distinct phases, during the first round, I solidi
 </div>
 </div></div>
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-5  mb-4 mt-0">
     {%- workimage  "/work/swr-srs/01-process/proto-system.png","","system level / administrator user screens" -%}
     {%- workimage  "/work/swr-srs/01-process/proto-master-account.png","","master account level screens" -%}
@@ -116,7 +116,7 @@ Prototyping went through three distinct phases, during the first round, I solidi
 
 {% hr %}
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-6 col-lg-7 mb-3">
 
 ## Testing
@@ -133,7 +133,7 @@ Testing the design happened continuously, although due to time constraints, I on
 </div>
 </div></div>
 {% hr %}
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8  mb-3">
 ## Hand-off & Design Specs
 
@@ -142,7 +142,7 @@ More information was recorded as comments in the InVision project that served as
 </div>
 </div></div>
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-6 mb-4 mt-0">
     {%- workimage  "/work/swr-srs/01-process/proto-global.png","","System level elements" -%}
     {%- workimage  "/work/swr-srs/01-process/save-interactions.png",""," Documenting the login logout interactions for development" -%}

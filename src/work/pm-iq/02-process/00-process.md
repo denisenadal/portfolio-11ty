@@ -6,7 +6,7 @@ draft: false
 order: 0
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
 
 This was one of the first major projects I was a part of at Pointman. At this time, we didn't have a discreet Product or UX team. We had a product owner who worked with our SME's to collect requirements, and he deeply collaborated with us on the Engineering team to design and develop the features.
@@ -22,7 +22,7 @@ If I had the chance to do this project over again— I would have performed a **
 </div></div>
 
 {% hr %}
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
 
 ## Research & Insights
@@ -35,7 +35,7 @@ I also performed **competitive analysis** by looking at how competing products, 
 
 </div>
 </div></div>
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-6 col-md-6">
         <div class="bg-accent p-3 mb-3">
             <h4 class="h6">No easy way to present multiple options for a job</h4>
@@ -58,7 +58,7 @@ I also performed **competitive analysis** by looking at how competing products, 
 </div>
 </div></div>
 {% hr %}
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8">
 ## Ideation & Design
 

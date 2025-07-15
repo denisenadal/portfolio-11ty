@@ -1,7 +1,5 @@
-@import "dn-vars";
-@import "dn-grid";
-@import "dn-spectre-lib";
-// @import "justifiedGallery.min";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Unbounded:wght@200..900&display=swap');
-@import "dn-global";
-@import "dn-main";
+@use "dn-vars";
+@use "dn-grid";
+@use "dn-spectre-lib";
+@use "dn-global";
+@use "dn-main";

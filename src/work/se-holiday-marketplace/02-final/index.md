@@ -34,7 +34,7 @@ images: [{"src": "categorie-375.webp",
      }
     }]
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-10 col-lg-8  mb-4">
 The project was huge success! We had over 1600+ businesses featured in our marketplace, and several tv shows and news sites covered our project. Our partners from the "Real Housewives of Altanta" also helped with promoting the project and driving engagement. 
 
@@ -45,7 +45,7 @@ Through this project we helped generate thousands of dollars of additional reven
 
 
 ## Desktop Screens
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-6 col-sm-6 col-md-6 col-lg-4  mb-4">
 {%- workimage  "/work/se-holiday-marketplace/02-final/home-1280.webp","","Landing page - Desktop size", "$4"  -%}
 </div>

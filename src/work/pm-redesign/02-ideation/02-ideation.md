@@ -4,7 +4,7 @@ draft: false
 columns: "col-sm-12"
 
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-6 mb-4">
 
 After establishing a deep understanding of who we were designing for and understanding the tasks involved, I did a lot of loose sketching on paper to work out my initial ideas. From there I worked up several wireframes, some of which are detailed in the next section

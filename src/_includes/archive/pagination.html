@@ -1,9 +1,7 @@
-<div class="pagination">
-{%- if pagination.href.previous -%}
-	<a href="{{ pagination.href.previous}}">Previous Page</a>
-{%- endif -%}
-{{ pagination.pageNumber | plus: 1}} of {{ pagination.pages | size }}
-{%- if pagination.href.next -%}
-	<a href="{{ pagination.href.next }}">Next Page</a>
-{%- endif -%}
+<div class="pagination container flex-center">
+	<a class="btn btn-link" {%- if pagination.href.previous -%}href="{{ pagination.href.previous}}" {%- else -%}disabled{%- endif -%}><i class="fa fa-chevron-left"></i> Prev</a>
+	<p class="accent-heading m-0">{{ pagination.pageNumber | plus: 1}} of {{ pagination.pages | size }}</p>
+
+	<a class="btn btn-link" {%- if pagination.href.next -%}href="{{ pagination.href.next}}" {%- else -%}disabled{%- endif -%}>Next <i class="fa fa-chevron-right"></i></a>
+
 </div>

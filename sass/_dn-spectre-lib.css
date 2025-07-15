@@ -17,7 +17,7 @@
   --g900: #303742;
   --color-primary: #5755d9;
   --color-primary-contrast: #fff;
-  --color-primary-active: #d955ab;
+  --color-primary-active: rgba(87, 85, 217,.2);
   --color-secondary: #e5e5f9;
   --color-secondary-contrast: #333;
   --color-secondary-active: #edacff;
@@ -38,9 +38,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */ 
   -ms-text-size-adjust: 100%; /* 3 */
 }
-html, body,.custom-page-wrapper {
-  scroll-behavior: smooth;
-}
+
 /* Sections ========================================================================== */
 /** Remove the margin in all browsers (opinionated). */
 body {

@@ -1,5 +1,5 @@
 :root {
-  --white: #FAF9FF;
+  --white: #FAF9FF; 
   --black: #281B5A;
   --dark: #2B3755;
   --ocean: #677BB0;
@@ -8,14 +8,22 @@
   --lavender: #EAE5FF;
   --lemon: #F6FFC2;
   --seafoam: #C2FFE5;
-  --cyan: #51E0FF;
+  --cyan: #05b6dd;
+  --powder-blue:#d3e2fa;
   --lavender-100: #F2EFFF;
+  --lavender-050:#F8F6FF;
   --lemon-100: #FAFFD8;
   --pure-white: #fff;
   --navy : #264f8e;
   --success: #52DEA3;
   --error: #FF5B5B;
   --gray-300: var(--lavender);
+  --purple: rgba(91, 11, 179, 1);
+  --blue:rgb(0, 131, 232);
+  --green: rgb(12, 178, 142);
+  --yellow: rgba(236, 226, 6, 1) ;
+  --orange: rgb(255, 140, 57) ;
+  --pink: rgba(255, 0, 156, 1) ;
   --rainbow-gradient:
       linear-gradient(292deg,
         rgba(91, 11, 179, 1) 0%,
@@ -39,14 +47,17 @@
   --default-animation: all 300ms var(--animation-rate);
   --menu-height: 68px;
   --adjusted-vh: calc(100vh - var(--menu-height));
-  --headings-font: "Roboto Flex", sans-serif;
-  --body-font: "Roboto Flex", Roboto, Inter, Arial, Helvetica, sans-serif;
+  --heading-font: "DM Sans", "Inter", "Poppins",  Inter,Roboto,  Arial, Helvetica, sans-serif;
+  --body-font: "DM Sans", "Inter", "Poppins",  Inter,Roboto,  Arial, Helvetica, sans-serif;
+  --accent-font: "Spline Sans Mono", monospace;
   --display1-weight: 300;
   --display2-weight: 300;
   --display3-weight: 700;
   --display4-weight: 700;
   --gap-units: 1rem;
   --gap: var(--gap-units);
+  --btn-in-animation:all 200ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+  --btn-out-animation:  all 200ms cubic-bezier(0.190, 1.000, 0.220, 1.000)
 }
 
 @mixin rainbow-border {

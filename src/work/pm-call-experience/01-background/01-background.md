@@ -6,7 +6,7 @@ draft: false
 order: 1
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8 col-xl-7 mb-4">
 
 Every app or product or service has a workflow that is critical to its success. For Field Management Software there are two; one each for its 2 primary user groups.  For CSR's the most important task is to be able to efficiently answer a phone call and schedule work. For the technicians in the field, it's efficiently working through the tasks necessary to complete a job.

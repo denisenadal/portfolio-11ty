@@ -4,7 +4,7 @@ draft: false
 columns: "col-sm-12"
 
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8 col-lg-7 mb-4">
 
 For the visual design of this project, I used our systems existing fonts, colors, and button styles, but tried to streamline and simplify the UI. 

@@ -3,7 +3,7 @@ title: "Research"
 draft: false
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8 col-lg-7 mb-4">I spearheaded this project after our new Product Director challenged the UX Team to **test our assumption**s about how our users really do their jobs. Up until this point, we accepted the longstanding assumptions that our organization has built up through the years about what a "job" should look like and what dispatchers and technicians "should" do.
 
 We started this process by **interviewing a former HVAC technician and  a general manage**r for plumbing and HVAC companies. During the interview process we made several discoveries that changed our entire perception of what a "job" was.
@@ -20,7 +20,7 @@ By building out these **detailed personas based on real data** rather that anecd
 </div>
 </div></div>
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-6 col-md-3">
      {%- workimage "/work/pm-redesign/01-research/job-mental-map.webp", "figure text-muted mb-4", "Job mental map", "Job mental map"  -%}
      {%- workimage "/work/pm-redesign/01-research/newjob-workflow.webp", "figure text-muted mb-4", "workflow for creating a job", "Workflow for creating a job"  -%}

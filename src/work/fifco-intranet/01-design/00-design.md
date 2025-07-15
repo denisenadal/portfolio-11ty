@@ -4,7 +4,7 @@ date: 2021-09-01
 draft: false
 columns: "col-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-7 col-md-8">
 Once we had the site map and information architecture planned, I focused on researching and planning out the development process while Joe Rice focused on the visual design. Jenny Keller and myself offered feedback and helped refine the design.
 
@@ -18,7 +18,7 @@ We turned the designs into Frigma prototypes and tested them against several sta
 </div></div>
 {% hr %}
 
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-6 col-sm-4">
 {%- workimage  "/work/fifco-intranet/01-design/Desktop-home-fold.webp","","Homepage above the fold design on desktop", "Homepage above the fold design on desktop"  -%}
 </div>

@@ -7,7 +7,7 @@ columns: "col-sm-12"
 ---
 ### Summary View 
 (Feb 2019 -?)
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 mb-4" >
 
 Our previous release made it easier to look up a person or their home, and schedule work, but it didn't make it much easier to look at information about them. I began exploring options whenever I had a spare moment, beginning to do **user research** by **interviewing our target audience, writing stories and scenarios to test designs,** and **organizing the information architecture** on the page. 

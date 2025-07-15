@@ -5,6 +5,8 @@
     margin: 0 auto;
     width: 100%;
     padding: 1rem;
+    gap:1rem;
+    --gap:1rem;
 }
 @media (min-width: 758px){
     .container{ 
@@ -68,7 +70,26 @@
     gap: calc(var(--gap-units) * 3);
     --gap: calc(var(--gap-units) * 3);
 }
-
+.gap-4 {
+    gap: calc(var(--gap-units) * 4);
+    --gap: calc(var(--gap-units) * 4);
+}
+@media (max-width: 540px){
+    .gap-2, .gap-3, .gap-4 {
+        gap: var(--gap-units);
+        --gap: var(--gap-units);  
+    }
+}
+@media (max-width: 800px){
+    .gap-2 {
+        gap: var(--gap-units);
+        --gap: var(--gap-units);  
+    }
+    .gap-3, .gap-4 {
+        gap: calc(var(--gap-units) * 2);
+        --gap: calc(var(--gap-units) * 2);
+    }
+}
 .col {
     box-sizing: border-box;
     max-width: 100%;
@@ -96,8 +117,16 @@
 
 .flex-column {
     flex-flow: column;
+    display: flex;
 }
-
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 .align-center {
     align-items: center;
 }
@@ -162,9 +191,13 @@
     flex: 1 0 calc(91.66% - var(--gap));
 }
 .col-12{
-    flex: 1 0 calc(100% - var(--gap));
+    flex: 1 0 100%;
 }
 @media (max-width: 419px) {
+    [class^=col-], .col{
+        width:100%;
+        flex: 1 0 100%;
+    }
     [class*=xxs-]{
         width: auto;
     }
@@ -223,7 +256,7 @@
         flex: 1 0 calc(91.66% - var(--gap));
     }
     .xs-12{
-        flex: 1 0 calc(100% - var(--gap));
+        flex: 1 0 100%;
     }
 }
 
@@ -262,7 +295,7 @@
         flex: 1 0 calc(91.66% - var(--gap));
     }
     .sm-12{
-        flex: 1 0 calc(100% - var(--gap));
+        flex: 1 0 100%;
     }
 }
 
@@ -302,7 +335,7 @@
         flex: 1 0 calc(91.66% - var(--gap));
     }
     .md-12{
-        flex: 1 0 calc(100% - var(--gap));
+        flex: 1 0 100%;
     }
 }
 
@@ -342,7 +375,7 @@
         flex: 1 0 calc(91.66% - var(--gap));
     }
     .lg-12{
-        flex: 1 0 calc(100% - var(--gap));
+        flex: 1 0 100%;
     }
 }
 
@@ -382,6 +415,6 @@
         flex: 1 0 calc(91.66% - var(--gap));
     }
     .xl-12{
-        flex: 1 0 calc(100% - var(--gap));
+        flex: 1 0 100%;
     }
 }

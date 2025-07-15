@@ -4,7 +4,7 @@ date: 2021-09-01
 draft: false
 columns: "col-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12  col-md-8 col-lg-6">
 {%- workimage  "/work/fifco-intranet/00-research/intranet-component-planning.jpg","","Information Architecture Schema for the intranet", "Information Architecture Schema for the intranet"  -%}
 </div>

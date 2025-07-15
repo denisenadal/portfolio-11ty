@@ -5,7 +5,7 @@ draft: false
 order: 0
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
 <div class="text-light bg-info mb-4 p-3">
 <h3 class="mb-1 mt-2 font-weight-bolder">Tech Stack</h3>
@@ -23,7 +23,7 @@ columns: "col-sm-12"
 The development process included several stages. First was collecting all the data about the businesses participating. Next was building out a static version of the site as a prototype for final design feedback and review. After that would come adding in the logic layer to display the data about the businesses and implement user interactions.
 </div>
 </div></div>
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-sm-12  col-lg-8 mb-4">
 
 ## Setting up the database

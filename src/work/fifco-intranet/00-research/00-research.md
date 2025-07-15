@@ -6,7 +6,7 @@ columns: "col-12"
 ---
 ## Initial Project Requirements
 Through an interview process with the Talent Team SME, we developed the following project brief:
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
     <div class="col col-12  col-md-8 col-lg-6">
     <div class="p-4 bg-info text-white mb-4">
 
@@ -40,7 +40,7 @@ Through an interview process with the Talent Team SME, we developed the followin
 </div>
 </div></div>
 {% hr %}
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12  col-md-8 col-lg-6">
 
 ## User Research

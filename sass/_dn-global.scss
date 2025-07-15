@@ -1,0 +1,307 @@
+/*===============typogrpahy==============*/
+@font-face {
+    font-family: "Bassy";
+    src: url("../Bassy.woff");
+  }
+h1,
+.h1,
+.display-heading {
+    font-weight: 650;
+    font-family: var(--heading-font),;
+    /* font-size: 1.5rem; */
+}
+
+h2,
+.h2 {
+    font-weight: 500;
+    font-family: var(--body-font);
+    /* font-size: 1rem; */
+}
+
+h3,
+.h3 {
+    font-weight: 600;
+    font-family: var(--body-font);
+    /* font-size: .875rem; */
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    /* font-size: .75rem; */
+    font-weight: 700;
+}
+
+.display-heading-1 {
+    font-size: 48px;
+}
+
+.display-heading-2 {
+    font-size: 40px;
+}
+
+.display-heading-3 {
+    font-size: 36px;
+}
+.accent-heading {
+    font-family: var(--accent-font);
+}
+.heading {
+    font-size: 3rem;
+  }
+/*===============layout=============*/
+
+html,
+body {
+    min-height: 100vh;
+    font-family: var(--body-font);
+    font-weight: 325;
+    letter-spacing: .02em;
+    font-size: 18px;
+}
+
+html,
+body,
+body>* {
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+main {
+    padding-top: var(--menu-height);
+}
+
+main,
+.full-height {
+    min-height: calc(100vh - var(--menu-height));
+}
+
+main > section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*===============nav==============*/
+
+header#main-header {
+    border-bottom: solid 3px var(--color-dark);
+    z-index: 10;
+    background: var(--pure-white);
+}
+
+#logo-link .logo-name {
+    font-size: 30px;
+    line-height: .8;
+    font-family: Bassy;
+    margin: 9px 0 -10px;
+
+    span.subtitle {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: var(--accent-font);
+        position: relative;
+        top: -4px;
+        font-weight: 500;
+    }
+}
+
+nav .btn.btn-link {
+    color: var(--font-color);
+    font-family: var(--accent-font);
+    font-weight: 500;
+    position: relative;
+}
+
+nav .btn.btn-link:hover {
+    box-shadow: none;
+    color: var(--color-primary);
+}
+
+nav .btn.btn-link:after {
+    border-bottom: dotted 4px var(--color-borders);
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 0;
+    left: 50%;
+    transition: all .2s cubic-bezier(0.5, 1, 0.89, 1);
+    display: block;
+    bottom: -2px;
+}
+
+nav .btn.btn-link:hover:after {
+    width: calc(100% - 1em);
+    left: .5em;
+}
+.meta-section.footer{
+    background: white;
+    z-index: 0;
+  }
+/*=============== elements  ==============*/
+.btn {
+    font-weight: 500;
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.btn.btn-primary {
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px 2px var(--purple);
+    color: var(--color-primary-contrast);
+    background: var(--color-primary);
+    border: none;
+    padding: .5rem 1rem;
+}
+
+.btn.btn-primary:focus, 
+.btn.btn-primary:hover, 
+.btn.btn-primary:active{
+    box-shadow: inset 3px 3px 0px 1px rgba(0, 0, 0, .2), 2px 2px 0px 2px var(--color-secondary);
+    transform: translate(2px, 2px);
+}
+.btn.btn-secondary {
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px 2px var(--color-primary);
+    color: var(--color-primary);
+    border: none;
+    padding: .5rem 1rem;
+}
+
+.btn.btn-secondary:focus, 
+.btn.btn-secondary:hover, 
+.btn.btn-secondary:active {
+    box-shadow: inset 3px 3px 0px 1px rgba(0, 0, 0, .2), 2px 2px 0px 2px var(--color-secondary);
+    transform: translate(2px, 2px);
+}
+
+.label {
+    border-radius: 26px;
+    padding: .1rem .4rem;
+    transition: var(--default-animation);
+    border: 1px solid;
+    background: none;
+    position: relative;
+   overflow: hidden;
+}
+
+a.label:hover {
+    text-decoration: none;
+}
+.label::before {
+    content: '▮';
+    font-size: 300px;
+    width: 150%;
+    height: 0%;
+    position: absolute;
+    text-indent: -70px;
+    top: 0;
+    left:0;
+    z-index: 1;
+    line-height: 0;
+    opacity: 0;
+  }
+  a.label:hover::before{
+    opacity: .12;
+    height:100%;
+  }
+  .gallery-item{
+    transition: var(--default-animation) 200ms;
+    border-radius: 17px;
+    border: #EAE5FF6E  solid .1em;
+    overflow: hidden;
+}
+
+.gallery-item.card h3 {
+    font-family: var(--body-font);
+    font-weight: 450;
+    color: var(--dark);
+    line-height: 1.27;
+}
+  .gallery-item:hover {
+    transform: scale(1.1);
+    transition: var(--default-animation) ;
+    position: absolute;
+    z-index: 1;
+  }
+  .gallery-item:hover h3{
+    color: var(--color-primary)
+  }
+.gallery-item .card-image .img-responsive {
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.gallery-item a {
+    text-decoration: none;
+  }
+
+.gallery-item .flex-grow {
+    flex-grow: 1;
+}
+
+.gallery-item .tag-list {
+    display: flex;
+    gap: .3rem;
+    flex-flow: row wrap;
+    margin-top: .5rem;
+    height:0;
+    opacity: 0;
+    transition: var(--default-animation) ;
+}
+.gallery-item:hover .tag-list{
+    height:auto;
+    opacity: 1;
+    transition: var(--default-animation) 250ms;
+  }
+/*===============utilities==============*/
+// 1. Define your list of color names
+$color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cyan', 'powder-blue', 'lavender-100', 'lemon-100', 'pure-white', 'navy' , 'success', 'error', 'gray-300', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink', 'white';
+
+// 2. Loop through the list and generate classes
+@each $color in $color-names {
+  .bg-#{$color} {
+    background: var(--#{$color});
+  }
+  .text-#{$color} {
+    color: var(--#{$color});
+    fill:var(--#{$color});
+  }
+}
+.rainbow {
+    background: var(--rainbow-gradient);
+    border-radius: 0.2rem;
+}
+
+.rainbow-text {
+    background: var(--rainbow-gradient);
+    /* background-size: 100% 30px; */
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.rainbow-text-link:hover {
+    background: var(--rainbow-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rainbow-block-link:hover {
+    background: var(--brand-gradient);
+}
+
+.section-break {
+    border-top: 4px dotted var(--gray-300);
+}

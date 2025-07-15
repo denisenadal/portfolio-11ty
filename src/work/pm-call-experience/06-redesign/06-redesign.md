@@ -54,7 +54,7 @@ images: [{
    }
 }]
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-8 col-lg-7 mb-4">
 ### Full Redesign 
 (Nov, Dec 2019)

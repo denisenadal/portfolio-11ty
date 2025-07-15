@@ -6,7 +6,7 @@ draft: false
 order: 0
 columns: "col-sm-12"
 ---
-<div class="wrapper"><div class="row">
+<div class="container lg"><div class="row">
 <div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
 
 The existing invoicing and quotes system in our app wasn't flexible enough to meet the needs of technicians out in the field. Here are some of the common issues our users experienced:

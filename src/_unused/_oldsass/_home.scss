@@ -126,18 +126,18 @@ section:not(.hero) {
 .stat .num {
   font-size: 40px;
   font-weight: 600;
-  font-family: "Spline Sans Mono";
+  font-family: var(--body-font);
   letter-spacing: -.05em;
 }
 .stat .yr {
   font-weight: 600;
-  font-family: "Spline Sans Mono";
+  font-family: var(--body-font);
   line-height: 1;
 }
 
 .stat .field {
   font-weight: 600;
-  font-family: "Spline Sans Mono";
+  font-family: var(--body-font);
   line-height: 1.2;
   margin-top: 0.25rem;
   word-spacing: -.1rem;
@@ -199,7 +199,7 @@ section:not(.hero) {
 }
 .form-label {
   font-size: 14px;
-  font-family: "Spline Sans Mono";
+  font-family: var(--body-font);
   padding: 0 0 .125rem 0;
 }
 textarea.form-input {
