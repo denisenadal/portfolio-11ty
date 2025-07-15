@@ -2,6 +2,7 @@
 layout: "archive.html"
 type: "tag"
 showPagination: false
+slug: "tag"
 pagination:
   data: collections.allTags 
   size: 1
@@ -10,10 +11,10 @@ eleventyComputed:
   permalink: "/tag/{{t.title| slugify}}/"
   title: "{{t.title}}"
   desc: "{{t.desc}}"
+  color: "{{t.color}}"
 ---
-<div class="row gallery-items">
+
 {%- assign items = collections.allWork | filterByTag: title -%}
 {%- for item in items -%}
     {%- include "archive/gallery-item.html" -%}
 {%- endfor -%}
-</div> 

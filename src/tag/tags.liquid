@@ -3,6 +3,7 @@ pagination:
   data: collections.allTags
   size: 1000
   alias: tag
+slug: tags
 permalink: "/tags/"
 layout: "archive.html"
 title: tags
@@ -12,6 +13,6 @@ showPagination: false
 ---
 {% assign tagsByCount = collections.allTags | sort: "count" | reverse %}
 {%- for tag in tagsByCount -%}
-<a href="/tag/{{tag.title|slugify}}"
-    class="badge font-weight-normal p-1 bg-{{tag.color}}">{{tag.title}} - {{tag.count}}</a>
+<a href="/tag/{{tag.title|slugify}}" class="label bg-{{tag.color}} solid">{{tag.title}} - {{tag.count}}</a>
 {%- endfor -%}
+

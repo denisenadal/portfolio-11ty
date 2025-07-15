@@ -106,3 +106,8 @@
     font-size: 14px;
     opacity: .76;
 }
+/* tags page */
+#tags .archive-list {
+    gap: .5rem;
+    --gap: .5rem;
+ }

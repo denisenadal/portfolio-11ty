@@ -2,7 +2,7 @@ const markdownIt = require("markdown-it");
 const xmlFiltersPlugin = require('eleventy-xml-plugin')
 require('dotenv').config()
 
-const colors = ["magenta","cyan","violet","pink","red","orange","yellow","green","blue","purple","ocean"];
+const colors = ["magenta","cyan","violet", 'blue', 'green', 'orange', 'pink','navy','error', 'dark'];
 let tagBK =[];
 
 module.exports = function (eleventyConfig) {

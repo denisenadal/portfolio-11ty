@@ -193,17 +193,27 @@ nav .btn.btn-link:hover:after {
     position: relative;
    overflow: hidden;
 }
+a.label.solid{
+    color: var(--white);
+    border-color: transparent;
+    padding: .5rem 1.25rem;
+    font-family: var(--accent-font);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
 
 a.label:hover {
     text-decoration: none;
 }
 .label::before {
-    content: '▮';
+    content: '▮▮';
     font-size: 300px;
-    width: 150%;
+    width: 200%;
     height: 0%;
     position: absolute;
     text-indent: -70px;
+    letter-spacing: -150px;
     top: 0;
     left:0;
     z-index: 1;
@@ -213,6 +223,12 @@ a.label:hover {
   a.label:hover::before{
     opacity: .12;
     height:100%;
+  }
+  a.label.solid::before{
+    content: none;
+  }
+  a.label.solid:hover {
+    box-shadow: inset 0 0 1000px 0 rgba(0,0,0,.2);
   }
   .gallery-item{
     transition: var(--default-animation) 200ms;
@@ -228,7 +244,7 @@ a.label:hover {
     line-height: 1.27;
 }
   .gallery-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: var(--default-animation) ;
     position: absolute;
     z-index: 1;
@@ -249,7 +265,9 @@ a.label:hover {
 .gallery-item .flex-grow {
     flex-grow: 1;
 }
-
+.gallery-item .card-body{
+    min-height: 106px;
+}
 .gallery-item .tag-list {
     display: flex;
     gap: .3rem;
