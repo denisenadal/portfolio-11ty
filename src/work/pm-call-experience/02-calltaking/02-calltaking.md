@@ -3,14 +3,14 @@ title: "Solution 1"
 date: 2019-11-30
 draft: false
 order: 2
-columns: "col-sm-12 col-md-8 col-lg-6"
+columns: "col col-12 md-8 lg-6"
 images: [{
     "src": "pm-callTaking-desktop.png",
    "title" : "the new call taking screen guided users through the process of searching for the customer, reviewing their info, and scheduling a new job, however, it didn't offer much flexibility. ",
    "params" : {
        "caption" : true,
        "order": 2,
-        "columns": "col-sm-6 col-md-4 col-lg-4"
+        "columns": "sm-6 md-4 lg-4"
    }
 },{
     "src": "pm-callTaking-scheduler-mobile.jpg",
@@ -18,7 +18,7 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-2"
+        "columns": "sm-6 md-4 lg-2"
    }
 }]
 ---

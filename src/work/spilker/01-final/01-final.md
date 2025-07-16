@@ -3,7 +3,7 @@ title: "The Final Design"
 date: 2020-01-31
 draft: 
 order: 1
-columns: "col-sm-12"
+columns: "col-12"
 images: [{
 "src":"spilker-set.jpg",
 "title":"mockup of website on all screens",
@@ -11,7 +11,7 @@ images: [{
 "params": {
     "caption": true,
     "order": 1,
-    "columns": "col-sm-6"
+    "columns": "sm-6"
     }
 },{
 "src":"spilker-branding.jpg",
@@ -20,7 +20,7 @@ images: [{
 "params": {
     "caption": true,
     "order": 2,
-    "columns": "col-sm-6"
+    "columns": "sm-6"
     }
 }]
 ---

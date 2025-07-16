@@ -3,7 +3,7 @@
             data-title="{{image.title}}">
         <img src="{{section.page.fileSlug}}/{{image.src}}"
              alt="{{image.caption | default: image.title}}"
-             class="figure-img img-fluid">
+             class="figure-img img-responsive">
         {%- if image.caption -%}
         <figcaption class="figure-caption">{{image.caption| default: image.title}}</figcaption>
         {%- endif -%}

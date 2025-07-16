@@ -3,14 +3,14 @@ title: "Overview"
 date: 2019-11-30
 draft: false
 order: 0
-columns: "col-sm-12"
+columns: "col-12"
 images: [{
     "src": "cover-01.webp",
    "title": "early paper prototypes & information architecture",
    "params": {
        "caption": false,
        "order": 1,
-       "columns": "col-sm-6 col-lg-3"
+       "columns": "sm-6 lg-3"
    }
 },{
     "src": "cover-02.webp",
@@ -18,7 +18,7 @@ images: [{
    "params": {
        "caption": false,
        "order": 2,
-        "columns": "col-sm-6 col-lg-3"
+        "columns": "sm-6 lg-3"
    }
 },{
     "src": "cover-03.webp",
@@ -26,7 +26,7 @@ images: [{
    "params": {
        "caption": false,
        "order": 3,
-        "columns": "col-sm-6 col-lg-3"
+        "columns": "sm-6 lg-3"
    }
 },{
     "src": "cover-04.webp",
@@ -34,7 +34,7 @@ images: [{
    "params": {
        "caption": false,
        "order": 4,
-        "columns": "col-sm-6 col-lg-3"
+        "columns": "sm-6 lg-3"
    }
 }]
 ---

@@ -3,11 +3,11 @@ title: "Development Process"
 date: 2020-11-01
 draft: false
 order: 0
-columns: "col-sm-12"
+columns: "col-12"
 ---
-<div class="container lg"><div class="row">
-<div class="col col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-<div class="text-light bg-info mb-4 p-3">
+<div class="container lg"><div class="container gap-1">
+<div class="col col-12 col col-6 md-4 lg-3 mb-3">
+<div class="text-light bg-cyan mb-2 p-3">
 <h3 class="mb-1 mt-2 font-weight-bolder">Tech Stack</h3>
 <ul>
 <li class="mb-1">11ty</li>
@@ -18,13 +18,13 @@ columns: "col-sm-12"
 </ul>
 </div>
 </div>
-<div class="col col-sm-6 col-md-8 col-lg-5 mb-4">
+<div class="col sm-6 md-8 lg-5 mb-2">
 
 The development process included several stages. First was collecting all the data about the businesses participating. Next was building out a static version of the site as a prototype for final design feedback and review. After that would come adding in the logic layer to display the data about the businesses and implement user interactions.
 </div>
 </div></div>
-<div class="container lg"><div class="row">
-<div class="col col-sm-12  col-lg-8 mb-4">
+<div class="container lg"><div class="container gap-1">
+<div class="col col-12  lg-8 mb-2">
 
 ## Setting up the database
 Each of the businesses participating submitted an application form with basic details about their business which the Brand team reviewed for eligibility. The application included links to their business website and up to 5 product pages. I was able to set up a Node.js script that would scrape each of the product pages for open graph tags and save what information it could find (product name, description, image and price). The script saved all the data scraped into a JSON file. 

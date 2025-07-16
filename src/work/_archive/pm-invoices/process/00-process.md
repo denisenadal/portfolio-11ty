@@ -8,7 +8,7 @@ images: [ {"src": "v00invoice01.jpg",
    "params": {
       "caption": true,
       "order": 1,
-      "columns": "col-sm-6 col-md-6 col-lg-3"
+      "columns": "sm-6 md-6 lg-3"
    }
 },
 {"src": "v01design.png",
@@ -16,7 +16,7 @@ images: [ {"src": "v00invoice01.jpg",
    "params": {
        "caption": true,
        "order": 2,
-      "columns": "col-sm-6 col-md-6 col-lg-3"
+      "columns": "sm-6 md-6 lg-3"
    }
 },
 {"src": "v01grid.png",
@@ -24,7 +24,7 @@ images: [ {"src": "v00invoice01.jpg",
    "params": {
        "caption": true,
        "order": 3,
-      "columns": "col-sm-6 col-md-6 col-lg-3 offset-lg-6"
+      "columns": "sm-6 md-6 lg-3 offset-6"
    }
 },
 {"src": "v02final.png",
@@ -32,7 +32,7 @@ images: [ {"src": "v00invoice01.jpg",
    "params": {
        "caption": true,
        "order": 4,
-      "columns": "col-sm-6 col-md-6 col-lg-3"
+      "columns": "sm-6 md-6 lg-3"
    }
 }]
 ---

@@ -3,12 +3,12 @@ title: "The Final Designs"
 date: 2020-01-31
 draft: false
 order: 1
-columns: "col-sm-12 col-lg-6 offset-lg-6"
+columns: "col-12 lg-6 offset-6"
 images: [{"src":"efficiency01.webp",
     "title":"Job Efficiency Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 1
    
      }
@@ -17,7 +17,7 @@ images: [{"src":"efficiency01.webp",
     "title":"Billable Hour Efficiency Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 2
    
      }
@@ -26,7 +26,7 @@ images: [{"src":"efficiency01.webp",
     "title":"Invoicing Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 3
    
      }
@@ -43,7 +43,7 @@ images: [{"src":"efficiency01.webp",
     "title":"Sales Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 4
    
      }

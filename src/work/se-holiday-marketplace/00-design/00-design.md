@@ -3,12 +3,12 @@ title: "Design Process"
 date: 2020-11-01
 draft: false
 order: 0
-columns: "col-sm-12 "
+columns: "col-12 "
 images: [{"src": "wireframes.webp",
     "title":"Initial wireframes",
     "params" : {
         "caption": false,
-        "columns": "col-sm-12 col-md-4 ",
+        "columns": "col-12 md-4 ",
         "order": 1
    
      }
@@ -16,7 +16,7 @@ images: [{"src": "wireframes.webp",
     "title":"Designs for various components",
     "params" : {
         "caption": false,
-        "columns": "col-sm-12 col-md-4 ",
+        "columns": "col-12 md-4 ",
         "order": 2
    
      }
@@ -24,7 +24,7 @@ images: [{"src": "wireframes.webp",
     "title":"Mockups used for collecting feedback",
     "params" : {
         "caption": false,
-              "columns": "col-sm-12 col-md-4 ",
+              "columns": "col-12 md-4 ",
         "order": 3
    
      }

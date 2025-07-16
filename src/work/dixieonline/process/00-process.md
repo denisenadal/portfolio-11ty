@@ -3,7 +3,7 @@ title: "Designs"
 date: 2017-10-31
 draft: false
 order: 0
-columns: "col-sm-12"
+columns: "col-12"
 images: [{
         "src": "01--home-Desktop-HD.jpg",
         "title":"homepage design, desktop size",

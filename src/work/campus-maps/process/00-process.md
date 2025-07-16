@@ -9,7 +9,7 @@ images: [{
     "params" : {
         "caption": true,
                 "order": 0,
-        "columns": "col-6 col-sm-6 col-md-6 col-lg-3"
+        "columns": "col-6 sm-6 md-6 lg-3"
      }
     },{
         "src": "campusmaps-active.png",
@@ -17,14 +17,14 @@ images: [{
     "params" : {
         "caption": true,
                 "order": 0,
-        "columns": "col-6 col-sm-6 col-md-6 col-lg-3"
+        "columns": "col-6 sm-6 md-6 lg-3"
      }
     },{
     "src": "campus-map-mobile01.png",
     "title":"map overview, mobile size",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-6 col-lg-3",
+        "columns": "col-6 sm-6 md-6 lg-3",
                 "order": 0
      }
     }]

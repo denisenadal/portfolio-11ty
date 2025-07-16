@@ -1,29 +1,27 @@
-<div class="image-modal modal overlay-light"
+<aside id="image-modal" class="image-modal modal modal-lg"
      tabindex="-1"
      role="dialog" style="display:none;">
-    <div class="modal-dialog white-bg shadow-lg modal-dialog-scrollable"
-         role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <a href="" class="modal-inner" target="_blank">
-                    <figure>
-                        <img class="modal-image" src="" alt="">
-                        <figcaption> 
-                            <a href=""> Click to View Full-size</a>
-                            <p class="caption"> </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
+     <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container" role="document">
+        <header class="modal-header d-flex align-center">
+            <h5 class="modal-title col mb-0">Modal title</h5>
+            <button type="button"
+                    class="close btn btn-link"
+                    data-dismiss="modal"
+                    aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </header>
+        <div class="modal-body">
+            <a href="" class="modal-inner" target="_blank">
+                <figure>
+                    <img class="modal-image" src="" alt="">
+                    <figcaption class="d-flex gap-1 my-1 text-muted"> 
+                        <p class="col mb-0"> Click to View Full-size</p>
+                        <p class="caption mb-0"> </p>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
     </div>
-</div>
+</aside>

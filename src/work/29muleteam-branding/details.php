@@ -24,7 +24,7 @@ include('../../header.php');
 </section>
 <section id="project-process" class="accent-bar">
 	<div class="container clearfix">
-		<div class="row outdent">
+		<div class="container outdent">
 			<div class="col12x col9s col8m col6l no-vpad  ">
 				<h2 class="h3 "><span class="gd">Design</span> Process</h2>
 				<p  class="gd">I wanted to create a bold design that captured some of the "Old West" nostaglia of the 29 Mule story and frontier mining, while also being modern and forward-thinking.</p>

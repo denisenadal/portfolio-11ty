@@ -4,10 +4,10 @@ name: "background"
 date: 2019-11-30
 draft: false
 order: 1
-columns: "col-sm-12"
+columns: "col-12"
 ---
-<div class="container lg"><div class="row">
-<div class="col col-12 col-sm-12 col-md-8 col-xl-7 mb-4">
+<div class="container lg"><div class="container gap-1">
+<div class="col col-12 col-12 md-8 xl-7 mb-2">
 
 Every app or product or service has a workflow that is critical to its success. For Field Management Software there are two; one each for its 2 primary user groups.  For CSR's the most important task is to be able to efficiently answer a phone call and schedule work. For the technicians in the field, it's efficiently working through the tasks necessary to complete a job.
 
@@ -25,8 +25,8 @@ We also conducted a usability test, tracking how long it took users to complete 
 
 It was clear that we needed to make this process simpler and faster; if we're expecting users to complete this task dozens of times a day, it needs to be a great experience.
 </div>
-<div class="col col-sm-12 col-md-4 col-xl-5 mb-4">
-    {%- workimage "/work/pm-call-experience/01-background/pm-dispatchboard-desktop.png", "figure text-muted mb-4", "screenshot of the dispatch board", "the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work"  -%}
-    {%- workimage "/work/pm-call-experience/01-background/pm-contactproperty-dialog.png", "figure text-muted mb-4", "screenshot of how our app displays information about a person or house.", "how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture."  -%}
+<div class="col col-12 md-4 xl-5 mb-2">
+    {%- workimage "/work/pm-call-experience/01-background/pm-dispatchboard-desktop.png", "figure text-muted mb-2", "screenshot of the dispatch board", "the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work"  -%}
+    {%- workimage "/work/pm-call-experience/01-background/pm-contactproperty-dialog.png", "figure text-muted mb-2", "screenshot of how our app displays information about a person or house.", "how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture."  -%}
 </div>
 </div></div>

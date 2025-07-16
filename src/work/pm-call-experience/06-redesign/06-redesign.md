@@ -3,14 +3,14 @@ title: "Solution 4"
 date: 2019-11-30
 draft: false
 order: 6
-columns: "col-sm-12"
+columns: "col-12"
 images: [{
     "src": "donna-lister-DIS.png",
    "title": "persona sheet",
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 },{
     "src": "cassie-booker-CSR.png",
@@ -18,7 +18,7 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 },{
     "src": "v04screens-scheduler.png",
@@ -26,7 +26,7 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 },{
     "src": "v04screens-search.png",
@@ -34,7 +34,7 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 },{
     "src": "v05desktopcontact.png",
@@ -42,7 +42,7 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 },{
     "src": "v05desktopjob.png",
@@ -50,12 +50,12 @@ images: [{
    "params": {
        "caption": true,
        "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
    }
 }]
 ---
-<div class="container lg"><div class="row">
-<div class="col col-12 col-sm-12 col-md-8 col-lg-7 mb-4">
+<div class="container lg"><div class="container gap-1">
+<div class="col col-12 col-12 md-8 lg-7 mb-2">
 ### Full Redesign 
 (Nov, Dec 2019)
 
@@ -66,6 +66,6 @@ We never implemented this redesign as we ran out of runway.
 You can read the **[full case study]( /work/pm-redesign/)**.
 </div>
 <div class="col">
-    {%- workimage "/work/pm-call-experience/06-redesign/all-workflows.jpg", "figure text-muted mb-4", "photo documenting task analysis of various target user's work flows", "documenting task analysis of various target user's work flows"  -%}
+    {%- workimage "/work/pm-call-experience/06-redesign/all-workflows.jpg", "figure text-muted mb-2", "photo documenting task analysis of various target user's work flows", "documenting task analysis of various target user's work flows"  -%}
 </div>
 </div></div>

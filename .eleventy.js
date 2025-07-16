@@ -80,9 +80,9 @@ module.exports = function (eleventyConfig) {
           }
           tags.push({
             title: itemsTag,
-            desc: `Things tagged with ${itemsTag}`,
+            desc: `Things tagged with <a href="#" class="archive-title-link d-inline-block">${itemsTag}</a>`,
             rawInput:  `Things tagged with ${itemsTag}`,
-            content:  `<p>Things tagged with ${itemsTag}</p>`,
+            content:  '',
             count: 1,
             color: colors[i]
           })
@@ -113,14 +113,15 @@ module.exports = function (eleventyConfig) {
     return `<hr class="content-divider clear-both">`
   });
   eleventyConfig.addShortcode("workimage", function (src, classes, alt, caption,) {
-    let classStr = "class='image-modal-link d-block'"
+    let classStr = "class='image-modal-link d-block "
     classStr += classes ? classes : "";
+    classStr += "'"
     let captionStr = '';
     if (caption) {
       captionStr = "<figcaption>" + caption + "</figcaption>";
     }
     return `<a href='${src}' ${classStr}>
-    <figure class="workimg-figure">
+    <figure class="work-img-figure">
         <img src='${src}'
              alt='${alt}' />
        ${captionStr}
@@ -189,6 +190,7 @@ module.exports = function (eleventyConfig) {
       "html",
       "liquid",
       "jpg",
+      "gif",
       "png",
       "webp",
       "svg",

@@ -3,34 +3,34 @@ title: The Final Design
 draft: false
 date: 2018-10-31
 order: 1
-columns: "col-sm-12 col-md-12 col-lg-6 offset-lg-6"
+columns: "col-12 md-12 lg-6 offset-6"
 images: [{
     "src": "quote/01-Blank.png",
    "title": "A tech starts a new quote",
    "params": {
        "caption": true,
-                       "order": 1
+        "order": 1
    }
 },{
     "src": "quote/02-AddItems.png",
    "title": "She then adds work items to the quote",
    "params": {
        "caption": true,
-                       "order": 1
+        "order": 1
    }
 },{
     "src": "quote/03-Edited.png",
    "title": "The customized quote",
    "params": {
        "caption": true,
-                       "order": 1
+        "order": 1
    }
 },{
     "src": "quote/04-SelectQuotes.png",
    "title": "She can make multiple quotes and choose which to present to the customer",
    "params": {
        "caption": true,
-              "order": 1
+        "order": 1
    }
 },{
     "src": "quote/05-Present.png",
@@ -44,7 +44,7 @@ images: [{
    "title": "After the customer accepts the quote, work begins",
    "params": {
        "caption": true,
-              "order": 1
+        "order": 1
    }
 },{
     "src": "quote/08-Completed Work.png",
@@ -70,4 +70,4 @@ images: [{
 }]
 ---
 This project was never finished, and below are some of the screens form the last round of designs.
-They follow the scenario of a technician in the field preparing a quote and invoice for a customer.
+The designs follow the scenario of a technician in the field preparing a quote and invoice for a customer.

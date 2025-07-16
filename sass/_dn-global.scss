@@ -32,7 +32,7 @@ h5,
 h6,
 .h6 {
     /* font-size: .75rem; */
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .display-heading-1 {
@@ -49,6 +49,7 @@ h6,
 .accent-heading {
     font-family: var(--accent-font);
 }
+
 .heading {
     font-size: 3rem;
   }
@@ -81,11 +82,15 @@ main,
 .full-height {
     min-height: calc(100vh - var(--menu-height));
 }
-
 main > section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+main.home > section {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
 figure {
     margin: 0;
     padding: 0;
@@ -104,6 +109,8 @@ header#main-header {
     line-height: .8;
     font-family: Bassy;
     margin: 9px 0 -10px;
+    text-shadow: 2px 1px 1px var(--seafoam);
+    
 
     span.subtitle {
         font-size: 16px;
@@ -185,7 +192,7 @@ nav .btn.btn-link:hover:after {
 }
 
 .label {
-    border-radius: 26px;
+    border-radius: var(--default-radius);
     padding: .1rem .4rem;
     transition: var(--default-animation);
     border: 1px solid;
@@ -230,9 +237,12 @@ a.label:hover {
   a.label.solid:hover {
     box-shadow: inset 0 0 1000px 0 rgba(0,0,0,.2);
   }
+  .gallery-col {
+    min-height: 330px;
+  }
   .gallery-item{
     transition: var(--default-animation) 200ms;
-    border-radius: 17px;
+    border-radius: var(--default-radius);
     border: #EAE5FF6E  solid .1em;
     overflow: hidden;
 }
@@ -267,12 +277,20 @@ a.label:hover {
 }
 .gallery-item .card-body{
     min-height: 106px;
+    padding: 0;
 }
+.gallery-item  .card-body >* {
+    padding: .8rem;
+
+    &.tag-list{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+  }
 .gallery-item .tag-list {
     display: flex;
     gap: .3rem;
     flex-flow: row wrap;
-    margin-top: .5rem;
     height:0;
     opacity: 0;
     transition: var(--default-animation) ;
@@ -284,7 +302,7 @@ a.label:hover {
   }
 /*===============utilities==============*/
 // 1. Define your list of color names
-$color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cyan', 'powder-blue', 'lavender-100', 'lemon-100', 'pure-white', 'navy' , 'success', 'error', 'gray-300', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink', 'white';
+$color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cyan', 'powder-blue', 'lavender-100', 'lemon-100', 'pure-white', 'navy' , 'success', 'error', 'muted', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink', 'white';
 
 // 2. Loop through the list and generate classes
 @each $color in $color-names {
@@ -296,6 +314,7 @@ $color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cya
     fill:var(--#{$color});
   }
 }
+
 .rainbow {
     background: var(--rainbow-gradient);
     border-radius: 0.2rem;

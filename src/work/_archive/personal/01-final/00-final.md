@@ -2,34 +2,34 @@
 title: "The Final Design"
 date: 2020-01-31
 draft: false
-columns: "col-sm-12"
+columns: "col-12"
 images: [{"src":"personal-hd.jpg",
     "title":"Personal Site on HD Screens",
     "params" : {
         "caption": true,
                 "order": 1,
-        "columns": "col-sm-3"
+        "columns": "sm-3"
      }
     }, {"src":"personal-sd.jpg",
     "title":"Personal Site on small Screens",
     "params" : {
         "caption": true,
                 "order": 2,
-        "columns": "col-sm-3"
+        "columns": "sm-3"
      }
     },{"src":"personal-tablet.jpg",
     "title":"Personal Site on Tablets",
     "params" : {
         "caption": true,
                 "order": 3,
-        "columns": "col-sm-3"
+        "columns": "sm-3"
      }
     }, {"src":"personal-mobile.jpg",
     "title":"Personal Site on Mobile",
     "params" : {
         "caption": true,
                 "order": 4,
-        "columns": "col-sm-3"
+        "columns": "sm-3"
      }
     }]
 ---

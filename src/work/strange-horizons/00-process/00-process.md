@@ -3,14 +3,14 @@ title: "The Design Process"
 date: 2017-10-31
 draft: false
 order: 0
-columns: "col-sm-12"
+columns: "col-12"
 images: [{
     "title":"Desktop Thumbnail",
     "src": "thumbs-desktop.gif",
     "params": {
         "caption": true,
         "order": 1,
-        "columns": "col-6 col-sm-3 col-lg-2"
+        "columns": "col-6 sm-3 lg-2"
      }
 },{
     "title":"Tablet Thumbnail",
@@ -18,7 +18,7 @@ images: [{
     "params": {
         "caption": true,
         "order": 2,
-        "columns": "col-4 col-sm-3 col-lg-2"
+        "columns": "col-4 sm-3 lg-2"
      }
 },{
     "title":"Mobile Thumbnail",
@@ -26,7 +26,7 @@ images: [{
     "params": {
         "caption": true,
         "order": 3,
-        "columns": "col-4 col-sm-3 col-lg-2"
+        "columns": "col-4 sm-3 lg-2"
      }
 },{
     "title":"Desktop Comp",
@@ -34,7 +34,7 @@ images: [{
     "params": { 
         "caption": true,
         "order": 6,
-        "columns": "col-6 col-sm-6 col-lg-4"
+        "columns": "col-6 sm-6 lg-4"
     }
 },{
     "title":"Tablet Comp",
@@ -42,7 +42,7 @@ images: [{
     "params": {
         "caption": true,
         "order": 5,
-        "columns": "col-6 col-sm-6 col-lg-4"
+        "columns": "col-6 sm-6 lg-4"
      }
 },{
     "title":"Mobile Comp",
@@ -50,7 +50,7 @@ images: [{
     "params": { 
         "caption": true,
         "order": 4,
-        "columns": "col-6 col-sm-3 col-lg-2"
+        "columns": "col-6 sm-3 lg-2"
     }
 }]
 ---

@@ -90,7 +90,8 @@
         --gap: calc(var(--gap-units) * 2);
     }
 }
-.col {
+.col,
+[class^=col-] {
     box-sizing: border-box;
     max-width: 100%;
     flex: 1 1 0%;
@@ -159,40 +160,86 @@
 }
 .col-1{
     flex: 1 0 calc(12.5% - var(--gap));
+    max-width: calc(12.5% - 20px)
 }
 .col-2{
     flex: 1 0 calc(16.66% - var(--gap));
+    max-width: calc(16.66% - 20px)
 }
 .col-3{
     flex: 1 0 calc(25% - var(--gap));
+    max-width: calc(25% - 20px)
 }
 .col-4{
     flex: 1 0 calc(33.333% - var(--gap));
+    max-width: calc(33.333% - 20px)
 }
 .col-5{
     flex: 1 0 calc(41.66% - var(--gap));
+    max-width: calc(41.66% - 20px)
 }
 .col-6{
     flex: 1 0 calc(50% - var(--gap));
+    max-width: calc(50% - 20px)
 }
 .col-7{
     flex: 1 0 calc(58.33% - var(--gap));
+    max-width: calc(58.33% - 20px)
 }
 .col-8{
     flex: 1 0 calc(66.66% - var(--gap));
+    max-width: calc(66.66% - 20px)
 }
 .col-9{
     flex: 1 0 calc(75% - var(--gap));
+     max-width: calc(75% - 20px)
 }
 .col-10{
     flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
 }
 .col-11{
     flex: 1 0 calc(91.66% - var(--gap));
+    max-width: calc(91.66% - 20px)
 }
 .col-12{
     flex: 1 0 100%;
 }
+
+.offset-1{
+    margin-left: calc(12.5% - var(--gap));
+}
+.offset-2{
+    margin-left: calc(16.66% - var(--gap));
+}
+.offset-3{
+    margin-left: calc(25% - var(--gap));
+}
+.offset-4{
+    margin-left: calc(33.333% - var(--gap));
+}
+.offset-5{
+    margin-left: calc(41.66% - var(--gap));
+}
+.offset-6{
+    margin-left: calc(50% - var(--gap));
+}
+.offset-7{
+    margin-left: calc(58.33% - var(--gap));
+}
+.offset-8{
+    margin-left: calc(66.66% - var(--gap));
+}
+.offset-9{
+    margin-left: calc(75% - var(--gap));
+}
+.offset-10{
+    margin-left: calc(83.33% - var(--gap));
+}
+.offset-11{
+    margin-left: calc(91.66% - var(--gap));
+}
+
 @media (max-width: 419px) {
     [class^=col-], .col{
         width:100%;
@@ -203,18 +250,23 @@
     }
     .xxs-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .xxs-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .xxs-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .xxs-8{
         flex: 1 0 calc(66.6% - var(--gap));
+        max-width: calc(66.6% - 20px)
     }
     .xxs-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
 }
 
@@ -224,36 +276,47 @@
     }
     .xs-1{
         flex: 1 0 calc(12.5% - var(--gap));
+        max-width: calc(12.5% - 20px)
     }
     .xs-2{
         flex: 1 0 calc(16.66% - var(--gap));
+        max-width: calc(16.66% - 20px)
     }
     .xs-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .xs-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .xs-5{
         flex: 1 0 calc(41.66% - var(--gap));
+        max-width: calc(41.66% - 20px)
     }
     .xs-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .xs-7{
         flex: 1 0 calc(58.33% - var(--gap));
+        max-width: calc(58.33% - 20px)
     }
     .xs-8{
         flex: 1 0 calc(66.66% - var(--gap));
+        max-width: calc(66.66% - 20px)
     }
     .xs-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
     .xs-10{
         flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
     }
     .xs-11{
         flex: 1 0 calc(91.66% - var(--gap));
+        max-width: calc(91.66% - 20px)
     }
     .xs-12{
         flex: 1 0 100%;
@@ -263,36 +326,47 @@
 @media (min-width: 758px) {
     .sm-1{
         flex: 1 0 calc(12.5% - var(--gap));
+        max-width: calc(12.5% - 20px)
     }
     .sm-2{
         flex: 1 0 calc(16.66% - var(--gap));
+        max-width: calc(16.66% - 20px)
     }
     .sm-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .sm-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .sm-5{
         flex: 1 0 calc(41.66% - var(--gap));
+        max-width: calc(41.66% - 20px)
     }
     .sm-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .sm-7{
         flex: 1 0 calc(58.33% - var(--gap));
+        max-width: calc(58.33% - 20px)
     }
     .sm-8{
         flex: 1 0 calc(66.66% - var(--gap));
+        max-width: calc(66.66% - 20px)
     }
     .sm-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
     .sm-10{
         flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
     }
     .sm-11{
         flex: 1 0 calc(91.66% - var(--gap));
+        max-width: calc(91.66% - 20px)
     }
     .sm-12{
         flex: 1 0 100%;
@@ -303,36 +377,47 @@
 
     .md-1{
         flex: 1 0 calc(12.5% - var(--gap));
+        max-width: calc(12.5% - 20px)
     }
     .md-2{
         flex: 1 0 calc(16.66% - var(--gap));
+        max-width: calc(16.66% - 20px)
     }
     .md-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .md-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .md-5{
         flex: 1 0 calc(41.66% - var(--gap));
+        max-width: calc(41.66% - 20px)
     }
     .md-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .md-7{
         flex: 1 0 calc(58.33% - var(--gap));
+        max-width: calc(58.33% - 20px)
     }
     .md-8{
         flex: 1 0 calc(66.66% - var(--gap));
+        max-width: calc(66.66% - 20px)
     }
     .md-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
     .md-10{
         flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
     }
     .md-11{
         flex: 1 0 calc(91.66% - var(--gap));
+        max-width: calc(91.66% - 20px)
     }
     .md-12{
         flex: 1 0 100%;
@@ -343,36 +428,47 @@
 
     .lg-1{
         flex: 1 0 calc(12.5% - var(--gap));
+        max-width: calc(12.5% - 20px)
     }
     .lg-2{
         flex: 1 0 calc(16.66% - var(--gap));
+        max-width: calc(16.66% - 20px)
     }
     .lg-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .lg-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .lg-5{
         flex: 1 0 calc(41.66% - var(--gap));
+        max-width: calc(41.66% - 20px)
     }
     .lg-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .lg-7{
         flex: 1 0 calc(58.33% - var(--gap));
+        max-width: calc(58.33% - 20px)
     }
     .lg-8{
         flex: 1 0 calc(66.66% - var(--gap));
+        max-width: calc(66.66% - 20px)
     }
     .lg-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
     .lg-10{
         flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
     }
     .lg-11{
         flex: 1 0 calc(91.66% - var(--gap));
+        max-width: calc(91.66% - 20px)
     }
     .lg-12{
         flex: 1 0 100%;
@@ -383,36 +479,47 @@
 
     .xl-1{
         flex: 1 0 calc(12.5% - var(--gap));
+        max-width: calc(12.5% - 20px)
     }
     .xl-2{
         flex: 1 0 calc(16.66% - var(--gap));
+        max-width: calc(16.66% - 20px)
     }
     .xl-3{
         flex: 1 0 calc(25% - var(--gap));
+        max-width: calc(25% - 20px)
     }
     .xl-4{
         flex: 1 0 calc(33.333% - var(--gap));
+        max-width: calc(33.333% - 20px)
     }
     .xl-5{
         flex: 1 0 calc(41.66% - var(--gap));
+        max-width: calc(41.66% - 20px)
     }
     .xl-6{
         flex: 1 0 calc(50% - var(--gap));
+        max-width: calc(50% - 20px)
     }
     .xl-7{
         flex: 1 0 calc(58.33% - var(--gap));
+        max-width: calc(58.33% - 20px)
     }
     .xl-8{
         flex: 1 0 calc(66.66% - var(--gap));
+        max-width: calc(66.66% - 20px)
     }
     .xl-9{
         flex: 1 0 calc(75% - var(--gap));
+        max-width: calc(75% - 20px)
     }
     .xl-10{
         flex: 1 0 calc(83.33% - var(--gap));
+        max-width: calc(83.33% - 20px)
     }
     .xl-11{
         flex: 1 0 calc(91.66% - var(--gap));
+        max-width: calc(91.66% - 20px)
     }
     .xl-12{
         flex: 1 0 100%;

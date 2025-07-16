@@ -3,7 +3,7 @@ title: "Outcomes"
 date: 2019-11-30
 draft: false
 order: 7
-columns: "col-sm-12 col-md-8 col-lg-7"
+columns: "col-12 md-8 lg-7"
 ---
 ### Results
 

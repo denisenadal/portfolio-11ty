@@ -1386,7 +1386,7 @@ code {
   width: 100%;
 }
 
-.img-responsive {
+.img-responsive, img {
   display: block;
   height: auto;
   max-width: 100%;
@@ -1849,10 +1849,6 @@ a.navbar-brand img {
   padding: 0 .4rem;
 }
 
-.modal.modal-lg .modal-overlay {
-  background: var(--color-background);
-}
-
 .modal.modal-lg .modal-container {
   box-shadow: none;
   max-width: 960px;
@@ -1866,7 +1862,7 @@ a.navbar-brand img {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-height: 75vh;
+  max-height: 95vh;
   max-width: 640px;
   padding: 0 .8rem;
   width: 100%;

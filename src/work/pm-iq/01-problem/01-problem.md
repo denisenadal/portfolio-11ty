@@ -4,14 +4,14 @@ name: "problem"
 date: 2017-10-31
 draft: false
 order: 0
-columns: "col-sm-12"
+columns: "col-12"
 ---
-<div class="container lg"><div class="row">
-<div class="col col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8 mb-4">
+<div class="container lg"><div class="container gap-1">
+<div class="col col-12 col-12 md-6 lg-7 xl-8 mb-2">
 
 The existing invoicing and quotes system in our app wasn't flexible enough to meet the needs of technicians out in the field. Here are some of the common issues our users experienced:
 
-    <div class="text-light bg-info mb-4 p-3">
+    <div class="text-light bg-cyan mb-2 p-3">
         <h3>Issues</h3>
         <ul>
             <li>There was no way to copy a quote from one job to another</li>

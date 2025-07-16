@@ -4,11 +4,11 @@
                 <img src="{{ item.data.page.url}}{{ item.data.image.name }}" class="img-responsive "
                       alt="Cover photo for the '{{ item.data.title}}' project" />
             </a>
-            <div class="card-body container gap-0">
-                <small  class="col text-muted "> {{ item.data.subtitle }}</small>
+            <div class="card-body">
+                <a href="{{ item.data.page.url}}" class=" container gap-0 col-12">
+                    <small  class="col text-muted "> {{ item.data.subtitle }}</small>
                 <small  class=" col-auto text-muted text-right"> {{ item.date | ISODate | date: "%b %Y"}}</small>
-                <a href="{{ item.data.page.url}}" class="flex-grow col-12">
-                    <h3 class="h5 m-0">{{ item.data.title}}</h3>
+                    <h3 class="h5 m-0 col-12">{{ item.data.title}}</h3>
                 </a>
                 <div class=" tag-list col-12 text-tiny">
                     {%- for t in item.data.tags -%}

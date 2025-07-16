@@ -5,6 +5,10 @@ layout: base.html
     <section class="meta-section">
         <div class="container lg justify-center">
             <div class="section-header flex-column flex-center text-center">
+                {%- if type and type == "tag" -%}
+                    {%- assign title = desc -%}
+                    {%- assign desc = "" -%}
+                {%- endif -%}
                 {%- if title -%}<h1 {% if color %}class="text-{{color}}"{%- endif-%}>{{ title }}</h1>{%- endif -%}
                 {%- if desc -%}<p class="subtitle">{{ desc }}</p>{%- endif -%}
             </div>

@@ -4,14 +4,14 @@ name: "background"
 date: 2019-11-30
 draft: false
 order: 0
-columns: "col-sm-6 col-lg-7"
+columns: "sm-6 lg-7"
 images: [{
     "src": "IA-OLD.png",
    "title": "original UI",
    "params": {
        "caption": true,
        "order": 1,
-       "columns": "col-sm-6 col-lg-5"
+       "columns": "sm-6 lg-5"
    }
 }]
 ---

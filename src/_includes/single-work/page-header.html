@@ -1,20 +1,17 @@
-<section id="work-header"
-         class="meta-section">
-    <div class="row container lg">
-        <div id="work-header-left"
-             class="col-md-7 mt-3">
+<section id="work-header" class="meta-section">
+    <div class="container lg gap-2"> 
+        <div id="work-header-left" class="col col-12 md-7 mt-3">
             {%- if image -%}
-            <img src="{{image.name}}"
-                 alt="{{image.alt}}"
-                 class="shadow-sm border">
+            <img src="{{image.name}}" alt="{{image.alt}}" class="img-responsive">
             {%- endif -%}
         </div>
         <div id="work-header-right"
-             class="col-md-5 d-flex flex-column flex-end justify-content-end">
-            <h2 id="work-title"
-                class="h2 m-0">{{title}}</h2>
-            <p class="h4 mt-0">{{subtitle}}</p>
-            <p class="h6 mb-2 mt-3 text-gray"> {{date_range}}</p>
+             class="col col-12 md-5 d-flex flex-column justify-end">
+            <h2 id="work-title" class="h2 m-0">{{title}}</h2>
+            <div class="info-row container text-muted mt-2 mb-1">
+                <p class="h5 m-0 col">{{subtitle}}</p>
+                <p class="h5 m-0 col-auto"> {{date_range}}</p>
+            </div>
             <p class="m-0 text-muted">
                 {{content}}
             </p>

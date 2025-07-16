@@ -2,13 +2,13 @@
 title: "Project Outcome"
 date: 2020-01-31
 draft: false
-columns: "col-sm-12 col-md-12 col-lg-6"
+columns: "col-12 md-12 lg-6"
 images: [{"src":"marketneed.png",
     "title":"Stats about the market",
     "params" : {
         "caption": false,
                 "order": 1,
-        "columns": "col-sm-6 col-md-6 col-lg-3"
+        "columns": "sm-6 md-6 lg-3"
      }
     },
     {"src":"marketsize.png",
@@ -16,7 +16,7 @@ images: [{"src":"marketneed.png",
     "params" : {
         "caption": false,
                 "order": 2,
-        "columns": "col-sm-6 col-md-6 col-lg-3"
+        "columns": "sm-6 md-6 lg-3"
      }
     },
     {"src":"productoffering.png",
@@ -24,7 +24,7 @@ images: [{"src":"marketneed.png",
     "params" : {
         "caption": false,
                 "order": 3,
-        "columns": "col-sm-12 col-md-12 col-lg-6"
+        "columns": "col-12 md-12 lg-6"
      }
     }]
 ---

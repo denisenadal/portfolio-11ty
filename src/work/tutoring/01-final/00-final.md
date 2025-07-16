@@ -9,7 +9,7 @@ images: [{
     "params":{
         "caption":true,
         "order":0,
-         "columns": "col-sm-6 col-md-6 col-lg-3"
+         "columns": "sm-6 md-6 lg-3"
     }
 },{
     "src": "tutoring-mobile.png",
@@ -17,7 +17,7 @@ images: [{
     "params":{
         "caption":true,
         "order":0,
-        "columns": "col-sm-6 col-md-6 col-lg-3"
+        "columns": "sm-6 md-6 lg-3"
     }
 }]
 ---

@@ -3,12 +3,12 @@ title: "The Design Process"
 date: 2017-10-31
 draft: false
 order: 0
-columns: "col-sm-12 col-lg-6 "
+columns: "col-12 lg-6 "
 images: [{"src": "efficiency-00v1.webp",
     "title":"Job Efficiency Report, version 1",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 1
    
      }
@@ -16,7 +16,7 @@ images: [{"src": "efficiency-00v1.webp",
     "title":"Job Efficiency Report, version 2",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 2
    
      }
@@ -24,7 +24,7 @@ images: [{"src": "efficiency-00v1.webp",
     "title":"Job Efficiency Report, version 3",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 3
    
      }
@@ -33,7 +33,7 @@ images: [{"src": "efficiency-00v1.webp",
     "title":"Lead Source Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 4
    
      }
@@ -42,7 +42,7 @@ images: [{"src": "efficiency-00v1.webp",
     "title":"Job Scorecard Report",
     "params" : {
         "caption": true,
-        "columns": "col-6 col-sm-6 col-md-4 ",
+        "columns": "col-6 sm-6 md-4 ",
                 "order": 5
    
      }

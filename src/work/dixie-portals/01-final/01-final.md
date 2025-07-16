@@ -3,13 +3,13 @@ title: "The Results"
 date: 2020-01-31
 draft: 
 order: 2
-columns: "col-sm-12 "
+columns: "col-12 "
 images: [{
     "src": "alumniPortalFinal.webp",
     "title":"Alumni Portal, Desktop View",
     "params":{
         "caption":true,
-        "columns":  "col-sm-4 ",
+        "columns":  "sm-4 ",
         "order":0
     }
 },{
@@ -17,7 +17,7 @@ images: [{
     "title":"Student Portal, Desktop View",
     "params":{
         "caption":true,
-        "columns":  "col-sm-4 ",
+        "columns":  "sm-4 ",
         "order":0
     }
 },{
@@ -25,7 +25,7 @@ images: [{
     "title":"Employee Portal, Desktop View",
     "params":{
         "caption":true,
-        "columns":  "col-sm-4 ",
+        "columns":  "sm-4 ",
         "order": 12
     }
 }]

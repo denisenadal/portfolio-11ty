@@ -3,13 +3,13 @@ title: "The Design Process"
 date: 2017-10-31
 draft: false
 order: 0
-columns: "col-sm-12 col-md-8 col-lg-6"
+columns: "col col-12 md-8 lg-6"
 images: [{"src": "mockup-contact.jpg",
     "title":"Mockup of the Contact page ",
     "params" : {
         "caption": true,
                 "order": 3,
-        "columns": "col-sm-6  col-md-4 col-lg-3"
+        "columns": "col col-6 md-8 lg-6"
      }
     },
     {"src": "mockup-about.jpg",
@@ -17,7 +17,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 2,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
      }
     },
    {"src": "mockup-skills.jpg",
@@ -25,7 +25,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 4,
-        "columns": "col-sm-6 col-md-4 col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
      }
     },
     {"src": "mockup-gallery.jpg",
@@ -33,7 +33,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 6,
-        "columns": "col-sm-6  col-md-4  col-lg-3"
+        "columns": "col col-6 md-4 lg-3"
      }
     },
     {"src": "mockup-exp01.jpg",
@@ -41,7 +41,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 5,
-        "columns": "col-sm-6 col-md-4 col-xl-3"
+        "columns": "col col-6 md-4 xl-3"
      }
     },
     {"src": "mockup-work02.jpg",
@@ -49,7 +49,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 7,
-        "columns": "col-sm-6 col-md-4 col-xl-3"
+        "columns": "col col-6 md-4 xl-3"
      }
     },
     {"src": "mockup-work03.jpg",
@@ -57,7 +57,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 8,
-        "columns": "col-sm-6 col-md-4  col-xl-3"
+        "columns": "col col-6 md-4 xl-3"
      }
     },
     {"src": "mockup-work07.jpg",
@@ -65,7 +65,7 @@ images: [{"src": "mockup-contact.jpg",
     "params" : {
         "caption": true,
                 "order": 9,
-        "columns": "col-sm-6 col-md-4  col-xl-3"
+        "columns": "col col-6 md-4 xl-3"
      }
     }]
 ---
