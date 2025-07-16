@@ -7,51 +7,39 @@ columns: "col-12"
 images: [{
     "src": "donna-lister-DIS.png",
    "title": "persona sheet",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 },{
     "src": "cassie-booker-CSR.png",
    "title": "persona sheet",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 },{
     "src": "v04screens-scheduler.png",
    "title": "low fidelity wireframe",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 },{
     "src": "v04screens-search.png",
    "title": "low fidelity wireframe",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 },{
     "src": "v05desktopcontact.png",
    "title": "high fidelity mockups",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 },{
     "src": "v05desktopjob.png",
    "title": "high fidelity mockups",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "col col-6 md-4 lg-3"
-   }
+   "caption": true,
+    "columns":  "col col-6 md-4 lg-3",
+    "order": 4
 }]
 ---
 <div class="container lg"><div class="container gap-1">

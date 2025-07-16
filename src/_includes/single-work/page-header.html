@@ -5,31 +5,28 @@
             <img src="{{image.name}}" alt="{{image.alt}}" class="img-responsive">
             {%- endif -%}
         </div>
-        <div id="work-header-right"
-             class="col col-12 md-5 d-flex flex-column justify-end">
+        <div id="work-header-right" class="col col-12 md-5 d-flex flex-column justify-end">
             <h2 id="work-title" class="h2 m-0">{{title}}</h2>
             <div class="info-row container text-muted mt-2 mb-1">
                 <p class="h5 m-0 col">{{subtitle}}</p>
                 <p class="h5 m-0 col-auto"> {{date_range}}</p>
             </div>
-            <p class="m-0 text-muted">
+            <div class="intro-content">
                 {{content}}
-            </p>
+            </div>
+        </div>
+        <div class="work-header-bottom container col-12 gap-1">
             {%- if team  or org or role -%}
-            <hr>
             <dl>
                 {%- if role -%}
-                <dt>Role</dt>
-                <dd class="mb-4">{{role}}</dd>
+                <dt class="text-muted">Role</dt>
+                <dd class="mt-0">{{role}}</dd>
                 {%- endif -%}
-                {%- if team -%}
-                <dt>Team</dt>
-                <dd class="mb-4">{{team}}</dd>
+                {%- if team or org -%}
+                <dt class="text-muted">Team {% if org %} ◊  {{org}}{% endif %} </dt>
+                <dd class="mt-0">{{team}}</dd>
                 {%- endif -%}
-                {%- if org -%}
-                <dt>Org</dt>
-                <dd class="mb-4">{{org}}</dd>
-                {%- endif -%}
+                
             </dl>
             {%- endif -%}
         </div>

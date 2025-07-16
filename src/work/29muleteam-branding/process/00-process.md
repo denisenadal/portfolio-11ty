@@ -6,44 +6,29 @@ order: 0
 images: [{
         "src": "business-system_letterhead.jpg",
     "title":"Letterhead",
-    "params" : {
-        "caption": true,
-                "order": 0
-   
-     }
+    "caption": true,
+    "order": 0
     },
     {
         "src": "BusinessSystem_businessCardBack.jpg",
     "title":"Business Card Back",
-    "params" : {
-        "caption": true,
-                "order": 1
-   
-     }
+    "caption": true,
+    "order": 1
     },{
         "src": "BusinessSystem_businessCardFront.jpg",
     "title":"Business Card Front",
-    "params" : {
-        "caption": true,
-                "order": 2
-   
-     }
+    "caption": true,
+    "order": 2
     },{
         "src": "BusinessSystem_envelopBack.jpg",
     "title":"Envelope Back",
-    "params" : {
-        "caption": true,
-                "order": 3
-   
-     }
+    "caption": true,
+    "order": 3
     },{
         "src": "BusinessSystem_envelopeFront.jpg",
     "title":"Envelope Front",
-    "params" : {
-        "caption": true,
-                "order": 4
-   
-     }
+    "caption": true,
+    "order": 4
     }]
 ---
 I wanted to create a bold design that captured some of the "Old West" nostaglia of the 29 Mule story and frontier mining, while also being modern and forward-thinking.

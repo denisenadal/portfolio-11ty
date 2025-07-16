@@ -7,27 +7,21 @@ columns: "col-12"
 images: [{
     "src": "flickrfeed-desktop-default.png",
     "title": "Desktop Latest Results",
-    "params": {
-        "caption": true,
-        "order": 3,
-        "columns": "sm-6 lg-4"
-    }
+    "caption": true,
+    "columns":  "sm-6 lg-4",
+    "order": 3
 },{
     "src": "flickrfeed-desktop-searchresults.png",
     "title": "Desktop Search Results",
-    "params": {
-        "caption": true,
-        "order": 2,
-        "columns": "sm-6 lg-4"
-    }
+    "caption": true,
+    "columns":  "sm-6 lg-4",
+    "order": 2
 },{
     "src": "flickrfeed-mobile.png",
     "title": "Mobile Version",
-    "params": {
-        "caption": true,
-        "order": 1,
-        "columns": "sm-6 lg-4"
-    }
+    "caption": true,
+    "columns":  "sm-6 lg-4",
+    "order": 1
 }]
 ---
 The final version is a demo hosted on glitch.

@@ -7,27 +7,21 @@ columns: "col-12 "
 images: [{
     "src": "alumniPortalFinal.webp",
     "title":"Alumni Portal, Desktop View",
-    "params":{
-        "caption":true,
-        "columns":  "sm-4 ",
-        "order":0
-    }
+    "caption": true,
+    "columns": "sm-4 ",
+    "order": 0
 },{
     "src": "students-portalFINAL.webp",
     "title":"Student Portal, Desktop View",
-    "params":{
-        "caption":true,
-        "columns":  "sm-4 ",
-        "order":0
-    }
+    "caption": true,
+    "columns": "sm-4 ",
+    "order": 0
 },{
     "src": "employees-final.webp",
     "title":"Employee Portal, Desktop View",
-    "params":{
-        "caption":true,
-        "columns":  "sm-4 ",
-        "order": 12
-    }
+    "caption": true,
+    "columns": "sm-4 ",
+    "order": 12
 }]
 ---
 The final result was a easily modified WordPress template that our Web Team could update regularly.

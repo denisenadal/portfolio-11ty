@@ -21,7 +21,7 @@ Research for this project consisted of interviewing internal and external users.
 I also interviewed members of the engineering team, who understood the data structures and the limitations of the system. Some of the most interesting insights from these interviews were
 
 </div>
-<div class="col bg-powder-blue p-2  mb-2 text-pink font-weight-bolder">
+<div class="col bg-lavender-100 p-2  mb-2 text-ocean font-weight-bolder">
 
 ### Key Findings:
 - some features were built so long ago and so underused that no one knew what they did
@@ -47,7 +47,7 @@ This was somewhat challenging as the data structure was as shown, right:
 <div class="col col-12 md-6 lg-5 xl-4 mb-3">
     <span class="h2 d-block">&nbsp;</span>
     {%- workimage  "/work/swr-srs/01-process/IAdiagram.png","","Diagram of the database structure" -%}
-        <div class="text-pink bg-powder-blue p-3">
+        <div class="text-ocean bg-lavender-100 p-3">
             <h3>Key Insight</h3>
             <em class="lead">
             It was often unclear why some settings existed at the "Master Account" level and others at the "Company" level.</em>
@@ -130,7 +130,7 @@ Testing the design happened continuously, although due to time constraints, I on
 
 </div>
 <div class="col">
-        <div class="text-pink bg-powder-blue p-3">
+        <div class="text-ocean bg-lavender-100 p-3">
             <h3>Key Insight</h3>
             <em class="lead">The more we improved the experience, the more the problems with the existing information architecture became apparent. 
             </em>

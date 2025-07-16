@@ -7,26 +7,20 @@ columns: "col-12"
 images: [{
     "src": "cover-02.png",
    "title": "trying to apply the new contact page layout to existing design patterns",
-   "params": {
-       "caption": false,
-       "order": 2,
-        "columns": "sm-4"
-   }
+   "caption": false,
+    "columns":  "sm-4",
+    "order": 2
 },{
     "src": "cover-03.png",
    "title": "trying to apply the new property page layout to existing design patterns",
-   "params": {
-       "caption": false,
-       "order": 3,
-        "columns": "sm-4"
-   }
+   "caption": false,
+    "columns":  "sm-4",
+    "order": 3
 },{
     "src": "cover-04.png",
    "title": "I was dissatisfied with the existing design patterns, and explored some alternatives",
-   "params": {
-       "caption": false,
-       "order": 4,
-        "columns": "sm-4"
-   }
+   "caption": false,
+    "columns":  "sm-4",
+    "order": 4
 }]
 ---

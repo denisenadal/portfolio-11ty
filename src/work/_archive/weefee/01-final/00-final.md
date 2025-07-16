@@ -7,12 +7,11 @@ columns: "sm-6"
 images:  [
         {"src":"weefee-logo-design.png",
         "title":"the final logo design",
-        "params" : {
-            "caption": true,
-            "group": 2, 
-            "order": 0,
-            "columns": "sm-6"
-            }
-    }] 
+        "caption": true,
+        "group": 2, 
+        "order": 0,
+        "columns": "sm-6"
+        }
+    ] 
 ---
 This thing looks god awful and what's his face was an asshole that's hard to work with.

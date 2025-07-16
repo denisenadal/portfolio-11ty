@@ -7,27 +7,22 @@ columns: "col-12"
 images: [{
     "title":"Final, Desktop size",
     "src": "strange_horizons_desktop.jpg",
-    "params": { 
-        "caption": true,
-        "columns": "col-12 col-12 md-6",
-                         "order": 1
-    }
+    "caption": true,
+    "columns": "col-12 col-12 md-6",
+    "order": 1
+
 },{
     "title":"Final, Tablet size",
     "src": "strange_horizons_tablet.jpg",
-    "params": { 
-        "caption": true,
-        "columns": "col-6 sm-8 md-4",
-                         "order": 2
-    }
+    "caption": true,
+    "columns": "col-6 sm-8 md-4",
+     "order": 2
 },{
     "title":"Final, Mobile size",
     "src": "strange_horizons_mobile.jpg",
-    "params": { 
-        "caption": true,
-        "columns": "col-3 sm-3 md-2",
-                         "order": 3
-    }
+    "caption": true,
+    "columns": "col-3 sm-3 md-2",
+    "order": 3
 }]
 ---
 The final mockups produced in the design exercise.

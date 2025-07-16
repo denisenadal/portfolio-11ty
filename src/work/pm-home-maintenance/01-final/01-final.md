@@ -5,27 +5,21 @@ draft: false
 columns: "col-12 md-12 lg-6"
 images: [{"src":"marketneed.png",
     "title":"Stats about the market",
-    "params" : {
-        "caption": false,
-                "order": 1,
-        "columns": "sm-6 md-6 lg-3"
-     }
+    "caption":  false,
+    "columns":  "sm-6 md-6 lg-3",
+    "order": 1
     },
     {"src":"marketsize.png",
     "title":"Stats about the market size",
-    "params" : {
-        "caption": false,
-                "order": 2,
-        "columns": "sm-6 md-6 lg-3"
-     }
+    "caption":  false,
+    "columns":  "sm-6 md-6 lg-3",
+    "order": 2
     },
     {"src":"productoffering.png",
     "title":"our initial product offering idea",
-    "params" : {
-        "caption": false,
-                "order": 3,
-        "columns": "col-12 md-12 lg-6"
-     }
+    "caption":  false,
+    "columns":  "col-12 md-12 lg-6",
+    "order": 3
     }]
 ---
 The final result was a **pitch deck** that we presented to the CEO, with illustrative design artifacts. The summary of our pitch is as follows:

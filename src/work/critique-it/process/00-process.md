@@ -6,27 +6,18 @@ order: 0
 images: [{
     "src": "wireframes.jpg",
     "title":"early design sketches",
-    "params" : {
-        "caption": true,
-                "order": 0
-   
-     }
+    "caption": true,
+    "order": 0
     },{
         "src": "critiqueit01.PNG",
     "title":"onboarding screen, desktop size",
-    "params" : {
-        "caption": true,
-                "order": 2
-   
-     }
+    "caption": true,
+    "order": 2
     },{
     "src": "critiqueit02.jpg",
     "title":"artist's profile, desktop size",
-    "params" : {
-        "caption": true,
-                "order": 3
-   
-     }
+    "caption": true,
+    "order": 3
     }]
 ---
 For the design, I started with some simple pencil sketches of screens and user flows. Once I felt I understood how user's should interact with the site and what information needed to be displayed, I started designing as I coded. 

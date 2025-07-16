@@ -6,46 +6,33 @@ order: 0
 columns: "col-12 lg-6 "
 images: [{"src": "efficiency-00v1.webp",
     "title":"Job Efficiency Report, version 1",
-    "params" : {
-        "caption": true,
-        "columns": "col-6 sm-6 md-4 ",
-                "order": 1
-   
-     }
-    },{"src": "efficiency-00v2.webp",
+    "caption": true,
+    "columns": "col-6 sm-6 md-4 ",
+    "order": 1
+},{
+   "src": "efficiency-00v2.webp",
     "title":"Job Efficiency Report, version 2",
-    "params" : {
-        "caption": true,
-        "columns": "col-6 sm-6 md-4 ",
-                "order": 2
-   
-     }
-    },{"src": "efficiency-00v3.webp",
+    "caption": true,
+    "columns": "col-6 sm-6 md-4 ",
+    "order": 2
+},{
+   "src": "efficiency-00v3.webp",
     "title":"Job Efficiency Report, version 3",
-    "params" : {
-        "caption": true,
-        "columns": "col-6 sm-6 md-4 ",
-                "order": 3
-   
-     }
-    },
-    {"src": "leadsource-00.webp",
+    "caption": true,
+    "columns": "col-6 sm-6 md-4 ",
+    "order": 3
+},{
+   "src": "leadsource-00.webp",
     "title":"Lead Source Report",
-    "params" : {
-        "caption": true,
-        "columns": "col-6 sm-6 md-4 ",
-                "order": 4
-   
-     }
-    },
-    {"src": "scorecard-00.webp",
+    "caption": true,
+    "columns": "col-6 sm-6 md-4 ",
+    "order": 4
+},{
+   "src": "scorecard-00.webp",
     "title":"Job Scorecard Report",
-    "params" : {
-        "caption": true,
-        "columns": "col-6 sm-6 md-4 ",
-                "order": 5
-   
-     }
+    "caption": true,
+    "columns": "col-6 sm-6 md-4 ",
+    "order": 5
     }]
 ---
 These designs were completed when I was on the Engineering team and design work was done ad-hoc as needed in an informal process. After getting assigned the ticket in a sprint, I discussed the feature requirements with internal stakeholders. I mocked up some quick designs based on their specifications, and review them with those same stakeholders. 

@@ -118,6 +118,9 @@ module.exports = function (eleventyConfig) {
     classStr += "'"
     let captionStr = '';
     if (caption) {
+      if (typeof caption == Boolean){
+        caption = alt;
+      }
       captionStr = "<figcaption>" + caption + "</figcaption>";
     }
     return `<a href='${src}' ${classStr}>

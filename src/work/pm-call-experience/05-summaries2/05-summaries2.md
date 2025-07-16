@@ -7,27 +7,21 @@ columns: "col-12 md-8 lg-7 offset-md-4"
 images: [{
     "src": "system-map.jpg",
    "title" : "mapping out the user tasks and data entities",
-   "params" : {
-       "caption" : true,
-       "order": 2,
-        "columns": "sm-4"
-   }
+   "caption":  true,
+    "columns":  "sm-4",
+    "order": 2
 },{
     "src": "v3contact-wires.png",
    "title": "wireframing",
-   "params": {
-       "caption": true,
-       "order": 4,
-        "columns": "sm-4"
-   }
+   "caption": true,
+    "columns":  "sm-4",
+    "order": 4
 },{
     "src": "v2contact-alt.png",
    "title": "ui design",
-   "params": {
-       "caption": true,
-       "order": 5,
-        "columns": "sm-4"
-   }
+   "caption": true,
+    "columns":  "sm-4",
+    "order": 5
 }]
 ---
 ### callTaking + summaries,

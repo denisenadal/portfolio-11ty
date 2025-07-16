@@ -6,19 +6,15 @@ order: 1
 images: [{
     "src": "tutoring-desktop.png",
     "title":"desktop version",
-    "params":{
-        "caption":true,
-        "order":0,
-         "columns": "sm-6 md-6 lg-3"
-    }
+    "caption":true,
+    "order":0,
+    "columns": "sm-6 md-6 lg-3"
 },{
     "src": "tutoring-mobile.png",
     "title":"mobile version",
-    "params":{
-        "caption":true,
-        "order":0,
-        "columns": "sm-6 md-6 lg-3"
-    }
+    "caption":true,
+    "order":0,
+    "columns": "sm-6 md-6 lg-3"
 }]
 ---
 The final design combined the most successful aspects of different designs. The color scheme was muted and refined to match our company's branding.

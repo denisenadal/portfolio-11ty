@@ -7,99 +7,75 @@ columns: "col col-12 md-8 lg-6"
 images: [{
     "src": "hpp03-data-collection.webp",
     "title":"All of the data collected",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp04-summary-of-user-feedback.webp",
     "title":"Summary of user feedback",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp05-datasummarization.webp",
     "title":"Summarizing the results",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp06-usergoals.webp",
     "title":"Examining user goals",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp07-user-needs.webp",
     "title":"Evaluating user needs",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp08-site-strengths-weakness.webp",
     "title":"Site strengths/weakness identified by users",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp09-finalgoals.webp",
     "title":"Final goals for project",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp10-thumbnail-sketches.webp",
     "title":"Thumbnail sketches",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "hpp10-thumbnail-sketches.webp",
     "title":"Thumbnail sketches",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "portal01-content.webp",
     "title":"Organizing content",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "portal03-wireframe.webp",
     "title":"early wireframes",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order":0
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 0
 },{
     "src": "portals-v1-wireframes.webp",
     "title":"detailed wireframes",
-    "params":{
-        "caption":true,
-        "columns":  "col col-6 md-4 lg-3",
-        "order": 8
-    }
+    "caption": true,
+    "columns": "col col-6 md-4 lg-3",
+    "order": 8
 }]
 ---
 We began this process by conducting user research. We held focus groups and user interviews to assess user sentiment about the site and learn what they considered to be their pain points. We reviewed our analytics to understand what our users were looking for and how they were finding it. 

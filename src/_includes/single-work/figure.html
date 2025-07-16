@@ -5,7 +5,12 @@
              alt="{{image.caption | default: image.title}}"
              class="figure-img img-responsive">
         {%- if image.caption -%}
-        <figcaption class="figure-caption">{{image.caption| default: image.title}}</figcaption>
+        {%- if image.caption == true -%}
+        {%- assign caption = image.title -%}
+        {%-else-%}
+        {%- assign caption = image.caption -%}
+        {%- endif -%}
+        <figcaption class="figure-caption">{{caption}}</figcaption>
         {%- endif -%}
     </figure>
 </a>
