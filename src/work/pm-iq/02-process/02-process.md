@@ -6,7 +6,7 @@ draft: false
 order: 0
 columns: "col-12"
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 col-12 md-6 lg-7 xl-8 mb-2">
 
 This was one of the first major projects I was a part of at Pointman. At this time, we didn't have a discreet Product or UX team. We had a product owner who worked with our SME's to collect requirements, and he deeply collaborated with us on the Engineering team to design and develop the features.
@@ -19,24 +19,24 @@ If I had the chance to do this project over again— I would have performed a **
 <div class="col">
 {%- workimage "/work/pm-iq/02-process/workflow.png", "text-muted", "Diagram of our old design process", "our old design process, which we used for this project"  -%}
 </div>
-</div></div>
+</div>
 
 {% hr %}
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 md-6 lg-7 xl-8 mb-2">
 
-## Research & Insights
+### Research & Insights
 
 We started this project by getting a list of requests from our Customer Success team, who collected user feedback. Our subject matter experts spend some time walking us through how they believed the users completed this task and how they should do it.
 
 I also performed **competitive analysis** by looking at how competing products, such as ServiceTitan, Housecall Pro and Jobber handled these issues.
 
 </div>
-</div></div>
+</div>
 <div class="container lg  gap-1">
 <div class="col-12">
 
-### Key Insights
+#### Key Insights
 
 </div>
 <div class="col col-12 sm-6 md-6 gap-2">
@@ -64,7 +64,7 @@ I also performed **competitive analysis** by looking at how competing products, 
 <div class="container lg  gap-1">
 <div class="col col-12 col-12 md-8">
 
-## Ideation & Design
+### Ideation & Design
 
 Our ideation process started with internalizing the information from our SME's and deep thinking about the problems. From there, we started sketching out ideas.
 

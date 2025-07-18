@@ -4,7 +4,7 @@ date: 2021-09-01
 draft: false
 columns: "col-12"
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12  md-8 lg-6">
 {%- workimage  "/work/fifco-intranet/00-research/intranet-component-planning.jpg","","Information Architecture Schema for the intranet", "Information Architecture Schema for the intranet"  -%}
 </div>
@@ -16,7 +16,7 @@ For development, I started by building a static site containing examples of all 
 From there, I just had to build and test all the page templates, widgets, custon plugins, and set up all the sites and plugins.
 
 </div>
-</div></div>
+</div>
 
 <!-- <div class="p-2 bg-blue text-white mb-2">
 

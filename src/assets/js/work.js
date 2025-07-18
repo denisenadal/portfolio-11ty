@@ -23,7 +23,7 @@ $(document).ready(function(){
                 columnWidth:colW,
                 gutter: 20,
                 percentPosition: true,
-                horizontalOrder: true,
+                // horizontalOrder: true,
                 initLayout: false,
                 containerStyle: null
               });

@@ -26,18 +26,18 @@ images: [{"src": "categorie-375.webp",
     "order": 2
 }]
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg  gap-1">
 <div class="col col-12 col-12 md-10 lg-8  mb-2">
 The project was huge success! We had over 1600+ businesses featured in our marketplace, and several tv shows and news sites covered our project. Our partners from the "Real Housewives of Altanta" also helped with promoting the project and driving engagement. 
 
 Through this project we helped generate thousands of dollars of additional revenue for small Black business owners, helped them reach new audiences, and strengthen brand loyalty with our consumers. Throughout the time period in which the marketplace ran, our main Seagram's Escapes site saw 20% more traffic than normal!
 </div>
-
+</div>
 {% hr %}
 
 
-## Desktop Screens
-<div class="container lg"><div class="container gap-1">
+### Desktop Screens
+<div class="container lg gap-1">
 <div class="col col-6 sm-6 md-6 lg-4  mb-2">
 {%- workimage  "/work/se-holiday-marketplace/02-final/home-1280.webp","","Landing page - Desktop size", ""  -%}
 </div>
@@ -48,8 +48,8 @@ Through this project we helped generate thousands of dollars of additional reven
 {%- workimage  "/work/se-holiday-marketplace/02-final/Screenshot_2021-02-09 Frequently Asked Questions Seagrams Escapes Holiday Marketplace.webp",""," Frequently Asked Questions- Desktop size", ""  -%}
 {%- workimage  "/work/se-holiday-marketplace/02-final/pre-releaseHome - Laptop - 1280px.webp","","Pre-Release Landing page - Desktop size", ""  -%}
 </div>
-</div></div>
+</div>
 {% hr %}
 
 
-## Mobile Screens
+### Mobile Screens

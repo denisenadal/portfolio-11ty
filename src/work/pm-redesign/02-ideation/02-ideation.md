@@ -4,7 +4,7 @@ draft: false
 columns: "col-12"
 
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 col-12 md-6 mb-2">
 
 After establishing a deep understanding of who we were designing for and understanding the tasks involved, I did a lot of loose sketching on paper to work out my initial ideas. From there I worked up several wireframes, some of which are detailed in the next section
@@ -26,6 +26,6 @@ Part of validating this design and workflow was running it through several commo
      {%- workimage "/work/pm-redesign/02-ideation/v04scenario-02.webp", "figure text-muted mb-2", "Scenario Step 3" -%}
     {%- workimage "/work/pm-redesign/02-ideation/v04scenario-05.webp", "figure text-muted mb-2", "Scenario Step 6" -%}
 </div>
-</div></div>
+</div>
 {%- workimage "/work/pm-redesign/02-ideation/v3workflow-wires.png", "figure text-muted mb-2", "Scenario: landlord calls to schedule work at a tenant's home" -%}
 

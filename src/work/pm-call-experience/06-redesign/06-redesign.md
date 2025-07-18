@@ -42,7 +42,7 @@ images: [{
     "order": 4
 }]
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 col-12 md-8 lg-7 mb-2">
 ### Full Redesign 
 (Nov, Dec 2019)
@@ -56,4 +56,4 @@ You can read the **[full case study]( /work/pm-redesign/)**.
 <div class="col">
     {%- workimage "/work/pm-call-experience/06-redesign/all-workflows.jpg", "figure text-muted mb-2", "photo documenting task analysis of various target user's work flows", "documenting task analysis of various target user's work flows"  -%}
 </div>
-</div></div>
+</div>

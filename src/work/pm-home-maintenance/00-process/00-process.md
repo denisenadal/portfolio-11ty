@@ -8,7 +8,7 @@ columns: "col-12"
 ---
 The process for this project was fast and experimental.
 {% hr %}
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 md-6 lg-7 xl-8 mb-2">
 
 ### Understand the Problem Space
@@ -29,8 +29,8 @@ Below are some examples of the experiments we ran.
             </ul>
         </div>
 </div>
-</div></div>
-<div class="container lg"><div class="container gap-1">
+</div> 
+<div class="container lg gap-1">
 <div class="col">
    {%- workimage "/work/pm-home-maintenance/00-process/experiment1.png", "figure text-muted mb-2", "experiment results", "experiment results"  -%}
     {%- workimage "/work/pm-home-maintenance/00-process/experiment-results.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "the results of all our experiments put together as an example of space saturate"  -%}
@@ -43,11 +43,11 @@ Below are some examples of the experiments we ran.
     {%- workimage "/work/pm-home-maintenance/00-process/boards-01.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
    {%- workimage "/work/pm-home-maintenance/00-process/boards-03.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
 </div>
-</div></div>
+</div>
 
 {% hr %}
 
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 md-3">
     {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.png","figure text-muted ", "our primary persona", "our primary persona"  -%}
 </div>
@@ -70,11 +70,11 @@ We build a **customer journey map** of their experience hiring a contractor for 
     </ol>
 </div>
 </div>
-</div></div>
+</div>
 
 {% hr %}
 
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 md-6 lg-7 xl-8 mb-2">
 
 ### Ideate
@@ -82,8 +82,8 @@ We build a **customer journey map** of their experience hiring a contractor for 
 We also conducted **collaborative design sessions** and **workshops** to ideate product opportunities and define and test a **value proposition**. 
 
 </div>
-</div></div>
-<div class="container lg"><div class="container gap-1">
+</div>
+<div class="container lg gap-1">
 <div class="col">
     {%- workimage "/work/pm-home-maintenance/00-process/boards-02.jpg", "figure text-muted mb-2", "design artifacts for subscription for various solutions for home maintenance service", "design artifacts for various solutions for subscription home maintenance service"  -%}
 </div>
@@ -96,7 +96,7 @@ We also conducted **collaborative design sessions** and **workshops** to ideate 
         </div>
      {%- workimage "/work/pm-home-maintenance/00-process/valueprop.png", "figure text-muted mb-2", "ideating on value propositions", "ideating on value propositions"  -%}
 </div>
-</div></div>
+</div>
 
 {% hr %}
 

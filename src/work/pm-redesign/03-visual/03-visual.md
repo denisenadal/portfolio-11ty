@@ -4,7 +4,7 @@ draft: false
 columns: "col-12"
 
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 col-12 md-8 lg-7 mb-2">
 
 For the visual design of this project, I used our systems existing fonts, colors, and button styles, but tried to streamline and simplify the UI. 
@@ -22,9 +22,10 @@ If we had continued with this project, I would have spend more time fine tuning 
 {%- workimage "/work/pm-redesign/03-visual/v4jobprog-desktop.webp", "figure text-muted mb-2", "Job 'In Progress' on a desktop", "Job 'In Progress' on a desktop"  -%}
 </div>
 </div>
-</div>
+
 <div class="col col-6 sm-6 md-2">
   {%- workimage "/work/pm-redesign/03-visual/v05mobilejob.webp", "figure text-muted mb-2", "Job Screen on a mobile device" -%}
 </div>
 
-</div></div>
+</div>
+</div>

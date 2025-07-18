@@ -3,7 +3,7 @@ title: "Research"
 draft: false
 columns: "col-12"
 ---
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col col-12 col-12 md-8 lg-7 mb-2">
 
 I spearheaded this project after our new Product Director challenged the UX Team to **test our assumption**s about how our users really do their jobs. Up until this point, we accepted the longstanding assumptions that our organization has built up through the years about what a "job" should look like and what dispatchers and technicians "should" do.
@@ -20,9 +20,9 @@ By building out these **detailed personas based on real data** rather that anecd
 <div class="col mt-1">
   {%- workimage "/work/pm-redesign/01-research/donna-lister-DIS.webp", "figure text-muted mb-2", "Dispatcher Persona", "Dispatcher Persona"  -%}
 </div>
-</div></div>
+</div>
 
-<div class="container lg"><div class="container gap-1">
+<div class="container lg gap-1">
 <div class="col sm-6 md-3">
      {%- workimage "/work/pm-redesign/01-research/job-mental-map.webp", "figure text-muted mb-2", "Job mental map", "Job mental map"  -%}
      {%- workimage "/work/pm-redesign/01-research/newjob-workflow.webp", "figure text-muted mb-2", "workflow for creating a job", "Workflow for creating a job"  -%}
@@ -38,5 +38,5 @@ By building out these **detailed personas based on real data** rather that anecd
 <div class="col sm-6 md-3">
     {%- workimage "/work/pm-redesign/01-research/csr-workflow.webp", "figure text-muted mb-2", "CSR workflow", "CSR workflow"  -%}
 </div>
-</div></div>
+</div>
 
