@@ -22,7 +22,7 @@ The existing invoicing and quotes system in our app wasn't flexible enough to me
 </div>
 </div>
 <div class="col">
-    {%- workimage "/work/pm-iq/01-problem/systems-map.png", "figure text-muted", "example of how complex the job workflow can be", "example of how complex the job workflow can be"  -%}
+    {%- workimage "/work/pm-iq/01-problem/systems-map.webp", "figure text-muted", "example of how complex the job workflow can be", "example of how complex the job workflow can be"  -%}
 </div>
 </div>
 

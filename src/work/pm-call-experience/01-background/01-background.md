@@ -26,7 +26,7 @@ We also conducted a usability test, tracking how long it took users to complete 
 It was clear that we needed to make this process simpler and faster; if we're expecting users to complete this task dozens of times a day, it needs to be a great experience.
 </div>
 <div class="col col-12 md-4 xl-5 mb-2">
-    {%- workimage "/work/pm-call-experience/01-background/pm-dispatchboard-desktop.png", "figure text-muted mb-2", "screenshot of the dispatch board", "the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work"  -%}
-    {%- workimage "/work/pm-call-experience/01-background/pm-contactproperty-dialog.png", "figure text-muted mb-2", "screenshot of how our app displays information about a person or house.", "how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture."  -%}
+    {%- workimage "/work/pm-call-experience/01-background/pm-dispatchboard-desktop.webp", "figure text-muted mb-2", "screenshot of the dispatch board", "the home page of the desktop app was visually confusing. From this screen, a dispatcher or CSR would answer calls and schedule work"  -%}
+    {%- workimage "/work/pm-call-experience/01-background/pm-contactproperty-dialog.webp", "figure text-muted mb-2", "screenshot of how our app displays information about a person or house.", "how our app displays information about a person or house. The information about a person or their home would be spread out across several different tabs, making it hard to get a clear picture."  -%}
 </div>
 </div>

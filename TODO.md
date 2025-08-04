@@ -1,16 +1,20 @@
 
-# Status 
-Homepage - content done, style ehhh, need to do animations
-Experience - nothing started
-Work galleries - conetnt done, style ehh
-work pages - conetnt done, style ehh
+# Missing Images
+Missing Images
+
+- COmmHUb Cover
+- SubMap Cover
+-Search Cover
+- Accessibility Cover 
+
+- CommHub live screens
+- SubMap live screens 
+- Search Live Screens
 
 
 # TODO
-[ ]
-[ ] update styles
-[ ] add new projects
 [ ] add details on new projects
+
 [ ] test theme
 [ ] deploy
 [ ] 
@@ -28,16 +32,8 @@ work pages - conetnt done, style ehh
 # Notes
 ---☆
 
-"Web Design" "Web Development" "UI Design"
 
-C - character
-D - denise's mixes
-F - fanmix
-G - genre
-M - mixes
-T - time 
 ==============
-finis home page
 
 about me -
 
@@ -53,4 +49,12 @@ about me -
 - add your interaction design membership?
 - karen pang -> connect linkedin
 
+---swithc to webp images in 
+
+PM-Call
+PM-IQ
+PM-Nav
+Spliker
+Strange Horion
+SWR-SRS
 

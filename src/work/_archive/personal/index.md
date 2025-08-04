@@ -6,7 +6,7 @@ date_range: "Spring 2018"
 draft: false
 archived: true
 image: {
-   "name":"personal-group.jpg",
+   "name":"personal-group.webp",
     "alt":"personal portfolio site on various screen sizes"}
 type: "work"
 tags: ["UX Design","UI Design","Web Development"]

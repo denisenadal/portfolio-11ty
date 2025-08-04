@@ -24,7 +24,7 @@ images: [{
     "order": 3
 },{
     "title":"Desktop Comp",
-    "src": "comps-desktop.jpg",
+    "src": "comps-desktop.webp",
     
     "caption": true,
     "order": 6,
@@ -32,13 +32,13 @@ images: [{
     
 },{
     "title":"Tablet Comp",
-    "src": "comps-tablet.jpg",
+    "src": "comps-tablet.webp",
     "caption": true,
     "columns":  "col-6 sm-6 lg-4",
     "order": 5
 },{
     "title":"Mobile Comp",
-    "src": "comps-mobile.jpg",
+    "src": "comps-mobile.webp",
     "caption": true,
     "order": 4,
     "columns": "col-6 sm-3 lg-2"

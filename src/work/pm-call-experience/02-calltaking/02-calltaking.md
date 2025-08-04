@@ -5,13 +5,13 @@ draft: false
 order: 2
 columns: "col col-12 md-8 lg-6"
 images: [{
-    "src": "pm-callTaking-desktop.png",
+    "src": "pm-callTaking-desktop.webp",
    "title" : "the new call taking screen guided users through the process of searching for the customer, reviewing their info, and scheduling a new job, however, it didn't offer much flexibility. ",
    "caption":  true,
     "columns":  "sm-6 md-4 lg-4",
     "order": 2
 },{
-    "src": "pm-callTaking-scheduler-mobile.jpg",
+    "src": "pm-callTaking-scheduler-mobile.webp",
    "title": "scheduling a job on a mobile device",
    "caption": true,
     "columns":  "sm-6 md-4 lg-2",

@@ -5,14 +5,14 @@ draft:
 order: 1
 columns: "col-12"
 images: [{
-"src":"spilker-set.jpg",
+"src":"spilker-set.webp",
 "title":"mockup of website on all screens",
 "name": "final-image",
 "caption": true,
     "columns":  "sm-6",
     "order": 1
 },{
-"src":"spilker-branding.jpg",
+"src":"spilker-branding.webp",
 "title":"web presence and branding kit",
 "name": "final-image",
 "caption": true,

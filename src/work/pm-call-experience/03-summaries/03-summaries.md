@@ -17,15 +17,15 @@ Through this process, I managed to condense ten screens of information into one.
 
 <div class="container mt-4">
 <div class="col-6 sm-6">
- {%- workimage "/work/pm-call-experience/03-summaries/v1contact.png", "figure text-muted mb-2", "redesigning the contact screen within our existing UI", "redesigning the contact screen within our existing UI"  -%}
+ {%- workimage "/work/pm-call-experience/03-summaries/v1contact.webp", "figure text-muted mb-2", "redesigning the contact screen within our existing UI", "redesigning the contact screen within our existing UI"  -%}
  </div>
  <div class="col-6 sm-6">
-  {%- workimage "/work/pm-call-experience/03-summaries/v1property.png", "figure text-muted mb-2", "redesigning the property screen within our existing UI", "redesigning the property screen within our existing UI"  -%}
+  {%- workimage "/work/pm-call-experience/03-summaries/v1property.webp", "figure text-muted mb-2", "redesigning the property screen within our existing UI", "redesigning the property screen within our existing UI"  -%}
 </div>
 </div>
 <div class="col col-12 md-4 lg-5 xl-6 mb-2">
-    {%- workimage "/work/pm-call-experience/03-summaries/userFlows.png", "figure text-muted mb-2", "information architecture and content design", "information architecture and content design"  -%}
-    {%- workimage "/work/pm-call-experience/03-summaries/summary-drafts.jpg", "figure text-muted mb-2", "task analysis and scenario design for common user goals", "task analysis and scenario design for common user goals"  -%}
+    {%- workimage "/work/pm-call-experience/03-summaries/userFlows.webp", "figure text-muted mb-2", "information architecture and content design", "information architecture and content design"  -%}
+    {%- workimage "/work/pm-call-experience/03-summaries/summary-drafts.webp", "figure text-muted mb-2", "task analysis and scenario design for common user goals", "task analysis and scenario design for common user goals"  -%}
 </div>
 </div>
 

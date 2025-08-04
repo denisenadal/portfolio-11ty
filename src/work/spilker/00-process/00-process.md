@@ -4,35 +4,35 @@ date: 2017-10-31
 draft: false
 order: 0
 images: [{
-"src": "gallery.png" ,
+"src": "gallery.webp" ,
 "title": "gallery design",
 "name": "process-image",
 "caption": true,
     "columns": "col-6 sm-6 md-3",
     "order": 1
 },{
-"src": "spliker-about-small.png" ,
+"src": "spliker-about-small.webp" ,
 "title": "about us design",
 "name": "process-image",
 "caption": true,
     "columns": "col-6 sm-6 md-3",
     "order": 2
 },{
-"src": "spilkermockup.jpg" ,
+"src": "spilkermockup.webp" ,
 "title": "desktop design",
 "name": "process-image",
 "caption": true,
     "columns": "col-6 sm-6 md-3",
     "order": 3
 },{
-"src": "spilker-mobile.png" ,
+"src": "spilker-mobile.webp" ,
 "title": "mobile design",
 "name": "process-image",
 "caption": true,
     "columns": "col-6 sm-6 md-3",
     "order": 0
 },{
-"src": "spliker-email.jpg" ,
+"src": "spliker-email.webp" ,
 "title": "email campaign newsletter",
 "name": "process-image",
 "caption": true,

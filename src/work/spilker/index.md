@@ -5,7 +5,7 @@ date: 2017-10-31
 date_range: "Fall 2017"
 draft: false
 archived: false
-image: {"name":"spilker-set.jpg"," alt":"mockup of website on all screens"}
+image: {"name":"spilker-set.webp"," alt":"mockup of website on all screens"}
 type: "work"
 tags: ["Web Design","Branding", "SEO"]
 weight: 35

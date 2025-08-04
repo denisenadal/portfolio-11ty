@@ -1,7 +1,7 @@
 ---
 title: Navigation Systems in Pointman
 subtitle: UI/UX Design 
-image: {"name":"mobile-group.jpg",
+image: {"name":"mobile-group.webp",
         "alt":"mobile devices"}
 draft: false
 archived: false

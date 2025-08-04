@@ -17,7 +17,7 @@ If I had the chance to do this project over again— I would have performed a **
 
 </div>
 <div class="col">
-{%- workimage "/work/pm-iq/02-process/workflow.png", "text-muted", "Diagram of our old design process", "our old design process, which we used for this project"  -%}
+{%- workimage "/work/pm-iq/02-process/workflow.webp", "text-muted", "Diagram of our old design process", "our old design process, which we used for this project"  -%}
 </div>
 </div>
 
@@ -73,16 +73,16 @@ After several rounds of design and critiques, we had some solid designs that we 
 
 <br>
 
-{%- workimage "/work/pm-iq/02-process/iq-screens-group.png", "text-muted", "overview of prototype screens", "overview of prototype screens"  -%}
+{%- workimage "/work/pm-iq/02-process/iq-screens-group.webp", "text-muted", "overview of prototype screens", "overview of prototype screens"  -%}
 
 </div>
 <div class="col sm-6 md-2 flex-column gap-1">
-{%- workimage "/work/pm-iq/02-process/editablev1.jpg","figure text-muted mb-3", "exploration of an editable invoice", "exploration of an editable invoice"  -%}
-{%- workimage "/work/pm-iq/02-process/iq-options.png", "figure text-muted", "exploration of presenting options to homeowners", "presenting options to homeowner"  -%}
+{%- workimage "/work/pm-iq/02-process/editablev1.webp","figure text-muted mb-3", "exploration of an editable invoice", "exploration of an editable invoice"  -%}
+{%- workimage "/work/pm-iq/02-process/iq-options.webp", "figure text-muted", "exploration of presenting options to homeowners", "presenting options to homeowner"  -%}
 </div>
 <div class="col sm-6 md-2 flex-column gap-1">
-{%- workimage "/work/pm-iq/02-process/editablev2.jpg"," figure text-muted mb-3", "exploration of a static invoice", "exploration of a static invoice"  -%}
-{%- workimage "/work/pm-iq/02-process/Email-Modal.png", "figure text-muted", "example of sending the invoice to the homeowner", " sending the invoice to the homeowner"  -%}
+{%- workimage "/work/pm-iq/02-process/editablev2.webp"," figure text-muted mb-3", "exploration of a static invoice", "exploration of a static invoice"  -%}
+{%- workimage "/work/pm-iq/02-process/Email-Modal.webp", "figure text-muted", "example of sending the invoice to the homeowner", " sending the invoice to the homeowner"  -%}
 </div>
 </div>
 

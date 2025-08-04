@@ -5,19 +5,19 @@ draft: false
 order: 5
 columns: "col-12 md-8 lg-7 offset-md-4"
 images: [{
-    "src": "system-map.jpg",
+    "src": "system-map.webp",
    "title" : "mapping out the user tasks and data entities",
    "caption":  true,
     "columns":  "sm-4",
     "order": 2
 },{
-    "src": "v3contact-wires.png",
+    "src": "v3contact-wires.webp",
    "title": "wireframing",
    "caption": true,
     "columns":  "sm-4",
     "order": 4
 },{
-    "src": "v2contact-alt.png",
+    "src": "v2contact-alt.webp",
    "title": "ui design",
    "caption": true,
     "columns":  "sm-4",
