@@ -4,19 +4,19 @@ date: 2017-10-31
 draft: false
 order: 0
 images: [{
-    "src": "campusmap-large.png",
+    "src": "campusmap-large.webp",
     "title":"map overview, desktop size",
     "caption":  true,
     "columns":  "col-6 sm-6 md-6 lg-3",
     "order": 0
     },{
-        "src": "campusmaps-active.png",
+        "src": "campusmaps-active.webp",
     "title":"active point details, desktop size",
     "caption":  true,
     "columns":  "col-6 sm-6 md-6 lg-3",
     "order": 0
     },{
-    "src": "campus-map-mobile01.png",
+    "src": "campus-map-mobile01.webp",
     "title":"map overview, mobile size",
     "caption": true,
     "columns": "col-6 sm-6 md-6 lg-3",

@@ -3,19 +3,19 @@ title: "Project Outcome"
 date: 2020-01-31
 draft: false
 columns: "col-12 md-12 lg-6"
-images: [{"src":"marketneed.png",
+images: [{"src":"marketneed.webp",
     "title":"Stats about the market",
     "caption":  false,
     "columns":  "sm-6 md-6 lg-3",
     "order": 1
     },
-    {"src":"marketsize.png",
+    {"src":"marketsize.webp",
     "title":"Stats about the market size",
     "caption":  false,
     "columns":  "sm-6 md-6 lg-3",
     "order": 2
     },
-    {"src":"productoffering.png",
+    {"src":"productoffering.webp",
     "title":"our initial product offering idea",
     "caption":  false,
     "columns":  "col-12 md-12 lg-6",

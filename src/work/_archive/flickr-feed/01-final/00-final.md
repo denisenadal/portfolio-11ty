@@ -5,19 +5,19 @@ draft: false
 order: 1
 columns: "col-12"
 images: [{
-    "src": "flickrfeed-desktop-default.png",
+    "src": "flickrfeed-desktop-default.webp",
     "title": "Desktop Latest Results",
     "caption": true,
     "columns":  "sm-6 lg-4",
     "order": 3
 },{
-    "src": "flickrfeed-desktop-searchresults.png",
+    "src": "flickrfeed-desktop-searchresults.webp",
     "title": "Desktop Search Results",
     "caption": true,
     "columns":  "sm-6 lg-4",
     "order": 2
 },{
-    "src": "flickrfeed-mobile.png",
+    "src": "flickrfeed-mobile.webp",
     "title": "Mobile Version",
     "caption": true,
     "columns":  "sm-6 lg-4",

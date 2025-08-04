@@ -6,7 +6,7 @@ date_range: "January 2020"
 draft: false
 featured: false
 image: {
-    "name":"pitchDeck-Title.png", 
+    "name":"pitchDeck-Title.webp", 
     "alt":"design for subscription home maintenance service"}
 type: "work"
 tags: [User Research,Product Design,Innovation]

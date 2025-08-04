@@ -4,37 +4,37 @@ draft: false
 order: 0
 columns: "col-12 md-12 lg-6"
 images: [{
-   "src":"v01index-mobile.png",
+   "src":"v01index-mobile.webp",
    "title": "Task Index mobile view, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",
    "order": 0
    },{
-   "src":"v01index-tablet.png",
+   "src":"v01index-tablet.webp",
    "title": "Task Index tablet view, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",
    "order": 0
 },{
-   "src":"v01metro-desktop.png",
+   "src":"v01metro-desktop.webp",
    "title": "Metro style task groups, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",
    "order": 0
 },{
-   "src":"v01metro-mobile.png",
+   "src":"v01metro-mobile.webp",
    "title": "Metro style task groups, mobile view, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",
    "order": 0
 },{
-   "src":"v01metro-tablet.png",
+   "src":"v01metro-tablet.webp",
    "title": "Metro style task groups, tablet view, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",
    "order": 0
 },{
-   "src":"v01weighted-mobile.png",
+   "src":"v01weighted-mobile.webp",
    "title": "tasks weighted by usage, mobile view, v1",
    "caption": true,
    "columns": "col-6 sm-6 md-4 lg-2",

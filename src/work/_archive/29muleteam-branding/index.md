@@ -5,7 +5,7 @@ date: "2015-10-31"
 date_range: "Fall 2015"
 draft: false
 archived: true
-image: {"name":"29muleteam-mockup.jpg"," alt":"29 Mule Borax Branding System Mockup"}
+image: {"name":"29muleteam-mockup.webp"," alt":"29 Mule Borax Branding System Mockup"}
 type: "work"
 tags: ["Branding"]
 weight: 24

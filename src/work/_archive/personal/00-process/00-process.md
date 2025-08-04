@@ -4,49 +4,49 @@ date: 2017-10-31
 draft: false
 order: 0
 columns: "col col-12 md-8 lg-6"
-images: [{"src": "mockup-contact.jpg",
+images: [{"src": "mockup-contact.webp",
     "title":"Mockup of the Contact page ",
     "caption":  true,
     "columns":  "col col-6 md-8 lg-6",
     "order": 3
     },
-    {"src": "mockup-about.jpg",
+    {"src": "mockup-about.webp",
     "title":"Mockup of the About page ",
     "caption":  true,
     "columns":  "col col-6 md-4 lg-3",
     "order": 2
     },
-   {"src": "mockup-skills.jpg",
+   {"src": "mockup-skills.webp",
     "title":"Mockup of the Skill page ",
     "caption":  true,
     "columns":  "col col-6 md-4 lg-3",
     "order": 4
     },
-    {"src": "mockup-gallery.jpg",
+    {"src": "mockup-gallery.webp",
     "title":"Mockup of the Gallery page ",
     "caption":  true,
     "columns":  "col col-6 md-4 lg-3",
     "order": 6
     },
-    {"src": "mockup-exp01.jpg",
+    {"src": "mockup-exp01.webp",
     "title":"Sample experience page",
     "caption":  true,
     "columns":  "col col-6 md-4 xl-3",
     "order": 5
     },
-    {"src": "mockup-work02.jpg",
+    {"src": "mockup-work02.webp",
     "title":"Sample work page",
     "caption":  true,
     "columns":  "col col-6 md-4 xl-3",
     "order": 7
     },
-    {"src": "mockup-work03.jpg",
+    {"src": "mockup-work03.webp",
     "title":"Sample work page",
     "caption":  true,
     "columns":  "col col-6 md-4 xl-3",
     "order": 8
     },
-    {"src": "mockup-work07.jpg",
+    {"src": "mockup-work07.webp",
     "title":"Sample work page",
     "caption":  true,
     "columns":  "col col-6 md-4 xl-3",

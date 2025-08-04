@@ -5,7 +5,7 @@ date: 2017-10-31
 date_range: "Fall 2017"
 draft: false
 archived: true
-image: {"name":"critiqueit-mockup.jpg"," alt":"CritiqueIt App on iMac screen"}
+image: {"name":"critiqueit-mockup.webp"," alt":"CritiqueIt App on iMac screen"}
 type: "work"
 tags: ["UX Design","UI Design", "Web App", "Development"]
 weight: 25

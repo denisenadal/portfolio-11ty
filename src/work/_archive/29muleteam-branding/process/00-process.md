@@ -4,28 +4,28 @@ date: 2017-10-31
 draft: false
 order: 0
 images: [{
-        "src": "business-system_letterhead.jpg",
+        "src": "business-system_letterhead.webp",
     "title":"Letterhead",
     "caption": true,
     "order": 0
     },
     {
-        "src": "BusinessSystem_businessCardBack.jpg",
+        "src": "BusinessSystem_businessCardBack.webp",
     "title":"Business Card Back",
     "caption": true,
     "order": 1
     },{
-        "src": "BusinessSystem_businessCardFront.jpg",
+        "src": "BusinessSystem_businessCardFront.webp",
     "title":"Business Card Front",
     "caption": true,
     "order": 2
     },{
-        "src": "BusinessSystem_envelopBack.jpg",
+        "src": "BusinessSystem_envelopBack.webp",
     "title":"Envelope Back",
     "caption": true,
     "order": 3
     },{
-        "src": "BusinessSystem_envelopeFront.jpg",
+        "src": "BusinessSystem_envelopeFront.webp",
     "title":"Envelope Front",
     "caption": true,
     "order": 4

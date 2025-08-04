@@ -4,17 +4,17 @@ date: 2017-10-31
 draft: false
 order: 0
 images: [{
-    "src": "wireframes.jpg",
+    "src": "wireframes.webp",
     "title":"early design sketches",
     "caption": true,
     "order": 0
     },{
-        "src": "critiqueit01.PNG",
+        "src": "critiqueit01.webp",
     "title":"onboarding screen, desktop size",
     "caption": true,
     "order": 2
     },{
-    "src": "critiqueit02.jpg",
+    "src": "critiqueit02.webp",
     "title":"artist's profile, desktop size",
     "caption": true,
     "order": 3

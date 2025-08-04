@@ -32,16 +32,16 @@ Below are some examples of the experiments we ran.
 </div> 
 <div class="container lg gap-1">
 <div class="col">
-   {%- workimage "/work/pm-home-maintenance/00-process/experiment1.png", "figure text-muted mb-2", "experiment results", "experiment results"  -%}
-    {%- workimage "/work/pm-home-maintenance/00-process/experiment-results.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "the results of all our experiments put together as an example of space saturate"  -%}
+   {%- workimage "/work/pm-home-maintenance/00-process/experiment1.webp", "figure text-muted mb-2", "experiment results", "experiment results"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/experiment-results.webp", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "the results of all our experiments put together as an example of space saturate"  -%}
 </div>
 <div class="col">
-    {%- workimage "/work/pm-home-maintenance/00-process/experiment2.png", "figure text-muted mb-2", "experiment results", "experiment results"  -%}
-    {%- workimage "/work/pm-home-maintenance/00-process/boards-04.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/experiment2.webp", "figure text-muted mb-2", "experiment results", "experiment results"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/boards-04.webp", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
 </div>
 <div class="col">
-    {%- workimage "/work/pm-home-maintenance/00-process/boards-01.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
-   {%- workimage "/work/pm-home-maintenance/00-process/boards-03.jpg", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/boards-01.webp", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
+   {%- workimage "/work/pm-home-maintenance/00-process/boards-03.webp", "figure text-muted mb-2", "design artifacts for subscription home maintenance service", "design artifacts for subscription home maintenance service"  -%}
 </div>
 </div>
 
@@ -49,10 +49,10 @@ Below are some examples of the experiments we ran.
 
 <div class="container lg gap-1">
 <div class="col col-12 md-3">
-    {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.png","figure text-muted ", "our primary persona", "our primary persona"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.webp","figure text-muted ", "our primary persona", "our primary persona"  -%}
 </div>
 <div class="col col-12 md-3">
-   {%- workimage "/work/pm-home-maintenance/00-process/ScottCarpenter-DIYHomeowner.png","figure text-muted ", "our secondary persona", "our secondary persona"  -%}
+   {%- workimage "/work/pm-home-maintenance/00-process/ScottCarpenter-DIYHomeowner.webp","figure text-muted ", "our secondary persona", "our secondary persona"  -%}
 </div>
 <div class="col col-12 md-6" >
 
@@ -85,7 +85,7 @@ We also conducted **collaborative design sessions** and **workshops** to ideate 
 </div>
 <div class="container lg gap-1">
 <div class="col">
-    {%- workimage "/work/pm-home-maintenance/00-process/boards-02.jpg", "figure text-muted mb-2", "design artifacts for subscription for various solutions for home maintenance service", "design artifacts for various solutions for subscription home maintenance service"  -%}
+    {%- workimage "/work/pm-home-maintenance/00-process/boards-02.webp", "figure text-muted mb-2", "design artifacts for subscription for various solutions for home maintenance service", "design artifacts for various solutions for subscription home maintenance service"  -%}
 </div>
 <div class="col">
         <div class="text-light bg-cyan p-3 mb-2">
@@ -94,7 +94,7 @@ We also conducted **collaborative design sessions** and **workshops** to ideate 
                 <em class="lead">A subscription service for regular home maintenance and regular inspections, by qualified and trustworthy advisors to discover repair needs before they become problems.</em>
             </ol>
         </div>
-     {%- workimage "/work/pm-home-maintenance/00-process/valueprop.png", "figure text-muted mb-2", "ideating on value propositions", "ideating on value propositions"  -%}
+     {%- workimage "/work/pm-home-maintenance/00-process/valueprop.webp", "figure text-muted mb-2", "ideating on value propositions", "ideating on value propositions"  -%}
 </div>
 </div>
 

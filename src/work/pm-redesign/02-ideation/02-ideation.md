@@ -27,5 +27,5 @@ Part of validating this design and workflow was running it through several commo
     {%- workimage "/work/pm-redesign/02-ideation/v04scenario-05.webp", "figure text-muted mb-2", "Scenario Step 6" -%}
 </div>
 </div>
-{%- workimage "/work/pm-redesign/02-ideation/v3workflow-wires.png", "figure text-muted mb-2", "Scenario: landlord calls to schedule work at a tenant's home" -%}
+{%- workimage "/work/pm-redesign/02-ideation/v3workflow-wires.webp", "figure text-muted mb-2", "Scenario: landlord calls to schedule work at a tenant's home" -%}
 

@@ -10,4 +10,4 @@ type: "work"
 weight: 70
 tags: ["Project Management","Accessibility","Web Development","No Code Development"]
 ---
-TBD
+An overview of how I led EcoMap's initiative to become WCAG 2.1 AA compliant
