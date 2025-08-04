@@ -34,7 +34,7 @@ images: [ {
     "columns": "col col-6 md-4 lg-3" ,
     "order": 0
 }, {
-    "src": "04-final-mobile - New Guide v2 - Tasks in Progress.webp",
+    "src": "04-final-mobile - New Guide v2 - Tasks in Progress.png",
     "title": "New Guide Design - Mobile",
     "caption": true,
     "columns": "col col-6 md-4 lg-3" ,
@@ -52,12 +52,6 @@ images: [ {
     "columns": "col col-6 md-4 lg-3" ,
     "order": 0
 },{
-    "src": "04-final-admin-Pathways Admin.webp",
-    "title": "Admin - Pathway Management",
-    "caption": true,
-    "columns": "col col-6 md-4 lg-3" ,
-    "order": 0
-}, {
     "src": "04-final-admin-User Management in Pathways.webp",
     "title": Admin - Dashboard Management with pathways",
     "caption": true,
