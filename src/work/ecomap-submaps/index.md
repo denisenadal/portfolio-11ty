@@ -3,7 +3,7 @@ title: "Submaps"
 subtitle: "UI/UX Design"
 date: 2023-11-01
 date_range: "Summer - Fall 2023"
-draft: true
+draft: false
 featured: true
 # image: {"name":"iq-group.webp"," alt":"design for the quote presentation process"}
 type: "work"

@@ -4,7 +4,7 @@ name: "build"
 date: 2023-04-01
 draft: false
 order: 0
-columns: "col-12"
+columns: "col md-8 lg-7"
 ---
 We delivered the feature that was sold to customers, but it didn’t have a lot of engagement. It was something of an unsuccessful feature because it exposed that these platforms didn’t have a regular audience - that wasn’t the purpose - you came, you found what you needed and you go on your way. 
 

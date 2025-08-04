@@ -16,7 +16,15 @@ module.exports = function (eleventyConfig) {
   //eleventyConfig.addPassthroughCopy("src/admin")
   // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.setBrowserSyncConfig({ notify: true });
-
+  // eleventyConfig.addPreprocessor("subpages", "md", (data, content) => {
+	// 	if( data.page.filePathStem.match(/\/work\/.+\/\d\d-.+\/.+md/)) {
+  //     console.log("=============")
+	// 		console.log(data.page.filePathStem)
+  //     console.log("=============")
+	// 		return false;
+	// 	}
+	// 	return 
+	// });
 
   //set up coolections & data
   const site = require('./src/_data/site.js');
@@ -24,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("allSections", async (collectionsApi) => {
     return collectionsApi.getAll().filter(function (item) {
-      if ( item.page.filePathStem.includes('work') && item.page.filePathStem.includes('0') && item.data.draft !== true) {
+      if ( item.page.filePathStem.includes('work') && item.page.filePathStem.includes('0') ) {
         return true
       }
     }).sort(function (a, b) {
