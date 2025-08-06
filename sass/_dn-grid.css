@@ -94,6 +94,10 @@
         gap: var(--gap-units);
         --gap: var(--gap-units);
     }
+
+    .xs-hide{
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
