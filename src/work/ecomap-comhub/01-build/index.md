@@ -19,12 +19,12 @@ images: [{
     "order": 0
 }]
 ---
-<div class="col sm-6 md-5">
+<div class="col col-12 sm-6 md-5">
 Because we were moving fast, our research process mainly consisted of looking at other community platforms, discussion forums, and social media apps to understand common design patterns and workflows.  Designing the UI and designing the architecture and data structures all happened concurrently within a few days.
 
 This feature was mainly built by our primary developer, Shua, and together we did QA before releasing the feature.
 </div>
-<div class="col sm-6 md-7 container">
-{%- workimage "/work/ecomap-comhub/01-build/reference.webp", "col md-5", "Community Feed reference" ,"Community Feed reference"  -%}
-{%- workimage "/work/ecomap-comhub/01-build/reference1.webp",  "col md-7","Post Editor reference"  ,"Post Editor reference" -%}
+<div class="col col-12 sm-6 md-7 container">
+{%- workimage "/work/ecomap-comhub/01-build/reference.webp", "col-5", "Community Feed reference" ,"Community Feed reference"  -%}
+{%- workimage "/work/ecomap-comhub/01-build/reference1.webp",  "col-7","Post Editor reference"  ,"Post Editor reference" -%}
 </div>

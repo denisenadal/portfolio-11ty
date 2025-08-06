@@ -30,13 +30,13 @@ images: [{
 }
 ]
 ---
-<div class="col sm-7 lg-8"> 
+<div class="col col-12 sm-7 lg-8"> 
 
 The design and testing process was iterative, and the early stages began concurrently with our research process. Once we felt we had a good understanding of the customer and the problem, and feedback on our early designs, we worked them up to high clarity, creating clickable prototypes that we could test with users, and and use in product demos to garner feedback from customers. This allowed us to refine the usability of the design before handing off to engineering.
 
 During this process, we also collaborated with internal stakeholders on our team. We checked with Customer Success, who are closest to our customers on a daily basis to get feedback on usability and if it met customer needs. We checked with sales and marketing to see if this is what they would want to sell, and make sure we were aligned on what features are included and what materials they would need to start selling and marketing. Through this process we identified which metrics would be critical to track in order to prove value to prospects.
 </div> 
-<div class="col sm-5 lg-4"> 
+<div class="col col-12 sm-5 lg-4"> 
 {%- workimage "/work/ecomap-pathways/02-design/01-reference.webp", "figure text-muted mb-2", "Examples of Reference images","Examples of Reference images"  -%}
 {%- workimage "/work/ecomap-pathways/02-design/02-wireframes-recommendations.webp", "figure text-muted mb-2", "Examples early wireframes","Examples early wireframes"  -%}
 {%- workimage "/work/ecomap-pathways/02-design/02-mockups-v1.webp", "figure text-muted mb-2", "Exploring different homepage ideas","Exploring different homepage ideas"  -%}

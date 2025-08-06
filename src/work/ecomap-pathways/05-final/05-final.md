@@ -7,25 +7,25 @@ images: [ {
     "src": "05-final-dashboard-desktop.webp",
     "title": "Pathways User Dashboard",
     "caption": true,
-    "columns": "col sm-6",
+    "columns": "col col-6 sm-6",
     "order": 0
 }, {
     "src": "05-Non-Pathways Dashboard.webp",
     "title": "Non-Pathways User Dashboard",
     "caption": true,
-    "columns": "col sm-6 ",
+    "columns": "col col-6 sm-6 ",
     "order": 0
 }, {
-    "src": "05-final-dashboard-mobile.webp",
-    "title": "User Dashboard Mobile",
-    "caption": true,
-    "columns": "col sm-6 md-4 lg-3",
-    "order": 0
-},{
     "src": "05-Homepage Module _ Single Path_ Mobile View.webp",
     "title": "Homepage Module - Mobile View",
     "caption": true,
-    "columns": "col sm-6 md-4 lg-3",
+    "columns": "col col-6 sm-6 md-4 lg-3",
+    "order": 0
+},{
+    "src": "05-final-dashboard-mobile.webp",
+    "title": "User Dashboard Mobile",
+    "caption": true,
+    "columns": "col col-6 sm-6 md-4 lg-3",
     "order": 0
 }]
 ---

@@ -7,31 +7,31 @@ images: [{
     "src": "03-worflow-pathways+onboarding.webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col md-6",
+    "columns": "col col-12 md-6",
     "order": 0
 },{
     "src": "03-prototypes-home.webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col sm-6 md-4 lg-3",
+    "columns": "col col-12 sm-6 md-4 lg-3",
     "order": 0
 },{
     "src": "03-prototype-dashboard.webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col sm-6 md-4 lg-3",
+    "columns": "col col-12 sm-6 md-4 lg-3",
     "order": 0
 },{
     "src": "03-workflow-01.webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col sm-6 md-4",
+    "columns": "col col-12 sm-6 md-4",
     "order": 0
 },{
     "src": "03-prototypes-Pathways-Admin.webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col md-8",
+    "columns": "col col-12 md-8",
     "order": 0
 }
 ]
