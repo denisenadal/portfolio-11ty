@@ -6,19 +6,19 @@ columns: "col-12 md-12 lg-6"
 images: [{"src":"marketneed.webp",
     "title":"Stats about the market",
     "caption":  false,
-    "columns":  "sm-6 md-6 lg-3",
+    "columns":  "sm-6 md-4 lg-3",
     "order": 1
     },
     {"src":"marketsize.webp",
     "title":"Stats about the market size",
     "caption":  false,
-    "columns":  "sm-6 md-6 lg-3",
+    "columns":  "sm-6 md-4 lg-3",
     "order": 2
     },
     {"src":"productoffering.webp",
     "title":"our initial product offering idea",
     "caption":  false,
-    "columns":  "col-12 md-12 lg-6",
+    "columns":  "col-12 md-4 lg-3",
     "order": 3
     }]
 ---

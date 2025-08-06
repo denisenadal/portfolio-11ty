@@ -62,7 +62,7 @@ I also performed **competitive analysis** by looking at how competing products, 
 </div>
 {% hr %}
 <div class="container lg  gap-1">
-<div class="col col-12 col-12 md-8">
+<div class="col md-7">
 
 ### Ideation & Design
 
