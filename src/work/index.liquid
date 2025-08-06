@@ -9,12 +9,7 @@ permalink: "/work{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber | p
 showPagination: true,
 pagination:{
     size: 12,
-    data: "collections.allWork",
-    before: function(paginationData, fullData) {
-        return paginationData.sort(function(a,b){
-            return b.data.weight -a.data.weight;
-        })
-      }
+    data: "collections.allWork"
     }
 }
 ---

@@ -149,6 +149,9 @@
     gap: var(--gap-units);
     --gap: var(--gap-units);
   }
+  .xs-hide {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .gap-2 {
@@ -4072,6 +4075,14 @@ body.work main section.process-nav {
   border-bottom: dotted var(--gray-300) 4px;
   background: var(--white);
 }
+body.work main section #work-header-left img {
+  border-radius: 36px;
+}
+body.work main section .container {
+  column-gap: 4rem;
+  row-gap: 2rem;
+  --gap: 4rem;
+}
 body.work main section h1.text-pink {
   margin: -0.75rem 0 1.25rem;
 }
@@ -4084,6 +4095,14 @@ body.work main section a:not(.btn) {
 }
 body.work main section a:not(.btn):hover {
   color: var(--color-primary);
+}
+body.work main section .content li {
+  text-indent: -1.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+body.work main section .content li p {
+  display: inline;
 }
 body.work main section.content-section h3 {
   margin-top: 2rem;
@@ -4113,9 +4132,12 @@ body.work main section figure {
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
+  margin: 0;
+  border-radius: 4%;
 }
 body.work main section figure .figure-img {
   margin: 0;
+  border-radius: 4% 4% 0 0;
 }
 body.work main section figure figcaption,
 body.work main section figure .fig-caption {
@@ -4123,9 +4145,14 @@ body.work main section figure .fig-caption {
   line-height: 1rem;
   padding: 0.25rem 0.5rem;
 }
-body.work main section .container.gap-1 .col a.image-modal-link,
+body.work main section .container a.image-modal-link,
 body.work main section .container.gap-1 .col {
   margin-bottom: 1rem;
+}
+body.work main section .image-modal-link {
+  border-radius: 4%;
+  overflow: hidden;
+  display: block;
 }
 
 hr.content-divider {

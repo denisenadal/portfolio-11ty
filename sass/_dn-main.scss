@@ -151,8 +151,17 @@
         border-top: dotted var(--gray-300) 4px;
         border-bottom: dotted var(--gray-300) 4px;
         background: var(--white)    }
+    
+    #work-header-left img{
+        border-radius: 36px;
+    }
 
     /*work page sections*/
+    .container {
+        column-gap: 4rem;
+        row-gap: 2rem;
+        --gap: 4rem;
+    }
     h1.text-pink {
         margin: -0.75rem 0 1.25rem;
     }
@@ -168,6 +177,15 @@
         }
         
     }
+    .content li {
+        text-indent: -1.5rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+
+        p{
+            display: inline;
+        }
+      }
 
     &.content-section {
         h3 {
@@ -203,9 +221,12 @@
         border-radius: 2px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         display: block;
+        margin: 0;
+        border-radius: 4%;
 
         .figure-img {
             margin: 0;
+            border-radius: 4% 4% 0 0;
         }
 
         figcaption,
@@ -215,10 +236,15 @@
             padding: 0.25rem 0.5rem;
         }
     }
-    .container.gap-1 .col a.image-modal-link,
+    .container a.image-modal-link,
     .container.gap-1 .col {
         margin-bottom: 1rem;
     }
+    .image-modal-link {
+        border-radius: 4%;
+        overflow: hidden;
+        display: block;
+      }
 }
 
 hr.content-divider {
