@@ -8,6 +8,7 @@ let tagBK =[];
 module.exports = function (eleventyConfig) {
   // setup server config & browersync
   eleventyConfig.addPassthroughCopy("src/assets")
+  eleventyConfig.addPassthroughCopy("src/assets/*")
   eleventyConfig.addPassthroughCopy("src/pages/*/assets")
   eleventyConfig.addPassthroughCopy("**/*.woff")
   eleventyConfig.addWatchTarget("assets/css/");
