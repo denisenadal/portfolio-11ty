@@ -16,15 +16,11 @@ module.exports = function (eleventyConfig) {
   //eleventyConfig.addPassthroughCopy("src/admin")
   // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.setBrowserSyncConfig({ notify: true });
-  // eleventyConfig.addPreprocessor("subpages", "md", (data, content) => {
-	// 	if( data.page.filePathStem.match(/\/work\/.+\/\d\d-.+\/.+md/)) {
-  //     console.log("=============")
-	// 		console.log(data.page.filePathStem)
-  //     console.log("=============")
-	// 		return false;
-	// 	}
-	// 	return 
-	// });
+  eleventyConfig.ignores.add("src/_unused/*");
+  eleventyConfig.watchIgnores.add("src/_unused/*");
+  eleventyConfig.ignores.add("src/work/_archive/*");
+  eleventyConfig.watchIgnores.add("src/work/_archive/*");
+
 
   //set up coolections & data
   const site = require('./src/_data/site.js');

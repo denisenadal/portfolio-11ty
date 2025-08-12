@@ -3,12 +3,12 @@ function showGrid(grid ){
     const $grid = $(grid);
     $grid.masonry();
 
-    $grid.find(".spinner").delay( 400 ).animate({ opacity: 0 }, 350, "swing", function () {
+    $grid.find(".spinner").delay( 300 ).animate({ opacity: 0 }, 350, "swing", function () {
         $grid.animate({ opacity: 1 }, 400, "swing");
         });
 }
 function hideGrid(el){
-    $(el).delay( 400 ).animate({ opacity: 0 }, 350, "swing", function () {
+    $(el).delay( 300 ).animate({ opacity: 0 }, 350, "swing", function () {
         $(el).find(".spinner").animate({ opacity: 1 }, 400, "swing");
     });
 }

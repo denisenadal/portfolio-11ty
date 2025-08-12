@@ -17,7 +17,7 @@
     "author": "Denise Nadal",
     "license": "ISC",
     "dependencies": {
-        "@11ty/eleventy": "^3.0.0",
+        "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
         "concurrently": "^8.0.1",
         "dotenv": "^16.4.7",
