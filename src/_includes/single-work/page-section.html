@@ -1,24 +1,23 @@
 <section class="meta-section content-section">
     <div class="container lg gap-1">
         <h2 class="text-primary col-12"> {{section.data.title}}</h2>
-        <div class="spinner-border text-info col-12"
-             role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
         <div id='{{section.page.fileSlug | formatSectionID}}-gallery' class="col-12">
-             <div class="pb-3 content {{section.data.columns | default :'col col-12 lg-6'}}">{{section.content}}</div>
-                        
+             <div class="pb-3 content gap-4 {{section.data.columns | default :'col col-12 lg-6'}}">{{section.content}}</div>
             {%- if section.data.images -%}
             <div class="grid container lg gap-1">
-            {%- assign sortedImages = section.data.images | sort: "order" -%}
-            {%- for image in sortedImages -%}
-            <div class="{{image.columns | default :'col-12 sm-6 md-4 lg-3'}} grid-item image">
-                {%- include "single-work/figure.html" -%}
+                <div class="spinner" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                {%- assign sortedImages = section.data.images | sort: "order" -%}
+                {%- for image in sortedImages -%}
+                {% assign src = section.fileSlug | append: "/" | append: image.src  %}
+                <div class="{{image.columns | default :'col-12 sm-6 md-4 lg-3'}} grid-item image">
+                    {%- include "single-work/figure.html" -%}
+                </div>
+                {%- endfor -%}
+                <div class="grid-sizer col-1 col"></div>
             </div>
-            {%- endfor -%}
-            <div class="grid-sizer col-1 col"></div>
-            </div>
-            {%- endif -%}
         </div>
+         {%- endif -%}
     </div>
 </section>

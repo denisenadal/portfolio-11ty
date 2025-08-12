@@ -2,7 +2,7 @@
     <div class="container lg gap-2"> 
         <div id="work-header-left" class="col col-12 md-7 mt-3">
             {%- if image -%}
-            <img src="{{image.name}}" alt="{{image.alt}}" class="img-responsive">
+            <img src="{{image.name}}" alt="{{image.alt}}" class="img-responsive" fetchpriority="high">
             {%- endif -%}
         </div>
         <div id="work-header-right" class="col col-12 md-5 d-flex flex-column justify-end">

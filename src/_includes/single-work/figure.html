@@ -1,9 +1,6 @@
-<a href="{{section.page.fileSlug}}/{{image.src}}" class="image-modal-link mb-3">
-    <figure class="figure"
-            data-title="{{image.title}}">
-        <img src="{{section.page.fileSlug}}/{{image.src}}"
-             alt="{{image.caption | default: image.title}}"
-             class="figure-img img-responsive">
+<a href="{{src}}" class="image-modal-link">
+    <figure class="figure" data-title="{{image.title}}">
+        <img src="{{src}}" alt="{{image.caption | default: image.title}}" class="figure-img img-responsive" loading=”lazy”>
         {%- if image.caption -%}
         {%- if image.caption == true -%}
         {%- assign caption = image.title -%}

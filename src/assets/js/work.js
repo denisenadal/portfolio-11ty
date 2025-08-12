@@ -1,49 +1,96 @@
-const Shuffle = window.Shuffle
 //init grid, fade out spinner and fade in grid
-function imagesLoadedHandler($grid ){
-    console.log("images loaded")
-    
-    $grid.closest(".meta-section.content-section").find(".spinner-border").animate({ opacity: 0 }, 200, "swing", function () {
-        $grid.animate({ opacity: 1 }, 200, "swing");
-        console.log("finish images loaded")
-        $grid.masonry();
+function showGrid(grid ){
+    const $grid = $(grid);
+    $grid.masonry();
+
+    $grid.find(".spinner").delay( 400 ).animate({ opacity: 0 }, 350, "swing", function () {
+        $grid.animate({ opacity: 1 }, 400, "swing");
         });
 }
+function hideGrid(el){
+    $(el).delay( 400 ).animate({ opacity: 0 }, 350, "swing", function () {
+        $(el).find(".spinner").animate({ opacity: 1 }, 400, "swing");
+    });
+}
+function getGridConfig(el){
+    const colW = parseInt((el.offsetWidth  - 220) / 12);
+   return {
+        itemSelector: '.grid-item',
+        columnWidth:colW,
+        gutter: 20,
+        percentPosition: true,
+        // horizontalOrder: true,
+        initLayout: false,
+        containerStyle: null,
+        resize: false,
+        isResizeBound:false
+      };
+}
+
+function intersectionCallback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        showGrid(entry.target)
+      } else {
+        hideGrid(entry.target)
+      }
+
+    });
+  }
+
+//get content from clicked link, and populate modal
+function modalHandler(link){
+    var src = $(link).find('img').attr('src');
+    var cap = $(link).find('figcaption').text();
+    var title =  $('#work-title').text();
+    var imgModal = $('.image-modal');
+    imgModal.addClass("active")
+    imgModal.find('.modal-image').attr('src', src);
+    imgModal.find('a').attr('href', src);
+    imgModal.find('.caption').text(cap);
+    imgModal.find('.modal-title').text(title);
+    imgModal.fadeIn(350,'linear');
+}
+
 
 $(document).ready(function(){
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: [0.0, 0.75],
+      };
+    
+    const gridObserver = new IntersectionObserver(intersectionCallback, observerOptions);
+
     var grids = [];
     console.log("doc reayd")
     $('.grid').each(function(i, el){
         //if galleries exist, for each gallery do all the prep
         if ( ($(el).find('.grid-item')).length > 1 ){
-            const colW = parseInt((el.offsetWidth  - 220) / 12);
-            console.log(colW)
-            const $grid = $(el).masonry({
-                itemSelector: '.grid-item',
-                columnWidth:colW,
-                gutter: 20,
-                percentPosition: true,
-                // horizontalOrder: true,
-                initLayout: false,
-                containerStyle: null
-              });
-
-           //when images are loaded, init the grid
-            $grid.imagesLoaded().always(function () {
-               imagesLoadedHandler($grid);
-            })
+            gridObserver.observe(el)
+            const config = getGridConfig(el);
+            const $grid = $(el).masonry(config );
 
             grids.push($grid);
         }
         //if there's no gallery, just show the content
         else{
-            $(el).siblings(".spinner-border").animate({ opacity: 0 }, 350, "swing", function () {
-                $(el).animate({ opacity: 1 }, 200, "swing");
-            });
+           hideGrid(el)
         }
     });
 
-
+    $(window).on('resize', function(e) {
+        clearTimeout(window.resizedFinished);
+        window.resizedFinished = setTimeout(function(){
+        console.log('Resized finished.');
+        grids.forEach($grid => {
+            $grid.masonry('destroy');
+            let newConfig = getGridConfig($grid[0]);
+            $grid.masonry(newConfig);
+            $grid.masonry();
+        });
+    }, 250);
+    });
     //open modal
     $('.image-modal-link').click(function(event){
         event.preventDefault();
@@ -64,18 +111,3 @@ $(document).ready(function(){
         event.stopPropagation();
     });
 });
-
-//get content from clicked link, and populate modal
-function modalHandler(link){
-    var src = $(link).find('img').attr('src');
-    var cap = $(link).find('figcaption').text();
-    var title =  $('#work-title').text();
-    var imgModal = $('.image-modal');
-    imgModal.addClass("active")
-    imgModal.find('.modal-image').attr('src', src);
-    imgModal.find('a').attr('href', src);
-    imgModal.find('.caption').text(cap);
-    imgModal.find('.modal-title').text(title);
-    imgModal.fadeIn(350,'linear');
-}
-console.log("js read")

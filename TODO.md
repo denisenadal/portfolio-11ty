@@ -1,23 +1,34 @@
 
 # Missing Images
-Missing Images
-
-- COmmHUb Cover
-- SubMap Cover
--Search Cover
-- Accessibility Cover 
-
-- CommHub live screens
-- SubMap live screens 
-- Search Live Screens
+Search Live Screens
 
 
 # TODO
-[ ] add details on new projects
-
-[ ] test theme
+- finish testing in CHrome, Edge, Safari
+- fix gallery spinners
+- make sure form works
 [ ] deploy
-[ ] 
+
+# Post Deploy
+- ad search project
+- add experience section/page
+
+#6A62FF
+#928CFE
+
+
+reorder columns 
+
+EVE-JnCm-uD5u-q6ZoE
+
+.bottom-right-graphic {
+    right: -50%;
+    bottom: auto;
+    position: absolute;
+    height: auto;
+    top: calc(80vh - 140px);
+    max-height: 0;
+}
 
 
 # Done
@@ -32,7 +43,15 @@ Missing Images
 # Notes
 ---☆
 
-
+- role flex-grow
+- SE hard seltzer adjust column gap
+- work gallery adjust column gap
+<420px is xxs
+420+ is xs  -> header, containers adjust this view
+768+ is sm   -> submaps, adust this view, comhub adjust this view
+1024+ is md
+1280+ is lg
+16160000+ is xl
 ==============
 
 about me -
@@ -49,12 +68,5 @@ about me -
 - add your interaction design membership?
 - karen pang -> connect linkedin
 
----swithc to webp images in 
 
-PM-Call
-PM-IQ
-PM-Nav
-Spliker
-Strange Horion
-SWR-SRS
 

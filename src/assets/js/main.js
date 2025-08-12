@@ -1,4 +1,3 @@
-
 //https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists
 function waitForElm(selector) {
     return new Promise(resolve => {
@@ -22,3 +21,9 @@ function waitForElm(selector) {
 }
 
 document.getElementById("copyright-date").innerText = new Date().getFullYear();
+
+waitForElm("#main-menu-button").then((el)=>{
+    el.addEventListener("click", (e)=>{
+        e.target.classList.toggle("opened");
+    })
+})
