@@ -117,6 +117,7 @@
 
     .form-label {
         text-transform: uppercase;
+        
         font-weight: 600;
         font-size: 14px;
         opacity: .76;
@@ -130,6 +131,9 @@
 
 #message {
     min-height: 120px;
+}
+#my-form-status {
+    color: var(--color-text) !important;
 }
 
 
@@ -165,8 +169,13 @@ body.work main section {
     #work-header-left img{
         border-radius: 36px;
     }
+    strong.org {
+        font-weight: 500;
+    }
+
+    @media (min-width:768px){
     .work-header-bottom {
-        dl {
+                dl {
             display: grid;
             grid-template-columns: 58% 42%;
             grid-template-rows: auto auto;
@@ -177,12 +186,10 @@ body.work main section {
         dd {
             grid-row-start: 2;
         }
-    
-        strong.org {
-            font-weight: 500;
+        
         }
     }
-    h1.text-pink {
+        h1.text-pink {
         margin: -0.75rem 0 1.25rem;
     }
     p:empty {

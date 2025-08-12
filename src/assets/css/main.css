@@ -4139,6 +4139,10 @@ a.label.solid:hover {
   min-height: 120px;
 }
 
+#my-form-status {
+  color: var(--color-text) !important;
+}
+
 /* tags page */
 #tags .archive-list {
   gap: 0.5rem;
@@ -4172,18 +4176,20 @@ body.work main section:nth-child(even) {
 body.work main section #work-header-left img {
   border-radius: 36px;
 }
-body.work main section .work-header-bottom dl {
-  display: grid;
-  grid-template-columns: 58% 42%;
-  grid-template-rows: auto auto;
-  column-gap: 1rem;
-  width: 100%;
-}
-body.work main section .work-header-bottom dd {
-  grid-row-start: 2;
-}
-body.work main section .work-header-bottom strong.org {
+body.work main section strong.org {
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  body.work main section .work-header-bottom dl {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+    width: 100%;
+  }
+  body.work main section .work-header-bottom dd {
+    grid-row-start: 2;
+  }
 }
 body.work main section h1.text-pink {
   margin: -0.75rem 0 1.25rem;
