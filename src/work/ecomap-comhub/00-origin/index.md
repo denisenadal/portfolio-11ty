@@ -1,5 +1,6 @@
 ---
 title: "Project Origin"
+permalink: false
 name: "origin"
 date: 2023-04-01
 draft: false

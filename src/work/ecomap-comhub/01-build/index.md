@@ -1,5 +1,6 @@
 ---
 title: "Design, Build, Test"
+permalink: false
 name: "build"
 date: 2023-04-01
 draft: false

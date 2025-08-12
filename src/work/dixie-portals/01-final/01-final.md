@@ -1,5 +1,6 @@
 ---
 title: "The Results"
+permalink: false
 date: 2020-01-31
 draft: 
 order: 2

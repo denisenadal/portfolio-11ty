@@ -1,5 +1,6 @@
 ---
 title: "Design Process"
+permalink: false
 date: 2021-01-01
 draft: false
 order: 0

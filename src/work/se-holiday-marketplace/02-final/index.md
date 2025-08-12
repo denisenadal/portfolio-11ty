@@ -1,5 +1,6 @@
 ---
 title: "The Live Marketplace"
+permalink: false
 date: 2020-11-01
 draft: false
 order: 0

@@ -1,5 +1,6 @@
 ---
 title: "Problem"
+permalink: false
 name: "problem"
 date: 2017-10-31
 draft: false

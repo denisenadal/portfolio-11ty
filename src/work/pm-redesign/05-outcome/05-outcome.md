@@ -1,5 +1,6 @@
 ---
 title: "Outcome"
+permalink: false
 draft: false
 columns: "col-12 md-8 lg-7"
 

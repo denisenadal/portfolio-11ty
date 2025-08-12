@@ -1,5 +1,6 @@
 ---
 title: "Solution 4"
+permalink: false
 date: 2019-11-30
 draft: false
 order: 6

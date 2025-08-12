@@ -1,5 +1,6 @@
 ---
 title: The Final Design
+permalink: false
 draft: false
 date: 2018-10-31
 order: 1

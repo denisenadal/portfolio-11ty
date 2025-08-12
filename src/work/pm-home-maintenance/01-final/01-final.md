@@ -1,5 +1,6 @@
 ---
 title: "Project Outcome"
+permalink: false
 date: 2020-01-31
 draft: false
 columns: "col-12 md-12 lg-6"

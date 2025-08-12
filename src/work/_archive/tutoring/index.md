@@ -1,5 +1,6 @@
 ---
 title: Tutoring Schedule App
+permalink: false
 subtitle: Design & Development
 date: 2017-01-31
 date_range: "January 2017"

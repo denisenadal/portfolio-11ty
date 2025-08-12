@@ -1,5 +1,6 @@
 ---
 title: "Ideation"
+permalink: false
 draft: false
 columns: "col-12"
 

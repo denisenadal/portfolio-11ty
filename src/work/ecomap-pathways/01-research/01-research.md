@@ -1,72 +1,47 @@
 ---
 title: "Customer Research"
+permalink: false
 date: 2025-07-17
 columns: "col-12 container"
 images: [{
-    "src": "01-Pathways Research Presentation (0).webp",
-    "title":"Pathways Research Presentation",
-    "caption": false,
-    "columns": "col col-6 md-4 lg-3",
-    "order": 0
-},
-{
     "src": "01-Pathways Research Presentation (1).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 },
 {
     "src":"01-Pathways Research Presentation (2).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 },{
     "src": "01-Pathways Research Presentation (3).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 },
 {
     "src": "01-Pathways Research Presentation (4).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 },
 {
     "src":"01-Pathways Research Presentation (5).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
-    "order": 0
-},{
-    "src": "01-Pathways Research Presentation (6).webp",
-    "title":"Pathways Research Presentation",
-    "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 },
 {
-    "src": "01-Pathways Research Presentation (7).webp",
-    "title":"Pathways Research Presentation",
-    "caption": false,
-    "columns": "col col-6 md-4 lg-3",
-    "order": 0
-},
-{
-    "src":"01-Pathways Research Presentation (8).webp",
-    "title":"Pathways Research Presentation",
-    "caption": false,
-    "columns": "col col-6 md-4 lg-3",
-    "order": 0
-},{
     "src":"01-Pathways Research Presentation (9).webp",
     "title":"Pathways Research Presentation",
     "caption": false,
-    "columns": "col col-6 md-4 lg-3",
+    "columns": "col col-6 md-4",
     "order": 0
 }]
 ---

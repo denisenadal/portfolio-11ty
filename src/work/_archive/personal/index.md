@@ -1,5 +1,6 @@
 ---
 title: "Personal Portfolio & Branding"
+permalink: false
 subtitle: "UI/UX Design"
 date: 2018-04-31
 date_range: "Spring 2018"

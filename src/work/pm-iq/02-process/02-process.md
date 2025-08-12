@@ -1,5 +1,6 @@
 ---
 title: "Process"
+permalink: false
 name: "process"
 date: 2019-09-01
 draft: false

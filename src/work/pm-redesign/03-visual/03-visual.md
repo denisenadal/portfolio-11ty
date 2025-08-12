@@ -1,5 +1,6 @@
 ---
 title: "Visual Design"
+permalink: false
 draft: false
 columns: "col-12"
 

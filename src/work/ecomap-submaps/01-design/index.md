@@ -1,5 +1,6 @@
 ---
 title: "Design"
+permalink: false
 name: "design"
 date: 2023-04-01
 draft: false

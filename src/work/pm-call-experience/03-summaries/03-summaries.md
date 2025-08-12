@@ -1,5 +1,6 @@
 ---
 title: "Solution 2 (Part 1)"
+permalink: false
 date: 2019-11-30
 draft: false
 order: 3

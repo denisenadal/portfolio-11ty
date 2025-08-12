@@ -1,5 +1,6 @@
 ---
 title: "Background"
+permalink: false
 name: "background"
 date: 2019-11-30
 draft: false

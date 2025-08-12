@@ -1,5 +1,6 @@
 ---
 title:  "CritiqueIt Web App"
+permalink: false
 subtitle: "UI/UX Design & Development"
 date: 2017-10-31
 date_range: "Fall 2017"

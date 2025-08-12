@@ -1,5 +1,6 @@
 ---
 title:  "Dixie Online"
+permalink: false
 subtitle: "Web Design"
 date: 2017-10-31
 date_range: "Fall 2017"

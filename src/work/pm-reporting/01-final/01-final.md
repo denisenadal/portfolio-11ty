@@ -1,5 +1,6 @@
 ---
 title: "The Final Designs"
+permalink: false
 date: 2020-01-31
 draft: false
 order: 1

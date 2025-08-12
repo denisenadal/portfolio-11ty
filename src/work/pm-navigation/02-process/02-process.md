@@ -1,5 +1,6 @@
 ---
 title: "Design Round 3"
+permalink: false
 draft: false
 order: 2
 columns: "col-12 md-12 lg-6"

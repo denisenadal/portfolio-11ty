@@ -1,5 +1,6 @@
 ---
 title:  "flickr feed"
+permalink: false
 subtitle: "Coding Project"
 date: 2018-03-31
 date_range: "March 2018"
