@@ -2,6 +2,14 @@
 layout: base.html 
 hero:
   description: I like to bring order to chaos without stifling creativity, and designing delightful and accessible experiences.
+about:
+  title: Design Leader
+  subtitle: I like to design software & teams
+  desc: I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development. I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions. I'm always open to learning about new opportunities to grow.
+person:
+  title: Creative
+  subtitle: I like to create & cultivate
+  desc: I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights! I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my 3 cats.
 stats:
   - id: pm
     num: 2
@@ -33,12 +41,12 @@ work:
     </div>
   </div>
 </section>
-<section id="about-career" class="">
-  <div class="container lg gap-2">
+<section id="about" class="about-career">
+  <div class="container lg gap-4">
       <div class="col-12 sm-8">
-          <h2 class="heading h1 mb-1 ">Design Leader</h2>
-          <p class="display-heading h3 subtitle mb-1">I like to design software & teams</p>
-          <p>I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development.</p><p>I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions.</p><p>I'm always open to learning about new opportunities to grow.</p>
+          <h2 class="heading h1 mb-1 ">{{about.title}}</h2>
+          <p class="display-heading h3 subtitle mb-1">{{about.subtitle}}</p>
+          <p>{{about.desc}}</p>
           <!--<h3 class="h3 text-center my-2">Experience</h3>
           <div class="stats container gap-1 col-gap">
               {%- for stat in stats -%}
@@ -55,14 +63,14 @@ work:
       </figure>
   </div>
 </section>
-<section id="about-person" class="">
-  <div class="container lg gap-2 flex-center">
+<section id="person" class="">
+  <div class="container lg gap-4 flex-center">
     <div class="col-12 sm-7 ">
-        <h2 class="heading h1 mb-1 ">Creative</h2>
+        <h2 class="heading h1 mb-1 ">{{person.title}}</h2>
         <p class="display-heading h3 subtitle">
-            I like to create & cultivate
+            {{person.subtitle}}
         </p>
-        <p>I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights!</p> <p>I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my 3 cats.<p>
+        <p>{{person.desc}}</p>
     </div>
     <div class="about-person-gallery col-12 sm-5 col container flex-center gap-1">
         <figure class="col-7 m-0"><img src="/assets/images/home/garden.webp" alt="" class="img-responsive"></figure>

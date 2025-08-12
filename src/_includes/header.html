@@ -1,25 +1,18 @@
 <header id="main-header" class="p-fixed col-12">
     <div class="navbar py-1 container lg" role="navigation" aria-label="Main Menu">
         <div class="branding navbar-section flex-grow">
-            <!-- <button class="hamburger-menu mr-2 mt-1" aria-label="Toggle Main Menu">
-					<div class="hamburger-inner" aria-label="hidden"></div>
-				</button> -->
-            <!--<a id="logo-link"
-							   data-menuanchor="intro"
-							   href="/#intro"
-							   class="nav-link px-0">
-								<img src="{{site.logo}}"
-									 alt="logo"
-									 class="navbar-brand rounded-circle p-0 m-0"
-									 width="36">
-							</a> -->
             <a id="logo-link" class="navbar-brand p-0 highlight-text" data-menuanchor="intro" href="{{site.baseURL}}#intro">
                 <p class="logo-name"><span class="title">{{site.title }}</span> {%if site.subtitle%}<span class="star">☆</span><br class="d-sm-none"><span class="subtitle"> {{ site.subtitle}}</span>{% endif %}
                 </p>
             </a>
         </div>
-
+        <span class="spacer navbar-section sm-hide"></span>
         {% if navigation %}
+        <button id="main-menu-button" class="hamburger btn btn-link">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav id="main-menu" class="navbar-section" aria-label="Main Menu Items">
             {% for item in navigation %}
                 {% if item.fullPage %}
