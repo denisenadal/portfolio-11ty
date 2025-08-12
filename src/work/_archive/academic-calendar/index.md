@@ -1,6 +1,7 @@
 ---
 title: Academic Calendar App
 permalink: false
+layout: "base.html"
 subtitle: Design & Development
 date: 2018-02-31
 date_range: "Fall 2017 -Spring 2018"

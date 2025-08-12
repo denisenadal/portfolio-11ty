@@ -1,6 +1,7 @@
 ---
 title:  "Campus Map App"
 permalink: false
+layout: "base.html"
 subtitle: "UI/UX Design & Development"
 date: 2017-07-31
 date_range: "Summer 2017"

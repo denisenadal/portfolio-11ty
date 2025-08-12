@@ -1,6 +1,7 @@
 ---
 title:  "29 Mule Team"
 permalink: false
+layout: "base.html"
 subtitle: "Branding Design Exercise"
 date: "2015-10-31"
 date_range: "Fall 2015"

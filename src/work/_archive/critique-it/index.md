@@ -1,6 +1,7 @@
 ---
 title:  "CritiqueIt Web App"
 permalink: false
+layout: "base.html"
 subtitle: "UI/UX Design & Development"
 date: 2017-10-31
 date_range: "Fall 2017"

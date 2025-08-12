@@ -1,6 +1,7 @@
 ---
 title: "Invoice Template Design"
 permalink: false
+layout: "base.html"
 subtitle: "UI/UX Design"
 date: 2018-10-31
 date_range: "Fall 2018"

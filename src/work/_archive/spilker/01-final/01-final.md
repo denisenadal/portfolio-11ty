@@ -1,0 +1,25 @@
+---
+title: "The Final Design"
+permalink: false
+layout: "base.html"
+date: 2020-01-31
+draft: 
+order: 1
+columns: "col-12"
+images: [{
+"src":"spilker-set.webp",
+"title":"mockup of website on all screens",
+"name": "final-image",
+"caption": true,
+    "columns":  "sm-6",
+    "order": 1
+},{
+"src":"spilker-branding.webp",
+"title":"web presence and branding kit",
+"name": "final-image",
+"caption": true,
+    "columns":  "sm-6",
+    "order": 2
+}]
+---
+Spilker Custom Homes used our design for their web presence for several years, from 2016 to 2019.
