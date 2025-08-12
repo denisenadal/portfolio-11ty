@@ -48,7 +48,7 @@ EVE-JnCm-uD5u-q6ZoE
 - work gallery adjust column gap
 <420px is xxs
 420+ is xs  -> header, containers adjust this view
-768+ is sm   -> submaps, adust this view, comhub adjust this view
+768+ is sm  
 1024+ is md
 1280+ is lg
 16160000+ is xl
@@ -68,5 +68,21 @@ about me -
 - add your interaction design membership?
 - karen pang -> connect linkedin
 
+
+
+====
+NAV - add about, resume
+
+intro- what it is
+details - dates, people, role, tech, project timeline, etc
+probelm overview
+solution overview
+
+process
+highlights, findings, insights etc
+
+
+outcome
+metrics, reflection
 
 
