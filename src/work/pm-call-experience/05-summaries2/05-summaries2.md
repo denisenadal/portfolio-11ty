@@ -1,6 +1,7 @@
 ---
 title: "Solution 2 (Part 2)"
 permalink: false
+layout: "base.html"
 date: 2019-11-30
 draft: false
 order: 5

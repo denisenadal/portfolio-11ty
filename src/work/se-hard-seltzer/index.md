@@ -10,4 +10,4 @@ type: "work"
 tags: ["Web Development","Web Design","11ty" ]
 weight: 120
 ---
-Design and development for the Seagram's Escapes Hard Seltzer brand website. 
+Design and development for the Seagram's Escapes Hard Seltzer brand website.  

@@ -1,6 +1,7 @@
 ---
 title: "Discovery"
 permalink: false
+layout: "base.html"
 name: "discovery"
 date: 2023-04-01
 draft: false

@@ -1,6 +1,7 @@
 ---
 title:  "Research"
 permalink: false
+layout: "base.html"
 date: 2021-09-01
 draft: false
 columns: "col-12"
@@ -21,13 +22,13 @@ Through an interview process with the Talent Team SME, we developed the followin
 
     </div>
     <div class="col col-12  md-4 lg-6">
-    <div class="p-2 bg-blue text-white mb-2">
+    <div class="p-2 bg-seafoam mb-2">
 
     #### Product Purpose
     Build a content management system for a company-wide intranet system. It should be a one-stop destination for information about company policies, procedures and news.
 
     </div>
-    <div class="p-2 bg-indigo text-white mb-2">
+    <div class="p-2 bg-ocean text-white mb-2">
 
     #### Target audience
     **FIFCOUSA Employees.** They will be looking for company policies, procedures, information, and news. We want then to view the newsletter and engage with timely content

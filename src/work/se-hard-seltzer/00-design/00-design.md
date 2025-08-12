@@ -1,6 +1,7 @@
 ---
 title: "Design Process"
 permalink: false
+layout: "base.html"
 date: 2021-01-01
 draft: false
 order: 0
@@ -15,13 +16,13 @@ Afterwords I quickly worked up some low fidelity mockups to make sure we were on
 
 ### Design Iterations
 <div class="container lg gap-1">
-<div class="col col-6 sm-6 md-4 lg-4  mb-2">
-{%- workimage  "/work/se-hard-seltzer/00-design/00-wireframe.webp","","Initial wireframes", "Initial wireframes"  -%}
-{%- workimage  "/work/se-hard-seltzer/00-design/01-lofi-design.webp","","Low Fidelity Designs", "Low Fidelity Designs"  -%}
+<div class="col xxs-6 xs-4  mb-2">
+{%- workimage  "/work/se-hard-seltzer/00-design/00-wireframe.webp","mb-2","Initial wireframes", "Initial wireframes"  -%}
+{%- workimage  "/work/se-hard-seltzer/00-design/01-lofi-design.webp","mb-2","Low Fidelity Designs", "Low Fidelity Designs"  -%}
 </div>
-<div class="col col-6 sm-6 md-8 lg-8  mb-2">
-{%- workimage  "/work/se-hard-seltzer/00-design/03-component-design.webp","","Designs for various components", "Designs for various components"  -%}
-{%- workimage  "/work/se-hard-seltzer/00-design/02-style-variants.webp","","Exploring difference style treaments", "Exploring difference style treaments"  -%}
+<div class="col xxs-6 xs-6 md-8 lg-8  mb-2">
+{%- workimage  "/work/se-hard-seltzer/00-design/03-component-design.webp","mb-2","Designs for various components", "Designs for various components"  -%}
+{%- workimage  "/work/se-hard-seltzer/00-design/02-style-variants.webp","mb-2","Exploring difference style treaments", "Exploring difference style treaments"  -%}
 </div>
 
 </div>
@@ -29,13 +30,13 @@ Afterwords I quickly worked up some low fidelity mockups to make sure we were on
 
 ### Prototype Screens
 <div class="container lg gap-1">
-<div class="col col-6 sm-6 md-3 lg-2  mb-2">
+<div class="col xxs-6 xs-3  mb-2">
 {%- workimage  "/work/se-hard-seltzer/01-testing/hifi-mobile-320px@1x.webp","","Landing page - Desktop size", "Landing page - Desktop size" -%}
 </div>
-<div class="col col-6 sm-6 md-4 lg-4  mb-2">
+<div class="col xxs-6 xs-3  mb-2">
 {%- workimage  "/work/se-hard-seltzer/01-testing/hifi-tablet-768px@1x.webp","","Landing page - Tablet size", "Landing page - Tablet size"  -%}
 </div>
-<div class="col col-6 sm-6 md-5 lg-6  mb-2">
+<div class="col col-12 xs-6  mb-2">
 {%- workimage  "/work/se-hard-seltzer/01-testing/hifi-laptop-1280px@1x.webp","","Landing page - Laptop size", "Landing page - Laptop size" -%}
 </div>
 

@@ -1,6 +1,7 @@
 ---
 title: "The Results"
 permalink: false
+layout: "base.html"
 date: 2020-01-31
 draft: 
 order: 2

@@ -1,6 +1,7 @@
 ---
 title: "Development & Final Site"
 permalink: false
+layout: "base.html"
 date: 2021-01-01
 draft: false
 order: 0
@@ -9,20 +10,20 @@ images: [{
 	"src": "2021-01-SE-SHS-mobile.webp",
     "title":"Landing page - Mobile size",
     "caption": false,
-    "columns": "col-6 sm-4 md-3 lg-2 ",
+    "columns": "xxs-6 xs-3",
     "order": 2
 },{
 	"src": "2021-01-SE-SHS-tablet.webp",
     "title":"Landing page - Tablet size",
     "caption": false,
-    "columns": "col-6 sm-6 md-4 lg-4",
+    "columns": "xxs-6 xs-3",
     "order": 2
 },
 	{
 	"src": "2021-01-SE-SHS-desktop.webp",
     "title":"Landing page - Desktop size",
     "caption": false,
-    "columns": "col-6 sm-4 md-5 lg-6",
+    "columns": "xxs-6 xs-6",
     "order": 2
 }]
 ---

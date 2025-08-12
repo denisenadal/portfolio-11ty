@@ -1,6 +1,7 @@
 ---
 title: "Design Process"
 permalink: false
+layout: "base.html"
 date: 2020-11-01
 draft: false
 order: 0

@@ -1,10 +1,11 @@
 ---
 title: "Overview"
 permalink: false
+layout: "base.html"
 date: 2024-08-30
 draft: false
 order: 0
-columns: "col-12"
+columns: "col xxs-12 sm-10 lg-8 is-center"
 
 ---
 ### Idea Generation
@@ -24,3 +25,17 @@ To keep our intern Cameron from feeling overwhelmed and lost, I performed a plat
 ### Result
 
 By doing the work to make sure our platforms met the WCAG 2.1 AA standards, we were able to renew contracts with several universities, and were now able to reapproach several customers that had WCAG requirements before we could close a deal.
+
+
+<style>
+    section.meta-section.content-section .container {
+    justify-content: center;
+}
+
+section.meta-section.content-section .container h2 {
+    text-align: center;
+}
+.is-center {
+    justify-self:center;
+}
+</style>

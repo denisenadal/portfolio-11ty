@@ -1,6 +1,7 @@
 ---
 title:  "Project Origin"
 permalink: false
+layout: "base.html"
 date: 2025-07-17
 draft: true
 columns: "col-12 container"

@@ -1,6 +1,7 @@
 ---
 title: "Visual Design"
 permalink: false
+layout: "base.html"
 draft: false
 columns: "col-12"
 
@@ -22,11 +23,11 @@ If we had continued with this project, I would have spend more time fine tuning 
 <div class="col col-6  sm-6 md-4 float-left mb-1">
 {%- workimage "/work/pm-redesign/03-visual/v4jobprog-desktop.webp", "figure text-muted mb-2", "Job 'In Progress' on a desktop", "Job 'In Progress' on a desktop"  -%}
 </div>
-</div>
-
-<div class="col col-6 sm-6 md-2">
+<div class="col xxs-6 sm-3 md-2">
   {%- workimage "/work/pm-redesign/03-visual/v05mobilejob.webp", "figure text-muted mb-2", "Job Screen on a mobile device" -%}
 </div>
+</div>
+
 
 </div>
 </div>

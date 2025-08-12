@@ -1,6 +1,7 @@
 ---
 title: "<span style='text-align:center;display:block'>Planning</span>"
 permalink: false
+layout: "base.html"
 name: "planning"
 date: 2023-04-01
 draft: false

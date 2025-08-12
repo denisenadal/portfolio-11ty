@@ -1,6 +1,7 @@
 ---
 title: "Process"
 permalink: false
+layout: "base.html"
 name: "process"
 date: 2017-10-31
 draft: false
@@ -49,10 +50,10 @@ Below are some examples of the experiments we ran.
 {% hr %}
 
 <div class="container lg gap-1">
-<div class="col col-12 md-3">
+<div class="col col-12 xs-6 md-3">
     {%- workimage "/work/pm-home-maintenance/00-process/amandaHaven-NewHomeowner.webp","figure text-muted ", "our primary persona", "our primary persona"  -%}
 </div>
-<div class="col col-12 md-3">
+<div class="col col-12 xs-6 md-3">
    {%- workimage "/work/pm-home-maintenance/00-process/ScottCarpenter-DIYHomeowner.webp","figure text-muted ", "our secondary persona", "our secondary persona"  -%}
 </div>
 <div class="col col-12 md-6" >

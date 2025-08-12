@@ -1,6 +1,7 @@
 ---
 title: "Customer Research"
 permalink: false
+layout: "base.html"
 date: 2025-07-17
 columns: "col-12 container"
 images: [{

@@ -1,6 +1,7 @@
 ---
 title: "Process"
 permalink: false
+layout: "base.html"
 name: "process"
 date: 2019-09-01
 draft: false
@@ -63,7 +64,7 @@ I also performed **competitive analysis** by looking at how competing products, 
 </div>
 {% hr %}
 <div class="container lg  gap-1">
-<div class="col md-7">
+<div class="col-12 sm-6 md-7">
 
 ### Ideation & Design
 
@@ -77,11 +78,11 @@ After several rounds of design and critiques, we had some solid designs that we 
 {%- workimage "/work/pm-iq/02-process/iq-screens-group.webp", "text-muted", "overview of prototype screens", "overview of prototype screens"  -%}
 
 </div>
-<div class="col sm-6 md-2 flex-column gap-1">
+<div class="col-6 xxs-6 sm-6 md-2 flex-column gap-1">
 {%- workimage "/work/pm-iq/02-process/editablev1.webp","figure text-muted mb-3", "exploration of an editable invoice", "exploration of an editable invoice"  -%}
 {%- workimage "/work/pm-iq/02-process/iq-options.webp", "figure text-muted", "exploration of presenting options to homeowners", "presenting options to homeowner"  -%}
 </div>
-<div class="col sm-6 md-2 flex-column gap-1">
+<div class="col-6 xxs-6 sm-6 md-2 flex-column gap-1">
 {%- workimage "/work/pm-iq/02-process/editablev2.webp"," figure text-muted mb-3", "exploration of a static invoice", "exploration of a static invoice"  -%}
 {%- workimage "/work/pm-iq/02-process/Email-Modal.webp", "figure text-muted", "example of sending the invoice to the homeowner", " sending the invoice to the homeowner"  -%}
 </div>

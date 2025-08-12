@@ -1,6 +1,7 @@
 ---
 title: "Component Design & Planning"
 permalink: false
+layout: "base.html"
 draft: false
 columns: "col-12 md-12 lg-6"
 images: [{

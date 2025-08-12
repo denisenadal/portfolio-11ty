@@ -17,4 +17,4 @@ role: Experiments, market research, user testing, analysis, workshop facilitatin
 ---
 Product Exploration, Market & UX Research Project to identify new product opportunities to help homeowners avoid problems with home service contractors. 
 
-This project was 3 week experiment by a cross-functional Innovation Team.
+This project was 3 week experiment by a cross-functional Innovation Team.  

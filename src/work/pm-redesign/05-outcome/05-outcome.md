@@ -1,6 +1,7 @@
 ---
 title: "Outcome"
 permalink: false
+layout: "base.html"
 draft: false
 columns: "col-12 md-8 lg-7"
 

@@ -1,6 +1,7 @@
 ---
 title: "The Live Marketplace"
 permalink: false
+layout: "base.html"
 date: 2020-11-01
 draft: false
 order: 0
@@ -8,22 +9,22 @@ columns: "col-12 "
 images: [{"src": "categorie-375.webp",
     "title":"Category page - Mobile size",
     "caption": false,
-    "columns": "col-5 sm-4 md-3 ",
+    "columns": "xxs-4 xs-4 md-3 ",
     "order": 1
 },{"src": "categorie-800.webp",
     "title":"Category page - Tablet size",
     "caption": false,
-    "columns": "col-6 sm-4 md-3 ",
+    "columns": "xxs-4 xs-4 md-3 ",
     "order": 2
 },{"src": "home-375.webp",
     "title":"Landing - Mobile size",
     "caption": false,
-    "columns": "col-6 sm-4 md-2 ",
+    "columns": "xxs-4 xs-4 md-2 ",
     "order": 1  
 },{"src": "home-800.webp",
     "title":"Landing page - Tablet size",
     "caption": false,
-    "columns": "col-6 sm-4 md-2 ",
+    "columns": "xxs-4 xs-4 md-2 ",
     "order": 2
 }]
 ---
@@ -39,13 +40,13 @@ Through this project we helped generate thousands of dollars of additional reven
 
 ### Desktop Screens
 <div class="container lg gap-1">
-<div class="col col-6 sm-6 md-6 lg-4  mb-2">
+<div class="xxs-6  xs-6 sm-4  mb-2">
 {%- workimage  "/work/se-holiday-marketplace/02-final/home-1280.webp","","Landing page - Desktop size", ""  -%}
 </div>
-<div class="col col-6 sm-6 md-6 lg-4  mb-2">
+<div class="xxs-6  xs-6 sm-4  mb-2">
 {%- workimage  "/work/se-holiday-marketplace/02-final/categorie-1280.webp","","Category page - Desktop size", ""  -%}
 </div>
-<div class="col col-6 sm-6 md-6 lg-4  mb-2">
+<div class="xxs-6  xs-6 sm-4  mb-2">
 {%- workimage  "/work/se-holiday-marketplace/02-final/Screenshot_2021-02-09 Frequently Asked Questions Seagrams Escapes Holiday Marketplace.webp",""," Frequently Asked Questions- Desktop size", ""  -%}
 {%- workimage  "/work/se-holiday-marketplace/02-final/pre-releaseHome - Laptop - 1280px.webp","","Pre-Release Landing page - Desktop size", ""  -%}
 </div>

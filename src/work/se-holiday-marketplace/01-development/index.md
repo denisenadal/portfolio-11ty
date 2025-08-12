@@ -1,13 +1,14 @@
 ---
 title: "Development Process"
 permalink: false
+layout: "base.html"
 date: 2020-11-01
 draft: false
 order: 0
 columns: "col-12"
 ---
 <div class="container lg gap-1">
-<div class="col sm-6 md-8 lg-8 mb-2">
+<div class="col-12 sm-8 mb-2">
 
 The development process included several stages. First was collecting all the data about the businesses participating. Next was building out a static version of the site as a prototype for final design feedback and review. After that would come adding in the logic layer to display the data about the businesses and implement user interactions.
 
@@ -24,7 +25,7 @@ The primary build stack at FIFCO USA is 11ty, which generates static HTML & CSS 
 Next came putting all the pieces together, and using Algolia's js library, I was able to very quickly replace all the static business listings with live dynamic data. The homepage displayed a random selection of businesses, and the category pages showed a gallery of businesses and their products, and had full search, filtering and pagination capabilities. 
 </div>
 
-<div class="col col-12 col col-6 md-4 lg-3">
+<div class="col-12 sm-4 lg-3">
 <div class=" mb-3 text-light bg-cyan p-3">
 <h3 class="mb-1 mt-2 font-weight-bolder">Tech Stack</h3>
 <ul>

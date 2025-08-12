@@ -1,6 +1,7 @@
 ---
 title: "Research"
 permalink: false
+layout: "base.html"
 draft: false
 columns: "col-12"
 ---

@@ -1,6 +1,7 @@
 ---
 title:  "Development"
 permalink: false
+layout: "base.html"
 date: 2021-09-01
 draft: false
 columns: "col-12"

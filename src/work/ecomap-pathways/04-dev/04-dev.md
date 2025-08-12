@@ -1,6 +1,7 @@
 ---
 title:  "Build"
 permalink: false
+layout: "base.html"
 date: 2025-07-17
 draft: false
 columns: "col-12"

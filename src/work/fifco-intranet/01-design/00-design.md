@@ -1,6 +1,7 @@
 ---
 title:  "Design Process"
 permalink: false
+layout: "base.html"
 date: 2021-09-01
 draft: false
 columns: "col-12"
@@ -22,10 +23,10 @@ We turned the designs into Frigma prototypes and tested them against several sta
 <div class="col col-6 sm-4">
 {%- workimage  "/work/fifco-intranet/01-design/Desktop-home-fold.webp","","Homepage above the fold design on desktop", "Homepage above the fold design on desktop"  -%}
 </div>
-<div class="col col-6 sm-4">
+<div class="col-6 xxs-6 sm-4">
 {%- workimage  "/work/fifco-intranet/01-design/intranet-desktop.webp","","Various Screens on Desktop", "Various Screens on Desktop"  -%}
 </div>
-<div class="col col-6 sm-4">
+<div class="col-6 xxs-6 sm-4">
 {%- workimage  "/work/fifco-intranet/01-design/intranet-mobile.webp","","Various Screens on Mobile","Various Screens on Mobile" -%}
 </div>
 </div>

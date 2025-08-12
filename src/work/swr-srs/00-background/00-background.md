@@ -1,6 +1,7 @@
 ---
 title: "Background"
 permalink: false
+layout: "base.html"
 name: "background"
 date: 2019-11-30
 draft: false
