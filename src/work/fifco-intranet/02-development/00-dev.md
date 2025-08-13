@@ -8,7 +8,7 @@ columns: "col-12"
 ---
 <div class="container lg gap-1">
 <div class="col col-12  md-8 lg-6">
-{%- workimage  "/work/fifco-intranet/00-research/intranet-component-planning.jpg","","Information Architecture Schema for the intranet", "Information Architecture Schema for the intranet"  -%}
+{%- workimage  "/work/fifco-intranet/00-research/intranet-component-planning.webp","","Information Architecture Schema for the intranet", "Information Architecture Schema for the intranet"  -%}
 </div>
 <div class="col col-12  md-4 lg-6">
 
