@@ -36,7 +36,7 @@ images: [ {
     "columns": "col col-6 md-4 lg-3" ,
     "order": 0
 }, {
-    "src": "04-final-mobile - New Guide v2 - Tasks in Progress.png",
+    "src": "04-final-mobile - New Guide v2 - Tasks in Progress.webp",
     "title": "New Guide Design - Mobile",
     "caption": true,
     "columns": "col col-6 md-4 lg-3" ,

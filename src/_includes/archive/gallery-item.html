@@ -1,7 +1,7 @@
  <div class="gallery-col col xxs-12 xs-6 sm-6 md-4 d-flex p-relative">
         <div class="card col-12 gallery-item bg-pure-white text-left">
             <a class="card-image " href="{{ item.data.page.url}}" >
-                <img src="{{ item.data.page.url}}{{ item.data.image.name }}" class="img-responsive "
+                <img src="{{ item.data.page.url}}{{ item.data.image.name | replace: '.webp', '-sm.webp'}}" class="img-responsive "
                       alt="Cover photo for the '{{ item.data.title}}' project" />
             </a>
             <div class="card-body">
