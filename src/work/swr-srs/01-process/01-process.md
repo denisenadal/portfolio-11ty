@@ -44,11 +44,11 @@ The existing screens were long and confusing- the result of almost ten years wor
 
 This was somewhat challenging as the data structure was as shown, right:
 
-{%- workimage  "/work/swr-srs/01-process/IA-New.png","","planning out the new information architecture" -%}
+{%- workimage  "/work/swr-srs/01-process/IA-New.webp","","planning out the new information architecture" -%}
 </div>
 <div class="col col-12 md-6 lg-5 xl-4 mb-3">
     <span class="h2 d-block">&nbsp;</span>
-    {%- workimage  "/work/swr-srs/01-process/IAdiagram.png","mb-2","Diagram of the database structure" -%}
+    {%- workimage  "/work/swr-srs/01-process/IAdiagram.webp","mb-2","Diagram of the database structure" -%}
         <div class="text-ocean bg-lavender-100 p-3">
             <h3>Key Insight</h3>
             <em class="lead">
@@ -75,7 +75,7 @@ Highlighted on the images are discussion points:
 </div>
 <div class="col">
         <span class="h2 d-block">&nbsp;</span>
-    {%- workimage  "/work/swr-srs/01-process/wireframes-group.png","","wireframes of the SWR SRS admin site" -%}
+    {%- workimage  "/work/swr-srs/01-process/wireframes-group.webp","","wireframes of the SWR SRS admin site" -%}
 </div>
 </div>
 
@@ -111,13 +111,13 @@ Prototyping went through three distinct phases, during the first round, I solidi
 
 <div class="container lg gap-1">
 <div class="col col-12 md-5  mb-2 mt-0">
-    {%- workimage  "/work/swr-srs/01-process/proto-system.png","mb-2","system level / administrator user screens" -%}
-    {%- workimage  "/work/swr-srs/01-process/proto-master-account.png","mb-2","master account level screens" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-system.webp","mb-2","system level / administrator user screens" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-master-account.webp","mb-2","master account level screens" -%}
 </div>
 <div class="col col-12 md-7  mb- mt-0">
-    {%- workimage  "/work/swr-srs/01-process/proto-company1.png","mb-2","company level settings screens" -%}
-    {%- workimage  "/work/swr-srs/01-process/proto-company2.png","mb-2","company level settings screens" -%}
-    {%- workimage  "/work/swr-srs/01-process/proto-company3.png","mb-2","company level settings screens" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-company1.webp","mb-2","company level settings screens" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-company2.webp","mb-2","company level settings screens" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-company3.webp","mb-2","company level settings screens" -%}
 </div>
 </div>
 
@@ -152,11 +152,11 @@ More information was recorded as comments in the InVision project that served as
 
 <div class="container lg gap-1">
 <div class="col col-12 md-6 mb-2 mt-0">
-    {%- workimage  "/work/swr-srs/01-process/proto-global.png","mb-2","System level elements" -%}
-    {%- workimage  "/work/swr-srs/01-process/save-interactions.png","mb-2"," Documenting the login logout interactions for development" -%}
+    {%- workimage  "/work/swr-srs/01-process/proto-global.webp","mb-2","System level elements" -%}
+    {%- workimage  "/work/swr-srs/01-process/save-interactions.webp","mb-2"," Documenting the login logout interactions for development" -%}
 </div>
 <div class="col col-12 md-6 mb-2 mt-0">
-    {%- workimage  "/work/swr-srs/01-process/layouts.png","mb-2","Demonstrating layouts and container sizes for development" -%}
+    {%- workimage  "/work/swr-srs/01-process/layouts.webp","mb-2","Demonstrating layouts and container sizes for development" -%}
 </div>
 </div>
 

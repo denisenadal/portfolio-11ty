@@ -18,5 +18,5 @@ While there's a large amount of helpful features in the SRS admin site, its hard
 
 </div>
 <div class="col-12 md-6">
-{%- workimage  "/work/swr-srs/00-background/IA-OLD.png","","Old Information Architecture", "Old Information Architecture"  -%}
+{%- workimage  "/work/swr-srs/00-background/IA-OLD.webp","","Old Information Architecture", "Old Information Architecture"  -%}
 </div>
