@@ -1,7 +1,9 @@
 /*===============typogrpahy==============*/
 @font-face {
   font-family: "Bassy";
+  src: local("Arial");
   src: url("../Bassy.woff");
+  font-display: swap;
 }
 
 h1,
@@ -415,24 +417,6 @@ a.label.solid:hover {
 
   .card-body>* {
     padding: .8rem;
-
-    &.tag-list {
-      padding-top: 0;
-      padding-bottom: 0;
-      display: flex;
-      gap: .3rem;
-      flex-flow: row wrap;
-      height: 0;
-      opacity: 0;
-      transition: var(--default-animation);
-
-      a {
-        max-width: 31vw;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    }
   }
   &:hover .tag-list {
     height: auto;
@@ -440,7 +424,22 @@ a.label.solid:hover {
     transition: var(--default-animation) 250ms;
   }
 }
-
+.tag-list {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  gap: .3rem;
+  flex-flow: row wrap;
+  height: 0;
+  opacity: 0;
+  transition: var(--default-animation);
+  a {
+    max-width: 31vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
 /*===============utilities==============*/
 // 1. Define your list of color names
 $color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cyan', 'powder-blue', 'lavender-100', 'lemon-100', 'pure-white', 'navy', 'success', 'error', 'muted', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink', 'white';
@@ -455,32 +454,4 @@ $color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cya
     color: var(--#{$color});
     fill:var(--#{$color});
   }
-}
-
-.rainbow {
-  background: var(--rainbow-gradient);
-  border-radius: 0.2rem;
-}
-
-.rainbow-text {
-  background: var(--rainbow-gradient);
-  /* background-size: 100% 30px; */
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.rainbow-text-link:hover {
-  background: var(--rainbow-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.rainbow-block-link:hover {
-  background: var(--brand-gradient);
-}
-
-.section-break {
-  border-top: 4px dotted var(--gray-300);
 }

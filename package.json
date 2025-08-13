@@ -5,6 +5,7 @@
     "main": ".eleventy.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "minify": "minify-js src/assets/js  ../../../_site/assets/js -M -X",
         "build:11typrod": "ELEVENTY_ENV=production eleventy",
         "build:11tydev": "ELEVENTY_ENV=staging eleventy",
         "build:sass": "npx sass --no-source-map --style=compressed sass/main.scss src/assets/css/main.css",
@@ -12,13 +13,14 @@
         "watch:sass": "sass --watch --trace --source-map-urls=absolute --color sass/main.scss src/assets/css/main.css ",
         "start": "concurrently \"npm run watch:dev\" \"npm run watch:sass\"",
         "build": "concurrently \"npm run build:11tydev\" \"npm run build:sass\"",
-        "build:prod": "concurrently \"npm run build:11typrod\" \"npm run build:sass\""
+        "build:prod": "npm run build:11typrod && npm run build:sass &&  npm run minify"
     },
     "author": "Denise Nadal",
     "license": "ISC",
     "dependencies": {
         "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
+        "@adamlui/minify.js": "^1.8.6",
         "concurrently": "^8.0.1",
         "dotenv": "^16.4.7",
         "eleventy-xml-plugin": "^0.1.0",

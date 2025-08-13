@@ -132,7 +132,8 @@ module.exports = function (eleventyConfig) {
     return `<a href='${src}' ${classStr}>
     <figure class="work-img-figure">
         <img src='${src}'
-             alt='${alt}' />
+             alt='${alt}'
+             loading="lazy" />
        ${captionStr}
     </figure>
 </a>`
