@@ -441,6 +441,9 @@ a.label.solid:hover {
   }
 }
 /*===============utilities==============*/
+v-100,h-100 {
+  height: 100%;
+}
 // 1. Define your list of color names
 $color-names: 'ocean', 'violet', 'magenta', 'lavender', 'lemon', 'seafoam', 'cyan', 'powder-blue', 'lavender-100', 'lemon-100', 'pure-white', 'navy', 'success', 'error', 'muted', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink', 'white';
 
