@@ -1,15 +1,20 @@
 ---
 title: "Platform Community Hub"
-subtitle: "UI/UX Design & Front-End"
+subtitle: "Learning from a Strategic Misfire"
 date: 2023-04-15
 date_range: "Spring 2023"
 draft: false
 featured: true
 image: {"name":"cover.webp"," alt":"Building Community"}
 type: "work"
-weight: 190
+weight: 180
 tags: ["UI Design","UX Design","Web Development","No Code Development"]
 team: Denise Nadal, Shua 
-role: UI/UX Design, Front-End Dev
+role: UI/UX Designer & Design Engineer
+timeline: 4 weeks
+org: EcoMap Technologies
+impact:
+  - Increased close rate for sales
+  - decreased customer satisfaction 🙃
 ---
-Working in a 2 person team, we designed and launched a community forum feature that revealed critical insights about user behavior - discovering that utility-focused platforms need different engagement strategies than traditional social networks.
+How a well-intentioned feature taught us critical lessons about user behavior and platform design

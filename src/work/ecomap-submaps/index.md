@@ -1,6 +1,6 @@
 ---
 title: "Submaps"
-subtitle: "Product & Design Lead"
+subtitle: "Scaling Enterprise Ecosystem Mapping"
 date: 2023-11-01
 date_range: "Summer - Fall 2023"
 draft: false
@@ -9,8 +9,14 @@ image: {"name":"cover-2.webp"," alt":"several screens displaying different subma
 type: "work"
 weight: 170
 tags: ["Product Management", "Project Management","UI Design","UX Design","Web Development","No Code Development"]
-team: Denise Nadal, Hope Chang, Marcus White, Jared Gibb, Pava LaPere
+team: "CEO: Pava LaPere <br> Product/Design Lead: Denise Nadal<br> Designers: Hope Chang, Marcus White<br> Engineer: Jared Gibb"
 role: Product Manager, Design Lead, QA & Front-End Dev
----
+timeline: 6-8 weeks
+org: EcoMap Technologies
+impact:
+  - Contract values increased 3x
+  - Enabled enterprise customer expansion
+  - Revenue growth through larger deals and customer expansion
 
-Led design and product management of a nested dataset feature that unlocked enterprise-level sales, growing average contract sizes from $20-30K to $60-90K while uncovering surprising applications for customer expansion and managing inter-organizational dynamics.
+---
+How we tripled contract values by designing for complex organizational hierarchies and unexpected use cases

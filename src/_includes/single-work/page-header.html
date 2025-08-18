@@ -7,26 +7,43 @@
         </div>
         <div id="work-header-right" class="col col-12 md-5 d-flex flex-column justify-end">
             <h2 id="work-title" class="h2 m-0">{{title}}</h2>
-            <div class="info-row container text-muted mt-2 mb-1">
-                <p class="h5 m-0 col">{{subtitle}}</p>
-                <p class="h5 m-0 col-auto"> {{date_range}}</p>
-            </div>
+            <p class="subtitle h4 text-muted mt-1">{{subtitle}}</p>
             <div class="intro-content">
                 {{content}}
             </div>
         </div>
         <div class="work-header-bottom container col-12 gap-3">
-            {%- if team  or org or role -%}
+            {%- if team  or org or role or timeline-%}
             <dl>
                 {%- if role -%}
-                <dt class="text-muted">Role</dt>
-                <dd class="mt-0">{{role}}</dd>
+                <div class="role">
+                    <dt class="text-muted">Role</dt>
+                    <dd class="mt-0">{{role}}</dd>
+                </div>
                 {%- endif -%}
+                <div class="time">
+                    <dt class="text-muted">Timeline:</dt>
+                    <dd class="mt-0">{{timeline}} ◊ {{date_range}}</dd>
+                </div>
                 {%- if team or org -%}
-                <dt class="text-muted">Team {% if org %} ◊  {{org}}{% endif %} </dt>
-                <dd class="mt-0">{{team}}</dd>
+                <div class="team">
+                    <dt class="text-muted">Team {% if org %} ◊  {{org}}{% endif %} </dt>
+                    <dd class="mt-0">{{team}}</dd>
+                </div>
                 {%- endif -%}
-                
+                {%- if impact -%}
+                <div class="impact">
+                    <dt class="text-muted">Impact</dt>
+                    <dd class="mt-0">
+                        <ul>
+                        {%- for item in impact -%}
+                        <li>{{item}}</li>
+                        {%- endfor -%}
+                        </ul>
+                    </dd>
+
+                </div>
+                {%- endif -%}
             </dl>
             {%- endif -%}
         </div>

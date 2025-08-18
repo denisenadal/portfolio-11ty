@@ -38,7 +38,8 @@ function intersectionCallback(entries) {
     });
   }
 
-//get content from clicked link, and populate modal
+
+  //get content from clicked link, and populate modal
 function modalHandler(link){
     var src = $(link).find('img').attr('src');
     var cap = $(link).find('figcaption').text();

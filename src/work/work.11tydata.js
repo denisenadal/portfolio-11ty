@@ -7,6 +7,7 @@ module.exports =  {
     date_range:"",
     image: "", 
     tags: [],
+    eleventyImport: ["allSections"],
     eleventyComputed: {
         metaTitle: function(data){
             return `${data.title} | ${data.site.title}`

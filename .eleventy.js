@@ -118,7 +118,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("hr", function () {
     return `<hr class="content-divider clear-both">`
   });
-  eleventyConfig.addShortcode("workimage", function (src, classes, alt, caption,) {
+  eleventyConfig.addShortcode("workimage", function (src, classes, alt, caption) {
     let classStr = "class='image-modal-link d-block "
     classStr += classes ? classes : "";
     classStr += "'"
