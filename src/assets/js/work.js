@@ -32,7 +32,9 @@ function intersectionCallback(entries) {
       if (entry.isIntersecting) {
         showGrid(entry.target)
       } else {
+        if(!printView){
         hideGrid(entry.target)
+        }
       }
 
     });
@@ -52,9 +54,10 @@ function modalHandler(link){
     imgModal.find('.modal-title').text(title);
     imgModal.fadeIn(350,'linear');
 }
-
-
+addEventListener("beforeprint", (event) => { printView = true; })
+const printView = false;
 $(document).ready(function(){
+
     const observerOptions = {
         root: null,
         rootMargin: "0px",
@@ -76,8 +79,9 @@ $(document).ready(function(){
         }
         //if there's no gallery, just show the content
         else{
+            if(!printView){
            hideGrid(el)
-        }
+        }}
     });
 
     $(window).on('resize', function(e) {

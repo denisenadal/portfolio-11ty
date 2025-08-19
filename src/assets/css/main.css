@@ -3670,4 +3670,32 @@ hr.content-divider {
   padding: 10px;
 }
 
+@media print {
+  #main-header {
+    display: none;
+  }
+  html, body, main {
+    font-size: 14px;
+  }
+  main {
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  body.work main section,
+  body.work main section:nth-child(2n) {
+    padding-top: 0;
+    background: none;
+  }
+  body.work main section .container {
+    gap: 1rem;
+  }
+  .grid.container {
+    opacity: 1 !important;
+  }
+  .spinner {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

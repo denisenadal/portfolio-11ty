@@ -10,7 +10,7 @@ type: "work"
 tags: ["UX Design","Web Development","11ty","Algolia.js" ]
 weight: 150
 org: FIFCO USA
-team: Seagram Escape Brand Team, Denise Nadla
+team: Seagram Escape Brand Team, Denise Nadal
 role: UX Designer & Web Developer
 timeline: 6 weeks
 impact: 

@@ -92,14 +92,14 @@ With clear problem definition, we moved into an iterative design and testing pro
 
 {%- workimage "/work/ecomap-pathways/02-design/02-wireframe-improved-search.webp", "figure  mb-2 col-6 md-3", "Examples early wireframes","Early concept for an improved search page"  -%}
 {%- workimage "/work/ecomap-pathways/02-design/02-wireframe-personal-ecosystem-dashboard.webp", "figure  mb-2 col-6 md-3", "Examples early wireframes","Early concept for a 'Personal Ecosystem Dashboard'"  -%}
-{%- workimage "/work/ecomap-pathways/02-design/02-wireframes-madlib-hom.webp", "figure  mb-2 col-6 md-3", "Examples early wireframes","Early concept for a 'Mad-Lib stle homepage'"  -%}
+{%- workimage "/work/ecomap-pathways/02-design/02-wireframes-madlib-hom.webp", "figure  mb-2 col-6 md-3", "Examples early wireframes","Early concept for a 'Mad-Lib style homepage'"  -%}
 {%- workimage "/work/ecomap-pathways/02-design/02-wireframes-search-home.webp", "figure  mb-2 col-6 md-3", "Examples early wireframes","Early concept for a clean search page as the homepage"  -%}
 </div>
 <div class="container">
 <h4 class="col-12"> Prototypes used for user testing</h4>
 <div class="grid container lg gap-1">
 <div class="spinner"></div>
-{%- workimage "/work/ecomap-pathways/02-design/03-worflow-pathways+onboarding.webp", "figure  mb-2 col-6 md-3 grid-item", "App Screen","Clickable Prototype of"  -%}
+{%- workimage "/work/ecomap-pathways/02-design/03-worflow-pathways+onboarding.webp", "figure  mb-2 col-6 md-3 grid-item", "App Screen","Clickable Prototype of the user onboarding experience"  -%}
 
 {%- workimage "/work/ecomap-pathways/02-design/03-prototypes-home.webp", "figure  mb-2 col-6 md-3 grid-item", "App Screen","Clickable Prototype of the feature home screen"  -%}
 {%- workimage "/work/ecomap-pathways/02-design/03-prototype-dashboard.webp", "figure  mb-2 col-6 md-3 grid-item", "App Screen","Clickable Prototype of the user dashboard"  -%}
