@@ -1,8 +1,9 @@
 ---
-title: "Home Maintenance Service"
-subtitle: "Product Research & UI/UX Design"
+title: "Home Maintenance as Saas"
+subtitle: "Exploring opportunities to sell to homeowners instead of HVAC servicerss"
 date: 2020-01-31
 date_range: "January 2020"
+timeline: 3 weeks
 draft: false
 featured: false
 image: {
@@ -15,6 +16,5 @@ org: Pointman
 team: David Thiemecke, Kurt Stangl, Tim McGuire, Denise Nadal, David Cloyd, Chris Schobert, Seth Zielinski, Jay Pawlowski, Nick Kaszmarek
 role: Experiments, market research, user testing, analysis, workshop facilitating, customer journeys, user flows, personas
 ---
-Product Exploration, Market & UX Research Project to identify new product opportunities to help homeowners avoid problems with home service contractors. 
+3 week cross-functional experiment to identify new product opportunities to help homeowners avoid problems with home service contractors. 
 
-This project was 3 week experiment by a cross-functional Innovation Team.  

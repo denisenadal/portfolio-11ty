@@ -1,6 +1,6 @@
 ---
-title: "Redesigning the Core Pointman Experience"
-subtitle: "UI/UX Design"
+title: "Answer the Call"
+subtitle: "Redesigning the Core Pointman Experience"
 date: 2019-11-30
 date_range: "Fall 2018 - Fall 2019"
 draft: false
@@ -10,8 +10,8 @@ type: "work"
 weight: 90
 tags: ["UI Design","UX Design", "User Research", "Product Design"]
 org: Pointman
-team: Kurt Stangl, Mike Spencer, Denise Nadal, David Cloyd
-role: User research, user testing, customer journeys, user flows, personas, information architecture, task analysis
+team: "Product Director: Kurt Stangl<br>Designers: Mike Spencer, Denise Nadal, David Cloyd"
+role: UX Designer
 ---
 Completely reimagining the "Answer a Call and Schedule Work" experience for HVAC dispatchers and customer service reps. inside the Pointman Web App and conducting the necessary user research.
 

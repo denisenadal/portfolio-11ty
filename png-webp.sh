@@ -40,11 +40,10 @@ find "$DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | 
   #thum = _site/work/pm-iq/02-process/iq-screens-group-sm.webp 
   #bkfile_loc_unused/original_imgs/work/pm-iq/02-process/iq-screens-group.png
   echo "Converting $img -> $out"
-  cwebp -q 80 "$img" -o "$out"
-  cwebp -q 80 -resize 360 0 "$img" -o "$thum"
-  mv "$img" "$bk_file"
+  cwebp -q 85 -short "$img" -o "$out"
+  cwebp -q 85 -resize 360 0 -short "$img" -o "$thum"
+  #mv "$img" "$bk_file"
 done
 
 echo "Conversion complete."
 
-TODO save webp to original dir, and prioginal png tpo bk fi,der in unused
