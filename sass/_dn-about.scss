@@ -1,0 +1,28 @@
+/* about */
+#about img {
+    max-height: 400px;
+}
+
+@media (max-width: 767px) {
+    section#about {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #about img {
+        display: none;
+    }
+}
+
+#person h2 {
+    color: var(--magenta);
+}
+
+#about h2 {
+    color: var(--violet);
+}
+
+#person img,
+#about img {
+    border-radius: var(--default-radius);
+}
