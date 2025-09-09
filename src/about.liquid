@@ -1,0 +1,73 @@
+---
+layout: base.html 
+
+about:
+  title: Design Leader
+  subtitle: I like to design software & teams
+  desc: I am a passionate leader, mentor and contributor with extensive experience in UX Design, Web Development and Product Management. I enjoy thinking wholistically about products and experiences as a designer, while also having a technical background allowing me to zoom and focus on the details. As someone who can design and code, I thrive in a collaborative environment where I can bridge the gap between design and development. I approach all my work with empathy and compassion for customers and users, open communication and a collaborative mindset towards my team, and ownership and accountability for delivering successful solutions. I'm always open to learning about new opportunities to grow.
+person:
+  title: Creative
+  subtitle: I like to create & cultivate
+  desc: I am a deeply creative person and am always trying new arts and crafts in my down time. Drawing, painting, sewing, knitting, crochet, and embroidery are just some of the highlights! I also like investing my time into growing and cultivating my houseplants, my garden, and caring for my 3 cats.
+stats:
+  - id: pm
+    num: 2
+    field: Product Management
+    desc: "I’m always learning new things, and my natural love of organization, planning and scheming for the future naturally led me to Product Management. I’m endlessly curious about problems and how to best solve them."
+  - id: web
+    num: 10+
+    field: Web Development
+    desc: "My first website was on geocities! Web Design was just another creative outlet for me until I started my professional career in 2016. While I’ve learned frameworks like Angular, React and Vue, I am happiest in in plain HTML, CSS and JS."
+  - id: design
+    num: 8+
+    field: Product & UX Design
+    desc: "I’ve been a designer my whole life. As a teen I designed books, zines, comics and more. I got a degree in Illustration in 2011 and learned how to craft solutions for clients. I’ve shifted to crafting experiences and interfaces in 2016, but the process stays the same."
+work:
+  title: My Work
+  subtitle:
+  desc: "Below are of my favorite projects I’ve worked on. Click through to see details on each."
+---
+<main class="about accent-bg ">
+<section id="about" class="about-career">
+  <div class="container lg gap-4">
+        <figure class="col-12 sm-4 img-wrap">
+          <img src="/assets/images/california-sm.webp" alt="photo of Denise Nadal" class="img-responsive s-rounded xs-hide">
+      </figure>
+      <div class="col-12 sm-8">
+          <h2 class="heading h1 mb-1 ">{{about.title}}</h2>
+          <p class="display-heading h3 subtitle mb-1">{{about.subtitle}}</p>
+          <p>{{about.desc}}</p>
+          <!--<h3 class="h3 text-center my-2">Experience</h3>
+          <div class="stats container gap-1 col-gap">
+              {%- for stat in stats -%}
+              <div id="{{stat.id}}" class="col stat">
+                  <a href="/work#{{stat.id}}" class="container gap-1 align-end justify-end">
+                    <span class="num">{{stat.num}}</span><span class="yr">YRS</span><span class="field col-12 text-right">{{stat.field}}</span>
+                  </a>
+              </div>
+              {%- endfor -%}
+          </div> -->
+      </div>
+  </div>
+</section>
+<section id="person" class="">
+  <div class="container lg gap-4 flex-center">
+    <div class="col-12 sm-7 ">
+        <h2 class="heading h1 mb-1 ">{{person.title}}</h2>
+        <p class="display-heading h3 subtitle">
+            {{person.subtitle}}
+        </p>
+        <p>{{person.desc}}</p>
+    </div>
+    <div class="about-person-gallery col-12 sm-5 col container flex-center gap-1">
+        <figure class="col-7 m-0"><img src="/assets/images/home/garden-sm.webp" alt="" class="img-responsive"></figure>
+        <figure class="col-5 m-0 "><img src="/assets/images/home/snake-hoop-sm.webp" alt="" class="img-responsive "></figure>
+        <figure class="col-4 m-0 "><img src="/assets/images/home/plant-cat-sm.webp" alt="" class="img-responsive col col-4 "></figure>
+        <figure class="col-8 m-0 "><img src="/assets/images/home/artifacts-sm.webp" alt="" class="img-responsive col col-8 "></figure>
+    </div>
+  </div>
+</section>
+<script>
+
+</script>
+
