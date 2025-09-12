@@ -1,23 +1,21 @@
 ---
 layout: base.html
 ---
-<main id="{{slug}}"class="archive bg-white">
-    <section class="meta-section">
-        <div class="container lg justify-center">
-            <div class="section-header flex-column flex-center text-center">
-                {%- if type and type == "tag" -%}
-                    {%- assign title = desc -%}
-                    {%- assign desc = "" -%}
-                {%- endif -%}
-                {%- if title -%}<h1 {% if color %}class="text-{{color}}"{%- endif-%}>{{ title }}</h1>{%- endif -%}
-                {%- if desc -%}<p class="subtitle">{{ desc }}</p>{%- endif -%}
-            </div>
-            <div class="archive-list container gap-4 mt-3 justify-center">
-                {{content}}
-            </div>
-            {%- if showPagination and pagination.pages.size > 1 -%}
-            {%- include "archive/pagination.html" -%}
+<main id="{{slug}}" class="archive bg-white">
+    <section class="container lg justify-center">
+        <div class="section-header flex-column flex-center text-center">
+            {%- if type and type == "tag" -%}
+            {%- assign title = desc -%}
+            {%- assign desc = "" -%}
             {%- endif -%}
+            {%- if title -%}<h1 {% if color %}class="text-{{color}}" {%- endif-%}>{{ title }}</h1>{%- endif -%}
+            {%- if desc -%}<p class="subtitle">{{ desc }}</p>{%- endif -%}
         </div>
+        <div class="archive-list container gap-4 mt-3 justify-center">
+            {{content}}
+        </div>
+        {%- if showPagination and pagination.pages.size > 1 -%}
+        {%- include "archive/pagination.html" -%}
+        {%- endif -%}
     </section>
 </main>

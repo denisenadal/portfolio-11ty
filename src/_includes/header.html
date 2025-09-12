@@ -16,7 +16,7 @@
         <nav id="main-menu" class="navbar-section" aria-label="Main Menu Items">
             {% for item in navigation %}
                 {% if item.fullPage %}
-                <a href="{{site.baseURL}}/{{ page.url }}" class="btn btn-link">{{ item.title | default: site.title}}</a> 
+                <a href="{{site.baseURL}}/{{ item.href }}" class="btn btn-link">{{ item.title | default: site.title}}</a> 
                 {%else %}
                 <a data-menuanchor="{{ .href }}" href="{{site.baseURL}}#{{ item.href }}" class="btn btn-link">{{ item.title }}</a> 
                 {% endif %}

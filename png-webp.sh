@@ -40,8 +40,8 @@ find "$DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | 
   #thum = _site/work/pm-iq/02-process/iq-screens-group-sm.webp 
   #bkfile_loc_unused/original_imgs/work/pm-iq/02-process/iq-screens-group.png
   echo "Converting $img -> $out"
-  cwebp -q 85 -short "$img" -o "$out"
-  cwebp -q 85 -resize 360 0 -short "$img" -o "$thum"
+  cwebp -q 90 -short "$img" -o "$out"
+  cwebp -q 90 -resize 360 0 -short "$img" -o "$thum"
   #mv "$img" "$bk_file"
 done
 

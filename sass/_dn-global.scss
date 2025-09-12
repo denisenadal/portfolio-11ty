@@ -9,7 +9,7 @@
 h1,
 .h1,
 .display-heading {
-  font-weight: 650;
+  font-weight: 550;
   font-family: var(--heading-font), ;
   /* font-size: 1.5rem; */
 }
@@ -115,7 +115,9 @@ header#main-header {
   border-bottom: solid 3px var(--color-dark);
   z-index: 10;
   background: var(--pure-white);
-}
+    border-bottom: 1px solid var(--lavender);
+    box-shadow: 0 0 40px 0 #D6CCFF;
+  }
 
 
 
@@ -275,8 +277,8 @@ nav .btn.btn-link:hover:after {
   left: .5em;
 }
 
-.meta-section.footer {
-  background: white;
+footer.footer{
+    background: white;
   z-index: 0;
 }
 
@@ -386,6 +388,7 @@ a.label.solid:hover {
     transition: var(--default-animation);
     position: absolute;
     z-index: 1;
+    width: 100%;
   }
 
   a {

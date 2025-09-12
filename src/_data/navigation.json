@@ -2,12 +2,17 @@
     {
         "title": "About",
         "href": "about",
-        "fullPage": false
+        "fullPage": true
     },   
     {
         "title": "Work",
         "href": "work",
         "fullPage": false
+    },
+    {
+        "title": "Experience",
+        "href": "experience",
+        "fullPage": true
     },
     {
         "title": "Contact",

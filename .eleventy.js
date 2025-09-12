@@ -192,6 +192,11 @@ module.exports = function (eleventyConfig) {
     content = eleventyConfig.getFilter("slugify")(content)
     return content
   });
+  eleventyConfig.addFilter("findWork", function find(collection = [], slug = "") {
+    // If you want more advanced, dynamic filtering, you might need https://lodash.com/docs/4.17.15#get
+    // for fetching [deeply] nested properties.
+    return collection.find(post => post.fileSlug === slug);
+  });
 
   return {
     templateFormats: [

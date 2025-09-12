@@ -1,0 +1,50 @@
+---
+layout: base.html
+title: Experience
+desc: Over the last 8 years, I've worked on projects large and small, as a freelancer, a design team of one, part of an agile engineering team, and leading design at a startup.
+---
+<main class="home accent-bg ">
+    <section class="container lg gap-2" id="experience">
+        <h1 class="col-12">{{ title }}</h1>
+        <p class="col-12 md-8">{{desc}}</p>
+        <div id="timeline" class="col-12">
+            {%- if experience -%}
+            {%- for exp in experience -%}
+            {%- assign index = forloop.index | minus: 1 | modulo: 7 -%}
+            <div class="timeline-item container gap-2 position-relative">
+                <div class="sample timeline-content d-flex">
+                {%- if exp.sample -%}
+                {%- assign item = collections.allWork | findWork: exp.sample -%}
+                <figure class="card col-12 sample-item ">
+                    <a class="card-image " href="{{ item.data.page.url}}" >
+                        <img src="{{ item.data.page.url}}{{ item.data.image.name | replace: '.webp', '-sm.webp'}}" class="img-responsive "
+                              alt="Cover photo for the '{{ item.data.title}}' project" />
+                    </a>
+                    <figcaption class="card-body">
+                        <small  class=" float-right"> {{ item.date | ISODate | date: "%b %Y"}}</small>
+                            <h3 class="h5 m-0 col-12">{{ item.data.title}}</h3>        
+                    </figcaption>
+                </figure>
+                {%- endif -%}
+            </div>
+                <div class="timeline-icon ">
+                    <i class="fa fa-certificate fa-2x text-{{site.colors[index]}}" aria-label="hidden"></i>
+                </div>
+                <div class="timeline-content col">
+                    <p class="info date h5 mb-1 d-inline-block">
+                        {{ exp.timeperiod }} | <span class="info">{{ exp.company }}</span></p>
+                    <h3 class="d-block">{{ exp.title }}</h3>
+                    <p class="description">{{ exp.description }}</p>
+                </div>
+            </div>
+            {%- endfor -%}
+            {%- endif -%}
+        </div>
+
+    </section>
+
+
+</main>
+<script>
+
+</script>
