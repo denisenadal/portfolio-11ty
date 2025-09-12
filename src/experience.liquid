@@ -1,30 +1,50 @@
 ---
-layout: base.html 
-stats:
-  - id: pm
-    num: 2
-    field: Product Management
-    desc: "I’m always learning new things, and my natural love of organization, planning and scheming for the future naturally led me to Product Management. I’m endlessly curious about problems and how to best solve them."
-  - id: web
-    num: 10+
-    field: Web Development
-    desc: "My first website was on geocities! Web Design was just another creative outlet for me until I started my professional career in 2016. While I’ve learned frameworks like Angular, React and Vue, I am happiest in in plain HTML, CSS and JS."
-  - id: design
-    num: 8+
-    field: Product & UX Design
-    desc: "I’ve been a designer my whole life. As a teen I designed books, zines, comics and more. I got a degree in Illustration in 2011 and learned how to craft solutions for clients. I’ve shifted to crafting experiences and interfaces in 2016, but the process stays the same."
-
+layout: base.html
+title: Experience
+desc: Over the last 8 years, I've worked on projects large and small, as a freelancer, a design team of one, part of an agile engineering team, and leading design at a startup.
 ---
 <main class="home accent-bg ">
-<section class="hero">
-  <div class="container flex-center lg gap-2">
-  {%- include "experience/work-history.html" -%}
-  </div>
-</section>
+    <section class="container lg gap-2" id="experience">
+        <h1 class="col-12">{{ title }}</h1>
+        <p class="col-12 md-8">{{desc}}</p>
+        <div id="timeline" class="col-12">
+            {%- if experience -%}
+            {%- for exp in experience -%}
+            {%- assign index = forloop.index | minus: 1 | modulo: 7 -%}
+            <div class="timeline-item container gap-2 position-relative">
+                <div class="sample timeline-content d-flex">
+                {%- if exp.sample -%}
+                {%- assign item = collections.allWork | findWork: exp.sample -%}
+                <figure class="card col-12 sample-item ">
+                    <a class="card-image " href="{{ item.data.page.url}}" >
+                        <img src="{{ item.data.page.url}}{{ item.data.image.name | replace: '.webp', '-sm.webp'}}" class="img-responsive "
+                              alt="Cover photo for the '{{ item.data.title}}' project" />
+                    </a>
+                    <figcaption class="card-body">
+                        <small  class=" float-right"> {{ item.date | ISODate | date: "%b %Y"}}</small>
+                            <h3 class="h5 m-0 col-12">{{ item.data.title}}</h3>        
+                    </figcaption>
+                </figure>
+                {%- endif -%}
+            </div>
+                <div class="timeline-icon ">
+                    <i class="fa fa-certificate fa-2x text-{{site.colors[index]}}" aria-label="hidden"></i>
+                </div>
+                <div class="timeline-content col">
+                    <p class="info date h5 mb-1 d-inline-block">
+                        {{ exp.timeperiod }} | <span class="info">{{ exp.company }}</span></p>
+                    <h3 class="d-block">{{ exp.title }}</h3>
+                    <p class="description">{{ exp.description }}</p>
+                </div>
+            </div>
+            {%- endfor -%}
+            {%- endif -%}
+        </div>
+
+    </section>
 
 
 </main>
 <script>
 
 </script>
-
