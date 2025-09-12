@@ -18,7 +18,7 @@ fi
 find "$DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | while read -r img; do
 
   rel_imgname="${img#$DIR/}"
-  out_dir="src/$(dirname "$rel_imgname")"
+  out_dir="src/work/$(dirname "$rel_imgname")"
   bk_file_loc="_unused/original_imgs/$(dirname "$rel_imgname")"
   mkdir -p "$out_dir"
   mkdir -p "$bk_file_loc"
