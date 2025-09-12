@@ -8,6 +8,7 @@
 
         .timeline-icon{
             display: none;
+            min-width: 45px;
         }
         .timeline-content {
             width: 100%;
@@ -43,9 +44,13 @@
 
         .timeline-content {
             flex: 1 1 40%;
-            max-width: calc(50% - 2rem);
-            padding-top: 4rem;
+            max-width: calc(50% - 1rem);
+
+            &.sample{
+                padding-top: 4rem;
+            }
         }
+
         .timeline-icon {
             align-self: stretch;
             position: relative;
@@ -85,7 +90,8 @@
         }
 
         .card {
-            background: none;
+            background: transparent;
+            outline: 0px solid transparent;
             border: none;
             border-radius: 0;
             width: auto;
@@ -93,30 +99,23 @@
             align-self: center;
             flex: 0 1 auto;
             max-width: 320px;
+            transition: var(--default-animation);
+
+            &:hover{
+                outline: 1rem solid white;
+                background: white;
+                border-radius: 1px;
+            }
 
             .card-image:first-child img {
                 border-radius: var(--default-radius);
                 overflow: hidden;
                 width: auto;
-                max-height: 220px;
             }
 
             .container.gap-0.col-12 {
                 display: block;
                 padding: 1rem 0;
-            }
-
-            h3 {
-                font-size: 16px;
-            }
-
-            .col-auto.text-muted.text-right {
-                float: right;
-            }
-
-            .tag-list,
-            p {
-                display: none;
             }
         }
 

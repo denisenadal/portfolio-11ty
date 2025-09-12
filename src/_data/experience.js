@@ -5,8 +5,8 @@ const exp =
 	"title": "Web Designer & Developer",
 	"website": "https://denisenadal.com",
 	"location": "Baltimore, MD",
-	"description": "Design and development of websites and SaaS platforms for clients of all sizes. I specialize in building small, lightweight, and responsive websites, and complex and flexible WordPress installations, including theme, widget, and plugin development. ",
-	"highlights": [
+	"description":"",
+	"highlights": ["Designed and launched 20+ custom landing pages for high-profile government and institutional clients.","Developed comprehensive brand identity and digital presence","Provided end-to-end UX strategy to early-stage startup founder, including MVP prototyping, onboarding flow, and product strategy","Build and maintain Ecomap website, implementing performance and SEO enhancements to boost traffic and engagement."
 	],
 	"sample": "elp-kansas"
 },{
@@ -15,8 +15,8 @@ const exp =
 	"title": "Director of Product Design",
 	"website": "https://ecomap.tech",
 	"location": "Baltimore, MD",
-	"description": "Coached and mentored a team of designers, collaborated with engineers, product managers, sales, and support, and acted as voice of the customer. As a detail-oriented leader, I enjoyed building cross-functional relationships with stakeholders and finding innovative solutions to challenging problems.",
-	"highlights": ["Led customer discovery and backlog prioritization.","Developed processes to validate, build and test solutions.","Product manager for Pathways, a new feature which doubled engagement time, tripled user retention, and nominated for Product of the Year 2024 by Technical.ly","Led effort to create a new visual brand identity."
+	"description": "",
+	"highlights": ["Led design on feature that doubled engagement time and tripled user retention, earning Product of the Year 2024 nomination.","Spearheaded design system development, serving multiple product areas, creating scalable component libraries with design tokens and standards that enabled consistent experiences across workflows.","Collaborated directly with engineering teams, serving as product manager establishing design-development workflows that improved delivery speed and reduced support tickets.","Mentored design team members through design critiques, career development, and collaborative workshops."
 	],
 	"sample": "ecomap-pathways"
 },{
@@ -25,8 +25,9 @@ const exp =
 	"title": "Design Engineer",
 	"website": "https://ecomap.tech",
 	"location": "Baltimore, MD",
-	"description": "First UI/UX hire; pioneered our UX design and research processes and spearheaded the design of the Ecomap platform to optimize for usability.",
-	"highlights": ["Modernized app UI for the Ecomap platform, improving usability.", "Design and front-end development for our AI-powered Ecosystem Chatbot", "Developed Figma Design Libraries and components to match our design system."],
+	"description": "",
+	"highlights": ["Pioneered design operations as first design hire, establishing design standards, research methodologies, and accessibility practices.","Designed WCAG compliant conversational interface for AI-powered resource discovery for users with varying technical literacy.","Led platform modernization - Redesigned legacy interface architecture resulting in measurably increased user retention through improved visual design and interaction patterns.","Conducted extensive user research across diverse user groups, optimizing complex workflows through iterative testing and design"
+	],
 	"sample": "ecomap-submaps"
 },{
 		"timeperiod": "Aug 2020 - Aug 2022",
@@ -36,9 +37,8 @@ const exp =
 		"location": "Remote (Rochester, NY)",
 		"description": "Lead designer and developer for a suite of brand and corporate websites. Rapidly designing, building, testing, and launching multiple web-based projects concurrently. Managing team project backlog, and prioritization.",
 		"highlights": [
-			"Designed and developed company intranet on WordPress.",
-			"Design and development for a holiday marketplace featuring black-owned businesses, that increased site traffic by 20%."
-		],
+			"Designed and built enterprise intranet serving 500+ employees across multiple departments, implementing accessibility standards and saving $20K+ annually in operational costs.","Built a digital marketplace spotlighting Black-owned businesses achieving 20% increase in traffic through inclusive design.","Maintained accessibility compliance across 5+ sites with brand design systems, meeting Section 508 and WCAG standards."
+	],
 	"sample": "fifco-intranet"
 	},
 	{
@@ -62,21 +62,19 @@ const exp =
 		"location":  "Buffalo, NY",
 		"description": "Front End Engineering in AngularJS and UI/UX Design for the Pointman app, a suite of field management software and mobile app for HVAC contractors.",
 		"highlights": [
-			"Facilitated cross-functional, collaborative design & research processes",
-			"Developed a Sketch UI library to accelerate the speed of creating prototypes. "
+			"Designed mobile-first enterprise software for field service teams with complex workflow requirements.","Built comprehensive design system using Sketch to accelerate cross-team workflows and improve consistency across products.","Led collaborative cross-functional design workshops iterative improvements based on user feedback and data analysis."
 		],
 	"sample": "pm-iq"
 	},
 	{
-		"timeperiod": "Dec 2016 - April 2018",
+		"timeperiod": "Sept 2015 - April 2018",
 		"company": "Utah Tech University",
 		"title": "Web Developer",
 		"website": "https://dixie.edu",
 		"location": "St George, UT",
 		"description": "Primary developer and team lead for 100+ University departmental and promotional websites. Designed and developed new themes and templates in WordPress.",
 		"highlights": [
-			"Used UX research to develop a new students page that increased traffic by 50%.",
-			"Acted as project manager: coordinating projects, managing deadlines, resources, resolving bugs, collecting user feedback, etc."
+			"Primary designer for university web services, providing design solutions to dozens of departments with varying technical needs.","Created custom WordPress solutions including themes, plugins, and templates for diverse content, ensuring accessibility best practices.",
 		],
 	"sample": "dixie-portals"
 	},
@@ -88,9 +86,7 @@ const exp =
 		"location": "St George, UT",
 		"description": "Lead & mentor team of interns in designing, developing and maintaining 100+ University departmental and promotional websites and related content.",
 		"highlights": [
-			"Migrated over 10,000 pages into WordPress within 6 months",
-			"Facilitated cross-functional, collaborative design & research processes",
-			"Acted as project manager: coordinating projects and communicating with clients."
+			"Led large-scale platform migration of 100+ departmental websites from legacy CMS to WordPress, streamlining content management.","Mentored junior team members in UX best practices and accessibility-focused front-end development techniques."
 		],
 	"sample": false
 	}

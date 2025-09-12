@@ -4,9 +4,7 @@ Search Live Screens
 
 
 # TODO
-
-- remove tags from cards, add to single work page
-- update JD's on experience page. 
+ 
 - regenerate images as higher res
 -deploy
 - add animations
