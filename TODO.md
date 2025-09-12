@@ -4,10 +4,7 @@ Search Live Screens
 
 
 # TODO
- 
-- regenerate images as higher res
--deploy
-- add animations
+  add animations
 -deploy again
 
 # Post Deploy

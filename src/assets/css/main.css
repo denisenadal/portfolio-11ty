@@ -3077,15 +3077,15 @@ a.label.solid:hover {
 }
 
 .gallery-item {
-  transition: var(--default-animation) 200ms;
+  transition: all 240ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   border-radius: var(--default-radius);
   border: rgba(234, 229, 255, 0.431372549) solid 0.1em;
   overflow: hidden;
 }
 .gallery-item:hover {
-  transform: scale(1.05);
-  transition: var(--default-animation);
-  position: absolute;
+  transform: scale(1.14);
+  transition: all 240ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: relative;
   z-index: 1;
   width: 100%;
 }
@@ -3113,11 +3113,6 @@ a.label.solid:hover {
 }
 .gallery-item .card-body > * {
   padding: 0.8rem;
-}
-.gallery-item:hover .tag-list {
-  height: auto;
-  opacity: 1;
-  transition: var(--default-animation) 250ms;
 }
 
 .tag-list {
@@ -3382,7 +3377,7 @@ v-100, h-100 {
 
 .bio-photo {
   max-width: 250px;
-  box-shadow: 70px 28px 0 4px rgba(249, 255, 0, 0.18), -70px 28px 0 4px rgba(0, 232, 255, 0.18), 0px -70px 0 4px rgba(255, 0, 0, 0.18);
+  overflow: hidden;
 }
 
 /* work section*/
@@ -3448,6 +3443,33 @@ v-100, h-100 {
 
 #my-form-status {
   color: var(--color-text) !important;
+}
+
+html, body {
+  scroll-snap-type: y;
+}
+
+.bio-photo {
+  transform-origin: center;
+  max-width: 0;
+  box-shadow: 0px 0px 0 0px rgba(249, 255, 0, 0.18), 0px 0px 0 0px rgba(0, 232, 255, 0.18), 0px 0px 0 0px rgba(255, 0, 0, 0.18);
+}
+
+.hero .text-col {
+  opacity: 0;
+}
+
+main.home section:not(.hero) > .container {
+  opacity: 0.0001;
+}
+
+main.home > section.snap {
+  scroll-snap-align: center;
+}
+
+main.home > section#work,
+main.home > section.hero {
+  scroll-snap-align: top;
 }
 
 /*expeirence*/

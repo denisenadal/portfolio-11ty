@@ -70,16 +70,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','{{ site.GTM_ID }}');</script>
 <!-- End Google Tag Manager -->
 </head>
-{%- if page.url == "/ -%}
+{%- if page.url == "/" -%}
     {%- assign pageClasses  = "home" -%}
-{%- elsif type -%}
-{%- assign pageClasses  = type -%}
 
+{%- elsif type -%}
+    {%- assign pageClasses  = type -%}
 {%- else -%}
 {%- assign pageClasses  = "page" -%}
 {%- endif %}
 
-<body id="{{page.fileSlug | slugify }}" class="{{ pageClasses }}  ">
+<body id="{{pageClasses}}-{{page.fileSlug | slugify }}" class="{{ pageClasses }}  ">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.GTM_ID }}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

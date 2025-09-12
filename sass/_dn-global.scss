@@ -379,15 +379,15 @@ a.label.solid:hover {
 }
 
 .gallery-item {
-  transition: var(--default-animation) 200ms;
+  transition: all 240ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
   border-radius: var(--default-radius);
   border: #EAE5FF6E solid .1em;
   overflow: hidden;
 
   &:hover {
-    transform: scale(1.05);
-    transition: var(--default-animation);
-    position: absolute;
+    transform: scale(1.14);
+    transition: all 240ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    position: relative;
     z-index: 1;
     width: 100%;
   }
@@ -422,11 +422,11 @@ a.label.solid:hover {
   .card-body>* {
     padding: .8rem;
   }
-  &:hover .tag-list {
-    height: auto;
-    opacity: 1;
-    transition: var(--default-animation) 250ms;
-  }
+  // &:hover .tag-list {
+  //   height: auto;
+  //   opacity: 1;
+  //   transition: var(--default-animation) 250ms;
+  // }
 }
 .tag-list {
   padding-top: 0;

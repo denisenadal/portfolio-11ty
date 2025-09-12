@@ -3,9 +3,12 @@
         <p class="m-0">&copy; <span id="copyright-date"></span> <a href="{{site.baseURL}}">{{site.title}}</a></p>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+
     <script src="/assets/js/main.js"></script>
     {% if page.url == "/" %}
     <script defer src="/assets/js/contact.js"></script> 
+    <script defer src="/assets/js/index.js"></script> 
     {% endif %} 
 	{% if type == "work" %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

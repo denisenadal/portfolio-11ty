@@ -1,5 +1,4 @@
 /* home */
-
 .accent-bg {
     background: linear-gradient(to bottom, var(--lavender), var(--powder-blue), var(--seafoam), var(--lemon-100), #ffe7c0, #ffdcdc);
     z-index: 0;
@@ -41,7 +40,7 @@
 
 .bio-photo {
     max-width: 250px;
-    box-shadow:  70px 28px 0 4px rgba(249, 255, 0, .18), -70px 28px 0 4px rgba(0, 232, 255, .18), 0px -70px 0 4px rgba(255, 0, 0, .18)
+    overflow:hidden
 }
 
 
@@ -112,4 +111,30 @@
 }
 #my-form-status {
     color: var(--color-text) !important;
+}
+// animations
+html, body{
+    scroll-snap-type: y ;
+
+}
+.bio-photo {
+    transform-origin: center;
+    max-width: 0;
+    box-shadow:  0px 0px 0 0px rgba(249, 255, 0, .18), 0px 0px 0 0px rgba(0, 232, 255, .18), 0px 0px 0 0px rgba(255, 0, 0, .18)
+//after     box-shadow:  70px 28px 0 4px rgba(249, 255, 0, .18), -70px 28px 0 4px rgba(0, 232, 255, .18), 0px -70px 0 4px rgba(255, 0, 0, .18)
+
+}
+.hero .text-col{
+    opacity: 0.0;
+}
+main.home section:not(.hero) > .container{
+    opacity: 0.0001;
+}
+main.home > section.snap{
+    scroll-snap-align: center;
+}
+
+main.home > section#work,
+main.home > section.hero{
+    scroll-snap-align: top;
 }

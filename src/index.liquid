@@ -16,10 +16,14 @@ work:
   desc: "Below are of my favorite projects I’ve worked on. Click through to see details on each."
 ---
 <main class="home accent-bg ">
-<section class="hero">
+<section id="hero" class="hero snap">
   <div class="container flex-center lg gap-2">
-  <figure  class="col-12 sm-4 img-wrap ">
-        <img src="assets/images/denise-sm.webp" alt="photo of Denise Nadal" class="img-responsive s-circle bio-photo">
+
+  <figure  class="col-12 sm-4 img-wrap  flex-center d-flex ">
+      <div class="bio-photo  s-circle">
+       <img src="assets/images/home/denise-sm.webp" alt="photo of Denise Nadal" class="img-responsive s-circle">
+       </div>
+
     </figure>
     <div class="col-12 sm-8 text-col">
     {%- assign heroSection = true -%}
@@ -28,29 +32,19 @@ work:
     </div>
   </div>
 </section>
-<section id="about" class="about-career">
+<section id="about" class="about-career snap">
   <div class="container lg gap-4">
       <div class="col-12 sm-8 text-col">
           <h2 class="heading h1 mb-1 ">{{about.title}}</h2>
           <p class="display-heading h3 subtitle mb-1">{{about.subtitle}}</p>
           <p>{{about.desc}}</p>
-          <!--<h3 class="h3 text-center my-2">Experience</h3>
-          <div class="stats container gap-1 col-gap">
-              {%- for stat in stats -%}
-              <div id="{{stat.id}}" class="col stat">
-                  <a href="/work#{{stat.id}}" class="container gap-1 align-end justify-end">
-                    <span class="num">{{stat.num}}</span><span class="yr">YRS</span><span class="field col-12 text-right">{{stat.field}}</span>
-                  </a>
-              </div>
-              {%- endfor -%}
-          </div> -->
       </div>
       <figure class="col-12 sm-4 img-wrap">
           <img src="/assets/images/california-sm.webp" alt="photo of Denise Nadal" class="img-responsive s-rounded xs-hide">
       </figure>
   </div>
 </section>
-<section id="person" class="">
+<section id="person" class="about-person snap">
   <div class="container lg gap-4 flex-center">
   <div class="about-person-gallery col-12 sm-5 col container flex-center gap-1">
         <figure class="col-7 m-0"><img src="/assets/images/home/garden-sm.webp" alt="" class="img-responsive"></figure>
