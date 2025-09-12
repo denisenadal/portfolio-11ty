@@ -10,6 +10,11 @@
         "fullPage": false
     },
     {
+        "title": "Experience",
+        "href": "experience",
+        "fullPage": true
+    },
+    {
         "title": "Contact",
         "href": "contact",
         "fullPage": false
