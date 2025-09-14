@@ -230,6 +230,11 @@ header#main-header {
     padding: 0;
   }
 }
+#logo-link:focus-visible {
+  background: var(--lemon);
+  outline: solid 6px var(--lemon);
+  border-radius: 1px;
+}
 
 #logo-link .logo-name {
   font-size: 30px;
@@ -383,17 +388,18 @@ a.label.solid:hover {
   border-radius: var(--default-radius);
   border: #EAE5FF6E solid .1em;
   overflow: hidden;
+  transition: all 240ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
-  &:hover {
+
+  &:hover ,
+  &:active{
     transform: scale(1.14);
-    transition: all 240ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-    position: relative;
-    z-index: 1;
-    width: 100%;
-  }
-
-  a {
     text-decoration: none;
+  }
+  &:focus-visible{
+    text-decoration: none;
+    border-color: var(--color-primary);
+    outline: solid 2px var(--color-primary);
   }
 
   h3 {
@@ -401,6 +407,7 @@ a.label.solid:hover {
     font-weight: 450;
     color: var(--dark);
     line-height: 1.27;
+    text-decoration: none;
   }
 
   &:hover h3 {

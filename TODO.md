@@ -4,12 +4,9 @@ Search Live Screens
 
 
 # TODO
-  add animations
--deploy again
 
 # Post Deploy
 - ad search project
-- add experience section/page
 
 
 

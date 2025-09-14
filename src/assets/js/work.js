@@ -49,10 +49,11 @@ function modalHandler(link){
     var imgModal = $('.image-modal');
     imgModal.addClass("active")
     imgModal.find('.modal-image').attr('src', src);
-    imgModal.find('a').attr('href', src);
+    imgModal.find('a.modal-inner').attr('href', src);
     imgModal.find('.caption').text(cap);
     imgModal.find('.modal-title').text(title);
     imgModal.fadeIn(350,'linear');
+    imgModal.find(".close").focus();
 }
 addEventListener("beforeprint", (event) => { printView = true; })
 const printView = false;
@@ -103,7 +104,7 @@ $(document).ready(function(){
     });
 
     //click outside of modal or exit button closes modal
-    $('.image-modal.overlay-light, .modal .close').click(function(event){
+    $('.modal-overlay, .modal .close').click(function(event){
         $('.image-modal').fadeOut(350, 'linear');
     });
 

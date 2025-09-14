@@ -1,22 +1,20 @@
- <div class="gallery-col col xxs-12 xs-6 sm-6 md-4 d-flex p-relative">
-        <div class="card col-12 gallery-item bg-pure-white text-left">
-            <a class="card-image " href="{{ item.data.page.url}}" >
-                <img src="{{ item.data.page.url}}{{ item.data.image.name | replace: '.webp', '-sm.webp'}}" class="img-responsive "
-                      alt="Cover photo for the '{{ item.data.title}}' project" />
-            </a>
-            <div class="card-body">
-                <a href="{{ item.data.page.url}}" class=" container gap-0 col-12">
-                    <span class="spacer col"></span>
-                <small  class=" col-auto text-muted text-right"> {{ item.date | ISODate | date: "%b %Y"}}</small>
-                    <h3 class="h5 m-0 col-12">{{ item.data.title}}</h3>
-                    <p  class="col-12 m-0 text-dark"> {{ item.data.subtitle }}</p>
+<article class="gallery-col col xxs-12 xs-6 sm-6 md-4 d-flex p-relative">
+    <a href="{{ item.data.page.url}}" class="card col-12 gallery-item bg-pure-white text-left">
+        <figure class="card-image ">
+            <img src="{{ item.data.page.url}}{{ item.data.image.name | replace: '.webp', '-sm.webp'}}" class="img-responsive "
+                    alt="Cover photo for the '{{ item.data.title}}' project" />
+        </figure>
+        <div class="card-body container gap-0 col-12">
+                <span class="spacer col"></span>
+            <small  class=" col-auto text-muted text-right"> {{ item.date | ISODate | date: "%b %Y"}}</small>
+                <h3 class="h5 m-0 col-12">{{ item.data.title}}</h3>
+                <p  class="col-12 m-0 text-dark"> {{ item.data.subtitle }}</p>
 
-                </a>
-                <!-- <div class=" tag-list col-12 text-tiny">
-                    {%- for t in item.data.tags -%}
-                    <a href="/tag/{{t | slugify}}" class="label text-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
-                    {%- endfor -%}
-                </div> -->
-            </div>
+            <!-- <div class=" tag-list col-12 text-tiny">
+                {%- for t in item.data.tags -%}
+                <a href="/tag/{{t | slugify}}" class="label text-{{ collections.allTags | getTagColor: t}}">{{t}}</a>
+                {%- endfor -%}
+            </div> -->
         </div>
-    </div>
+    </a>
+</article>

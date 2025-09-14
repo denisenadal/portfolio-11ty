@@ -144,6 +144,9 @@ body.work main section {
             text-decoration: none;
             opacity: 1;
         }
+        &:focus-visible{
+            outline: 2px solid var(--color-primary);
+        }
     }
 }
 .content div[class*="bg-"] {
@@ -198,10 +201,16 @@ hr.content-divider {
 }
 .modal-container {
 
-    a {
+    a.modal-inner {
         text-decoration: none;
         font-size: .8rem;
         font-weight: 500;
+        
+
+        &:hover .link-label,
+        &:focus-visible .link-label{
+            text-decoration: underline;
+        }
     }
 
     .close.btn.btn-link {

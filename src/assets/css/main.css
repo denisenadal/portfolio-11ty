@@ -2931,6 +2931,12 @@ header#main-header {
     padding: 0;
   }
 }
+#logo-link:focus-visible {
+  background: var(--lemon);
+  outline: solid 6px var(--lemon);
+  border-radius: 1px;
+}
+
 #logo-link .logo-name {
   font-size: 30px;
   line-height: 0.8;
@@ -3081,22 +3087,23 @@ a.label.solid:hover {
   border-radius: var(--default-radius);
   border: rgba(234, 229, 255, 0.431372549) solid 0.1em;
   overflow: hidden;
-}
-.gallery-item:hover {
-  transform: scale(1.14);
   transition: all 240ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  position: relative;
-  z-index: 1;
-  width: 100%;
 }
-.gallery-item a {
+.gallery-item:hover, .gallery-item:active {
+  transform: scale(1.14);
   text-decoration: none;
+}
+.gallery-item:focus-visible {
+  text-decoration: none;
+  border-color: var(--color-primary);
+  outline: solid 2px var(--color-primary);
 }
 .gallery-item h3 {
   font-family: var(--body-font);
   font-weight: 450;
   color: var(--dark);
   line-height: 1.27;
+  text-decoration: none;
 }
 .gallery-item:hover h3 {
   color: var(--color-primary);
@@ -3423,6 +3430,14 @@ v-100, h-100 {
   text-decoration: none;
 }
 
+.social-links a:focus-visible {
+  outline: solid 2px var(--color-primary);
+  outline-color: inherit;
+  background: var(--white);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
 #contact-section h2 {
   color: var(--ocean);
 }
@@ -3569,7 +3584,8 @@ main.home > section.hero {
   max-width: 320px;
   transition: var(--default-animation);
 }
-#timeline .timeline-item .card:hover {
+#timeline .timeline-item .card:hover,
+#timeline .timeline-item .card .card-image:focus-visible {
   outline: 1rem solid white;
   background: white;
   border-radius: 1px;
@@ -3734,6 +3750,9 @@ body.work main section a:not(.btn):hover {
   text-decoration: none;
   opacity: 1;
 }
+.content-section .image-modal-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
 
 .content div[class*=bg-] {
   border-radius: 16px;
@@ -3778,10 +3797,13 @@ hr.content-divider {
   border-color: var(--white);
 }
 
-.modal-container a {
+.modal-container a.modal-inner {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
+}
+.modal-container a.modal-inner:hover .link-label, .modal-container a.modal-inner:focus-visible .link-label {
+  text-decoration: underline;
 }
 .modal-container .close.btn.btn-link {
   line-height: 1;
