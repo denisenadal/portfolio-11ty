@@ -2,6 +2,7 @@
 #timeline {
     position: relative;
     transition: var(default-animation);
+    overflow: hidden;
 
     .timeline-item {
         padding: 5rem 0;
@@ -57,18 +58,18 @@
             display: block;
         }
 
-        .timeline-icon::after {
+        .timeline-border{
             content: "";
             border-left: 3px solid var(--lavender-050);
             ;
             border-image-slice: 1;
             border-image-source: linear-gradient(to bottom, #C5BDDE54, #CCC5D1C4);
-            height: calc(100% + 10rem);
             display: block;
             position: absolute;
             left: calc(50% - 2px);
             top: 1px;
             z-index: -1;
+            transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
         }
         }
         .gallery-col {
@@ -146,3 +147,24 @@
     //     }
     // }
 }
+// animations
+#experience .header,
+#timeline .timeline-icon,
+#timeline .timeline-content  {
+    opacity: 0;
+}
+#timeline .timeline-content.txt-col {
+    transform: translateY(100vh);
+}
+
+#timeline .timeline-border{
+    height:0px;
+    max-height: 0px;
+    opacity: 0;
+    //height: calc(100% + 10rem);
+}
+// anmiations
+#work-header{
+    opacity: 0;
+}
+

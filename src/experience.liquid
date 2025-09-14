@@ -3,10 +3,13 @@ layout: base.html
 title: Experience
 desc: Over the last 8 years, I've worked on projects large and small, as a freelancer, a design team of one, part of an agile engineering team, and leading design at a startup.
 ---
-<main class="home accent-bg ">
+<main class="experience accent-bg">
     <section class="container lg gap-2" id="experience">
-        <h1 class="col-12">{{ title }}</h1>
-        <p class="col-12 md-8">{{desc}}</p>
+        <div class="header pt-3 pb-1">
+            <h1 class="col-12">{{ title }}</h1>
+            <p class="col-12 md-8">{{desc}}</p>
+            <hr class="col-12 divider">
+        </div>
         <div id="timeline" class="col-12">
             {%- if experience -%}
             {%- for exp in experience -%}
@@ -29,6 +32,7 @@ desc: Over the last 8 years, I've worked on projects large and small, as a freel
             </div>
                 <div class="timeline-icon ">
                     <i class="fa fa-certificate fa-2x text-{{site.colors[index]}}" aria-label="hidden"></i>
+                    <span class="timeline-border"></span>
                 </div>
                 <div class="timeline-content col txt-col">
                     <p class="info date h5 mb-1 d-inline-block">

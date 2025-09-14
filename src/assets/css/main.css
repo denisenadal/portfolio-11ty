@@ -3354,6 +3354,12 @@ v-100, h-100 {
   transform: translate(-50vw, -4vw);
 }
 
+#hero,
+#contact {
+  justify-content: center;
+  align-items: center;
+}
+
 .bio-title {
   font-family: "Bassy", "DM Sans", "Inter", "Poppins", Inter, Roboto, Arial, Helvetica, sans-serif;
   font-size: 80px;
@@ -3445,10 +3451,6 @@ v-100, h-100 {
   color: var(--color-text) !important;
 }
 
-html, body {
-  scroll-snap-type: y;
-}
-
 .bio-photo {
   transform-origin: center;
   max-width: 0;
@@ -3463,19 +3465,26 @@ main.home section:not(.hero) > .container {
   opacity: 0.0001;
 }
 
-main.home > section.snap {
+html, body {
+  scroll-snap-type: y;
+  scroll-padding: 50px 0 0 0;
+}
+
+main.home > section {
   scroll-snap-align: center;
+  min-height: 100vh;
 }
 
 main.home > section#work,
 main.home > section.hero {
-  scroll-snap-align: top;
+  scroll-snap-align: start;
 }
 
 /*expeirence*/
 #timeline {
   position: relative;
   transition: var(default-animation);
+  overflow: hidden;
 }
 #timeline .timeline-item {
   padding: 5rem 0;
@@ -3520,17 +3529,17 @@ main.home > section.hero {
     position: relative;
     display: block;
   }
-  #timeline .timeline-item .timeline-icon::after {
+  #timeline .timeline-item .timeline-border {
     content: "";
     border-left: 3px solid var(--lavender-050);
     border-image-slice: 1;
     border-image-source: linear-gradient(to bottom, rgba(197, 189, 222, 0.3294117647), rgba(204, 197, 209, 0.768627451));
-    height: calc(100% + 10rem);
     display: block;
     position: absolute;
     left: calc(50% - 2px);
     top: 1px;
     z-index: -1;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 #timeline .timeline-item .gallery-col {
@@ -3573,6 +3582,26 @@ main.home > section.hero {
 #timeline .timeline-item .card .container.gap-0.col-12 {
   display: block;
   padding: 1rem 0;
+}
+
+#experience .header,
+#timeline .timeline-icon,
+#timeline .timeline-content {
+  opacity: 0;
+}
+
+#timeline .timeline-content.txt-col {
+  transform: translateY(100vh);
+}
+
+#timeline .timeline-border {
+  height: 0px;
+  max-height: 0px;
+  opacity: 0;
+}
+
+#work-header {
+  opacity: 0;
 }
 
 /* tags page */

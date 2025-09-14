@@ -115,4 +115,14 @@ $(document).ready(function(){
     $('.modal-dialog').click(function(event){
         event.stopPropagation();
     });
+
+    const { animate, scroll, inView } = Motion
+
+    inView("#work-header",(el, info)=>{
+        animate(el,{opacity:1}, { duration: .6, ease: [0.470, 0.000, 0.745, 0.715] })
+
+        return (leaveInfo)=>{
+            
+        }
+    },)
 });

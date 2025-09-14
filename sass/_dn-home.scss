@@ -16,7 +16,11 @@
     background: radial-gradient(var(--lemon) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     transform: translate(-50vw, -4vw);
 }
-
+#hero,
+#contact {
+    justify-content: center;
+    align-items: center;
+}
 .bio-title {
     font-family: "Bassy", "DM Sans", "Inter", "Poppins", Inter,Roboto, Arial, Helvetica, sans-serif;
     font-size: 80px;
@@ -113,10 +117,7 @@
     color: var(--color-text) !important;
 }
 // animations
-html, body{
-    scroll-snap-type: y ;
 
-}
 .bio-photo {
     transform-origin: center;
     max-width: 0;
@@ -130,11 +131,18 @@ html, body{
 main.home section:not(.hero) > .container{
     opacity: 0.0001;
 }
-main.home > section.snap{
+
+html, body{
+    scroll-snap-type: y ;
+    scroll-padding: 50px 0 0 0;
+
+}
+main.home > section{
     scroll-snap-align: center;
+    min-height: 100vh;
 }
 
 main.home > section#work,
 main.home > section.hero{
-    scroll-snap-align: top;
+    scroll-snap-align:start;
 }
