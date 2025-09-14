@@ -392,7 +392,8 @@ a.label.solid:hover {
 
 
   &:hover ,
-  &:active{
+  &:active,
+  &:focus{
     transform: scale(1.14);
     text-decoration: none;
   }
